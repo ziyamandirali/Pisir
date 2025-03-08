@@ -1,2 +1,2 @@
 # project
-yazılım mühendisliği ödevi
+pişir
