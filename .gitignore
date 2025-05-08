@@ -3,3 +3,4 @@ other/
 *.exe
 *.o
 *.out
+.idea/
