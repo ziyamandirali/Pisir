@@ -1,4 +1,4 @@
-package com.example.pisir
+package com.teampisir.pisir
 
 import io.flutter.embedding.android.FlutterActivity
 
