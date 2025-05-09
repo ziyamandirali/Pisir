@@ -1,17 +1,23 @@
 import 'package:flutter/material.dart';
+import 'screens/splash_screen.dart';
+import 'screens/login_page.dart';
+import 'screens/home_page.dart';
+import 'screens/pantry_page.dart';
+import 'screens/recipe_detail_page.dart';
+import 'screens/settings_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const PisirApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class PisirApp extends StatelessWidget {
+  const PisirApp({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Pişir',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -29,8 +35,16 @@ class MyApp extends StatelessWidget {
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      initialRoute: '/',
+        routes: {
+        '/': (context) => SplashScreen(),
+        '/login': (context) => LoginPage(),
+        '/home': (context) => HomePage(),
+        '/pantry': (context) => PantryPage(),
+        '/recipeDetail': (context) => RecipeDetailPage(),
+        '/settings': (context) => SettingsPage(),},
     );
   }
 }
