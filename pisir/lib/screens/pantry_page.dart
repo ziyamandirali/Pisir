@@ -99,17 +99,6 @@ class PantryPageState extends State<PantryPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Mutfak Dolabı'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.logout),
-            onPressed: () async {
-              await _auth.signOut();
-              if (mounted) {
-                Navigator.pushReplacementNamed(context, '/login');
-              }
-            },
-          ),
-        ],
       ),
       body: StreamBuilder<QuerySnapshot>(
         stream: FirebaseFirestore.instance

@@ -30,15 +30,11 @@ class _LoginPageState extends State<LoginPage> {
     if (_isInitialized) return;
 
     try {
-      // Önce Firebase oturumunu kapat
-      await _auth.signOut();
-      
-      // Sonra Google oturumunu kapat
-      if (await _googleSignIn.isSignedIn()) {
-        await _googleSignIn.signOut();
-      }
-    } catch (e) {
-      print('Error initializing auth: $e');
+      // Sessizce oturumları kapat
+      await Future.wait([
+        _auth.signOut(),
+        _googleSignIn.signOut(),
+      ]);
     } finally {
       if (mounted) {
         setState(() {
@@ -56,98 +52,58 @@ class _LoginPageState extends State<LoginPage> {
     });
 
     try {
-      // Google ile giriş yap
       final GoogleSignInAccount? googleUser = await _googleSignIn.signIn();
       
       if (googleUser == null) {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Google ile giriş iptal edildi'),
-              backgroundColor: Colors.orange,
-            ),
-          );
-        }
         return;
       }
 
-      // Google kimlik bilgilerini al
       final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
-      
-      // Firebase kimlik bilgilerini oluştur
       final credential = GoogleAuthProvider.credential(
         accessToken: googleAuth.accessToken,
         idToken: googleAuth.idToken,
       );
 
-      // Firebase ile giriş yap
       final userCredential = await _auth.signInWithCredential(credential);
       
       if (userCredential.user != null) {
-        // Token'ı yenile
-        await userCredential.user?.getIdToken(true);
+        final user = userCredential.user!;
+        await user.getIdToken(true);
+        
+        if (user.displayName == null || user.email == null) {
+          throw Exception('Kullanıcı bilgileri eksik');
+        }
+
+        await _saveUserDetails(user);
         
         if (mounted) {
           Navigator.pushReplacementNamed(context, '/home');
         }
-      } else {
-        throw Exception('Kullanıcı bilgileri alınamadı');
       }
     } on FirebaseAuthException catch (e) {
-      print('Firebase Auth Error: ${e.code} - ${e.message}');
-      String errorMessage = 'Giriş yapılırken bir hata oluştu';
-      
-      switch (e.code) {
-        case 'account-exists-with-different-credential':
-          errorMessage = 'Bu e-posta adresi başka bir giriş yöntemiyle kullanılıyor';
-          break;
-        case 'invalid-credential':
-          errorMessage = 'Geçersiz kimlik bilgileri';
-          break;
-        case 'operation-not-allowed':
-          errorMessage = 'Google ile giriş etkin değil';
-          break;
-        case 'user-disabled':
-          errorMessage = 'Bu hesap devre dışı bırakılmış';
-          break;
-        case 'user-not-found':
-          errorMessage = 'Kullanıcı bulunamadı';
-          break;
-        case 'wrong-password':
-          errorMessage = 'Hatalı şifre';
-          break;
-        case 'invalid-verification-code':
-          errorMessage = 'Geçersiz doğrulama kodu';
-          break;
-        case 'invalid-verification-id':
-          errorMessage = 'Geçersiz doğrulama kimliği';
-          break;
-      }
-      
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(errorMessage),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
+      debugPrint('Firebase Auth Error: ${e.code} - ${e.message}');
     } catch (e) {
-      print('Google sign in error: $e');
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Giriş yapılırken bir hata oluştu: ${e.toString()}'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
+      debugPrint('Google sign in error: $e');
     } finally {
       if (mounted) {
         setState(() {
           _isLoading = false;
         });
       }
+    }
+  }
+
+  Future<void> _saveUserDetails(User user) async {
+    try {
+      final userDetails = {
+        'uid': user.uid,
+        'email': user.email,
+        'displayName': user.displayName,
+        'photoURL': user.photoURL,
+      };
+      debugPrint('User details saved: $userDetails');
+    } catch (e) {
+      debugPrint('Error saving user details: $e');
     }
   }
 

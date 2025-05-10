@@ -22,26 +22,16 @@ class _HomePageState extends State<HomePage> {
     });
 
     try {
-      // Önce Google Sign-In oturumunu kapat
-      await _googleSignIn.signOut();
-      
-      // Sonra Firebase oturumunu kapat
-      await _auth.signOut();
+      // Sessizce oturumları kapat
+      await Future.wait([
+        _googleSignIn.signOut(),
+        _auth.signOut(),
+      ]);
       
       if (!mounted) return;
       
       // Login sayfasına yönlendir
       Navigator.pushReplacementNamed(context, '/login');
-    } catch (e) {
-      print('Çıkış yapılırken hata oluştu: $e');
-      if (!mounted) return;
-      
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Çıkış yapılırken bir hata oluştu'),
-          backgroundColor: Colors.red,
-        ),
-      );
     } finally {
       if (mounted) {
         setState(() {
@@ -56,26 +46,6 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Pişir'),
-        actions: [
-          if (_isLoading)
-            const Center(
-              child: Padding(
-                padding: EdgeInsets.all(16.0),
-                child: SizedBox(
-                  width: 20,
-                  height: 20,
-                  child: CircularProgressIndicator(
-                    strokeWidth: 2,
-                  ),
-                ),
-              ),
-            )
-          else
-            IconButton(
-              icon: const Icon(Icons.logout),
-              onPressed: _signOut,
-            ),
-        ],
       ),
       drawer: Drawer(
         child: ListView(
