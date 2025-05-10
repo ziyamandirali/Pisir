@@ -36,15 +36,17 @@ class MyApp extends StatelessWidget {
               ),
             );
           }
-          
+
           if (snapshot.hasData) {
             return const HomePage();
           }
-          
+
           return const LoginPage();
         },
       ),
       routes: {
+        '/login': (context) => const LoginPage(),
+        '/home': (context) => const HomePage(),
         '/pantry': (context) => const PantryPage(),
         '/recipeDetail': (context) => RecipeDetailPage(),
         '/settings': (context) => const SettingsPage(),

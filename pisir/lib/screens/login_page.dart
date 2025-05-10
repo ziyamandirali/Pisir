@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'home_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -18,34 +19,24 @@ class _LoginPageState extends State<LoginPage> {
     ],
   );
   bool _isLoading = false;
-  bool _isInitialized = false;
 
-  @override
+   @override
   void initState() {
     super.initState();
-    _initializeAuth();
-  }
-
-  Future<void> _initializeAuth() async {
-    if (_isInitialized) return;
-
-    try {
-      // Sessizce oturumları kapat
-      await Future.wait([
-        _auth.signOut(),
-        _googleSignIn.signOut(),
-      ]);
-    } finally {
-      if (mounted) {
-        setState(() {
-          _isInitialized = true;
-        });
+    
+    // authStateChanges() ile kullanıcının durumu dinlenir.
+    FirebaseAuth.instance.authStateChanges().listen((user) {
+      if (user != null) {
+        // Eğer kullanıcı giriş yaptıysa ana sayfaya yönlendir
+        if (mounted) {
+          Navigator.pushReplacementNamed(context, '/home');
+        }
       }
-    }
+    });
   }
 
   Future<void> _signInWithGoogle() async {
-    if (_isLoading || !_isInitialized) return;
+    if (_isLoading) return;
 
     setState(() {
       _isLoading = true;
@@ -55,6 +46,9 @@ class _LoginPageState extends State<LoginPage> {
       final GoogleSignInAccount? googleUser = await _googleSignIn.signIn();
       
       if (googleUser == null) {
+        setState(() {
+          _isLoading = false;
+        });
         return;
       }
 
@@ -64,24 +58,19 @@ class _LoginPageState extends State<LoginPage> {
         idToken: googleAuth.idToken,
       );
 
-      final userCredential = await _auth.signInWithCredential(credential);
-      
-      if (userCredential.user != null) {
-        final user = userCredential.user!;
-        await user.getIdToken(true);
-        
-        if (user.displayName == null || user.email == null) {
-          throw Exception('Kullanıcı bilgileri eksik');
-        }
+      await _auth.signInWithCredential(credential);
 
-        await _saveUserDetails(user);
-        
-        if (mounted) {
-          Navigator.pushReplacementNamed(context, '/home');
-        }
-      }
-    } on FirebaseAuthException catch (e) {
-      debugPrint('Firebase Auth Error: ${e.code} - ${e.message}');
+      if (mounted) {
+      Navigator.pushReplacementNamed(context, '/home');
+}
+
+// Ek kontrol: authStateChanges() tetiklenmezse, elle yönlendir
+      if (_auth.currentUser != null && mounted) {
+        Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const HomePage()),
+  );
+}
     } catch (e) {
       debugPrint('Google sign in error: $e');
     } finally {
@@ -93,30 +82,8 @@ class _LoginPageState extends State<LoginPage> {
     }
   }
 
-  Future<void> _saveUserDetails(User user) async {
-    try {
-      final userDetails = {
-        'uid': user.uid,
-        'email': user.email,
-        'displayName': user.displayName,
-        'photoURL': user.photoURL,
-      };
-      debugPrint('User details saved: $userDetails');
-    } catch (e) {
-      debugPrint('Error saving user details: $e');
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
-    if (!_isInitialized) {
-      return const Scaffold(
-        body: Center(
-          child: CircularProgressIndicator(),
-        ),
-      );
-    }
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('Pişir'),
