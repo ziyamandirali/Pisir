@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:uuid/uuid.dart';
 import 'home_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -22,9 +23,9 @@ class _LoginPageState extends State<LoginPage> {
     });
 
     try {
-      final deviceInfo = DeviceInfoPlugin();
-      final androidInfo = await deviceInfo.androidInfo;
-      final deviceId = androidInfo.id;
+      // Benzersiz bir UUID oluştur
+      final uuid = const Uuid();
+      final deviceId = uuid.v4();
       
       // Cihaz ID'sini SharedPreferences'a kaydet
       final prefs = await SharedPreferences.getInstance();
