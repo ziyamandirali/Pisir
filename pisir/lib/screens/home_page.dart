@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:google_sign_in/google_sign_in.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -10,9 +10,21 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final FirebaseAuth _auth = FirebaseAuth.instance;
-  final GoogleSignIn _googleSignIn = GoogleSignIn();
   bool _isLoading = false;
+  String? _deviceId;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadDeviceId();
+  }
+
+  Future<void> _loadDeviceId() async {
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _deviceId = prefs.getString('device_id');
+    });
+  }
 
   Future<void> _signOut() async {
     if (!mounted) return;
@@ -22,15 +34,11 @@ class _HomePageState extends State<HomePage> {
     });
 
     try {
-      // Sessizce oturumları kapat
-      await Future.wait([
-        _googleSignIn.signOut(),
-        _auth.signOut(),
-      ]);
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool('is_logged_in', false);
       
       if (!mounted) return;
       
-      // Login sayfasına yönlendir
       Navigator.pushReplacementNamed(context, '/login');
     } finally {
       if (mounted) {
@@ -91,11 +99,27 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pushNamed(context, '/recipeDetail');
-          },
-          child: const Text('Rastgele Tarif Göster'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            if (_deviceId != null)
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text(
+                  'Cihaz ID: ${_deviceId!.substring(0, 8)}...',
+                  style: const TextStyle(
+                    fontSize: 16,
+                    color: Colors.grey,
+                  ),
+                ),
+              ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/recipeDetail');
+              },
+              child: const Text('Rastgele Tarif Göster'),
+            ),
+          ],
         ),
       ),
     );

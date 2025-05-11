@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class PantryPage extends StatefulWidget {
   const PantryPage({super.key});
@@ -13,12 +12,20 @@ class PantryPage extends StatefulWidget {
 class PantryPageState extends State<PantryPage> {
   bool _isLoading = false;
   bool _isInitialized = false;
-  final FirebaseAuth _auth = FirebaseAuth.instance;
+  String? _deviceId;
 
   @override
   void initState() {
     super.initState();
+    _loadDeviceId();
     _initializePantry();
+  }
+
+  Future<void> _loadDeviceId() async {
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _deviceId = prefs.getString('device_id');
+    });
   }
 
   Future<void> _initializePantry() async {
@@ -65,33 +72,49 @@ class PantryPageState extends State<PantryPage> {
     }
   }
 
+  Future<void> _removeDuplicateIngredients() async {
+    if (_deviceId == null) return;
+
+    try {
+      final snapshot = await FirebaseFirestore.instance
+          .collection('pantry')
+          .where('device_id', isEqualTo: _deviceId)
+          .get();
+
+      final Map<String, List<String>> nameToIds = {};
+      
+      // Malzemeleri isimlerine göre grupla
+      for (var doc in snapshot.docs) {
+        final name = doc.data()['name']?.toString().toLowerCase() ?? '';
+        if (!nameToIds.containsKey(name)) {
+          nameToIds[name] = [];
+        }
+        nameToIds[name]!.add(doc.id);
+      }
+
+      // Tekrar eden malzemeleri sil
+      final batch = FirebaseFirestore.instance.batch();
+      for (var ids in nameToIds.values) {
+        if (ids.length > 1) {
+          // İlk malzemeyi tut, diğerlerini sil
+          for (var i = 1; i < ids.length; i++) {
+            batch.delete(FirebaseFirestore.instance.collection('pantry').doc(ids[i]));
+          }
+        }
+      }
+
+      await batch.commit();
+    } catch (e) {
+      debugPrint('Error removing duplicates: $e');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
-    if (!_isInitialized) {
+    if (!_isInitialized || _deviceId == null) {
       return const Scaffold(
         body: Center(
           child: CircularProgressIndicator(),
-        ),
-      );
-    }
-
-    final user = _auth.currentUser;
-    if (user == null) {
-      return Scaffold(
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text('Lütfen giriş yapın'),
-              const SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/login');
-                },
-                child: const Text('Giriş Yap'),
-              ),
-            ],
-          ),
         ),
       );
     }
@@ -103,7 +126,7 @@ class PantryPageState extends State<PantryPage> {
       body: StreamBuilder<QuerySnapshot>(
         stream: FirebaseFirestore.instance
             .collection('pantry')
-            .where('userId', isEqualTo: user.email)
+            .where('device_id', isEqualTo: _deviceId)
             .snapshots(),
         builder: (context, snapshot) {
           if (snapshot.hasError) {
@@ -192,6 +215,7 @@ class PantryPageState extends State<PantryPage> {
             ),
           );
         },
+        backgroundColor: Colors.purple[100],
         child: const Icon(Icons.add),
       ),
     );
@@ -215,20 +239,70 @@ class AddIngredientPageState extends State<AddIngredientPage> {
   List<String> _filteredIngredients = [];
   bool _isLoading = false;
   bool _isInitialized = false;
-  final FirebaseAuth _auth = FirebaseAuth.instance;
+  String? _deviceId;
+  Set<String> _existingIngredients = {};
 
   @override
   void initState() {
     super.initState();
     _searchController.addListener(_onSearchChanged);
-    _initializeIngredients();
+    _initializePage();
+  }
+
+  Future<void> _initializePage() async {
+    setState(() {
+      _isLoading = true;
+    });
+
+    try {
+      await _loadDeviceId();
+      await _loadExistingIngredients();
+      await _initializeIngredients();
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+          _isInitialized = true;
+        });
+      }
+    }
+  }
+
+  Future<void> _loadDeviceId() async {
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _deviceId = prefs.getString('device_id');
+    });
+  }
+
+  Future<void> _loadExistingIngredients() async {
+    if (_deviceId == null) return;
+
+    try {
+      final snapshot = await FirebaseFirestore.instance
+          .collection('pantry')
+          .where('device_id', isEqualTo: _deviceId)
+          .get();
+
+      setState(() {
+        _existingIngredients = snapshot.docs
+            .map((doc) => doc.data()['name']?.toString().toLowerCase() ?? '')
+            .toSet();
+      });
+    } catch (e) {
+      debugPrint('Error loading existing ingredients: $e');
+    }
   }
 
   Future<void> _initializeIngredients() async {
     try {
+      // Mevcut malzemeleri hariç tut
+      final availableIngredients = _allIngredients
+          .where((ingredient) => !_existingIngredients.contains(ingredient.toLowerCase()))
+          .toList();
+
       setState(() {
-        _filteredIngredients = List.from(_allIngredients);
-        _isInitialized = true;
+        _filteredIngredients = availableIngredients;
       });
     } catch (e) {
       if (mounted) {
@@ -242,125 +316,80 @@ class AddIngredientPageState extends State<AddIngredientPage> {
     }
   }
 
-  @override
-  void dispose() {
-    _searchController.dispose();
-    super.dispose();
-  }
-
   void _onSearchChanged() {
-    if (!mounted) return;
     final query = _searchController.text.toLowerCase();
     setState(() {
       _filteredIngredients = _allIngredients
-          .where((item) =>
-              item.toLowerCase().startsWith(query) &&
-              !_selectedIngredients.contains(item))
+          .where((ingredient) => 
+              ingredient.toLowerCase().contains(query) &&
+              !_existingIngredients.contains(ingredient.toLowerCase()))
           .toList();
     });
   }
 
-  void _selectIngredient(String ingredient) {
-    if (!mounted) return;
-    setState(() {
-      _selectedIngredients.add(ingredient);
-      _searchController.clear();
-      _filteredIngredients = _allIngredients
-          .where((String item) => !_selectedIngredients.contains(item))
-          .toList();
-    });
-  }
-
-  void _removeIngredient(String ingredient) {
-    if (!mounted) return;
-    setState(() {
-      _selectedIngredients.remove(ingredient);
-      _filteredIngredients = _allIngredients
-          .where((String item) => !_selectedIngredients.contains(item))
-          .toList();
-    });
-  }
-
-  Future<void> _addToPantry() async {
-    if (_selectedIngredients.isEmpty || !mounted) return;
-
-    final user = _auth.currentUser;
-    if (user == null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Lütfen önce giriş yapın'),
-          backgroundColor: Colors.red,
-        ),
-      );
-      return;
-    }
+  Future<void> _saveIngredients() async {
+    if (_deviceId == null) return;
 
     setState(() {
       _isLoading = true;
     });
 
     try {
-      final pantryRef = FirebaseFirestore.instance.collection('pantry');
-      final batch = FirebaseFirestore.instance.batch();
-
-      // Mevcut malzemeleri kontrol et
-      final existingIngredients = await pantryRef
-          .where('userId', isEqualTo: user.email)
+      // Mevcut malzemeleri tekrar kontrol et
+      final snapshot = await FirebaseFirestore.instance
+          .collection('pantry')
+          .where('device_id', isEqualTo: _deviceId)
           .get();
-      final existingNames = existingIngredients.docs
-          .map((doc) => (doc.data()['name'] as String).toLowerCase())
+
+      final currentIngredients = snapshot.docs
+          .map((doc) => doc.data()['name']?.toString().toLowerCase() ?? '')
           .toSet();
 
-      for (var ingredient in _selectedIngredients) {
-        // Eğer malzeme zaten varsa, ekleme
-        if (existingNames.contains(ingredient.toLowerCase())) {
-          if (mounted) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text('$ingredient zaten dolapta mevcut'),
-                backgroundColor: Colors.orange,
-              ),
-            );
-          }
-          continue;
-        }
+      // Sadece dolapta olmayan malzemeleri ekle
+      final newIngredients = _selectedIngredients
+          .where((ingredient) => !currentIngredients.contains(ingredient.toLowerCase()))
+          .toList();
 
-        final docRef = pantryRef.doc();
+      if (newIngredients.isEmpty) {
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Seçilen malzemeler zaten dolapta mevcut'),
+              backgroundColor: Colors.orange,
+            ),
+          );
+        }
+        return;
+      }
+
+      final batch = FirebaseFirestore.instance.batch();
+      
+      for (final ingredient in newIngredients) {
+        final docRef = FirebaseFirestore.instance.collection('pantry').doc();
         batch.set(docRef, {
           'name': ingredient,
-          'userId': user.email,
+          'device_id': _deviceId,
+          'created_at': FieldValue.serverTimestamp(),
         });
       }
 
       await batch.commit();
 
       if (mounted) {
+        Navigator.pop(context);
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
-            content: Text('Malzemeler başarıyla eklendi!'),
+            content: Text('Malzemeler başarıyla eklendi'),
             backgroundColor: Colors.green,
           ),
         );
-
-        Navigator.pop(context);
       }
-    } catch (e, stackTrace) {
-      print('Error adding to pantry: $e');
-      print('Stack trace: $stackTrace');
-      
-      String errorMessage = 'Hata oluştu: ';
-      if (e.toString().contains('database (default) does not exist')) {
-        errorMessage = 'Firestore veritabanı henüz oluşturulmamış. Lütfen Firebase Console\'da veritabanını oluşturun.';
-      } else {
-        errorMessage += e.toString();
-      }
-      
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(errorMessage),
+            content: Text('Malzemeler eklenirken hata oluştu: $e'),
             backgroundColor: Colors.red,
-            duration: const Duration(seconds: 5),
           ),
         );
       }
@@ -371,6 +400,12 @@ class AddIngredientPageState extends State<AddIngredientPage> {
         });
       }
     }
+  }
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
   }
 
   @override
@@ -387,65 +422,64 @@ class AddIngredientPageState extends State<AddIngredientPage> {
       appBar: AppBar(
         title: const Text('Malzeme Ekle'),
       ),
-      body: Stack(
+      body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              children: [
-                Wrap(
-                  spacing: 8.0,
-                  runSpacing: 4.0,
-                  children: [
-                    for (var ingredient in _selectedIngredients)
-                      Chip(
-                        label: Text(ingredient),
-                        onDeleted: () => _removeIngredient(ingredient),
-                      ),
-                    SizedBox(
-                      width: 150,
-                      child: TextField(
-                        controller: _searchController,
-                        decoration: const InputDecoration(
-                          hintText: 'Malzeme ara...',
-                          border: InputBorder.none,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                const Divider(height: 20),
-                Expanded(
-                  child: ListView.builder(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              controller: _searchController,
+              decoration: const InputDecoration(
+                labelText: 'Malzeme Ara',
+                prefixIcon: Icon(Icons.search),
+                border: OutlineInputBorder(),
+              ),
+            ),
+          ),
+          Expanded(
+            child: _filteredIngredients.isEmpty
+                ? const Center(
+                    child: Text('Eklenebilecek yeni malzeme kalmadı'),
+                  )
+                : ListView.builder(
                     itemCount: _filteredIngredients.length,
                     itemBuilder: (context, index) {
-                      final item = _filteredIngredients[index];
+                      final ingredient = _filteredIngredients[index];
+                      final isSelected = _selectedIngredients.contains(ingredient);
+
                       return ListTile(
-                        title: Text(item),
-                        trailing: const Icon(Icons.add),
-                        onTap: () => _selectIngredient(item),
+                        title: Text(ingredient),
+                        trailing: Icon(
+                          isSelected ? Icons.check_circle : Icons.circle_outlined,
+                          color: isSelected ? Colors.green : null,
+                        ),
+                        onTap: () {
+                          setState(() {
+                            if (isSelected) {
+                              _selectedIngredients.remove(ingredient);
+                            } else {
+                              _selectedIngredients.add(ingredient);
+                            }
+                          });
+                        },
                       );
                     },
                   ),
-                ),
-                ElevatedButton.icon(
-                  onPressed: _isLoading || _selectedIngredients.isEmpty
-                      ? null
-                      : _addToPantry,
-                  icon: const Icon(Icons.add),
-                  label: Text(_isLoading ? 'Ekleniyor...' : 'Dolaba Ekle'),
-                ),
-              ],
-            ),
           ),
-          if (_isLoading)
-            Container(
-              color: Colors.black.withOpacity(0.5),
-              child: const Center(
-                child: CircularProgressIndicator(),
-              ),
-            ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _selectedIngredients.isEmpty || _isLoading ? null : _saveIngredients,
+        backgroundColor: _selectedIngredients.isEmpty ? Colors.grey : Colors.purple[100],
+        child: _isLoading
+            ? const SizedBox(
+                width: 20,
+                height: 20,
+                child: CircularProgressIndicator(
+                  strokeWidth: 2,
+                  color: Colors.white,
+                ),
+              )
+            : const Icon(Icons.add),
       ),
     );
   }

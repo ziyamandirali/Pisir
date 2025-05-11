@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:google_sign_in/google_sign_in.dart';
+import 'package:device_info_plus/device_info_plus.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'home_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -11,31 +12,9 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  final FirebaseAuth _auth = FirebaseAuth.instance;
-  final GoogleSignIn _googleSignIn = GoogleSignIn(
-    scopes: [
-      'email',
-      'profile',
-    ],
-  );
   bool _isLoading = false;
 
-   @override
-  void initState() {
-    super.initState();
-    
-    // authStateChanges() ile kullanıcının durumu dinlenir.
-    FirebaseAuth.instance.authStateChanges().listen((user) {
-      if (user != null) {
-        // Eğer kullanıcı giriş yaptıysa ana sayfaya yönlendir
-        if (mounted) {
-          Navigator.pushReplacementNamed(context, '/home');
-        }
-      }
-    });
-  }
-
-  Future<void> _signInWithGoogle() async {
+  Future<void> _signIn() async {
     if (_isLoading) return;
 
     setState(() {
@@ -43,36 +22,27 @@ class _LoginPageState extends State<LoginPage> {
     });
 
     try {
-      final GoogleSignInAccount? googleUser = await _googleSignIn.signIn();
+      final deviceInfo = DeviceInfoPlugin();
+      final androidInfo = await deviceInfo.androidInfo;
+      final deviceId = androidInfo.id;
       
-      if (googleUser == null) {
-        setState(() {
-          _isLoading = false;
-        });
-        return;
-      }
-
-      final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
-      final credential = GoogleAuthProvider.credential(
-        accessToken: googleAuth.accessToken,
-        idToken: googleAuth.idToken,
-      );
-
-      await _auth.signInWithCredential(credential);
-
+      // Cihaz ID'sini SharedPreferences'a kaydet
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString('device_id', deviceId);
+      await prefs.setBool('is_logged_in', true);
+      
+      // Firebase'e kullanıcı verilerini kaydet
+      await FirebaseFirestore.instance.collection('users').doc(deviceId).set({
+        'device_id': deviceId,
+        'last_login': FieldValue.serverTimestamp(),
+        'created_at': FieldValue.serverTimestamp(),
+      }, SetOptions(merge: true));
+      
       if (mounted) {
-      Navigator.pushReplacementNamed(context, '/home');
-}
-
-// Ek kontrol: authStateChanges() tetiklenmezse, elle yönlendir
-      if (_auth.currentUser != null && mounted) {
-        Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => const HomePage()),
-  );
-}
+        Navigator.pushReplacementNamed(context, '/home');
+      }
     } catch (e) {
-      debugPrint('Google sign in error: $e');
+      debugPrint('Sign in error: $e');
     } finally {
       if (mounted) {
         setState(() {
@@ -96,12 +66,9 @@ class _LoginPageState extends State<LoginPage> {
               const CircularProgressIndicator()
             else
               ElevatedButton.icon(
-                onPressed: _signInWithGoogle,
-                icon: Image.asset(
-                  'assets/google_logo.png',
-                  height: 24,
-                ),
-                label: const Text('Google ile Giriş Yap'),
+                onPressed: _signIn,
+                icon: const Icon(Icons.login),
+                label: const Text('Giriş Yap'),
               ),
           ],
         ),
