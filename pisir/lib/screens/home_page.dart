@@ -36,9 +36,9 @@ class _HomePageState extends State<HomePage> {
     try {
       final prefs = await SharedPreferences.getInstance();
       await prefs.setBool('is_logged_in', false);
-      
+
       if (!mounted) return;
-      
+
       Navigator.pushReplacementNamed(context, '/login');
     } finally {
       if (mounted) {
@@ -52,72 +52,47 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text('Pişir'),
-      ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: [
-            const DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.deepPurple,
-              ),
-              child: Text(
-                'Pişir',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                ),
-              ),
-            ),
-            ListTile(
-              leading: const Icon(Icons.home),
-              title: const Text('Ana Sayfa'),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.pushReplacementNamed(context, '/home');
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.kitchen),
-              title: const Text('Mutfak Dolabı'),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.pushNamed(context, '/pantry');
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.settings),
-              title: const Text('Ayarlar'),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.pushNamed(context, '/settings');
-              },
-            ),
-          ],
+        backgroundColor: Colors.white,
+        elevation: 0,
+        centerTitle: true,
+        toolbarHeight: 110,
+        title: Image.asset(
+          'assets/pısırlogo.png',
+          width: 115,
+          height: 115,
         ),
       ),
-      body: Center(
+      body: Padding(
+        padding: const EdgeInsets.only(top: 10),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            if (_deviceId != null)
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Text(
-                  'Cihaz ID: ${_deviceId!.substring(0, 8)}...',
-                  style: const TextStyle(
-                    fontSize: 16,
-                    color: Colors.grey,
-                  ),
+            Expanded(
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    if (_deviceId != null)
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Text(
+                          'Cihaz ID: ${_deviceId!.substring(0, 8)}...',
+                          style: const TextStyle(
+                            fontSize: 16,
+                            color: Colors.grey,
+                          ),
+                        ),
+                      ),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/recipeDetail');
+                      },
+                      child: const Text('Rastgele Tarif Göster'),
+                    ),
+                  ],
                 ),
               ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/recipeDetail');
-              },
-              child: const Text('Rastgele Tarif Göster'),
             ),
           ],
         ),
