@@ -12,6 +12,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   bool _isLoading = false;
   String? _deviceId;
+  List<Map<String, dynamic>> _matchingRecipes = [];
+  Map<String, List<String>> _pantryIngredients = {};
 
   @override
   void initState() {
@@ -24,28 +26,99 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       _deviceId = prefs.getString('device_id');
     });
+    if (_deviceId != null) {
+      await _loadPantryIngredients();
+      await _loadMatchingRecipes();
+    }
   }
 
-  Future<void> _signOut() async {
-    if (!mounted) return;
+  Future<void> _loadPantryIngredients() async {
+    if (_deviceId == null) return;
+
+    try {
+      final userDoc = await FirebaseFirestore.instance
+          .collection('users')
+          .doc(_deviceId)
+          .get();
+
+      if (userDoc.exists && userDoc.data()!.containsKey('pantry')) {
+        final pantryData = userDoc.data()?['pantry'];
+        if (pantryData is Map) {
+          setState(() {
+            _pantryIngredients = Map<String, List<String>>.from(
+              (pantryData as Map).map((key, value) => MapEntry(
+                key.toString(),
+                List<String>.from(value as List),
+              )),
+            );
+          });
+        }
+      }
+    } catch (e) {
+      debugPrint('Error loading pantry ingredients: $e');
+    }
+  }
+
+  Future<void> _loadMatchingRecipes() async {
+    if (_deviceId == null) return;
 
     setState(() {
       _isLoading = true;
     });
 
     try {
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setBool('is_logged_in', false);
+      // Get all pantry ingredients as a flat list
+      final List<String> allPantryIngredients = _pantryIngredients.values
+          .expand((ingredients) => ingredients)
+          .map((ingredient) => ingredient.toLowerCase())
+          .toList();
 
-      if (!mounted) return;
+      // Get all recipes
+      final recipesSnapshot = await FirebaseFirestore.instance
+          .collection('recipes')
+          .get();
 
-      Navigator.pushReplacementNamed(context, '/login');
-    } finally {
-      if (mounted) {
-        setState(() {
-          _isLoading = false;
-        });
+      final List<Map<String, dynamic>> matchingRecipes = [];
+
+      for (var recipeDoc in recipesSnapshot.docs) {
+        final recipeData = recipeDoc.data();
+        final ingredientsOnly = recipeData['ingredientsOnly'] as String?;
+        
+        if (ingredientsOnly != null) {
+          final recipeIngredients = ingredientsOnly
+              .split(',')
+              .map((ingredient) => ingredient.trim().toLowerCase())
+              .toList();
+
+          // Check if ALL recipe ingredients are in pantry
+          final allIngredientsAvailable = recipeIngredients.every(
+            (recipeIngredient) => allPantryIngredients.any(
+              (pantryIngredient) => recipeIngredient.contains(pantryIngredient) ||
+                  pantryIngredient.contains(recipeIngredient),
+            ),
+          );
+
+          if (allIngredientsAvailable) {
+            matchingRecipes.add({
+              'id': recipeDoc.id,
+              'title': recipeData['title'],
+              'ingredientsOnly': ingredientsOnly,
+              'ingredients': recipeData['ingredients'],
+              'instructions': recipeData['instructions'],
+            });
+          }
+        }
       }
+
+      setState(() {
+        _matchingRecipes = matchingRecipes;
+        _isLoading = false;
+      });
+    } catch (e) {
+      debugPrint('Error loading matching recipes: $e');
+      setState(() {
+        _isLoading = false;
+      });
     }
   }
 
@@ -64,39 +137,52 @@ class _HomePageState extends State<HomePage> {
           height: 115,
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.only(top: 10),
-        child: Column(
-          children: [
-            Expanded(
-              child: Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    if (_deviceId != null)
-                      Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Text(
-                          'Cihaz ID: ${_deviceId!.substring(0, 8)}...',
+      body: _isLoading
+          ? const Center(child: CircularProgressIndicator())
+          : _matchingRecipes.isEmpty
+              ? const Center(
+                  child: Text(
+                    'Mutfak dolabınızdaki malzemelerle yapabileceğiniz tarif bulunamadı',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 16),
+                  ),
+                )
+              : ListView.builder(
+                  padding: const EdgeInsets.all(16),
+                  itemCount: _matchingRecipes.length,
+                  itemBuilder: (context, index) {
+                    final recipe = _matchingRecipes[index];
+                    return Card(
+                      margin: const EdgeInsets.only(bottom: 16),
+                      child: ListTile(
+                        contentPadding: const EdgeInsets.all(16),
+                        title: Text(
+                          recipe['title'] ?? 'İsimsiz Tarif',
                           style: const TextStyle(
-                            fontSize: 16,
-                            color: Colors.grey,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
+                        subtitle: Padding(
+                          padding: const EdgeInsets.only(top: 8),
+                          child: Text(
+                            'Malzemeler: ${recipe['ingredientsOnly']}',
+                            style: const TextStyle(
+                              fontStyle: FontStyle.italic,
+                            ),
+                          ),
+                        ),
+                        onTap: () {
+                          Navigator.pushNamed(
+                            context,
+                            '/recipeDetail',
+                            arguments: recipe,
+                          );
+                        },
                       ),
-                    ElevatedButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/recipeDetail');
-                      },
-                      child: const Text('Rastgele Tarif Göster'),
-                    ),
-                  ],
+                    );
+                  },
                 ),
-              ),
-            ),
-          ],
-        ),
-      ),
     );
   }
 }
