@@ -25,7 +25,7 @@ class _LoginPageState extends State<LoginPage> {
     try {
       final prefs = await SharedPreferences.getInstance();
       String? deviceId = prefs.getString('device_id');
-      
+
       // Eğer device_id yoksa yeni bir tane oluştur
       if (deviceId == null) {
         debugPrint('No existing device ID, generating new one');
@@ -35,16 +35,16 @@ class _LoginPageState extends State<LoginPage> {
       } else {
         debugPrint('Using existing device ID: $deviceId');
       }
-      
+
       await prefs.setBool('is_logged_in', true);
-      
+
       // Firebase'e kullanıcı verilerini kaydet
       await FirebaseFirestore.instance.collection('users').doc(deviceId).set({
         'device_id': deviceId,
         'last_login': FieldValue.serverTimestamp(),
         'created_at': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true));
-      
+
       if (mounted) {
         Navigator.pushReplacementNamed(context, '/main');
       }
@@ -62,9 +62,6 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Pişir'),
-      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
