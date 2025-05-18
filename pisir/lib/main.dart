@@ -29,7 +29,10 @@ class MyApp extends StatelessWidget {
       routes: {
         '/login': (context) => const LoginPage(),
         '/main': (context) => const MainScreen(),
-        '/recipeDetail': (context) => RecipeDetailPage(),
+        '/recipeDetail': (context) {
+          final recipe = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
+          return RecipeDetailPage(recipe: recipe);
+        },
       },
     );
   }
