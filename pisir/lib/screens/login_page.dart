@@ -40,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
       }, SetOptions(merge: true));
       
       if (mounted) {
-        Navigator.pushReplacementNamed(context, '/home');
+        Navigator.pushReplacementNamed(context, '/main');
       }
     } catch (e) {
       debugPrint('Sign in error: $e');
@@ -63,6 +63,12 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset(
+              'assets/pısırlogo.png',
+              width: 200,
+              height: 200,
+            ),
+            const SizedBox(height: 32),
             if (_isLoading)
               const CircularProgressIndicator()
             else
