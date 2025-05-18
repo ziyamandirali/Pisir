@@ -23,13 +23,19 @@ class _LoginPageState extends State<LoginPage> {
     });
 
     try {
-      // Benzersiz bir UUID oluştur
-      final uuid = const Uuid();
-      final deviceId = uuid.v4();
-      
-      // Cihaz ID'sini SharedPreferences'a kaydet
       final prefs = await SharedPreferences.getInstance();
-      await prefs.setString('device_id', deviceId);
+      String? deviceId = prefs.getString('device_id');
+      
+      // Eğer device_id yoksa yeni bir tane oluştur
+      if (deviceId == null) {
+        debugPrint('No existing device ID, generating new one');
+        final uuid = const Uuid();
+        deviceId = uuid.v4();
+        await prefs.setString('device_id', deviceId);
+      } else {
+        debugPrint('Using existing device ID: $deviceId');
+      }
+      
       await prefs.setBool('is_logged_in', true);
       
       // Firebase'e kullanıcı verilerini kaydet
