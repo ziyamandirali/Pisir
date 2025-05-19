@@ -104,6 +104,10 @@ class _HomePageState extends State<HomePage> {
               'title': recipeData['title'],
               'ingredientsOnly': ingredientsOnly,
               'ingredients': recipeData['ingredients'],
+              'imageUrl': recipeData['imageUrl'],
+              'cookTime': recipeData['cookTime'],
+              'prepTime': recipeData['prepTime'],
+              'description': recipeData['description'],
               'instructions': recipeData['instructions'],
             });
           }
@@ -154,24 +158,11 @@ class _HomePageState extends State<HomePage> {
                     final recipe = _matchingRecipes[index];
                     return Card(
                       margin: const EdgeInsets.only(bottom: 16),
-                      child: ListTile(
-                        contentPadding: const EdgeInsets.all(16),
-                        title: Text(
-                          recipe['title'] ?? 'İsimsiz Tarif',
-                          style: const TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        subtitle: Padding(
-                          padding: const EdgeInsets.only(top: 8),
-                          child: Text(
-                            'Malzemeler: ${recipe['ingredientsOnly']}',
-                            style: const TextStyle(
-                              fontStyle: FontStyle.italic,
-                            ),
-                          ),
-                        ),
+                      elevation: 2,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: InkWell(
                         onTap: () {
                           Navigator.pushNamed(
                             context,
@@ -179,6 +170,94 @@ class _HomePageState extends State<HomePage> {
                             arguments: recipe,
                           );
                         },
+                        borderRadius: BorderRadius.circular(12),
+                        child: Padding(
+                          padding: const EdgeInsets.all(12),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              // Recipe Image
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(8),
+                                child: recipe['imageUrl'] != null
+                                    ? Image.network(
+                                        recipe['imageUrl'],
+                                        width: 100,
+                                        height: 100,
+                                        fit: BoxFit.cover,
+                                        errorBuilder: (context, error, stackTrace) {
+                                          return Container(
+                                            width: 100,
+                                            height: 100,
+                                            color: Colors.grey[200],
+                                            child: const Icon(
+                                              Icons.image_not_supported,
+                                              size: 30,
+                                              color: Colors.grey,
+                                            ),
+                                          );
+                                        },
+                                      )
+                                    : Container(
+                                        width: 100,
+                                        height: 100,
+                                        color: Colors.grey[200],
+                                        child: const Icon(
+                                          Icons.restaurant,
+                                          size: 30,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                              ),
+                              const SizedBox(width: 16),
+                              // Recipe Details
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      recipe['title'] ?? 'İsimsiz Tarif',
+                                      style: const TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 8),
+                                    Text(
+                                      recipe['ingredientsOnly'] ?? 'Malzemeler belirtilmemiş',
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        color: Colors.grey[600],
+                                      ),
+                                      maxLines: 2,
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                    if (recipe['cookTime'] != null) ...[
+                                      const SizedBox(height: 8),
+                                      Row(
+                                        children: [
+                                          const Icon(
+                                            Icons.timer_outlined,
+                                            size: 16,
+                                            color: Colors.grey,
+                                          ),
+                                          const SizedBox(width: 4),
+                                          Text(
+                                            'Hazırlanma süresi: ${(recipe['prepTime'] ?? 0) + (recipe['cookTime'] ?? 0)} dakika',
+                                            style: TextStyle(
+                                              fontSize: 14,
+                                              color: Colors.grey[600],
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
                       ),
                     );
                   },
