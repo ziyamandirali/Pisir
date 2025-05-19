@@ -127,7 +127,12 @@
 }
 
 # Keep custom JavaScript interface exceptions
--keepclassmembers class * extends java.lang.Exception implements android.webkit.JavascriptInterface {
+-keepclassmembers class * extends java.lang.Exception {
+    <init>(...);
+}
+
+# Keep custom JavaScript interface with Exception
+-keepclassmembers class * implements android.webkit.JavascriptInterface {
     <init>(...);
 }
 
@@ -153,4 +158,17 @@
 -keepattributes Synthetic
 
 # Keep custom JavaScript interface deprecation
--keepattributes Deprecated 
+-keepattributes Deprecated
+
+# Play Core library warnings (for deferred components)
+-dontwarn com.google.android.play.core.splitcompat.SplitCompatApplication
+-dontwarn com.google.android.play.core.splitinstall.SplitInstallException
+-dontwarn com.google.android.play.core.splitinstall.SplitInstallManager
+-dontwarn com.google.android.play.core.splitinstall.SplitInstallManagerFactory
+-dontwarn com.google.android.play.core.splitinstall.SplitInstallRequest$Builder
+-dontwarn com.google.android.play.core.splitinstall.SplitInstallRequest
+-dontwarn com.google.android.play.core.splitinstall.SplitInstallSessionState
+-dontwarn com.google.android.play.core.splitinstall.SplitInstallStateUpdatedListener
+-dontwarn com.google.android.play.core.tasks.OnFailureListener
+-dontwarn com.google.android.play.core.tasks.OnSuccessListener
+-dontwarn com.google.android.play.core.tasks.Task 
