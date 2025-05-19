@@ -15,6 +15,8 @@ class PantryPageState extends State<PantryPage> {
   bool _isInitialized = false;
   String? _deviceId;
   Map<String, List<String>> _ingredients = {};
+  bool _isSelectionMode = false;
+  Set<String> _selectedIngredients = {};
 
   @override
   void initState() {
@@ -140,17 +142,57 @@ class PantryPageState extends State<PantryPage> {
     }
   }
 
-  Future<void> _removeIngredient(String category, String ingredient) async {
-    if (_deviceId == null) return;
+  void _toggleSelectionMode() {
+    setState(() {
+      _isSelectionMode = !_isSelectionMode;
+      if (!_isSelectionMode) {
+        _selectedIngredients.clear();
+      }
+    });
+  }
+
+  void _toggleIngredientSelection(String category, String ingredient) {
+    setState(() {
+      final key = '$category-$ingredient';
+      if (_selectedIngredients.contains(key)) {
+        _selectedIngredients.remove(key);
+      } else {
+        _selectedIngredients.add(key);
+      }
+    });
+  }
+
+  void _selectAllIngredients() {
+    setState(() {
+      _selectedIngredients.clear();
+      for (var category in _ingredients.keys) {
+        for (var ingredient in _ingredients[category]!) {
+          _selectedIngredients.add('$category-$ingredient');
+        }
+      }
+    });
+  }
+
+  Future<void> _deleteSelectedIngredients() async {
+    if (_deviceId == null || _selectedIngredients.isEmpty) return;
 
     try {
       final updatedIngredients = Map<String, List<String>>.from(_ingredients);
-      updatedIngredients[category] = updatedIngredients[category]!
-          .where((i) => i != ingredient)
-          .toList();
+      
+      for (var key in _selectedIngredients) {
+        final parts = key.split('-');
+        final category = parts[0];
+        final ingredient = parts[1];
+        
+        if (updatedIngredients.containsKey(category)) {
+          updatedIngredients[category] = updatedIngredients[category]!
+              .where((i) => i != ingredient)
+              .toList();
 
-      if (updatedIngredients[category]!.isEmpty) {
-        updatedIngredients.remove(category);
+          if (updatedIngredients[category]!.isEmpty) {
+            updatedIngredients.remove(category);
+          }
+        }
       }
 
       await FirebaseFirestore.instance
@@ -160,12 +202,14 @@ class PantryPageState extends State<PantryPage> {
 
       setState(() {
         _ingredients = updatedIngredients;
+        _selectedIngredients.clear();
+        _isSelectionMode = false;
       });
       
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
-            content: Text('Malzeme başarıyla silindi'),
+            content: Text('Seçili malzemeler başarıyla silindi'),
             backgroundColor: Colors.green,
           ),
         );
@@ -174,7 +218,7 @@ class PantryPageState extends State<PantryPage> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Malzeme silinirken hata oluştu: $e'),
+            content: Text('Malzemeler silinirken hata oluştu: $e'),
             backgroundColor: Colors.red,
           ),
         );
@@ -192,104 +236,114 @@ class PantryPageState extends State<PantryPage> {
       );
     }
 
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Mutfak Dolabı'),
-      ),
-      body: _ingredients.isEmpty
-          ? const Center(
-              child: Text('Henüz malzeme eklenmemiş'),
-            )
-          : ListView.builder(
-              itemCount: _ingredients.length,
-              itemBuilder: (context, categoryIndex) {
-                final category = _ingredients.keys.elementAt(categoryIndex);
-                final ingredients = _ingredients[category]!;
-                
-                return Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        category,
-                        style: const TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
+    return WillPopScope(
+      onWillPop: () async {
+        if (_isSelectionMode) {
+          setState(() {
+            _isSelectionMode = false;
+            _selectedIngredients.clear();
+          });
+          return false;
+        }
+        return true;
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('Mutfak Dolabı'),
+          actions: [
+            if (_isSelectionMode) ...[
+              TextButton(
+                onPressed: _selectAllIngredients,
+                child: const Text(
+                  'Tümünü Seç',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ),
+              TextButton(
+                onPressed: _toggleSelectionMode,
+                child: const Text(
+                  'İptal',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ),
+            ],
+          ],
+        ),
+        body: _ingredients.isEmpty
+            ? const Center(
+                child: Text('Henüz malzeme eklenmemiş'),
+              )
+            : ListView.builder(
+                itemCount: _ingredients.length,
+                itemBuilder: (context, categoryIndex) {
+                  final category = _ingredients.keys.elementAt(categoryIndex);
+                  final ingredients = _ingredients[category]!;
+                  
+                  return Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          category,
+                          style: const TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
-                    ),
-                    ...ingredients.map((ingredient) => Dismissible(
-                      key: Key('$category-$ingredient'),
-                      background: Container(
-                        color: Colors.red,
-                        alignment: Alignment.centerRight,
-                        padding: const EdgeInsets.only(right: 20),
-                        child: const Icon(
-                          Icons.delete,
-                          color: Colors.white,
-                        ),
-                      ),
-                      direction: DismissDirection.endToStart,
-                      onDismissed: (direction) {
-                        _removeIngredient(category, ingredient);
-                      },
-                      child: ListTile(
+                      ...ingredients.map((ingredient) => ListTile(
+                        key: Key('$category-$ingredient'),
                         title: Text(ingredient),
-                        leading: const Icon(Icons.kitchen),
+                        leading: _isSelectionMode
+                            ? Checkbox(
+                                value: _selectedIngredients.contains('$category-$ingredient'),
+                                onChanged: (bool? value) {
+                                  _toggleIngredientSelection(category, ingredient);
+                                },
+                              )
+                            : const Icon(Icons.kitchen),
+                        onTap: _isSelectionMode
+                            ? () {
+                                _toggleIngredientSelection(category, ingredient);
+                              }
+                            : null,
                         onLongPress: () {
-                          showDialog(
-                            context: context,
-                            builder: (BuildContext context) {
-                              return AlertDialog(
-                                title: const Text('Malzemeyi Sil'),
-                                content: Text('$ingredient malzemesini silmek istediğinize emin misiniz?'),
-                                actions: [
-                                  TextButton(
-                                    onPressed: () {
-                                      Navigator.of(context).pop();
-                                    },
-                                    child: const Text('İptal'),
-                                  ),
-                                  TextButton(
-                                    onPressed: () {
-                                      _removeIngredient(category, ingredient);
-                                      Navigator.of(context).pop();
-                                    },
-                                    child: const Text(
-                                      'Sil',
-                                      style: TextStyle(color: Colors.red),
-                                    ),
-                                  ),
-                                ],
-                              );
-                            },
-                          );
+                          if (!_isSelectionMode) {
+                            _toggleSelectionMode();
+                            _toggleIngredientSelection(category, ingredient);
+                          }
                         },
-                      ),
-                    )).toList(),
-                  ],
-                );
-              },
-            ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => AddIngredientPage(
-                existingIngredients: _ingredients,
-                onIngredientsAdded: (newIngredients) {
-                  setState(() {
-                    _ingredients = newIngredients;
-                  });
+                      )).toList(),
+                    ],
+                  );
                 },
               ),
-            ),
-          );
-        },
-        backgroundColor: Colors.purple[100],
-        child: const Icon(Icons.add),
+        floatingActionButton: _isSelectionMode
+            ? FloatingActionButton(
+                onPressed: _selectedIngredients.isEmpty ? null : _deleteSelectedIngredients,
+                backgroundColor: _selectedIngredients.isEmpty ? Colors.grey : Colors.red,
+                child: const Icon(Icons.delete),
+              )
+            : FloatingActionButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AddIngredientPage(
+                        existingIngredients: _ingredients,
+                        onIngredientsAdded: (newIngredients) {
+                          setState(() {
+                            _ingredients = newIngredients;
+                          });
+                        },
+                      ),
+                    ),
+                  );
+                },
+                backgroundColor: Colors.purple[100],
+                child: const Icon(Icons.add),
+              ),
       ),
     );
   }
@@ -493,7 +547,7 @@ class _AddIngredientPageState extends State<AddIngredientPage> {
             child: Text(
               'Kaydet',
               style: TextStyle(
-                color: _selectedIngredients.isEmpty ? Colors.grey : Colors.white,
+                color: _selectedIngredients.isEmpty ? Colors.grey : Colors.black,
               ),
             ),
           ),
