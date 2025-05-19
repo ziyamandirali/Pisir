@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
+import 'package:cached_network_image/cached_network_image.dart';
 
 class PantryPage extends StatefulWidget {
   const PantryPage({super.key});
@@ -18,6 +19,9 @@ class PantryPageState extends State<PantryPage> {
   bool _isSelectionMode = false;
   Set<String> _selectedIngredients = {};
   final ScrollController _scrollController = ScrollController();
+  static const String _pantryCacheKey = 'pantry_data_cache';
+  static const String _recipesCacheKey = 'recipes_data_cache';
+  static const String _lastUpdateKey = 'last_update_timestamp';
 
   @override
   void initState() {
@@ -69,6 +73,10 @@ class PantryPageState extends State<PantryPage> {
     }
 
     try {
+      // Önce önbellekten verileri yüklemeyi dene
+      await _loadFromCache();
+
+      // Firestore'dan güncel verileri al
       final userDoc = await FirebaseFirestore.instance
           .collection('users')
           .doc(_deviceId)
@@ -125,6 +133,9 @@ class PantryPageState extends State<PantryPage> {
         }
       }
 
+      // Verileri önbelleğe kaydet
+      await _saveToCache(ingredients);
+
       if (mounted) {
         setState(() {
           _ingredients = ingredients;
@@ -132,6 +143,9 @@ class PantryPageState extends State<PantryPage> {
           _isLoading = false;
         });
       }
+
+      // Tarifleri güncelle
+      await _updateRecipesCache();
     } catch (e, stackTrace) {
       debugPrint('Error in _initializePantry: $e');
       debugPrint('Stack trace: $stackTrace');
@@ -148,6 +162,86 @@ class PantryPageState extends State<PantryPage> {
         });
       }
     }
+  }
+
+  Future<void> _loadFromCache() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final String? cachedData = prefs.getString(_pantryCacheKey);
+      
+      if (cachedData != null) {
+        final Map<String, dynamic> decodedData = json.decode(cachedData);
+        final Map<String, List<String>> cachedIngredients = Map<String, List<String>>.from(
+          decodedData.map((key, value) => MapEntry(
+            key.toString(),
+            List<String>.from(value as List),
+          )),
+        );
+        
+        if (mounted) {
+          setState(() {
+            _ingredients = cachedIngredients;
+          });
+        }
+      }
+    } catch (e) {
+      debugPrint('Error loading from cache: $e');
+    }
+  }
+
+  Future<void> _saveToCache(Map<String, List<String>> ingredients) async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final String encodedData = json.encode(ingredients);
+      await prefs.setString(_pantryCacheKey, encodedData);
+      await prefs.setString(_lastUpdateKey, DateTime.now().toIso8601String());
+    } catch (e) {
+      debugPrint('Error saving to cache: $e');
+    }
+  }
+
+  Future<void> _updateRecipesCache() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final String? lastUpdate = prefs.getString(_lastUpdateKey);
+      final DateTime lastUpdateTime = lastUpdate != null 
+          ? DateTime.parse(lastUpdate) 
+          : DateTime.now().subtract(const Duration(days: 1));
+
+      // Son güncellemeden bu yana 24 saat geçtiyse veya hiç güncelleme yoksa
+      if (DateTime.now().difference(lastUpdateTime).inHours >= 24) {
+        // Tüm tarifleri getir
+        final recipesSnapshot = await FirebaseFirestore.instance
+            .collection('recipes')
+            .get(GetOptions(source: Source.serverAndCache));
+
+        final List<Map<String, dynamic>> recipes = recipesSnapshot.docs
+            .map((doc) => {
+                  'id': doc.id,
+                  ...doc.data(),
+                })
+            .toList();
+
+        // Tarifleri önbelleğe kaydet
+        await prefs.setString(_recipesCacheKey, json.encode(recipes));
+        await prefs.setString(_lastUpdateKey, DateTime.now().toIso8601String());
+      }
+    } catch (e) {
+      debugPrint('Error updating recipes cache: $e');
+    }
+  }
+
+  // Resim önbelleği için widget
+  Widget _buildCachedImage(String imageUrl) {
+    return CachedNetworkImage(
+      imageUrl: imageUrl,
+      placeholder: (context, url) => const Center(
+        child: CircularProgressIndicator(),
+      ),
+      errorWidget: (context, url, error) => const Icon(Icons.error),
+      memCacheWidth: 300, // Önbellekteki resim boyutunu optimize et
+      memCacheHeight: 300,
+    );
   }
 
   void _toggleSelectionMode() {

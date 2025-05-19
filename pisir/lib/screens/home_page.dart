@@ -14,11 +14,14 @@ class _HomePageState extends State<HomePage> {
   bool _loadingMore = false;
   String? _deviceId;
   List<Map<String, dynamic>> _matchingRecipes = [];
+  List<Map<String, dynamic>> _displayedRecipes = [];
   Map<String, List<String>> _pantryIngredients = {};
   // Sayfalandırma için değişkenler
   DocumentSnapshot? _lastDocument;
   bool _hasMoreRecipes = true;
-  final int _recipesPerPage = 10;
+  final int _recipesPerPage = 2000; // Tarif sayfa boyutu
+  final int _maxTotalRecipes = 50; // Maksimum toplam tarif sayısı
+  final int _displayPerPage = 10; // Sayfa başına gösterilecek tarif sayısı
   final ScrollController _scrollController = ScrollController();
 
   @override
@@ -49,8 +52,6 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> _testFirestore() async {
     try {
-      debugPrint('PIŞIR_DEBUG: Firestore bağlantı testi yapılıyor...');
-      
       // Basit bir get işlemi ile kontrol
       final testDoc = await FirebaseFirestore.instance
           .collection('test')
@@ -58,68 +59,50 @@ class _HomePageState extends State<HomePage> {
           .get(GetOptions(source: Source.serverAndCache));
       
       if (testDoc.exists) {
-        debugPrint('PIŞIR_DEBUG: Firestore test başarılı - ${testDoc.data()}');
+        // Test belgesi mevcut
       } else {
-        debugPrint('PIŞIR_DEBUG: Firestore test belge mevcut değil, oluşturuluyor...');
-        
         // Test belgesini oluştur
         try {
           await FirebaseFirestore.instance
               .collection('test')
               .doc('test')
               .set({'timestamp': FieldValue.serverTimestamp()});
-          debugPrint('PIŞIR_DEBUG: Firestore test belgesi oluşturuldu');
         } catch (e) {
-          debugPrint('PIŞIR_DEBUG: Firestore test belgesi oluşturulamadı: $e');
+          // Test belgesi oluşturulamadı
         }
       }
       
       // Mevcut recipes koleksiyonunu kontrol et
-      debugPrint('PIŞIR_DEBUG: Recipes koleksiyonu kontrol ediliyor...');
       final recipesSnapshot = await FirebaseFirestore.instance
           .collection('recipes')
           .limit(5)
           .get();
       
-      debugPrint('PIŞIR_DEBUG: ${recipesSnapshot.docs.length} adet tarif bulundu');
-      for (var doc in recipesSnapshot.docs) {
-        debugPrint('PIŞIR_DEBUG: Tarif ID: ${doc.id}, Başlık: ${doc.data()['title'] ?? 'Başlık yok'}');
-      }
-      
     } catch (e) {
-      debugPrint('PIŞIR_DEBUG: Firestore testi başarısız: $e');
+      // Firestore testi başarısız
     }
   }
 
   Future<void> _loadDeviceId() async {
-    debugPrint('PIŞIR_DEBUG: [A] Device ID yükleniyor...');
     final prefs = await SharedPreferences.getInstance();
     setState(() {
       _deviceId = prefs.getString('device_id');
     });
-    debugPrint('PIŞIR_DEBUG: [B] Device ID: $_deviceId');
     if (_deviceId != null) {
-      debugPrint('PIŞIR_DEBUG: [C] Mutfak dolabını yüklemeye başlıyorum...');
       await _loadPantryIngredients();
-      debugPrint('PIŞIR_DEBUG: [D] Mutfak dolabı yüklendi. Şimdi tarifleri yüklemeye başlıyorum...');
       await _loadMatchingRecipes();
-      debugPrint('PIŞIR_DEBUG: [E] Tarifler yüklendi.');
-    } else {
-      debugPrint('PIŞIR_DEBUG: HATA! Device ID bulunamadı');
     }
   }
 
   Future<void> _loadPantryIngredients() async {
     if (_deviceId == null) return;
 
-    debugPrint('PIŞIR_DEBUG: Mutfak dolabı malzemeleri yükleniyor...');
     try {
       final userDoc = await FirebaseFirestore.instance
           .collection('users')
           .doc(_deviceId)
           .get(GetOptions(source: Source.serverAndCache));
 
-      debugPrint('PIŞIR_DEBUG: Kullanıcı belgesi var mı? ${userDoc.exists}');
       if (userDoc.exists && userDoc.data()!.containsKey('pantry')) {
         final pantryData = userDoc.data()?['pantry'];
         if (pantryData is Map) {
@@ -131,27 +114,15 @@ class _HomePageState extends State<HomePage> {
               )),
             );
           });
-          debugPrint('PIŞIR_DEBUG: Mutfak dolabı yüklendi: ${_pantryIngredients.length} kategori');
-          // Kategorileri ve içlerindeki malzemeleri yazdır
-          _pantryIngredients.forEach((category, ingredients) {
-            debugPrint('PIŞIR_DEBUG: Kategori: $category - Malzemeler: ${ingredients.join(", ")}');
-          });
         }
-      } else {
-        debugPrint('PIŞIR_DEBUG: Kullanıcının mutfak dolabı boş veya uygun formatta değil');
       }
     } catch (e) {
-      debugPrint('PIŞIR_DEBUG: Mutfak dolabı yüklenirken hata: $e');
+      // Mutfak dolabı yüklenirken hata
     }
   }
 
   Future<void> _loadMatchingRecipes() async {
-    debugPrint('PIŞIR_DEBUG: [Z] _loadMatchingRecipes başladı ------------------');
-    
-    if (_deviceId == null) {
-      debugPrint('PIŞIR_DEBUG: [Z1] Device ID null, tarifleri yükleyemiyorum!');
-      return;
-    }
+    if (_deviceId == null) return;
 
     setState(() {
       _isLoading = true;
@@ -159,67 +130,45 @@ class _HomePageState extends State<HomePage> {
       _hasMoreRecipes = true;
       _matchingRecipes = [];
     });
-    debugPrint('PIŞIR_DEBUG: [Z2] State ayarlandı, şimdi ilk tarif sayfası yüklenecek');
     
-    // Burada bir gecikme ekleyelim, böylece state doğru şekilde güncellenebilir
     await Future.delayed(const Duration(milliseconds: 100));
-    
     await _loadMoreRecipes();
-    debugPrint('PIŞIR_DEBUG: [Y] _loadMatchingRecipes tamamlandı ---------------');
   }
 
   Future<void> _loadMoreRecipes() async {
-    debugPrint('PIŞIR_DEBUG: [M] ************* _loadMoreRecipes BAŞLADI ************');
-    
-    if (_deviceId == null) {
-      debugPrint('PIŞIR_DEBUG: [M-ERR] DeviceID null!');
+    if (_deviceId == null || _loadingMore || !_hasMoreRecipes) return;
+
+    // Maksimum tarif sayısına ulaşıldı mı kontrol et
+    if (_matchingRecipes.length >= _maxTotalRecipes) {
+      setState(() {
+        _hasMoreRecipes = false;
+        _loadingMore = false;
+        _isLoading = false;
+      });
       return;
     }
-    
-    if (_loadingMore) {
-      debugPrint('PIŞIR_DEBUG: [M-ERR] Zaten yükleme yapılıyor!');
-      return;
-    }
-    
-    if (!_hasMoreRecipes) {
-      debugPrint('PIŞIR_DEBUG: [M-ERR] Daha fazla tarif yok!');
-      return;
-    }
-    
-    // _isLoading kontrolü artık atlanabilir
-    // Bu metod direkt çalışmalı
-    debugPrint('PIŞIR_DEBUG: [M-OK] Tarifler yüklenmeye başlıyor...');
 
     setState(() {
       _loadingMore = true;
     });
 
     try {
-      debugPrint('PIŞIR_DEBUG: [1] Tarifleri yüklemeye başlıyoruz...');
       final List<String> allPantryIngredients = _pantryIngredients.values
           .expand((ingredients) => ingredients)
           .map((ingredient) => ingredient.toLowerCase().trim())
           .toList();
-      
-      debugPrint('PIŞIR_DEBUG: [2] Mutfak dolabında ${allPantryIngredients.length} malzeme var: ${allPantryIngredients.join(', ')}');
 
-      // İlk sorgu veya sonraki sayfa sorgusu
       Query recipesQuery = FirebaseFirestore.instance
           .collection('recipes')
           .limit(_recipesPerPage);
 
-      // Eğer bir önceki sayfa yüklendiyse, son belge referansını kullan
       if (_lastDocument != null) {
         recipesQuery = recipesQuery.startAfterDocument(_lastDocument!);
       }
 
-      debugPrint('PIŞIR_DEBUG: [3] Firestore sorgusu yapılıyor...');
       final recipesSnapshot = await recipesQuery.get(GetOptions(source: Source.serverAndCache));
-      debugPrint('PIŞIR_DEBUG: [4] *** Sorgu yapıldı: ${recipesSnapshot.docs.length} tarif bulundu ***');
 
-      // Son belge kontrolü
       if (recipesSnapshot.docs.isEmpty) {
-        debugPrint('PIŞIR_DEBUG: [5] Sorgu sonucu boş geldi');
         setState(() {
           _hasMoreRecipes = false;
           _loadingMore = false;
@@ -228,14 +177,8 @@ class _HomePageState extends State<HomePage> {
         return;
       }
 
-      // Son belgeyi kaydet
       _lastDocument = recipesSnapshot.docs.last;
-
-      // Eşleşen tarifleri topla
       final List<Map<String, dynamic>> newMatchingRecipes = [];
-      
-      // Hangi tariflerin mutfak dolabındaki malzemelerle eşleştiğini kontrol et
-      debugPrint('PIŞIR_DEBUG: [6] ========= MALZEME KARŞILAŞTIRMA BAŞLIYOR =========');
       
       for (var recipeDoc in recipesSnapshot.docs) {
         final recipeData = recipeDoc.data() as Map<String, dynamic>;
@@ -243,44 +186,29 @@ class _HomePageState extends State<HomePage> {
         final String recipeTitle = recipeData['title'] ?? 'İsimsiz Tarif';
         final ingredientsOnly = recipeData['ingredientsOnly'] as String?;
         
-        debugPrint('PIŞIR_DEBUG: [7] TARİF: $recipeTitle (ID: $recipeId)');
+        if (ingredientsOnly == null) continue;
         
-        if (ingredientsOnly == null) {
-          debugPrint('PIŞIR_DEBUG: [8] UYARI! Bu tarifte ingredientsOnly alanı yok!');
-          continue; // Bu tarifi atla
-        }
-        
-        // Malzemeleri virgülle ayır
         final List<String> recipeIngredients = ingredientsOnly
             .split(',')
             .map((ingredient) => ingredient.trim().toLowerCase())
             .where((ingredient) => ingredient.isNotEmpty)
             .toList();
         
-        debugPrint('PIŞIR_DEBUG: [9] TARİF MALZEMELERİ (${recipeIngredients.length}): ${recipeIngredients.join(", ")}');
-        
-        // YENİ ALGORİTMA: Tarifte SADECE pantry'deki malzemeler olmalı
-        bool allIngredientsInPantry = true; // Tüm malzemeler pantry'de mi?
+        bool allIngredientsInPantry = true;
         List<String> matchedIngredients = [];
         List<String> missingIngredients = [];
         
-        // Her tarif malzemesini kontrol et
         for (int i = 0; i < recipeIngredients.length; i++) {
           final String recipeIngredient = recipeIngredients[i];
-          debugPrint('PIŞIR_DEBUG: [10] MAL-${i+1}: "$recipeIngredient"');
-          
-          // Bu malzeme pantry'de var mı?
           bool foundInPantry = false;
           String? matchedPantryIngredient;
           
           for (int j = 0; j < allPantryIngredients.length; j++) {
             final String pantryIngredient = allPantryIngredients[j];
             
-            // Tam eşleşme kontrolü
             if (recipeIngredient == pantryIngredient) {
               foundInPantry = true;
               matchedPantryIngredient = pantryIngredient;
-              debugPrint('PIŞIR_DEBUG: [11] EŞLEŞME BULUNDU! "$recipeIngredient" = "$pantryIngredient"');
               break;
             }
           }
@@ -288,9 +216,8 @@ class _HomePageState extends State<HomePage> {
           if (foundInPantry) {
             matchedIngredients.add('"$recipeIngredient" (✓)');
           } else {
-            allIngredientsInPantry = false; // Bu malzeme pantry'de yok!
+            allIngredientsInPantry = false;
             missingIngredients.add('"$recipeIngredient" (✗)');
-            debugPrint('PIŞIR_DEBUG: [12] EKSİK MALZEME: "$recipeIngredient" pantry\'de bulunamadı');
           }
         }
         
@@ -304,38 +231,28 @@ class _HomePageState extends State<HomePage> {
             'cookTime': recipeData['cookTime'],
             'prepTime': recipeData['prepTime'],
           });
-        } else {
-          debugPrint('PIŞIR_DEBUG: [14] ❌ EŞLEŞME YOK: $recipeTitle | Eksik malzemeler: ${missingIngredients.join(", ")}');
         }
-        
-        debugPrint('PIŞIR_DEBUG: [15] ----------------------------------------');
       }
-      
-      debugPrint('PIŞIR_DEBUG: [16] *** Bu sayfada ${newMatchingRecipes.length} tarif eşleşti ***');
 
-      // Daha fazla tarif olup olmadığını kontrol et
       if (recipesSnapshot.docs.length < _recipesPerPage) {
         _hasMoreRecipes = false;
-        debugPrint('PIŞIR_DEBUG: [17] *** Daha fazla tarif yok ***');
       }
 
-      // UI'ı bir kerede güncelle
       if (newMatchingRecipes.isNotEmpty) {
         setState(() {
           _matchingRecipes.addAll(newMatchingRecipes);
-          debugPrint('PIŞIR_DEBUG: [18] *** Toplam ${_matchingRecipes.length} tarif gösteriliyor ***');
+          if (_displayedRecipes.isEmpty) {
+            _displayedRecipes = _matchingRecipes.take(_displayPerPage).toList();
+          }
           _loadingMore = false;
           _isLoading = false;
         });
       } else {
-        // Eşleşen tarif yoksa ve daha fazla tarif varsa, bir sonraki sayfayı yükle
         if (_hasMoreRecipes) {
-          debugPrint('PIŞIR_DEBUG: [19] Hiç eşleşme bulunamadı, bir sonraki sayfaya geçiliyor');
           setState(() {
             _loadingMore = false;
             _isLoading = false;
           });
-          // Hemen bir sonraki sayfayı yükle
           await _loadMoreRecipes();
         } else {
           setState(() {
@@ -345,24 +262,30 @@ class _HomePageState extends State<HomePage> {
         }
       }
     } catch (e, stackTrace) {
-      debugPrint('PIŞIR_DEBUG: [20] HATA! Tarifleri yüklerken hata: $e');
-      debugPrint('PIŞIR_DEBUG: [21] HATA DETAYI: $stackTrace');
       setState(() {
         _loadingMore = false;
         _isLoading = false;
       });
     }
     
-    // Eğer 10 saniye içinde işlem tamamlanmazsa zorunlu olarak yükleme durumunu kaldır
     Future.delayed(const Duration(seconds: 10), () {
       if (_isLoading || _loadingMore) {
-        debugPrint('PIŞIR_DEBUG: [TIMEOUT] Yükleme zaman aşımına uğradı, UI güncelleniyor.');
         setState(() {
           _loadingMore = false;
           _isLoading = false;
         });
       }
     });
+  }
+
+  // Yeni metod: Daha fazla tarif yükle
+  void _loadMoreDisplayedRecipes() {
+    if (_matchingRecipes.length > _displayedRecipes.length) {
+      setState(() {
+        final nextBatch = _matchingRecipes.skip(_displayedRecipes.length).take(_displayPerPage).toList();
+        _displayedRecipes.addAll(nextBatch);
+      });
+    }
   }
 
   @override
@@ -393,17 +316,28 @@ class _HomePageState extends State<HomePage> {
               : ListView.builder(
                   controller: _scrollController,
                   padding: const EdgeInsets.all(16),
-                  itemCount: _matchingRecipes.length + (_hasMoreRecipes ? 1 : 0),
+                  itemCount: _displayedRecipes.length + (_matchingRecipes.length > _displayedRecipes.length ? 1 : 0),
                   itemBuilder: (context, index) {
-                    // Son öğe ve daha fazla tarif varsa yükleme göstergesi göster
-                    if (index == _matchingRecipes.length) {
-                      return const Padding(
-                        padding: EdgeInsets.symmetric(vertical: 16.0),
-                        child: Center(child: CircularProgressIndicator()),
+                    // Son öğe ve daha fazla tarif varsa "Daha Fazla" butonu göster
+                    if (index == _displayedRecipes.length) {
+                      return Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 16.0),
+                        child: Center(
+                          child: ElevatedButton(
+                            onPressed: _loadMoreDisplayedRecipes,
+                            style: ElevatedButton.styleFrom(
+                              padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                            ),
+                            child: const Text('Daha Fazla Tarif Göster'),
+                          ),
+                        ),
                       );
                     }
                     
-                    final recipe = _matchingRecipes[index];
+                    final recipe = _displayedRecipes[index];
                     return Card(
                       margin: const EdgeInsets.only(bottom: 16),
                       elevation: 2,

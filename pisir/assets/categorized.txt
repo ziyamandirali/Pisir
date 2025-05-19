@@ -301,6 +301,8 @@ kuru et
 
 SÜT VE SÜT ÜRÜNLERİ
 
+süt
+
 labne		
 
 krema			
@@ -854,8 +856,6 @@ acuka
 zeytin ezmesi
 
 İÇECEKLER 
-
-süt
 
 siyah çay
 
