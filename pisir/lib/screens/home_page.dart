@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../main.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -290,10 +291,11 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = darkModeNotifier.value;
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: isDark ? Colors.grey[900] : Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: isDark ? Colors.grey[900] : Colors.white,
         elevation: 0,
         centerTitle: true,
         toolbarHeight: 110,
@@ -336,7 +338,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       );
                     }
-                    
+
                     final recipe = _displayedRecipes[index];
                     return Card(
                       margin: const EdgeInsets.only(bottom: 16),

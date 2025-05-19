@@ -3,14 +3,19 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:provider/provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'screens/login_page.dart';
 import 'screens/main_screen.dart';
 import 'screens/recipe_detail_page.dart';
 import 'screens/splash_screen.dart';
 
+final ValueNotifier<bool> darkModeNotifier = ValueNotifier(false);
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  final prefs = await SharedPreferences.getInstance();
+  darkModeNotifier.value = prefs.getBool('is_dark_mode') ?? false;
   
   // Firestore önbelleğini yapılandır
   FirebaseFirestore.instance.settings = Settings(
@@ -44,21 +49,70 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Pişir',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const SplashScreen(),
-      routes: {
-        '/login': (context) => const LoginPage(),
-        '/main': (context) => const MainScreen(),
-        '/recipeDetail': (context) {
-          final recipe = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
-          return RecipeDetailPage(recipe: recipe);
-        },
+    return ValueListenableBuilder<bool>(
+      valueListenable: darkModeNotifier,
+      builder: (context, isDark, _) {
+        return MaterialApp(
+          title: 'Pişir',
+          debugShowCheckedModeBanner: false,
+          theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(
+              seedColor: Colors.deepPurple,
+              brightness: isDark ? Brightness.dark : Brightness.light,
+            ),
+            useMaterial3: true,
+            scaffoldBackgroundColor: isDark ? Colors.grey[900] : Colors.white,
+            appBarTheme: AppBarTheme(
+              backgroundColor: isDark ? Colors.grey[900] : Colors.white,
+              elevation: 0,
+              iconTheme: IconThemeData(
+                color: isDark ? Colors.white : Colors.black,
+              ),
+              titleTextStyle: TextStyle(
+                color: isDark ? Colors.white : Colors.black,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            cardColor: isDark ? Colors.grey[800] : Colors.white,
+            textTheme: TextTheme(
+              bodyLarge: TextStyle(
+                color: isDark ? Colors.white : Colors.black,
+              ),
+              bodyMedium: TextStyle(
+                color: isDark ? Colors.white70 : Colors.black87,
+              ),
+            ),
+            bottomNavigationBarTheme: BottomNavigationBarThemeData(
+              backgroundColor: isDark ? Colors.grey[900] : Colors.white,
+              selectedItemColor: isDark ? Colors.deepPurple[200] : Colors.deepPurple,
+              unselectedItemColor: isDark ? Colors.grey[400] : Colors.grey[600],
+            ),
+            switchTheme: SwitchThemeData(
+              thumbColor: MaterialStateProperty.resolveWith<Color>((Set<MaterialState> states) {
+                if (states.contains(MaterialState.selected)) {
+                  return Colors.deepPurple;
+                }
+                return isDark ? Colors.grey[400]! : Colors.grey[600]!;
+              }),
+              trackColor: MaterialStateProperty.resolveWith<Color>((Set<MaterialState> states) {
+                if (states.contains(MaterialState.selected)) {
+                  return isDark ? Colors.deepPurple.withOpacity(0.5) : Colors.deepPurple.withOpacity(0.3);
+                }
+                return isDark ? Colors.grey[700]! : Colors.grey[300]!;
+              }),
+            ),
+          ),
+          home: const SplashScreen(),
+          routes: {
+            '/login': (context) => const LoginPage(),
+            '/main': (context) => const MainScreen(),
+            '/recipeDetail': (context) {
+              final recipe = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
+              return RecipeDetailPage(recipe: recipe);
+            },
+          },
+        );
       },
     );
   }
