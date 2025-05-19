@@ -17,6 +17,7 @@ class PantryPageState extends State<PantryPage> {
   Map<String, List<String>> _ingredients = {};
   bool _isSelectionMode = false;
   Set<String> _selectedIngredients = {};
+  final ScrollController _scrollController = ScrollController();
 
   @override
   void initState() {
@@ -24,47 +25,56 @@ class PantryPageState extends State<PantryPage> {
     _initialize();
   }
 
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
   Future<void> _initialize() async {
+    if (!mounted) return;
+    
+    setState(() {
+      _isLoading = true;
+    });
+
     await _loadDeviceId();
+    
     if (mounted) {
       await _initializePantry();
     }
   }
 
   Future<void> _loadDeviceId() async {
-    debugPrint('Loading device ID from SharedPreferences');
-    final prefs = await SharedPreferences.getInstance();
-    final deviceId = prefs.getString('device_id');
-    debugPrint('Loaded device ID: $deviceId');
-    
-    if (mounted) {
-      setState(() {
-        _deviceId = deviceId;
-      });
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final deviceId = prefs.getString('device_id');
+      
+      if (mounted) {
+        setState(() {
+          _deviceId = deviceId;
+        });
+      }
+    } catch (e) {
+      debugPrint('Error loading device ID: $e');
     }
   }
 
   Future<void> _initializePantry() async {
     if (_deviceId == null) {
-      debugPrint('Device ID is null, redirecting to login');
       if (mounted) {
         Navigator.pushReplacementNamed(context, '/login');
       }
       return;
     }
 
-    debugPrint('Initializing pantry for device: $_deviceId');
-
     try {
       final userDoc = await FirebaseFirestore.instance
           .collection('users')
           .doc(_deviceId)
-          .get();
-
-      debugPrint('User document exists: ${userDoc.exists}');
+          .get(GetOptions(source: Source.serverAndCache));
 
       if (!userDoc.exists) {
-        debugPrint('Creating new user document');
         await FirebaseFirestore.instance
             .collection('users')
             .doc(_deviceId)
@@ -74,14 +84,13 @@ class PantryPageState extends State<PantryPage> {
           setState(() {
             _ingredients = {};
             _isInitialized = true;
+            _isLoading = false;
           });
         }
-        debugPrint('New user document created');
         return;
       }
 
       if (!userDoc.data()!.containsKey('pantry')) {
-        debugPrint('Adding pantry field to existing user document');
         await FirebaseFirestore.instance
             .collection('users')
             .doc(_deviceId)
@@ -91,13 +100,12 @@ class PantryPageState extends State<PantryPage> {
           setState(() {
             _ingredients = {};
             _isInitialized = true;
+            _isLoading = false;
           });
         }
-        debugPrint('Pantry field added');
         return;
       }
 
-      debugPrint('Loading existing pantry items');
       final pantryData = userDoc.data()?['pantry'];
       Map<String, List<String>> ingredients = {};
       
@@ -110,7 +118,6 @@ class PantryPageState extends State<PantryPage> {
             )),
           );
         } else if (pantryData is String) {
-          // Eski format için geriye dönük uyumluluk
           final List<String> oldIngredients = pantryData.split(',').where((s) => s.isNotEmpty).toList();
           if (oldIngredients.isNotEmpty) {
             ingredients['Genel'] = oldIngredients;
@@ -122,9 +129,9 @@ class PantryPageState extends State<PantryPage> {
         setState(() {
           _ingredients = ingredients;
           _isInitialized = true;
+          _isLoading = false;
         });
       }
-      debugPrint('Pantry items loaded: ${_ingredients.length} categories');
     } catch (e, stackTrace) {
       debugPrint('Error in _initializePantry: $e');
       debugPrint('Stack trace: $stackTrace');
@@ -137,6 +144,7 @@ class PantryPageState extends State<PantryPage> {
         );
         setState(() {
           _isInitialized = true;
+          _isLoading = false;
         });
       }
     }
@@ -200,13 +208,13 @@ class PantryPageState extends State<PantryPage> {
           .doc(_deviceId)
           .update({'pantry': updatedIngredients});
 
-      setState(() {
-        _ingredients = updatedIngredients;
-        _selectedIngredients.clear();
-        _isSelectionMode = false;
-      });
-      
       if (mounted) {
+        setState(() {
+          _ingredients = updatedIngredients;
+          _selectedIngredients.clear();
+          _isSelectionMode = false;
+        });
+        
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
             content: Text('Seçili malzemeler başarıyla silindi'),
@@ -269,56 +277,59 @@ class PantryPageState extends State<PantryPage> {
             ],
           ],
         ),
-        body: _ingredients.isEmpty
-            ? const Center(
-                child: Text('Henüz malzeme eklenmemiş'),
-              )
-            : ListView.builder(
-                itemCount: _ingredients.length,
-                itemBuilder: (context, categoryIndex) {
-                  final category = _ingredients.keys.elementAt(categoryIndex);
-                  final ingredients = _ingredients[category]!;
-                  
-                  return Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          category,
-                          style: const TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
+        body: _isLoading
+            ? const Center(child: CircularProgressIndicator())
+            : _ingredients.isEmpty
+                ? const Center(
+                    child: Text('Henüz malzeme eklenmemiş'),
+                  )
+                : ListView.builder(
+                    controller: _scrollController,
+                    itemCount: _ingredients.length,
+                    itemBuilder: (context, categoryIndex) {
+                      final category = _ingredients.keys.elementAt(categoryIndex);
+                      final ingredients = _ingredients[category]!;
+                      
+                      return Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              category,
+                              style: const TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
-                        ),
-                      ),
-                      ...ingredients.map((ingredient) => ListTile(
-                        key: Key('$category-$ingredient'),
-                        title: Text(ingredient),
-                        leading: _isSelectionMode
-                            ? Checkbox(
-                                value: _selectedIngredients.contains('$category-$ingredient'),
-                                onChanged: (bool? value) {
-                                  _toggleIngredientSelection(category, ingredient);
-                                },
-                              )
-                            : const Icon(Icons.kitchen),
-                        onTap: _isSelectionMode
-                            ? () {
+                          ...ingredients.map((ingredient) => ListTile(
+                            key: Key('$category-$ingredient'),
+                            title: Text(ingredient),
+                            leading: _isSelectionMode
+                                ? Checkbox(
+                                    value: _selectedIngredients.contains('$category-$ingredient'),
+                                    onChanged: (bool? value) {
+                                      _toggleIngredientSelection(category, ingredient);
+                                    },
+                                  )
+                                : const Icon(Icons.kitchen),
+                            onTap: _isSelectionMode
+                                ? () {
+                                    _toggleIngredientSelection(category, ingredient);
+                                  }
+                                : null,
+                            onLongPress: () {
+                              if (!_isSelectionMode) {
+                                _toggleSelectionMode();
                                 _toggleIngredientSelection(category, ingredient);
                               }
-                            : null,
-                        onLongPress: () {
-                          if (!_isSelectionMode) {
-                            _toggleSelectionMode();
-                            _toggleIngredientSelection(category, ingredient);
-                          }
-                        },
-                      )).toList(),
-                    ],
-                  );
-                },
-              ),
+                            },
+                          )).toList(),
+                        ],
+                      );
+                    },
+                  ),
         floatingActionButton: _isSelectionMode
             ? FloatingActionButton(
                 onPressed: _selectedIngredients.isEmpty ? null : _deleteSelectedIngredients,

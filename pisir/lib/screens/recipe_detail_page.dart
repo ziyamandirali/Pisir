@@ -21,6 +21,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
   String? _imageUrl;
   String? _prepTime;
   String? _cookTime;
+  String? _description;
   
   @override
   void initState() {
@@ -39,7 +40,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
       final recipeDoc = await FirebaseFirestore.instance
           .collection('recipes')
           .doc(widget.recipe['id'].toString())
-          .get();
+          .get(GetOptions(source: Source.serverAndCache));
 
       if (recipeDoc.exists) {
         final data = recipeDoc.data()!;
@@ -50,6 +51,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
           _imageUrl = data['imageUrl'];
           _prepTime = data['prepTime'];
           _cookTime = data['cookTime'];
+          _description = data['description'] ?? '';
           _isLoading = false;
         });
       }
@@ -119,7 +121,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
                     ),
                   const SizedBox(height: 16),
                   Text(
-                    widget.recipe['description'] ?? 'Açıklama yok',
+                    _description ?? 'Açıklama yok',
                     style: const TextStyle(fontSize: 16),
                   ),
                   const SizedBox(height: 24),
