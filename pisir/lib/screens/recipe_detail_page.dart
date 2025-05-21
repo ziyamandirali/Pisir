@@ -38,48 +38,46 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
   }
 
   Future<void> _loadRecipeDetails() async {
-    if (widget.recipe['id'] == null) return;
+    if (widget.recipe['id'] == null) {
+      setState(() { 
+        _isLoading = false; 
+        _isUpdatingFavorite = false; 
+      });
+      return;
+    }
 
-    setState(() {
-      _isLoading = true;
+    setState(() { 
+      _isLoading = true; 
       _isUpdatingFavorite = true; 
     });
+
+    bool determinedIsFavoritedFlag = false; 
+    bool actualInitialIsFavoritedValue = false;
 
     try {
       final recipeId = widget.recipe['id'].toString();
       final deviceId = await _getDeviceId();
 
-      final recipeDocFuture = FirebaseFirestore.instance
+      if (deviceId != null) {
+        final userDoc = await FirebaseFirestore.instance.collection('users').doc(deviceId).get();
+        if (userDoc.exists && userDoc.data() != null) {
+          final userData = userDoc.data()!;
+          if (userData.containsKey('favorites')) {
+            final favoritesList = List<String>.from(userData['favorites'] ?? []);
+            actualInitialIsFavoritedValue = favoritesList.contains(recipeId);
+          }
+        }
+        determinedIsFavoritedFlag = true; 
+      } else {
+        debugPrint('Device ID not found. Cannot load favorite status.');
+        actualInitialIsFavoritedValue = false; // Default to false if no deviceId
+        determinedIsFavoritedFlag = true; // Still, consider it "determined"
+      }
+
+      final recipeDoc = await FirebaseFirestore.instance
           .collection('recipes')
           .doc(recipeId)
           .get(GetOptions(source: Source.serverAndCache));
-
-      Future<DocumentSnapshot<Map<String, dynamic>>?> userDocFuture;
-      bool initialIsFavorited = false;
-
-      if (deviceId != null) {
-        userDocFuture = FirebaseFirestore.instance
-            .collection('users')
-            .doc(deviceId)
-            .get();
-        
-        // Fetch user document to check favorites list
-        final userDoc = await userDocFuture;
-        if (userDoc != null && userDoc.exists) {
-          final userData = userDoc.data();
-          if (userData != null && userData.containsKey('favorites')) {
-            final favoritesList = List<String>.from(userData['favorites'] ?? []);
-            initialIsFavorited = favoritesList.contains(recipeId);
-          }
-        }
-      } else {
-        debugPrint('Device ID not found. Cannot load favorite status.');
-        // If deviceId is null, we can't determine favorite status from Firestore.
-        // Keep _isUpdatingFavorite true until recipe data is loaded, then set it.
-      }
-      
-      // Wait for recipe details
-      final recipeDoc = await recipeDocFuture;
 
       if (recipeDoc.exists) {
         final data = recipeDoc.data()!;
@@ -91,19 +89,28 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
           _prepTime = data['prepTime'];
           _cookTime = data['cookTime'];
           _description = data['description'] ?? '';
-          _isFavorited = initialIsFavorited; // Set based on userDoc check
+          if (determinedIsFavoritedFlag) {
+             _isFavorited = actualInitialIsFavoritedValue;
+          }
           _isLoading = false;
-          _isUpdatingFavorite = false; // Done checking/loading
+          _isUpdatingFavorite = false;
         });
       } else {
-         setState(() {
+        setState(() {
+          if (determinedIsFavoritedFlag) {
+            _isFavorited = actualInitialIsFavoritedValue;
+          }
           _isLoading = false;
-          _isUpdatingFavorite = false; // Done attempting to load
+          _isUpdatingFavorite = false;
+          debugPrint('Recipe document not found, but favorite status determined.');
         });
       }
     } catch (e) {
       debugPrint('Error loading recipe details or favorite status: $e');
       setState(() {
+        if (determinedIsFavoritedFlag) {
+          _isFavorited = actualInitialIsFavoritedValue;
+        }
         _isLoading = false;
         _isUpdatingFavorite = false;
       });
