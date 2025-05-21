@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../main.dart'; // darkModeNotifier için import
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -23,11 +24,12 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = darkModeNotifier.value; // isDark değişkenini burada tanımla
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: isDark ? Colors.grey[900] : Colors.white,
       body: Center(
         child: Image.asset(
-          'assets/pisirlogo.png',
+          'assets/pisirlogo.png', // Transparan logo kullanılmaya devam edilecek
           width: 200,
           height: 200,
         ),

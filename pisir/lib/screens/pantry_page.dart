@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 import 'package:cached_network_image/cached_network_image.dart';
+import '../main.dart'; // darkModeNotifier için import
 
 class PantryPage extends StatefulWidget {
   const PantryPage({super.key});
@@ -330,6 +331,7 @@ class PantryPageState extends State<PantryPage> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = darkModeNotifier.value; // isDark değişkenini burada tanımla
     if (!_isInitialized || _deviceId == null) {
       return const Scaffold(
         body: Center(
@@ -356,16 +358,16 @@ class PantryPageState extends State<PantryPage> {
             if (_isSelectionMode) ...[
               TextButton(
                 onPressed: _selectAllIngredients,
-                child: const Text(
+                child: Text(
                   'Tümünü Seç',
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: isDark ? Colors.white : Colors.black),
                 ),
               ),
               TextButton(
                 onPressed: _toggleSelectionMode,
-                child: const Text(
+                child: Text(
                   'İptal',
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: isDark ? Colors.white : Colors.black),
                 ),
               ),
             ],
@@ -635,6 +637,7 @@ class _AddIngredientPageState extends State<AddIngredientPage> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = darkModeNotifier.value; // isDark değişkenini burada tanımla
     if (_isLoading) {
       return const Scaffold(
         body: Center(
@@ -652,7 +655,11 @@ class _AddIngredientPageState extends State<AddIngredientPage> {
             child: Text(
               'Kaydet',
               style: TextStyle(
-                color: _selectedIngredients.isEmpty ? Colors.grey : Colors.black,
+                color: _selectedIngredients.isEmpty 
+                    ? Colors.grey 
+                    : isDark // Tanımlı isDark değişkenini kullan
+                        ? Colors.white 
+                        : Colors.black,
               ),
             ),
           ),
