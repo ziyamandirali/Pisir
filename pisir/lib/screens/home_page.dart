@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/services.dart' show rootBundle;
+import 'dart:convert';
 import '../main.dart';
 
 class HomePage extends StatefulWidget {
@@ -17,12 +19,13 @@ class _HomePageState extends State<HomePage> {
   List<Map<String, dynamic>> _matchingRecipes = [];
   List<Map<String, dynamic>> _displayedRecipes = [];
   Map<String, List<String>> _pantryIngredients = {};
-  // Sayfalandırma için değişkenler
-  DocumentSnapshot? _lastDocument;
-  bool _hasMoreRecipes = true;
-  final int _recipesPerPage = 2000; // Tarif sayfa boyutu
-  final int _maxTotalRecipes = 50; // Maksimum toplam tarif sayısı
-  final int _displayPerPage = 10; // Sayfa başına gösterilecek tarif sayısı
+  List<Map<String, dynamic>> _localRecipes = []; // Yerel tarif verileri
+  int _currentRecipeIndex = 0; // İşlenecek tarif indeksi
+  
+  final int _maxTotalRecipes = 50; // Maksimum eşleşecek tarif sayısı
+  final int _initialDisplayCount = 20; // Başlangıçta gösterilecek tarif sayısı
+  final int _loadMoreCount = 10; // Daha fazla butonu ile yüklenecek tarif sayısı
+  final int _batchSize = 50; // Bir seferde işlenecek tarif sayısı
   final ScrollController _scrollController = ScrollController();
 
   @override
@@ -30,30 +33,17 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     _testFirestore();
     _loadDeviceId();
-    // Kaydırma olayını dinle
-    _scrollController.addListener(_scrollListener);
   }
 
   @override
   void dispose() {
-    _scrollController.removeListener(_scrollListener);
     _scrollController.dispose();
     super.dispose();
   }
 
-  // Kaydırma olayı dinleyicisi
-  void _scrollListener() {
-    if (_scrollController.position.pixels >= _scrollController.position.maxScrollExtent * 0.8 &&
-        !_isLoading && 
-        !_loadingMore && 
-        _hasMoreRecipes) {
-      _loadMoreRecipes();
-    }
-  }
-
+  // Mevcut Firestore test fonksiyonu
   Future<void> _testFirestore() async {
     try {
-      // Basit bir get işlemi ile kontrol
       final testDoc = await FirebaseFirestore.instance
           .collection('test')
           .doc('test')
@@ -73,7 +63,6 @@ class _HomePageState extends State<HomePage> {
         }
       }
       
-      // Mevcut recipes koleksiyonunu kontrol et
       final recipesSnapshot = await FirebaseFirestore.instance
           .collection('recipes')
           .limit(5)
@@ -91,7 +80,8 @@ class _HomePageState extends State<HomePage> {
     });
     if (_deviceId != null) {
       await _loadPantryIngredients();
-      await _loadMatchingRecipes();
+      await _loadLocalRecipes(); // Yerel tarifleri yükle
+      await _matchLocalRecipes(); // Yerel tarifleri karşılaştır
     }
   }
 
@@ -121,170 +111,175 @@ class _HomePageState extends State<HomePage> {
       // Mutfak dolabı yüklenirken hata
     }
   }
-
-  Future<void> _loadMatchingRecipes() async {
-    if (_deviceId == null) return;
-
+  
+  // YENİ FONKSIYON: Yerel tarif dosyasını oku
+  Future<void> _loadLocalRecipes() async {
     setState(() {
       _isLoading = true;
-      _lastDocument = null;
-      _hasMoreRecipes = true;
       _matchingRecipes = [];
     });
     
-    await Future.delayed(const Duration(milliseconds: 100));
-    await _loadMoreRecipes();
+    try {
+      // recipes.txt dosyasını oku
+      final String data = await rootBundle.loadString('assets/recipes.txt');
+      final List<String> lines = data.split('\n');
+      
+      _localRecipes = [];
+      
+      // Her satırı ayrıştır
+      for (String line in lines) {
+        if (line.trim().isEmpty) continue;
+        
+        try {
+          // Format: document_id:{ingredientsOnly}{imageUrl}{prepTime+cookTime}{title}
+          final int idEndIndex = line.indexOf(':');
+          if (idEndIndex == -1) continue;
+          
+          final String docId = line.substring(0, idEndIndex);
+          String content = line.substring(idEndIndex + 1);
+          
+          // İçeriği süslü parantezlerle ayır
+          List<String> parts = [];
+          int startIndex = 0;
+          for (int i = 0; i < 4; i++) {
+            final int openBrace = content.indexOf('{', startIndex);
+            if (openBrace == -1) break;
+            
+            final int closeBrace = content.indexOf('}', openBrace + 1);
+            if (closeBrace == -1) break;
+            
+            parts.add(content.substring(openBrace + 1, closeBrace));
+            startIndex = closeBrace + 1;
+          }
+          
+          if (parts.length == 4) {
+            _localRecipes.add({
+              'id': docId,
+              'ingredientsOnly': parts[0],
+              'imageUrl': parts[1],
+              'totalTime': int.tryParse(parts[2]) ?? 0,
+              'title': parts[3],
+            });
+          }
+        } catch (e) {
+          // Bu satırı ayrıştırırken hata oluştu, sonraki satıra geç
+          continue;
+        }
+      }
+      
+    } catch (e) {
+      // Dosya okuma hatası
+    }
   }
-
-  Future<void> _loadMoreRecipes() async {
-    if (_deviceId == null || _loadingMore || !_hasMoreRecipes) return;
-
-    // Maksimum tarif sayısına ulaşıldı mı kontrol et
-    if (_matchingRecipes.length >= _maxTotalRecipes) {
+  
+  // YENİ FONKSIYON: Yerel tarifleri pantry ile karşılaştır
+  Future<void> _matchLocalRecipes() async {
+    if (_pantryIngredients.isEmpty || _localRecipes.isEmpty) {
       setState(() {
-        _hasMoreRecipes = false;
-        _loadingMore = false;
         _isLoading = false;
       });
       return;
     }
-
-    setState(() {
-      _loadingMore = true;
-    });
-
-    try {
-      final List<String> allPantryIngredients = _pantryIngredients.values
-          .expand((ingredients) => ingredients)
-          .map((ingredient) => ingredient.toLowerCase().trim())
-          .toList();
-
-      Query recipesQuery = FirebaseFirestore.instance
-          .collection('recipes')
-          .limit(_recipesPerPage);
-
-      if (_lastDocument != null) {
-        recipesQuery = recipesQuery.startAfterDocument(_lastDocument!);
-      }
-
-      final recipesSnapshot = await recipesQuery.get(GetOptions(source: Source.serverAndCache));
-
-      if (recipesSnapshot.docs.isEmpty) {
-        setState(() {
-          _hasMoreRecipes = false;
-          _loadingMore = false;
-          _isLoading = false;
-        });
-        return;
-      }
-
-      _lastDocument = recipesSnapshot.docs.last;
-      final List<Map<String, dynamic>> newMatchingRecipes = [];
-      
-      for (var recipeDoc in recipesSnapshot.docs) {
-        final recipeData = recipeDoc.data() as Map<String, dynamic>;
-        final String recipeId = recipeDoc.id;
-        final String recipeTitle = recipeData['title'] ?? 'İsimsiz Tarif';
-        final ingredientsOnly = recipeData['ingredientsOnly'] as String?;
-        
-        if (ingredientsOnly == null) continue;
-        
-        final List<String> recipeIngredients = ingredientsOnly
-            .split(',')
-            .map((ingredient) => ingredient.trim().toLowerCase())
-            .where((ingredient) => ingredient.isNotEmpty)
-            .toList();
-        
-        bool allIngredientsInPantry = true;
-        List<String> matchedIngredients = [];
-        List<String> missingIngredients = [];
-        
-        for (int i = 0; i < recipeIngredients.length; i++) {
-          final String recipeIngredient = recipeIngredients[i];
-          bool foundInPantry = false;
-          String? matchedPantryIngredient;
-          
-          for (int j = 0; j < allPantryIngredients.length; j++) {
-            final String pantryIngredient = allPantryIngredients[j];
-            
-            if (recipeIngredient == pantryIngredient) {
-              foundInPantry = true;
-              matchedPantryIngredient = pantryIngredient;
-              break;
-            }
-          }
-          
-          if (foundInPantry) {
-            matchedIngredients.add('"$recipeIngredient" (✓)');
-          } else {
-            allIngredientsInPantry = false;
-            missingIngredients.add('"$recipeIngredient" (✗)');
-          }
-        }
-        
-        if (allIngredientsInPantry) {
-          debugPrint('PIŞIR_DEBUG: [13] ✅ BAŞARILI EŞLEŞME: $recipeTitle | Tüm malzemeler mevcut: ${matchedIngredients.join(", ")}');
-          newMatchingRecipes.add({
-            'id': recipeId,
-            'title': recipeTitle,
-            'ingredientsOnly': ingredientsOnly,
-            'imageUrl': recipeData['imageUrl'],
-            'cookTime': recipeData['cookTime'],
-            'prepTime': recipeData['prepTime'],
-          });
-        }
-      }
-
-      if (recipesSnapshot.docs.length < _recipesPerPage) {
-        _hasMoreRecipes = false;
-      }
-
-      if (newMatchingRecipes.isNotEmpty) {
-        setState(() {
-          _matchingRecipes.addAll(newMatchingRecipes);
-          if (_displayedRecipes.isEmpty) {
-            _displayedRecipes = _matchingRecipes.take(_displayPerPage).toList();
-          }
-          _loadingMore = false;
-          _isLoading = false;
-        });
-      } else {
-        if (_hasMoreRecipes) {
-          setState(() {
-            _loadingMore = false;
-            _isLoading = false;
-          });
-          await _loadMoreRecipes();
-        } else {
-          setState(() {
-            _loadingMore = false;
-            _isLoading = false;
-          });
-        }
-      }
-    } catch (e, stackTrace) {
-      setState(() {
-        _loadingMore = false;
-        _isLoading = false;
-      });
+    
+    // Pantry malzemelerini düz liste haline getir
+    final List<String> allPantryIngredients = _pantryIngredients.values
+        .expand((ingredients) => ingredients)
+        .map((ingredient) => ingredient.toLowerCase().trim())
+        .toList();
+    
+    // Tarifleri belirli aralıklarla işle (UI'ı bloklamayı önlemek için)
+    await _processNextBatchOfRecipes(allPantryIngredients);
+  }
+  
+  // YENİ FONKSIYON: Tarifleri gruplar halinde işle
+  Future<void> _processNextBatchOfRecipes(List<String> allPantryIngredients) async {
+    if (_currentRecipeIndex >= _localRecipes.length || 
+        _matchingRecipes.length >= _maxTotalRecipes) {
+      // İşlem tamamlandı veya maksimum tarif sayısına ulaşıldı
+      _finishRecipeProcessing();
+      return;
     }
     
-    Future.delayed(const Duration(seconds: 10), () {
-      if (_isLoading || _loadingMore) {
-        setState(() {
-          _loadingMore = false;
-          _isLoading = false;
-        });
+    final int endIndex = _currentRecipeIndex + _batchSize;
+    final int actualEndIndex = endIndex > _localRecipes.length ? 
+        _localRecipes.length : endIndex;
+    
+    for (int i = _currentRecipeIndex; 
+         i < actualEndIndex && _matchingRecipes.length < _maxTotalRecipes; 
+         i++) {
+      final recipe = _localRecipes[i];
+      final String ingredientsOnly = recipe['ingredientsOnly'] as String;
+      
+      final List<String> recipeIngredients = ingredientsOnly
+          .split(',')
+          .map((ingredient) => ingredient.trim().toLowerCase())
+          .where((ingredient) => ingredient.isNotEmpty)
+          .toList();
+      
+      bool allIngredientsInPantry = true;
+      List<String> matchedIngredients = [];
+      
+      for (String recipeIngredient in recipeIngredients) {
+        bool foundInPantry = allPantryIngredients.contains(recipeIngredient);
+        
+        if (foundInPantry) {
+          matchedIngredients.add('"$recipeIngredient" (✓)');
+        } else {
+          allIngredientsInPantry = false;
+          break;
+        }
+      }
+      
+      if (allIngredientsInPantry) {
+        debugPrint('PIŞIR_DEBUG: [13] ✅ BAŞARILI EŞLEŞME: ${recipe['title']} | Tüm malzemeler mevcut: ${matchedIngredients.join(", ")}');
+        _matchingRecipes.add(recipe);
+      }
+    }
+    
+    _currentRecipeIndex = actualEndIndex;
+    
+    // Daha fazla işlenecek tarif varsa, UI'ı güncelleyip sonraki grubu işle
+    if (_currentRecipeIndex < _localRecipes.length && 
+        _matchingRecipes.length < _maxTotalRecipes) {
+      // UI'ı güncelle ve sonraki grubu işle
+      setState(() {});
+      await Future.delayed(const Duration(milliseconds: 10));
+      await _processNextBatchOfRecipes(allPantryIngredients);
+    } else {
+      // İşlem tamamlandı
+      _finishRecipeProcessing();
+    }
+  }
+  
+  // YENİ FONKSIYON: Tarif işlemesini tamamla
+  void _finishRecipeProcessing() {
+    setState(() {
+      _isLoading = false;
+      // Başlangıçta belirlenen sayıda tarifi göster
+      if (_matchingRecipes.isNotEmpty) {
+        // İlk _initialDisplayCount kadar tarifi göster veya daha az varsa hepsini
+        _displayedRecipes = _matchingRecipes.take(_initialDisplayCount).toList();
       }
     });
   }
 
-  // Yeni metod: Daha fazla tarif yükle
+  // Daha fazla tarif gösterme fonksiyonu
   void _loadMoreDisplayedRecipes() {
     if (_matchingRecipes.length > _displayedRecipes.length) {
       setState(() {
-        final nextBatch = _matchingRecipes.skip(_displayedRecipes.length).take(_displayPerPage).toList();
-        _displayedRecipes.addAll(nextBatch);
+        _loadingMore = true; // Daha fazla yükleme durumunu true yap
+      });
+      
+      // Yükleme efekti için kısa bir gecikme
+      Future.delayed(const Duration(milliseconds: 300), () {
+        setState(() {
+          final nextBatch = _matchingRecipes
+              .skip(_displayedRecipes.length)
+              .take(_loadMoreCount)
+              .toList();
+          _displayedRecipes.addAll(nextBatch);
+          _loadingMore = false; // Yükleme tamamlandı
+        });
       });
     }
   }
@@ -295,18 +290,18 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: isDark ? Colors.grey[900] : Colors.white,
       appBar: AppBar(
-        backgroundColor: isDark ? Colors.grey[900] : Colors.white,
+        backgroundColor: Colors.white,
         elevation: 0,
         centerTitle: true,
         toolbarHeight: 110,
         title: Image.asset(
-          'assets/pısırlogo.png',
+          'assets/pisirlogo.png',
           width: 115,
           height: 115,
         ),
       ),
-      body: _isLoading && _matchingRecipes.isEmpty
-          ? const Center(child: CircularProgressIndicator())
+      body: _isLoading 
+          ? const Center(child: CircularProgressIndicator()) // Tariflerin ilk yüklenmesi
           : _matchingRecipes.isEmpty
               ? const Center(
                   child: Text(
@@ -320,25 +315,27 @@ class _HomePageState extends State<HomePage> {
                   padding: const EdgeInsets.all(16),
                   itemCount: _displayedRecipes.length + (_matchingRecipes.length > _displayedRecipes.length ? 1 : 0),
                   itemBuilder: (context, index) {
-                    // Son öğe ve daha fazla tarif varsa "Daha Fazla" butonu göster
+                    // Son öğe ve daha fazla tarif varsa "Daha Fazla" butonu veya loading göster
                     if (index == _displayedRecipes.length) {
                       return Padding(
                         padding: const EdgeInsets.symmetric(vertical: 16.0),
                         child: Center(
-                          child: ElevatedButton(
-                            onPressed: _loadMoreDisplayedRecipes,
-                            style: ElevatedButton.styleFrom(
-                              padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(8),
+                          child: _loadingMore 
+                            ? const CircularProgressIndicator() // Yükleme göstergesi
+                            : ElevatedButton(
+                                onPressed: _loadMoreDisplayedRecipes,
+                                style: ElevatedButton.styleFrom(
+                                  padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                ),
+                                child: const Text('Daha Fazla Tarif Göster'),
                               ),
-                            ),
-                            child: const Text('Daha Fazla Tarif Göster'),
-                          ),
                         ),
                       );
                     }
-
+                    
                     final recipe = _displayedRecipes[index];
                     return Card(
                       margin: const EdgeInsets.only(bottom: 16),
@@ -416,7 +413,7 @@ class _HomePageState extends State<HomePage> {
                                       maxLines: 2,
                                       overflow: TextOverflow.ellipsis,
                                     ),
-                                    if (recipe['cookTime'] != null) ...[
+                                    if (recipe['totalTime'] != null) ...[
                                       const SizedBox(height: 8),
                                       Row(
                                         children: [
@@ -427,7 +424,7 @@ class _HomePageState extends State<HomePage> {
                                           ),
                                           const SizedBox(width: 4),
                                           Text(
-                                            'Hazırlanma süresi: ${(recipe['prepTime'] ?? 0) + (recipe['cookTime'] ?? 0)} dakika',
+                                            'Hazırlanma süresi: ${recipe['totalTime']} dakika',
                                             style: TextStyle(
                                               fontSize: 14,
                                               color: Colors.grey[600],
