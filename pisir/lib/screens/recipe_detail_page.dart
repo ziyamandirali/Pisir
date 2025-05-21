@@ -42,7 +42,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
 
     setState(() {
       _isLoading = true;
-      _isUpdatingFavorite = true;
+      _isUpdatingFavorite = true; 
     });
 
     try {
@@ -54,33 +54,33 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
           .doc(recipeId)
           .get(GetOptions(source: Source.serverAndCache));
 
-      Future<DocumentSnapshot?>? favoriteStatusFuture;
+      Future<DocumentSnapshot<Map<String, dynamic>>?> userDocFuture;
+      bool initialIsFavorited = false;
+
       if (deviceId != null) {
-        favoriteStatusFuture = FirebaseFirestore.instance
+        userDocFuture = FirebaseFirestore.instance
             .collection('users')
             .doc(deviceId)
-            .collection('favorites')
-            .doc(recipeId)
             .get();
+        
+        // Fetch user document to check favorites list
+        final userDoc = await userDocFuture;
+        if (userDoc != null && userDoc.exists) {
+          final userData = userDoc.data();
+          if (userData != null && userData.containsKey('favorites')) {
+            final favoritesList = List<String>.from(userData['favorites'] ?? []);
+            initialIsFavorited = favoritesList.contains(recipeId);
+          }
+        }
       } else {
         debugPrint('Device ID not found. Cannot load favorite status.');
-        setState(() {
-          _isUpdatingFavorite = false; 
-        });
-      }
-
-      final results = await Future.wait([
-        recipeDocFuture,
-        if (favoriteStatusFuture != null) favoriteStatusFuture,
-      ]);
-
-      final recipeDoc = results[0] as DocumentSnapshot<Map<String, dynamic>>;
-      bool isFavorited = false;
-      if (results.length > 1 && results[1] != null) {
-        final favoriteDoc = results[1] as DocumentSnapshot;
-        isFavorited = favoriteDoc.exists;
+        // If deviceId is null, we can't determine favorite status from Firestore.
+        // Keep _isUpdatingFavorite true until recipe data is loaded, then set it.
       }
       
+      // Wait for recipe details
+      final recipeDoc = await recipeDocFuture;
+
       if (recipeDoc.exists) {
         final data = recipeDoc.data()!;
         setState(() {
@@ -91,14 +91,14 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
           _prepTime = data['prepTime'];
           _cookTime = data['cookTime'];
           _description = data['description'] ?? '';
-          _isFavorited = isFavorited;
+          _isFavorited = initialIsFavorited; // Set based on userDoc check
           _isLoading = false;
-          _isUpdatingFavorite = false;
+          _isUpdatingFavorite = false; // Done checking/loading
         });
       } else {
-        setState(() {
+         setState(() {
           _isLoading = false;
-          _isUpdatingFavorite = false;
+          _isUpdatingFavorite = false; // Done attempting to load
         });
       }
     } catch (e) {
@@ -115,6 +115,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
 
     if (deviceId == null) {
       debugPrint('Device ID not found. Cannot change favorite status.');
+      // Optionally: show a message to the user
       return;
     }
 
@@ -125,23 +126,50 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
       _isUpdatingFavorite = true;
     });
 
-    final favoriteRef = FirebaseFirestore.instance
-        .collection('users')
-        .doc(deviceId)
-        .collection('favorites')
-        .doc(recipeId);
+    final userDocRef = FirebaseFirestore.instance.collection('users').doc(deviceId);
 
     try {
       if (_isFavorited) {
-        await favoriteRef.delete();
+        // Remove from favorites array
+        await userDocRef.update({
+          'favorites': FieldValue.arrayRemove([recipeId])
+        });
       } else {
-        await favoriteRef.set({'favoritedAt': FieldValue.serverTimestamp()});
+        // Add to favorites array
+        await userDocRef.update({
+          'favorites': FieldValue.arrayUnion([recipeId])
+        });
       }
       setState(() {
         _isFavorited = !_isFavorited;
       });
     } catch (e) {
-      debugPrint('Error updating favorite status: $e');
+      debugPrint('Error updating favorite status (array): $e');
+      // Optionally: show an error message to the user
+      // Consider if the user document or 'favorites' field might not exist.
+      // If it might not exist and update would fail, you might need to use .set with merge:true
+      // or check existence first. For now, assuming 'favorites' field exists or can be created by update.
+      // If 'users' doc or 'favorites' field might not exist, a more robust approach:
+      /*
+      await FirebaseFirestore.instance.runTransaction((transaction) async {
+        final snapshot = await transaction.get(userDocRef);
+        if (!snapshot.exists) {
+          // If user doc doesn't exist, create it with the favorite
+           transaction.set(userDocRef, {'favorites': [recipeId], 'device_id': deviceId});
+        } else {
+          final currentFavorites = List<String>.from(snapshot.data()?['favorites'] ?? []);
+          if (_isFavorited) { // Current state is favorited, so we want to remove
+            if (currentFavorites.contains(recipeId)) {
+              transaction.update(userDocRef, {'favorites': FieldValue.arrayRemove([recipeId])});
+            }
+          } else { // Current state is not favorited, so we want to add
+            if (!currentFavorites.contains(recipeId)) {
+               transaction.update(userDocRef, {'favorites': FieldValue.arrayUnion([recipeId])});
+            }
+          }
+        }
+      });
+      */
     } finally {
       setState(() {
         _isUpdatingFavorite = false;
