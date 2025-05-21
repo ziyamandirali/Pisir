@@ -41,29 +41,31 @@ class _FavoritesPageState extends State<FavoritesPage> {
   }
 
   Stream<List<Map<String, dynamic>>> _loadFavoritesStream() {
-    if (_deviceId == null) { 
+    if (_deviceId == null) {
       debugPrint('Device ID is null in _loadFavoritesStream. Cannot load favorites.');
       return Stream.value([]);
     }
 
+    // Dinlenecek olan kullanıcı dokümanının referansı
     return FirebaseFirestore.instance
         .collection('users')
-        .doc(_deviceId!)
-        .collection('favorites')
-        .snapshots()
-        .asyncMap((snapshot) async {
-      if (snapshot.docs.isEmpty) {
+        .doc(_deviceId!) // deviceId kullanıldı
+        .snapshots() // Artık kullanıcı dokümanının tamamını dinliyoruz
+        .asyncMap((userDocSnapshot) async {
+      if (!userDocSnapshot.exists || userDocSnapshot.data() == null) {
+        return []; // Kullanıcı dokümanı yoksa veya veri yoksa boş liste
+      }
+
+      final userData = userDocSnapshot.data()!;
+      final favoriteRecipeIds = List<String>.from(userData['favorites'] ?? []);
+
+      if (favoriteRecipeIds.isEmpty) {
         return [];
       }
 
-      // Get all recipe IDs from favorites
-      final recipeIds = snapshot.docs.map((doc) => doc.id).toList();
-
       // Fetch details for each recipe ID
-      // This can be inefficient if there are many favorites,
-      // consider denormalizing some data or fetching in batches if performance becomes an issue.
       List<Map<String, dynamic>> favoriteRecipes = [];
-      for (String recipeId in recipeIds) {
+      for (String recipeId in favoriteRecipeIds) {
         try {
           final recipeDoc = await FirebaseFirestore.instance
               .collection('recipes')
@@ -77,7 +79,6 @@ class _FavoritesPageState extends State<FavoritesPage> {
           }
         } catch (e) {
           debugPrint('Error fetching recipe details for $recipeId: $e');
-          // Skip this recipe or handle error
         }
       }
       return favoriteRecipes;
