@@ -31,7 +31,6 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    _testFirestore();
     _loadDeviceId();
   }
 
@@ -39,38 +38,6 @@ class _HomePageState extends State<HomePage> {
   void dispose() {
     _scrollController.dispose();
     super.dispose();
-  }
-
-  // Mevcut Firestore test fonksiyonu
-  Future<void> _testFirestore() async {
-    try {
-      final testDoc = await FirebaseFirestore.instance
-          .collection('test')
-          .doc('test')
-          .get(GetOptions(source: Source.serverAndCache));
-      
-      if (testDoc.exists) {
-        // Test belgesi mevcut
-      } else {
-        // Test belgesini oluştur
-        try {
-          await FirebaseFirestore.instance
-              .collection('test')
-              .doc('test')
-              .set({'timestamp': FieldValue.serverTimestamp()});
-        } catch (e) {
-          // Test belgesi oluşturulamadı
-        }
-      }
-      
-      final recipesSnapshot = await FirebaseFirestore.instance
-          .collection('recipes')
-          .limit(5)
-          .get();
-      
-    } catch (e) {
-      // Firestore testi başarısız
-    }
   }
 
   Future<void> _loadDeviceId() async {
