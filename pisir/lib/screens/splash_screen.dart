@@ -23,15 +23,13 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
-        child: Text(
-          'Pişir',
-          style: TextStyle(
-            fontSize: 32,
-            fontWeight: FontWeight.bold,
-          ),
+        child: Image.asset(
+          'assets/pisirlogo.png',
+          width: 200,
+          height: 200,
         ),
       ),
     );
