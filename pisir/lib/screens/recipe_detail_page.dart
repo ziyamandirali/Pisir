@@ -38,13 +38,20 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
   }
 
   Future<void> _loadRecipeDetails() async {
+    debugPrint("[RecipeDetailPage] _loadRecipeDetails CALLED.");
+    debugPrint("[RecipeDetailPage] Initial widget.recipe: ${widget.recipe}");
+
     if (widget.recipe['id'] == null) {
+      debugPrint("[RecipeDetailPage] recipe['id'] is NULL. Exiting _loadRecipeDetails early.");
       setState(() { 
         _isLoading = false; 
         _isUpdatingFavorite = false; 
       });
       return;
     }
+
+    final recipeId = widget.recipe['id'].toString();
+    debugPrint("[RecipeDetailPage] Determined recipeId: $recipeId");
 
     setState(() { 
       _isLoading = true; 
@@ -55,7 +62,6 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
     bool actualInitialIsFavoritedValue = false;
 
     try {
-      final recipeId = widget.recipe['id'].toString();
       final deviceId = await _getDeviceId();
 
       if (deviceId != null) {
@@ -69,26 +75,31 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
         }
         determinedIsFavoritedFlag = true; 
       } else {
-        debugPrint('Device ID not found. Cannot load favorite status.');
-        actualInitialIsFavoritedValue = false; // Default to false if no deviceId
-        determinedIsFavoritedFlag = true; // Still, consider it "determined"
+        debugPrint('[RecipeDetailPage] Device ID not found. Cannot load favorite status.');
+        actualInitialIsFavoritedValue = false; 
+        determinedIsFavoritedFlag = true;
       }
 
+      debugPrint("[RecipeDetailPage] Fetching recipe document from Firestore for ID: $recipeId");
       final recipeDoc = await FirebaseFirestore.instance
           .collection('recipes')
           .doc(recipeId)
-          .get(GetOptions(source: Source.serverAndCache));
+          .get(const GetOptions(source: Source.serverAndCache)); // Added const
 
       if (recipeDoc.exists) {
+        debugPrint("[RecipeDetailPage] Recipe document FOUND for ID: $recipeId");
         final data = recipeDoc.data()!;
+        debugPrint("[RecipeDetailPage] Firestore data received: $data");
+        debugPrint("[RecipeDetailPage] Firestore data['description'] specific value: ${data['description']}");
+        
         setState(() {
-          _title = data['title'] ?? '';
+          _title = data['title'] ?? widget.recipe['title'] ?? 'Tarif Başlığı Yok'; // Robust title
           _ingredients = data['ingredients'] ?? '';
           _instructions = data['instructions'] ?? '';
           _imageUrl = data['imageUrl'];
-          _prepTime = data['prepTime'];
-          _cookTime = data['cookTime'];
-          _description = data['description'] ?? '';
+          _prepTime = data['prepTime']?.toString(); // Convert int/double to String
+          _cookTime = data['cookTime']?.toString(); // Convert int/double to String
+          _description = data['description']; // Keep as is from previous fix
           if (determinedIsFavoritedFlag) {
              _isFavorited = actualInitialIsFavoritedValue;
           }
@@ -96,18 +107,23 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
           _isUpdatingFavorite = false;
         });
       } else {
+        debugPrint("[RecipeDetailPage] Recipe document NOT FOUND in Firestore for ID: $recipeId");
         setState(() {
+          _title = widget.recipe['title'] ?? 'Tarif Bulunamadı'; // Fallback title
+          // _description will remain null, displayDescription will handle it
           if (determinedIsFavoritedFlag) {
             _isFavorited = actualInitialIsFavoritedValue;
           }
           _isLoading = false;
           _isUpdatingFavorite = false;
-          debugPrint('Recipe document not found, but favorite status determined.');
+          debugPrint('[RecipeDetailPage] Recipe document not found, but favorite status determined.');
         });
       }
     } catch (e) {
-      debugPrint('Error loading recipe details or favorite status: $e');
+      debugPrint('[RecipeDetailPage] Error loading recipe details or favorite status: $e');
       setState(() {
+        _title = widget.recipe['title'] ?? 'Hata Oluştu'; // Error title
+        // _description will remain null
         if (determinedIsFavoritedFlag) {
           _isFavorited = actualInitialIsFavoritedValue;
         }
@@ -115,6 +131,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
         _isUpdatingFavorite = false;
       });
     }
+    debugPrint("[RecipeDetailPage] _loadRecipeDetails FINISHED. Current state _description: $_description");
   }
 
   Future<void> _toggleFavoriteStatus() async {
@@ -205,6 +222,20 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
     return instructions.split('||').join('\n\n');
   }
 
+  String get displayDescription {
+    // Use _description from Firestore if it's valid (not null, not empty)
+    if (_description != null && _description!.isNotEmpty) {
+      return _description!;
+    }
+    // Fallback to initial widget.recipe['description'] if it's valid
+    final initialDescription = widget.recipe['description'] as String?;
+    if (initialDescription != null && initialDescription.isNotEmpty) {
+      return initialDescription;
+    }
+    // Default placeholder
+    return 'Açıklama yok';
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -261,9 +292,17 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
                       ),
                     ),
                   const SizedBox(height: 16),
-                  Text(
-                    _description ?? widget.recipe['description'] ?? 'Açıklama yok',
-                    style: const TextStyle(fontSize: 16),
+                  Builder( // Used Builder to easily insert debugPrint before Text
+                    builder: (context) {
+                      final currentDisplayDescription = displayDescription;
+                      debugPrint("[RecipeDetailPage] BUILDER: _description = $_description");
+                      debugPrint("[RecipeDetailPage] BUILDER: widget.recipe['description'] = ${widget.recipe['description']}");
+                      debugPrint("[RecipeDetailPage] BUILDER: displayDescription evaluates to = $currentDisplayDescription");
+                      return Text(
+                        currentDisplayDescription,
+                        style: const TextStyle(fontSize: 16),
+                      );
+                    }
                   ),
                   const SizedBox(height: 24),
                   const Text(
