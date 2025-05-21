@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle; // Added for rootBundle
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'recipe_detail_page.dart';
 // Removed: import 'package:cloud_firestore/cloud_firestore.dart'; // Not needed for local search list
 
@@ -8,17 +10,20 @@ class LocalRecipe {
   final String id;
   final String title;
   final String imageUrl;
-  // home_page.dart'taki kartta gösterilen ek bilgiler için alanlar eklenebilir.
-  // final String ingredientsPreview; 
-  // final String totalTimeText;
+  final String ingredientsOnly;
+  final int totalTime;
+  List<String> missingIngredients = []; // Eksik malzemeler listesi
 
   LocalRecipe({
     required this.id,
     required this.title,
     required this.imageUrl,
-    // this.ingredientsPreview = '',
-    // this.totalTimeText = '',
-  });
+    this.ingredientsOnly = '',
+    this.totalTime = 0,
+    List<String>? missingIngredients,
+  }) {
+    this.missingIngredients = missingIngredients ?? [];
+  }
 
   // Factory constructor to parse a line from recipes.txt
   // Example line: çilekli-ve-vişneli-cheesecake:{bisküvi...}{https://...}{95}{Çilekli ve Vişneli Cheesecake}
@@ -46,15 +51,15 @@ class LocalRecipe {
         }
       }
       
-      // title her zaman sonuncu eleman
-      if (parts.length < 4) throw FormatException("Line does not contain enough parts. Found ${parts.length}, expected at least 4 for title to be last.");
+      // Format: document_id:{ingredientsOnly}{imageUrl}{prepTime+cookTime}{title}
+      if (parts.length < 4) throw FormatException("Line does not contain enough parts. Found ${parts.length}, expected at least 4.");
       
       return LocalRecipe(
         id: id,
-        title: parts.last.trim(), // Son eleman her zaman title
-        imageUrl: parts.length > 1 ? parts[1].trim() : '', // imageUrl ikinci eleman (varsa)
-        // ingredientsPreview: parts.isNotEmpty ? parts[0].trim() : '', // İlk eleman malzemeler (varsa)
-        // totalTimeText: parts.length > 2 ? parts[2].trim() : '', // Üçüncü eleman süre (varsa)
+        ingredientsOnly: parts[0].trim(),
+        imageUrl: parts[1].trim(),
+        totalTime: int.tryParse(parts[2].trim()) ?? 0,
+        title: parts[3].trim(),
       );
     } catch (e) {
       debugPrint("Error parsing line '$line': $e");
@@ -79,18 +84,82 @@ class _RecipeSearchPageState extends State<RecipeSearchPage> {
   List<LocalRecipe> _allRecipes = [];
   List<LocalRecipe> _filteredRecipes = []; // Başlangıçta boş olacak
   bool _isLoading = true;
+  bool _isPantryLoading = false; // Pantry yükleme durumu
+  String? _deviceId;
+  Map<String, List<String>> _pantryIngredients = {}; // Kullanıcının mutfak dolabı
 
   @override
   void initState() {
     super.initState();
+    _loadDeviceId();
+  }
+
+  // Önce cihaz ID'sini yükle
+  Future<void> _loadDeviceId() async {
+    setState(() {
+      _isPantryLoading = true;
+    });
+    
+    final prefs = await SharedPreferences.getInstance();
+    final deviceId = prefs.getString('device_id');
+    
+    setState(() {
+      _deviceId = deviceId;
+    });
+    
+    if (_deviceId != null) {
+      await _loadPantryIngredients();
+    } else {
+      setState(() {
+        _isPantryLoading = false;
+      });
+    }
+    
     _loadRecipesFromAssets();
   }
 
+  // Kullanıcının mutfak dolabını yükle
+  Future<void> _loadPantryIngredients() async {
+    if (_deviceId == null) return;
+
+    try {
+      final userDoc = await FirebaseFirestore.instance
+          .collection('users')
+          .doc(_deviceId)
+          .get(GetOptions(source: Source.serverAndCache));
+
+      if (userDoc.exists && userDoc.data()!.containsKey('pantry')) {
+        final pantryData = userDoc.data()?['pantry'];
+        if (pantryData is Map) {
+          setState(() {
+            _pantryIngredients = Map<String, List<String>>.from(
+              (pantryData as Map).map((key, value) => MapEntry(
+                key.toString(),
+                List<String>.from(value as List),
+              )),
+            );
+            _isPantryLoading = false;
+          });
+        }
+      } else {
+        setState(() {
+          _isPantryLoading = false;
+        });
+      }
+    } catch (e) {
+      setState(() {
+        _isPantryLoading = false;
+      });
+      debugPrint("PIŞIR_DEBUG: Mutfak dolabı yüklenirken hata: $e");
+    }
+  }
+
+  // Tarifleri yükle ve pantry ile karşılaştır
   Future<void> _loadRecipesFromAssets() async {
     setState(() {
       _isLoading = true;
-      _allRecipes = []; // Yükleme başlarken listeyi temizle
-      _filteredRecipes = []; // Yükleme başlarken filtrelenmiş listeyi de temizle
+      _allRecipes = [];
+      _filteredRecipes = [];
     });
     try {
       final String fileContents = await rootBundle.loadString('assets/recipes.txt');
@@ -103,18 +172,50 @@ class _RecipeSearchPageState extends State<RecipeSearchPage> {
         }
       }
       
+      // Geçerli tarifleri filtrele
+      final List<LocalRecipe> validRecipes = loadedRecipes.where((r) => r.id != 'error-id').toList();
+      
+      // Pantry ile karşılaştır ve eksik malzemeleri belirle
+      _compareRecipesWithPantry(validRecipes);
+      
       setState(() {
-        _allRecipes = loadedRecipes.where((r) => r.id != 'error-id').toList();
-        // _filteredRecipes = []; // Arama yapılana kadar boş kalacak
+        _allRecipes = validRecipes;
         _isLoading = false;
       });
-      debugPrint("PIŞIR_DEBUG: Loaded ${_allRecipes.length} recipes from assets.");
     } catch (e) {
       setState(() {
         _isLoading = false;
       });
       debugPrint("PIŞIR_DEBUG: Error loading recipes from assets: $e");
-      // Optionally show an error message to the user
+    }
+  }
+
+  // Tarifleri mutfak dolabı ile karşılaştır ve eksik malzemeleri belirle
+  void _compareRecipesWithPantry(List<LocalRecipe> recipes) {
+    // Pantry boşsa karşılaştırma yapmaya gerek yok
+    if (_pantryIngredients.isEmpty) return;
+    
+    // Tüm mutfak dolabı malzemelerini düz listeye çevir
+    final allPantryIngredients = _pantryIngredients.values
+        .expand((ingredients) => ingredients)
+        .map((i) => i.toLowerCase().trim())
+        .toList();
+    
+    // Her tarif için eksik malzemeleri kontrol et
+    for (var recipe in recipes) {
+      final recipeIngredients = recipe.ingredientsOnly
+          .split(',')
+          .map((i) => i.trim().toLowerCase())
+          .where((i) => i.isNotEmpty)
+          .toList();
+      
+      // Eksik malzemeleri belirle
+      final missingIngredients = recipeIngredients
+          .where((ingredient) => !allPantryIngredients.contains(ingredient))
+          .toList();
+      
+      // Eksik malzemeleri tarife ekle
+      recipe.missingIngredients = missingIngredients;
     }
   }
 
@@ -178,6 +279,24 @@ class _RecipeSearchPageState extends State<RecipeSearchPage> {
               },
             ),
           ),
+          if (_isPantryLoading)
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    height: 16,
+                    width: 16,
+                    child: CircularProgressIndicator(strokeWidth: 2),
+                  ),
+                  SizedBox(width: 8),
+                  Text("Dolap bilgileri yükleniyor...", 
+                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                  ),
+                ],
+              ),
+            ),
           Expanded(
             child: _isLoading
                 ? const Center(child: CircularProgressIndicator())
@@ -226,6 +345,8 @@ class _RecipeSearchPageState extends State<RecipeSearchPage> {
                                             'id': recipe.id,
                                             'title': recipe.title,
                                             'imageUrl': recipe.imageUrl,
+                                            'ingredientsOnly': recipe.ingredientsOnly,
+                                            'totalTime': recipe.totalTime,
                                           },
                                         ),
                                         settings: RouteSettings(
@@ -233,6 +354,8 @@ class _RecipeSearchPageState extends State<RecipeSearchPage> {
                                             'id': recipe.id,
                                             'title': recipe.title,
                                             'imageUrl': recipe.imageUrl,
+                                            'ingredientsOnly': recipe.ingredientsOnly,
+                                            'totalTime': recipe.totalTime,
                                           },
                                         ),
                                       ),
@@ -241,69 +364,139 @@ class _RecipeSearchPageState extends State<RecipeSearchPage> {
                                   borderRadius: BorderRadius.circular(12),
                                   child: Padding(
                                     padding: const EdgeInsets.all(12),
-                                    child: Row(
+                                    child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        ClipRRect(
-                                          borderRadius: BorderRadius.circular(8),
-                                          child: recipe.imageUrl.isNotEmpty && Uri.tryParse(recipe.imageUrl)?.hasAbsolutePath == true
-                                              ? Image.network(
-                                                  recipe.imageUrl,
-                                                  width: 100,
-                                                  height: 100,
-                                                  fit: BoxFit.cover,
-                                                  errorBuilder: (context, error, stackTrace) {
-                                                    return Container(
+                                        Row(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            ClipRRect(
+                                              borderRadius: BorderRadius.circular(8),
+                                              child: recipe.imageUrl.isNotEmpty && Uri.tryParse(recipe.imageUrl)?.hasAbsolutePath == true
+                                                  ? Image.network(
+                                                      recipe.imageUrl,
+                                                      width: 100,
+                                                      height: 100,
+                                                      fit: BoxFit.cover,
+                                                      errorBuilder: (context, error, stackTrace) {
+                                                        return Container(
+                                                          width: 100,
+                                                          height: 100,
+                                                          color: Colors.grey[200],
+                                                          child: const Icon(
+                                                            Icons.image_not_supported,
+                                                            size: 30,
+                                                            color: Colors.grey,
+                                                          ),
+                                                        );
+                                                      },
+                                                    )
+                                                  : Container(
                                                       width: 100,
                                                       height: 100,
                                                       color: Colors.grey[200],
                                                       child: const Icon(
-                                                        Icons.image_not_supported,
+                                                        Icons.restaurant_menu, // Placeholder for missing/invalid image
                                                         size: 30,
                                                         color: Colors.grey,
                                                       ),
-                                                    );
-                                                  },
-                                                )
-                                              : Container(
-                                                  width: 100,
-                                                  height: 100,
-                                                  color: Colors.grey[200],
-                                                  child: const Icon(
-                                                    Icons.restaurant_menu, // Placeholder for missing/invalid image
-                                                    size: 30,
-                                                    color: Colors.grey,
+                                                    ),
+                                            ),
+                                            const SizedBox(width: 16),
+                                            Expanded(
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                mainAxisAlignment: MainAxisAlignment.center, // Dikeyde ortalamak için
+                                                children: [
+                                                  Text(
+                                                    recipe.title,
+                                                    style: const TextStyle(
+                                                      fontSize: 18,
+                                                      fontWeight: FontWeight.bold,
+                                                    ),
+                                                    maxLines: 2, // Başlık en fazla 2 satır olsun
+                                                    overflow: TextOverflow.ellipsis, // Taşarsa ... ile kesilsin
+                                                  ),
+                                                  // İsteğe bağlı: Malzeme önizlemesi veya süre gibi ek bilgiler buraya eklenebilir
+                                                  // if (recipe.ingredientsPreview.isNotEmpty) ...[
+                                                  //   const SizedBox(height: 8),
+                                                  //   Text(
+                                                  //     recipe.ingredientsPreview,
+                                                  //     style: TextStyle(fontSize: 14, color: Colors.grey[600]),
+                                                  //     maxLines: 2,
+                                                  //     overflow: TextOverflow.ellipsis,
+                                                  //   ),
+                                                  // ],
+                                                  const SizedBox(height: 8),
+                                                  Text(
+                                                    recipe.ingredientsOnly,
+                                                    style: TextStyle(
+                                                      fontSize: 14,
+                                                      color: Colors.grey[600],
+                                                    ),
+                                                    maxLines: 2,
+                                                    overflow: TextOverflow.ellipsis,
+                                                  ),
+                                                  if (recipe.totalTime > 0) ...[
+                                                    const SizedBox(height: 8),
+                                                    Row(
+                                                      children: [
+                                                        const Icon(
+                                                          Icons.timer_outlined,
+                                                          size: 16,
+                                                          color: Colors.grey,
+                                                        ),
+                                                        const SizedBox(width: 4),
+                                                        Text(
+                                                          'Hazırlanma süresi: ${recipe.totalTime} dakika',
+                                                          style: TextStyle(
+                                                            fontSize: 14,
+                                                            color: Colors.grey[600],
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ],
+                                                ],
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        // Eksik malzemeler varsa göster
+                                        if (recipe.missingIngredients.isNotEmpty) ...[
+                                          const SizedBox(height: 12),
+                                          const Divider(height: 1),
+                                          const SizedBox(height: 8),
+                                          Text(
+                                            'Dolabınızda olmayan malzemeler:',
+                                            style: TextStyle(
+                                              fontSize: 13,
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          ),
+                                          const SizedBox(height: 4),
+                                          Wrap(
+                                            spacing: 6,
+                                            runSpacing: 6,
+                                            children: recipe.missingIngredients.map((ingredient) {
+                                              return Container(
+                                                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                                decoration: BoxDecoration(
+                                                  color: Colors.red.withOpacity(0.1),
+                                                  borderRadius: BorderRadius.circular(4),
+                                                  border: Border.all(color: Colors.red.withOpacity(0.3)),
+                                                ),
+                                                child: Text(
+                                                  ingredient,
+                                                  style: TextStyle(
+                                                    color: Colors.red,
+                                                    fontSize: 12,
                                                   ),
                                                 ),
-                                        ),
-                                        const SizedBox(width: 16),
-                                        Expanded(
-                                          child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            mainAxisAlignment: MainAxisAlignment.center, // Dikeyde ortalamak için
-                                            children: [
-                                              Text(
-                                                recipe.title,
-                                                style: const TextStyle(
-                                                  fontSize: 18,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                                maxLines: 2, // Başlık en fazla 2 satır olsun
-                                                overflow: TextOverflow.ellipsis, // Taşarsa ... ile kesilsin
-                                              ),
-                                              // İsteğe bağlı: Malzeme önizlemesi veya süre gibi ek bilgiler buraya eklenebilir
-                                              // if (recipe.ingredientsPreview.isNotEmpty) ...[
-                                              //   const SizedBox(height: 8),
-                                              //   Text(
-                                              //     recipe.ingredientsPreview,
-                                              //     style: TextStyle(fontSize: 14, color: Colors.grey[600]),
-                                              //     maxLines: 2,
-                                              //     overflow: TextOverflow.ellipsis,
-                                              //   ),
-                                              // ],
-                                            ],
+                                              );
+                                            }).toList(),
                                           ),
-                                        ),
+                                        ],
                                       ],
                                     ),
                                   ),
