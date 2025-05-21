@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class RecipeDetailPage extends StatefulWidget {
   final Map<String, dynamic> recipe;
@@ -22,6 +23,8 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
   String? _prepTime;
   String? _cookTime;
   String? _description;
+  bool _isFavorited = false;
+  bool _isUpdatingFavorite = false;
   
   @override
   void initState() {
@@ -29,19 +32,55 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
     _loadRecipeDetails();
   }
   
+  Future<String?> _getDeviceId() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getString('device_id');
+  }
+
   Future<void> _loadRecipeDetails() async {
     if (widget.recipe['id'] == null) return;
 
     setState(() {
       _isLoading = true;
+      _isUpdatingFavorite = true;
     });
 
     try {
-      final recipeDoc = await FirebaseFirestore.instance
+      final recipeId = widget.recipe['id'].toString();
+      final deviceId = await _getDeviceId();
+
+      final recipeDocFuture = FirebaseFirestore.instance
           .collection('recipes')
-          .doc(widget.recipe['id'].toString())
+          .doc(recipeId)
           .get(GetOptions(source: Source.serverAndCache));
 
+      Future<DocumentSnapshot?>? favoriteStatusFuture;
+      if (deviceId != null) {
+        favoriteStatusFuture = FirebaseFirestore.instance
+            .collection('users')
+            .doc(deviceId)
+            .collection('favorites')
+            .doc(recipeId)
+            .get();
+      } else {
+        debugPrint('Device ID not found. Cannot load favorite status.');
+        setState(() {
+          _isUpdatingFavorite = false; 
+        });
+      }
+
+      final results = await Future.wait([
+        recipeDocFuture,
+        if (favoriteStatusFuture != null) favoriteStatusFuture,
+      ]);
+
+      final recipeDoc = results[0] as DocumentSnapshot<Map<String, dynamic>>;
+      bool isFavorited = false;
+      if (results.length > 1 && results[1] != null) {
+        final favoriteDoc = results[1] as DocumentSnapshot;
+        isFavorited = favoriteDoc.exists;
+      }
+      
       if (recipeDoc.exists) {
         final data = recipeDoc.data()!;
         setState(() {
@@ -52,13 +91,60 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
           _prepTime = data['prepTime'];
           _cookTime = data['cookTime'];
           _description = data['description'] ?? '';
+          _isFavorited = isFavorited;
           _isLoading = false;
+          _isUpdatingFavorite = false;
+        });
+      } else {
+        setState(() {
+          _isLoading = false;
+          _isUpdatingFavorite = false;
         });
       }
     } catch (e) {
-      debugPrint('Error loading recipe details: $e');
+      debugPrint('Error loading recipe details or favorite status: $e');
       setState(() {
         _isLoading = false;
+        _isUpdatingFavorite = false;
+      });
+    }
+  }
+
+  Future<void> _toggleFavoriteStatus() async {
+    final deviceId = await _getDeviceId();
+
+    if (deviceId == null) {
+      debugPrint('Device ID not found. Cannot change favorite status.');
+      return;
+    }
+
+    if (widget.recipe['id'] == null) return;
+    final recipeId = widget.recipe['id'].toString();
+
+    setState(() {
+      _isUpdatingFavorite = true;
+    });
+
+    final favoriteRef = FirebaseFirestore.instance
+        .collection('users')
+        .doc(deviceId)
+        .collection('favorites')
+        .doc(recipeId);
+
+    try {
+      if (_isFavorited) {
+        await favoriteRef.delete();
+      } else {
+        await favoriteRef.set({'favoritedAt': FieldValue.serverTimestamp()});
+      }
+      setState(() {
+        _isFavorited = !_isFavorited;
+      });
+    } catch (e) {
+      debugPrint('Error updating favorite status: $e');
+    } finally {
+      setState(() {
+        _isUpdatingFavorite = false;
       });
     }
   }
@@ -88,7 +174,27 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.recipe['title'] ?? 'Tarif Detayı'),
+        title: Text(_title ?? widget.recipe['title'] ?? 'Tarif Detayı'),
+        actions: [
+          if (widget.recipe['id'] != null)
+            _isUpdatingFavorite
+              ? const Padding(
+                  padding: EdgeInsets.all(16.0),
+                  child: SizedBox(
+                    width: 24,
+                    height: 24,
+                    child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white,)
+                  ),
+                )
+              : IconButton(
+                  icon: Icon(
+                    _isFavorited ? Icons.favorite : Icons.favorite_border,
+                    color: _isFavorited ? Colors.red : null,
+                  ),
+                  onPressed: _toggleFavoriteStatus,
+                  tooltip: _isFavorited ? 'Favorilerden çıkar' : 'Favorilere ekle',
+                ),
+        ],
       ),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
@@ -101,7 +207,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(8),
                       child: Image.network(
-                        widget.recipe['imageUrl'],
+                        _imageUrl ?? widget.recipe['imageUrl'],
                         width: double.infinity,
                         height: 200,
                         fit: BoxFit.cover,
@@ -121,7 +227,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
                     ),
                   const SizedBox(height: 16),
                   Text(
-                    _description ?? 'Açıklama yok',
+                    _description ?? widget.recipe['description'] ?? 'Açıklama yok',
                     style: const TextStyle(fontSize: 16),
                   ),
                   const SizedBox(height: 24),
@@ -161,7 +267,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      '${widget.recipe['cookingTime']} dakika',
+                      '${_cookTime ?? widget.recipe['cookingTime']} dakika',
                       style: const TextStyle(fontSize: 16),
                     ),
                   ],
@@ -201,7 +307,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
                                 ),
                                 const SizedBox(width: 8),
                                 Text(
-                                  'Hazırlık süresi: $_prepTime dakika',
+                                  'Hazırlık süresi: ${_prepTime ?? widget.recipe['prepTime']} dakika',
                                   style: const TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w500,
@@ -221,7 +327,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
                                 ),
                                 const SizedBox(width: 8),
                                 Text(
-                                  'Pişirme süresi: $_cookTime dakika',
+                                  'Pişirme süresi: ${_cookTime ?? widget.recipe['cookTime']} dakika',
                                   style: const TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w500,

@@ -3,6 +3,7 @@ import 'home_page.dart';
 import 'pantry_page.dart';
 import 'settings_page.dart';
 import 'recipe_search_page.dart';
+import 'favorites_page.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -17,6 +18,7 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _pages = [
     const HomePage(),
     const RecipeSearchPage(),
+    const FavoritesPage(),
     const PantryPage(),
     const SettingsPage(),
   ];
@@ -40,6 +42,10 @@ class _MainScreenState extends State<MainScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
             label: 'Tarif Ara',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.favorite),
+            label: 'Favoriler',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.kitchen),
