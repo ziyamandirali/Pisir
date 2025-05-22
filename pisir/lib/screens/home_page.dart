@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   bool _isLoading = false;
   bool _loadingMore = false;
   String? _deviceId;
@@ -23,6 +23,12 @@ class _HomePageState extends State<HomePage> {
   List<Map<String, dynamic>> _localRecipes = []; // Yerel tarif verileri
   int _currentRecipeIndex = 0; // İşlenecek tarif indeksi
   int _randomStartIndex = 0;  // Rastgele başlangıç indeksi
+  
+  // Kategori ile ilgili değişkenler
+  List<String> _categories = []; // Mevcut kategoriler
+  String? _selectedCategory; // Seçilen kategori (null ise tüm tarifler)
+  bool _categoriesLoading = false; // Kategoriler yüklenirken
+  TabController? _tabController; // TabBar controller
   
   final int _maxTotalRecipes = 50; // Maksimum eşleşecek tarif sayısı
   final int _initialDisplayCount = 20; // Başlangıçta gösterilecek tarif sayısı
@@ -34,12 +40,14 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
+    _loadCategories(); // Kategorileri yükle
     _loadDeviceId();
   }
 
   @override
   void dispose() {
     _scrollController.dispose();
+    _tabController?.dispose();
     super.dispose();
   }
 
@@ -82,7 +90,7 @@ class _HomePageState extends State<HomePage> {
     }
   }
   
-  // YENİ FONKSIYON: Yerel tarif dosyasını oku
+  // Yerel tarif dosyasını rastgele bir noktadan okuma
   Future<void> _loadLocalRecipesWithRandomStart() async {
     setState(() {
       _isLoading = true;
@@ -91,8 +99,19 @@ class _HomePageState extends State<HomePage> {
     });
     
     try {
-      // recipes.txt dosyasını oku
-      final String data = await rootBundle.loadString('assets/recipes.txt');
+      // Seçilen kategoriye göre dosya yolunu belirle
+      String filePath;
+      if (_selectedCategory == null) {
+        filePath = 'assets/recipes.txt'; // Tüm tarifler
+      } else {
+        String fileName = _getCategoryFileName(_selectedCategory!);
+        filePath = 'assets/categories/$fileName';
+      }
+      
+      debugPrint('PIŞIR_DEBUG: Dosya yükleniyor: $filePath');
+      
+      // İlgili dosyayı oku
+      final String data = await rootBundle.loadString(filePath);
       final List<String> lines = data.split('\n').where((line) => line.trim().isNotEmpty).toList();
       
       // Rastgele bir başlangıç indeksi belirle
@@ -142,6 +161,8 @@ class _HomePageState extends State<HomePage> {
           continue;
         }
       }
+      
+      debugPrint('PIŞIR_DEBUG: ${_localRecipes.length} tarif yüklendi');
       
     } catch (e) {
       // Dosya okuma hatası
@@ -276,6 +297,178 @@ class _HomePageState extends State<HomePage> {
     await _matchLocalRecipes();
   }
 
+  // Kategorileri yükleme fonksiyonu
+  Future<void> _loadCategories() async {
+    setState(() {
+      _categoriesLoading = true;
+    });
+    
+    try {
+      // Assets klasöründeki category dosyalarını yükle
+      final categoryFiles = [
+        'anayemekler.txt',
+        'atıştırmalıklar.txt', 
+        'çorbalar.txt',
+        'denizürünleri.txt',
+        'ekmekler.txt',
+        'hamur_işi.txt',
+        'içecekler.txt',
+        'kahvaltılıklar.txt',
+        'kis_hazirliklari.txt',
+        'meze_salata.txt',
+        'özel_beslenme.txt',
+        'soslar.txt',
+        'tatlılar.txt',
+        'turşular.txt',
+        'zeytinyağlı_dolma_sarma.txt',
+      ];
+      
+      final List<String> categories = [];
+      
+      for (String fileName in categoryFiles) {
+        try {
+          await rootBundle.loadString('assets/categories/$fileName');
+          // Dosya adını kategori adına çevir
+          String categoryName = _formatCategoryName(fileName);
+          categories.add(categoryName);
+        } catch (e) {
+          // Bu dosya yoksa atla
+          debugPrint('PIŞIR_DEBUG: Kategori dosyası bulunamadı: $fileName');
+        }
+      }
+      
+      setState(() {
+        _categories = categories;
+        _categoriesLoading = false;
+      });
+      
+      // TabController'ı initialize et
+      _initializeTabController();
+      
+    } catch (e) {
+      setState(() {
+        _categoriesLoading = false;
+      });
+      debugPrint('PIŞIR_DEBUG: Kategoriler yüklenirken hata: $e');
+    }
+  }
+
+  // TabController'ı initialize et
+  void _initializeTabController() {
+    _tabController = TabController(
+      length: _categories.length + 1, // +1 "Tümü" seçeneği için
+      vsync: this,
+    );
+    
+    // Tab değişikliklerini dinle
+    _tabController!.addListener(() {
+      if (!_tabController!.indexIsChanging) {
+        final int selectedIndex = _tabController!.index;
+        String? newCategory;
+        
+        if (selectedIndex == 0) {
+          newCategory = null; // "Tümü" seçeneği
+        } else {
+          newCategory = _categories[selectedIndex - 1];
+        }
+        
+        if (_selectedCategory != newCategory) {
+          setState(() {
+            _selectedCategory = newCategory;
+          });
+          _refreshRecipes();
+        }
+      }
+    });
+  }
+
+  // Kategori dosya adını güzel kategori adına çevir
+  String _formatCategoryName(String fileName) {
+    String name = fileName.replaceAll('.txt', '');
+    
+    // Özel durumlar için manuel mapping
+    switch (name) {
+      case 'anayemekler':
+        return 'Ana Yemekler';
+      case 'atıştırmalıklar':
+        return 'Atıştırmalıklar';
+      case 'çorbalar':
+        return 'Çorbalar';
+      case 'denizürünleri':
+        return 'Deniz Ürünleri';
+      case 'ekmekler':
+        return 'Ekmekler';
+      case 'hamur_işi':
+        return 'Hamur İşi';
+      case 'içecekler':
+        return 'İçecekler';
+      case 'kahvaltılıklar':
+        return 'Kahvaltılıklar';
+      case 'kis_hazirliklari':
+        return 'Kış Hazırlıkları';
+      case 'meze_salata':
+        return 'Meze & Salata';
+      case 'özel_beslenme':
+        return 'Özel Beslenme';
+      case 'soslar':
+        return 'Soslar';
+      case 'tatlılar':
+        return 'Tatlılar';
+      case 'turşular':
+        return 'Turşular';
+      case 'zeytinyağlı_dolma_sarma':
+        return 'Zeytinyağlı Dolma & Sarma';
+      default:
+        // Varsayılan formatla
+        return name
+            .replaceAll('_', ' ')
+            .split(' ')
+            .map((word) => word.isNotEmpty ? word[0].toUpperCase() + word.substring(1) : '')
+            .join(' ');
+    }
+  }
+
+  // Seçilen kategoriye göre dosya adını getir
+  String _getCategoryFileName(String categoryName) {
+    // Kategori adından dosya adına geri çevir
+    switch (categoryName) {
+      case 'Ana Yemekler':
+        return 'anayemekler.txt';
+      case 'Atıştırmalıklar':
+        return 'atıştırmalıklar.txt';
+      case 'Çorbalar':
+        return 'çorbalar.txt';
+      case 'Deniz Ürünleri':
+        return 'denizürünleri.txt';
+      case 'Ekmekler':
+        return 'ekmekler.txt';
+      case 'Hamur İşi':
+        return 'hamur_işi.txt';
+      case 'İçecekler':
+        return 'içecekler.txt';
+      case 'Kahvaltılıklar':
+        return 'kahvaltılıklar.txt';
+      case 'Kış Hazırlıkları':
+        return 'kis_hazirliklari.txt';
+      case 'Meze & Salata':
+        return 'meze_salata.txt';
+      case 'Özel Beslenme':
+        return 'özel_beslenme.txt';
+      case 'Soslar':
+        return 'soslar.txt';
+      case 'Tatlılar':
+        return 'tatlılar.txt';
+      case 'Turşular':
+        return 'turşular.txt';
+      case 'Zeytinyağlı Dolma & Sarma':
+        return 'zeytinyağlı_dolma_sarma.txt';
+      default:
+        return categoryName
+            .toLowerCase()
+            .replaceAll(' ', '_') + '.txt';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final isDark = darkModeNotifier.value;
@@ -302,9 +495,21 @@ class _HomePageState extends State<HomePage> {
             onPressed: _refreshRecipes,
           ),
         ],
+        // TabBar'ı AppBar'ın altına ekle
+        bottom: _tabController != null ? TabBar(
+          controller: _tabController,
+          isScrollable: true, // Horizontal scroll için
+          labelColor: isDark ? Colors.white : Colors.black,
+          unselectedLabelColor: isDark ? Colors.grey[400] : Colors.grey[600],
+          indicatorColor: Colors.blue,
+          tabs: [
+            const Tab(text: 'Tümü'),
+            ..._categories.map((category) => Tab(text: category)),
+          ],
+        ) : null,
       ),
       body: _isLoading 
-          ? const Center(child: CircularProgressIndicator()) // Tariflerin ilk yüklenmesi
+          ? const Center(child: CircularProgressIndicator())
           : _matchingRecipes.isEmpty
               ? const Center(
                   child: Text(

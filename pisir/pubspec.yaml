@@ -88,6 +88,7 @@ flutter:
     - assets/pisirlogo.png
     - assets/categorized.txt
     - assets/recipes.txt
+    - assets/categories/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
