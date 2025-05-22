@@ -1,0 +1,27 @@
+kışlık-domates-sosu:{domates, kekik, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/07/kislik-domates-sosu-tarifi.jpg}{60}{Kışlık Domates Sosu}
+kışlık-kavurma:{iç yağı, kuzu eti, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/08/kislik-kavurma-1.jpg}{55}{Kışlık Kavurma}
+kışlık-kırmızı-biber-sos:{cin biberi, domates, domates salçası, elma sirkesi, kapya biber, maydanoz, sarımsak, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/kislik-kirmizi-biber-sos-tarifi.jpeg}{12}{Kışlık Kırmızı Biber Sos}
+domates-kabuğundan-kolay-salça:{domates, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/09/domates-kabugundan-kolay-salca-onecikan.jpg}{40}{Domates Kabuğundan Kolay Salça}
+bamya-konservesi:{bamya, domates, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/08/bamya-konservesi-yemekcom.jpg}{30}{Bamya Konservesi}
+kyopolou:{ceviz, defne yaprağı, domates, kırmızı biber, patlıcan, sarımsak, sıvı yağ, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/kyopolou-yemekcom.jpg}{21}{Kyopolou}
+kışlık-şakşuka:{domates, patlıcan, sarımsak, sıvı yağ, tuz, yeşil biber, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/09/kislik-saksuka-yeni.jpg}{75}{Kışlık Şakşuka}
+ajvar:{kapya biber, patlıcan, sarımsak, sıvı yağ, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/08/ajvar-yemekcom.jpg}{4}{Ajvar}
+kışlık-menemen:{domates, sivri biber, sıvı yağ, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/08/kislik-menemen-one-cikan-yeni.jpg}{17}{Kışlık Menemen}
+köz-biber-konservesi:{elma sirkesi, kapya biber, limon, sarımsak, su, tuz, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/koz-biber-konservesi-onecikan.jpg}{30}{Köz Biber Konservesi}
+salça:{domates, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/08/salca-tarifi-yemekcom.jpg}{48}{Salça}
+zacusca:{defne yaprağı, domates, kapya biber, karabiber, patlıcan, soğan, sıvı yağ, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/08/zacusca-sos-yemekcom.jpg}{4}{Zacusca}
+derin-dondurucuda-barbunya:{barbunya, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/09/derin-dondurucuda-barbunya-yemekcom.jpg}{10}{Derin Dondurucuda Barbunya}
+buzluk-i-çin-bezelye:{bezelye}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/05/buzluk-icin-bezelye-onecikan.jpg}{30}{Buzluk İçin Bezelye}
+öksürüğe-birebir:{bal, karabiber, limon}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/09/oksuruge-birebir-yemekcom.jpg}{5}{Öksürüğe Birebir}
+kışlık-domates-sos:{domates, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/kislik-domates-sosu-tria.jpg}{55}{Kışlık Domates Sos}
+kışlık-sirkeli-patlıcan:{elma sirkesi, kapya biber, maydanoz, patlıcan, sarımsak, sıvı yağ, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/09/sirkeli-patlican-konservesi-tarifi.jpg}{45}{Kışlık Sirkeli Patlıcan}
+güneşte-kurutmadan-biber-salçası:{kapya biber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/09/guneste-kurutmadan-biber-salcasi-onecikan.jpg}{11}{Güneşte Kurutmadan Biber Salçası}
+lutenitsa:{domates, karabiber, kırmızı biber, sıvı yağ, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/08/lutenitsa-yemekcom.jpg}{6}{Lutenitsa}
+ev-yapımı-konserve-garnitür:{bezelye, havuç, patates, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/05/ev-yapimi-konserve-garnitur-onecikan.jpg}{50}{Ev Yapımı Konserve Garnitür}
+taze-fasulye-konservesi:{domates, su, tuz, yeşil fasulye, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/06/taze-fasulye-konservesi-onecikan.jpg}{30}{Taze Fasulye Konservesi}
+domates-konservesi:{domates, tuz, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/08/domates-konservesi-onecikan-yeni.jpg}{130}{Domates Konservesi}
+kışlık-ezme-turşu:{domates, elma sirkesi, kapya biber, limon tuzu, maydanoz, sarımsak, sıvı yağ, tuz, yeşil biber, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/karisik-ezme-tursu-one-cikan.jpg}{36}{Kışlık Ezme Turşu}
+kışlık-patlıcan:{domates, kapya biber, patlıcan, tuz, yeşil biber, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/10/kislik-patlican-tarifi.jpg}{60}{Kışlık Patlıcan}
+biber-salçası:{ayçiçek yağı, kapya biber, sivri biber, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/10/biber-salcasi-tarifi.jpg}{2}{Biber Salçası}
+kışlık-patlıcan-ve-biber:{kapya biber, patlıcan, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/11/kislik-patlican-ve-biber-tarifi.jpg}{40}{Kışlık Patlıcan ve Biber}
+dondurucu-i-çin-kışlık-taze-fasulye:{domates, yeşil fasulye}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/dondurucu-icin-kislik-taze-fasulye-tarifi.jpg}{45}{Dondurucu İçin Kışlık Taze Fasulye}
