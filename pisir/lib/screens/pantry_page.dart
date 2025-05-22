@@ -20,6 +20,9 @@ class PantryPageState extends State<PantryPage> {
   bool _isSelectionMode = false;
   Set<String> _selectedIngredients = {};
   final ScrollController _scrollController = ScrollController();
+  final TextEditingController _searchController = TextEditingController();
+  String _searchQuery = '';
+  Set<String> _selectedCategories = {};
   static const String _pantryCacheKey = 'pantry_data_cache';
   static const String _recipesCacheKey = 'recipes_data_cache';
   static const String _lastUpdateKey = 'last_update_timestamp';
@@ -33,6 +36,7 @@ class PantryPageState extends State<PantryPage> {
   @override
   void dispose() {
     _scrollController.dispose();
+    _searchController.dispose();
     super.dispose();
   }
 
@@ -329,9 +333,53 @@ class PantryPageState extends State<PantryPage> {
     }
   }
 
+  Map<String, List<String>> _getFilteredIngredients() {
+    Map<String, List<String>> filteredBySearch = _ingredients;
+    
+    // Önce arama filtresini uygula
+    if (_searchQuery.isNotEmpty) {
+      final query = _searchQuery.toLowerCase();
+      filteredBySearch = {};
+      
+      _ingredients.forEach((category, ingredients) {
+        final filteredList = ingredients.where((ingredient) {
+          return ingredient.toLowerCase().contains(query) ||
+                 category.toLowerCase().contains(query);
+        }).toList();
+
+        if (filteredList.isNotEmpty) {
+          filteredBySearch[category] = filteredList;
+        }
+      });
+    }
+
+    // Sonra kategori filtresini uygula
+    if (_selectedCategories.isNotEmpty) {
+      final filteredByCategory = <String, List<String>>{};
+      filteredBySearch.forEach((category, ingredients) {
+        if (_selectedCategories.contains(category)) {
+          filteredByCategory[category] = ingredients;
+        }
+      });
+      return filteredByCategory;
+    }
+
+    return filteredBySearch;
+  }
+
+  void _toggleCategory(String category) {
+    setState(() {
+      if (_selectedCategories.contains(category)) {
+        _selectedCategories.remove(category);
+      } else {
+        _selectedCategories.add(category);
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    final isDark = darkModeNotifier.value; // isDark değişkenini burada tanımla
+    final isDark = darkModeNotifier.value;
     if (!_isInitialized || _deviceId == null) {
       return const Scaffold(
         body: Center(
@@ -339,6 +387,8 @@ class PantryPageState extends State<PantryPage> {
         ),
       );
     }
+
+    final filteredIngredients = _getFilteredIngredients();
 
     return WillPopScope(
       onWillPop: () async {
@@ -376,55 +426,226 @@ class PantryPageState extends State<PantryPage> {
         body: _isLoading
             ? const Center(child: CircularProgressIndicator())
             : _ingredients.isEmpty
-                ? const Center(
-                    child: Text('Henüz malzeme eklenmemiş'),
-                  )
-                : ListView.builder(
-                    controller: _scrollController,
-                    itemCount: _ingredients.length,
-                    itemBuilder: (context, categoryIndex) {
-                      final category = _ingredients.keys.elementAt(categoryIndex);
-                      final ingredients = _ingredients[category]!;
-                      
-                      return Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Text(
-                              category,
-                              style: const TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
+                ? Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.kitchen_outlined,
+                          size: 80,
+                          color: Colors.grey[400],
+                        ),
+                        const SizedBox(height: 16),
+                        Text(
+                          'Henüz malzeme eklenmemiş',
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.grey[600],
+                          ),
+                        ),
+                        const SizedBox(height: 24),
+                        ElevatedButton.icon(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => AddIngredientPage(
+                                  existingIngredients: _ingredients,
+                                  onIngredientsAdded: (newIngredients) {
+                                    setState(() {
+                                      _ingredients = newIngredients;
+                                    });
+                                  },
+                                ),
                               ),
+                            );
+                          },
+                          icon: const Icon(Icons.add),
+                          label: const Text('Malzeme Ekle'),
+                          style: ElevatedButton.styleFrom(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 24,
+                              vertical: 12,
                             ),
                           ),
-                          ...ingredients.map((ingredient) => ListTile(
-                            key: Key('$category-$ingredient'),
-                            title: Text(ingredient),
-                            leading: _isSelectionMode
-                                ? Checkbox(
-                                    value: _selectedIngredients.contains('$category-$ingredient'),
-                                    onChanged: (bool? value) {
-                                      _toggleIngredientSelection(category, ingredient);
+                        ),
+                      ],
+                    ),
+                  )
+                : Column(
+                    children: [
+                      // Arama çubuğu
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: TextField(
+                          controller: _searchController,
+                          decoration: InputDecoration(
+                            hintText: 'Malzeme ara...',
+                            prefixIcon: const Icon(Icons.search),
+                            suffixIcon: _searchQuery.isNotEmpty
+                                ? IconButton(
+                                    icon: const Icon(Icons.clear),
+                                    onPressed: () {
+                                      setState(() {
+                                        _searchController.clear();
+                                        _searchQuery = '';
+                                      });
                                     },
                                   )
-                                : const Icon(Icons.kitchen),
-                            onTap: _isSelectionMode
-                                ? () {
-                                    _toggleIngredientSelection(category, ingredient);
-                                  }
                                 : null,
-                            onLongPress: () {
-                              if (!_isSelectionMode) {
-                                _toggleSelectionMode();
-                                _toggleIngredientSelection(category, ingredient);
-                              }
-                            },
-                          )).toList(),
-                        ],
-                      );
-                    },
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            filled: true,
+                            fillColor: isDark ? Colors.grey[800] : Colors.grey[100],
+                          ),
+                          onChanged: (value) {
+                            setState(() {
+                              _searchQuery = value;
+                            });
+                          },
+                        ),
+                      ),
+                      // Kategori seçici
+                      Container(
+                        height: 50,
+                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: _ingredients.length,
+                          itemBuilder: (context, index) {
+                            final category = _ingredients.keys.elementAt(index);
+                            final hasIngredients = _ingredients[category]?.isNotEmpty ?? false;
+                            
+                            return Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 4),
+                              child: FilterChip(
+                                label: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Text(category),
+                                    if (hasIngredients) ...[
+                                      const SizedBox(width: 4),
+                                      Icon(
+                                        Icons.check_circle,
+                                        size: 16,
+                                        color: _selectedCategories.contains(category)
+                                            ? Theme.of(context).primaryColor
+                                            : Colors.grey,
+                                      ),
+                                    ],
+                                  ],
+                                ),
+                                selected: _selectedCategories.contains(category),
+                                onSelected: hasIngredients ? (selected) {
+                                  _toggleCategory(category);
+                                } : null,
+                                backgroundColor: hasIngredients
+                                    ? (_selectedCategories.contains(category)
+                                        ? Theme.of(context).primaryColor.withOpacity(0.1)
+                                        : null)
+                                    : Colors.grey[200],
+                              ),
+                            );
+                          },
+                        ),
+                      ),
+                      // Malzeme listesi
+                      Expanded(
+                        child: filteredIngredients.isEmpty
+                            ? Center(
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Icon(
+                                      Icons.search_off,
+                                      size: 64,
+                                      color: Colors.grey[400],
+                                    ),
+                                    const SizedBox(height: 16),
+                                    Text(
+                                      'Arama sonucu bulunamadı',
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        color: Colors.grey[600],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )
+                            : ListView.builder(
+                                controller: _scrollController,
+                                itemCount: filteredIngredients.length,
+                                itemBuilder: (context, categoryIndex) {
+                                  final category = filteredIngredients.keys.elementAt(categoryIndex);
+                                  final ingredients = filteredIngredients[category]!;
+                                  
+                                  return Card(
+                                    margin: const EdgeInsets.symmetric(
+                                      horizontal: 8,
+                                      vertical: 4,
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.all(12.0),
+                                          child: Row(
+                                            children: [
+                                              Icon(
+                                                _getCategoryIcon(category),
+                                                color: Theme.of(context).primaryColor,
+                                              ),
+                                              const SizedBox(width: 8),
+                                              Text(
+                                                category,
+                                                style: const TextStyle(
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        const Divider(height: 1),
+                                        ...ingredients.map((ingredient) => ListTile(
+                                          key: Key('$category-$ingredient'),
+                                          title: Text(ingredient),
+                                          leading: _isSelectionMode
+                                              ? Checkbox(
+                                                  value: _selectedIngredients.contains('$category-$ingredient'),
+                                                  onChanged: (bool? value) {
+                                                    _toggleIngredientSelection(category, ingredient);
+                                                  },
+                                                )
+                                              : const Icon(Icons.kitchen),
+                                          trailing: _isSelectionMode
+                                              ? null
+                                              : IconButton(
+                                                  icon: const Icon(Icons.delete_outline),
+                                                  onPressed: () {
+                                                    // Silme fonksiyonu eklenecek
+                                                  },
+                                                ),
+                                          onTap: _isSelectionMode
+                                              ? () {
+                                                  _toggleIngredientSelection(category, ingredient);
+                                                }
+                                              : null,
+                                          onLongPress: () {
+                                            if (!_isSelectionMode) {
+                                              _toggleSelectionMode();
+                                              _toggleIngredientSelection(category, ingredient);
+                                            }
+                                          },
+                                        )).toList(),
+                                      ],
+                                    ),
+                                  );
+                                },
+                              ),
+                      ),
+                    ],
                   ),
         floatingActionButton: _isSelectionMode
             ? FloatingActionButton(
@@ -448,11 +669,34 @@ class PantryPageState extends State<PantryPage> {
                     ),
                   );
                 },
-                backgroundColor: Colors.purple[100],
+                backgroundColor: Theme.of(context).primaryColor,
                 child: const Icon(Icons.add),
               ),
       ),
     );
+  }
+
+  IconData _getCategoryIcon(String category) {
+    switch (category.toLowerCase()) {
+      case 'sebze':
+        return Icons.eco;
+      case 'meyve':
+        return Icons.apple;
+      case 'et':
+        return Icons.restaurant;
+      case 'süt ürünleri':
+        return Icons.water_drop;
+      case 'bakliyat':
+        return Icons.grain;
+      case 'baharat':
+        return Icons.spa;
+      case 'unlu mamüller':
+        return Icons.bakery_dining;
+      case 'içecek':
+        return Icons.local_drink;
+      default:
+        return Icons.category;
+    }
   }
 }
 
