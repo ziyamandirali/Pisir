@@ -8,6 +8,7 @@ import 'screens/login_page.dart';
 import 'screens/main_screen.dart';
 import 'screens/recipe_detail_page.dart';
 import 'screens/splash_screen.dart';
+import 'animations/page_transitions.dart';
 
 final ValueNotifier<bool> darkModeNotifier = ValueNotifier(false);
 
@@ -104,13 +105,18 @@ class MyApp extends StatelessWidget {
             ),
           ),
           home: const SplashScreen(),
-          routes: {
-            '/login': (context) => const LoginPage(),
-            '/main': (context) => const MainScreen(),
-            '/recipeDetail': (context) {
-              final recipe = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
-              return RecipeDetailPage(recipe: recipe);
-            },
+          onGenerateRoute: (settings) {
+            switch (settings.name) {
+              case '/login':
+                return PageTransitions.slideTransition(const LoginPage());
+              case '/main':
+                return PageTransitions.slideTransition(const MainScreen());
+              case '/recipeDetail':
+                final recipe = settings.arguments as Map<String, dynamic>;
+                return PageTransitions.slideTransition(RecipeDetailPage(recipe: recipe));
+              default:
+                return PageTransitions.slideTransition(const SplashScreen());
+            }
           },
         );
       },

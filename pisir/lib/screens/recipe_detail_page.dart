@@ -269,29 +269,47 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  if (widget.recipe['imageUrl'] != null)
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(8),
-                      child: Image.network(
-                        _imageUrl ?? widget.recipe['imageUrl'],
-                        width: double.infinity,
-                        height: 200,
+                  Container(
+                    width: double.infinity,
+                    height: 250,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage(_imageUrl ?? widget.recipe['imageUrl'] ?? ''),
                         fit: BoxFit.cover,
-                        errorBuilder: (context, error, stackTrace) {
-                          return Container(
-                            width: double.infinity,
-                            height: 200,
-                            color: Colors.grey[300],
-                            child: const Icon(
-                              Icons.image_not_supported,
-                              size: 50,
-                              color: Colors.grey,
-                            ),
-                          );
-                        },
                       ),
                     ),
-                  const SizedBox(height: 16),
+                  ),
+                  
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        _buildTimeInfo(
+                          Icons.timer_outlined,
+                          'Hazırlık Süresi',
+                          '${_prepTime ?? widget.recipe['prepTime'] ?? 0} dk',
+                        ),
+                        _buildTimeInfo(
+                          Icons.restaurant,
+                          'Pişirme Süresi',
+                          '${_cookTime ?? widget.recipe['cookTime'] ?? 0} dk',
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Text(
+                      _title ?? widget.recipe['title'] ?? '',
+                      style: const TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+
                   Builder( // Used Builder to easily insert debugPrint before Text
                     builder: (context) {
                       final currentDisplayDescription = displayDescription;
@@ -330,91 +348,38 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
                     _formatInstructionsText(_instructions ?? widget.recipe['instructions']),
                     style: const TextStyle(fontSize: 16),
                   ),
-                  const SizedBox(height: 24),
-                  if (widget.recipe['cookingTime'] != null) ...[
-                    const Text(
-                      'Pişirme Süresi',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      '${_cookTime ?? widget.recipe['cookingTime']} dakika',
-                      style: const TextStyle(fontSize: 16),
-                    ),
-                  ],
-                  if (widget.recipe['servings'] != null) ...[
-                    const SizedBox(height: 24),
-                    const Text(
-                      'Porsiyon',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      '${widget.recipe['servings']} kişilik',
-                      style: const TextStyle(fontSize: 16),
-                    ),
-                  ],
-                  const SizedBox(height: 16),
-                  if (_prepTime != null || _cookTime != null)
-                    Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: BoxDecoration(
-                        color: Colors.grey[100],
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          if (_prepTime != null) ...[
-                            Row(
-                              children: [
-                                const Icon(
-                                  Icons.timer_outlined,
-                                  size: 20,
-                                  color: Colors.grey,
-                                ),
-                                const SizedBox(width: 8),
-                                Text(
-                                  'Hazırlık süresi: ${_prepTime ?? widget.recipe['prepTime']} dakika',
-                                  style: const TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(height: 8),
-                          ],
-                          if (_cookTime != null)
-                            Row(
-                              children: [
-                                const Icon(
-                                  Icons.restaurant,
-                                  size: 20,
-                                  color: Colors.grey,
-                                ),
-                                const SizedBox(width: 8),
-                                Text(
-                                  'Pişirme süresi: ${_cookTime ?? widget.recipe['cookTime']} dakika',
-                                  style: const TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                              ],
-                            ),
-                        ],
-                      ),
-                    ),
                 ],
               ),
             ),
+    );
+  }
+
+  Widget _buildTimeInfo(IconData icon, String label, String value) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final textColor = isDark ? Colors.white70 : Colors.black87;
+    final iconColor = isDark ? Colors.white60 : Colors.black54;
+
+    return Column(
+      children: [
+        Icon(icon, size: 24, color: iconColor),
+        const SizedBox(height: 8),
+        Text(
+          label,
+          style: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+            color: textColor,
+          ),
+        ),
+        const SizedBox(height: 4),
+        Text(
+          value,
+          style: TextStyle(
+            fontSize: 14,
+            color: textColor,
+          ),
+        ),
+      ],
     );
   }
 }
