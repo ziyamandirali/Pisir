@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:convert';
+import 'dart:math';  // Rastgele sayı üretmek için
 import '../main.dart';
 
 class HomePage extends StatefulWidget {
@@ -21,12 +22,14 @@ class _HomePageState extends State<HomePage> {
   Map<String, List<String>> _pantryIngredients = {};
   List<Map<String, dynamic>> _localRecipes = []; // Yerel tarif verileri
   int _currentRecipeIndex = 0; // İşlenecek tarif indeksi
+  int _randomStartIndex = 0;  // Rastgele başlangıç indeksi
   
   final int _maxTotalRecipes = 50; // Maksimum eşleşecek tarif sayısı
   final int _initialDisplayCount = 20; // Başlangıçta gösterilecek tarif sayısı
   final int _loadMoreCount = 10; // Daha fazla butonu ile yüklenecek tarif sayısı
   final int _batchSize = 50; // Bir seferde işlenecek tarif sayısı
   final ScrollController _scrollController = ScrollController();
+  final Random _random = Random();  // Random nesnesi
 
   @override
   void initState() {
@@ -47,8 +50,8 @@ class _HomePageState extends State<HomePage> {
     });
     if (_deviceId != null) {
       await _loadPantryIngredients();
-      await _loadLocalRecipes(); // Yerel tarifleri yükle
-      await _matchLocalRecipes(); // Yerel tarifleri karşılaştır
+      await _loadLocalRecipesWithRandomStart(); // Eski _loadLocalRecipes yerine yeni fonksiyon
+      await _matchLocalRecipes();
     }
   }
 
@@ -80,22 +83,28 @@ class _HomePageState extends State<HomePage> {
   }
   
   // YENİ FONKSIYON: Yerel tarif dosyasını oku
-  Future<void> _loadLocalRecipes() async {
+  Future<void> _loadLocalRecipesWithRandomStart() async {
     setState(() {
       _isLoading = true;
       _matchingRecipes = [];
+      _localRecipes = [];
     });
     
     try {
       // recipes.txt dosyasını oku
       final String data = await rootBundle.loadString('assets/recipes.txt');
-      final List<String> lines = data.split('\n');
+      final List<String> lines = data.split('\n').where((line) => line.trim().isNotEmpty).toList();
+      
+      // Rastgele bir başlangıç indeksi belirle
+      _randomStartIndex = _random.nextInt(lines.length);
+      debugPrint('PIŞIR_DEBUG: Rastgele başlangıç indeksi: $_randomStartIndex / ${lines.length}');
       
       _localRecipes = [];
       
-      // Her satırı ayrıştır
-      for (String line in lines) {
-        if (line.trim().isEmpty) continue;
+      // Rastgele indeksten başlayarak tüm satırları işle
+      for (int i = 0; i < lines.length; i++) {
+        int currentIndex = (_randomStartIndex + i) % lines.length;  // Dairesel erişim
+        String line = lines[currentIndex];
         
         try {
           // Format: document_id:{ingredientsOnly}{imageUrl}{prepTime+cookTime}{title}
@@ -136,6 +145,7 @@ class _HomePageState extends State<HomePage> {
       
     } catch (e) {
       // Dosya okuma hatası
+      debugPrint('PIŞIR_DEBUG: Dosya okuma hatası: $e');
     }
   }
   
@@ -251,6 +261,21 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
+  // Tarifleri yenileme fonksiyonu - rastgele başlangıç noktası ile
+  Future<void> _refreshRecipes() async {
+    if (_isLoading) return;  // Zaten yükleme yapılıyorsa işlemi engelle
+    
+    setState(() {
+      _isLoading = true;
+      _matchingRecipes = [];
+      _displayedRecipes = [];
+      _currentRecipeIndex = 0;
+    });
+    
+    await _loadLocalRecipesWithRandomStart();
+    await _matchLocalRecipes();
+  }
+
   @override
   Widget build(BuildContext context) {
     final isDark = darkModeNotifier.value;
@@ -266,6 +291,17 @@ class _HomePageState extends State<HomePage> {
           width: 115,
           height: 115,
         ),
+        actions: [
+          // Yenile butonu
+          IconButton(
+            icon: Icon(
+              Icons.refresh, 
+              color: isDark ? Colors.white : Colors.black54,
+            ),
+            tooltip: 'Tarifleri Yenile',
+            onPressed: _refreshRecipes,
+          ),
+        ],
       ),
       body: _isLoading 
           ? const Center(child: CircularProgressIndicator()) // Tariflerin ilk yüklenmesi
