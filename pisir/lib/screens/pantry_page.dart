@@ -524,16 +524,6 @@ class PantryPageState extends State<PantryPage> {
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
                                     Text(category),
-                                 /*   if (hasIngredients) ...[
-                                      const SizedBox(width: 4),
-                                      Icon(
-                                        Icons.check_circle,
-                                        size: 16,
-                                        color: _selectedCategories.contains(category)
-                                            ? Theme.of(context).primaryColor
-                                            : Colors.grey,
-                                      ),
-                                    ],*/
                                   ],
                                 ),
                                 selected: _selectedCategories.contains(category),
@@ -592,10 +582,11 @@ class PantryPageState extends State<PantryPage> {
                                           padding: const EdgeInsets.all(12.0),
                                           child: Row(
                                             children: [
-                                              Icon(
+                                              /*Icon(
                                                 _getCategoryIcon(category),
                                                 color: Theme.of(context).colorScheme.primary,
-                                              ),
+                                              
+                                              )*/
                                               const SizedBox(width: 8),
                                               Text(
                                                 category,
@@ -611,22 +602,15 @@ class PantryPageState extends State<PantryPage> {
                                         ...ingredients.map((ingredient) => ListTile(
                                           key: Key('$category-$ingredient'),
                                           title: Text(ingredient),
-                                          leading: _isSelectionMode
-                                              ? Checkbox(
-                                                  value: _selectedIngredients.contains('$category-$ingredient'),
-                                                  onChanged: (bool? value) {
-                                                    _toggleIngredientSelection(category, ingredient);
-                                                  },
-                                                )
-                                              : const Icon(Icons.kitchen),
+                                          leading: const Icon(Icons.kitchen),
                                           trailing: _isSelectionMode
-                                              ? null
-                                              : IconButton(
-                                                  icon: const Icon(Icons.delete_outline),
-                                                  onPressed: () {
-                                                    // Silme fonksiyonu eklenecek
-                                                  },
-                                                ),
+                                              ? Checkbox(
+                                                value: _selectedIngredients.contains('$category-$ingredient'),
+                                                onChanged: (bool? value) {
+                                                  _toggleIngredientSelection(category, ingredient);
+                                                },
+                                              )
+                                              : null,
                                           onTap: _isSelectionMode
                                               ? () {
                                                   _toggleIngredientSelection(category, ingredient);

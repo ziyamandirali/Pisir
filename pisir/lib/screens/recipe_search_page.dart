@@ -246,7 +246,7 @@ class _RecipeSearchPageState extends State<RecipeSearchPage> {
             padding: const EdgeInsets.all(16.0),
             child: TextField(
               controller: _searchController,
-              autofocus: true, // Sayfa açıldığında otomatik odaklan
+              autofocus: false, // Yalnızca bara tıklandığında odaklan
               decoration: InputDecoration(
                 hintText: 'Bulmak istediğiniz tarifi yazın...',
                 prefixIcon: const Icon(Icons.search),
