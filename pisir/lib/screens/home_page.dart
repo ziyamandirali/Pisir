@@ -30,10 +30,10 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   bool _categoriesLoading = false; // Kategoriler yüklenirken
   TabController? _tabController; // TabBar controller
   
-  final int _maxTotalRecipes = 50; // Maksimum eşleşecek tarif sayısı
+  final int _maxTotalRecipes = 40; // Maksimum eşleşecek tarif sayısı
   final int _initialDisplayCount = 20; // Başlangıçta gösterilecek tarif sayısı
   final int _loadMoreCount = 10; // Daha fazla butonu ile yüklenecek tarif sayısı
-  final int _batchSize = 50; // Bir seferde işlenecek tarif sayısı
+  final int _batchSize = 40; // Bir seferde işlenecek tarif sayısı
   final ScrollController _scrollController = ScrollController();
   final Random _random = Random();  // Random nesnesi
 
@@ -501,7 +501,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
           isScrollable: true, // Horizontal scroll için
           labelColor: isDark ? Colors.white : Colors.black,
           unselectedLabelColor: isDark ? Colors.grey[400] : Colors.grey[600],
-          indicatorColor: Colors.blue,
+          indicatorColor: Theme.of(context).colorScheme.primary,
           tabs: [
             const Tab(text: 'Tümü'),
             ..._categories.map((category) => Tab(text: category)),

@@ -524,7 +524,7 @@ class PantryPageState extends State<PantryPage> {
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
                                     Text(category),
-                                    if (hasIngredients) ...[
+                                 /*   if (hasIngredients) ...[
                                       const SizedBox(width: 4),
                                       Icon(
                                         Icons.check_circle,
@@ -533,7 +533,7 @@ class PantryPageState extends State<PantryPage> {
                                             ? Theme.of(context).primaryColor
                                             : Colors.grey,
                                       ),
-                                    ],
+                                    ],*/
                                   ],
                                 ),
                                 selected: _selectedCategories.contains(category),
@@ -594,7 +594,7 @@ class PantryPageState extends State<PantryPage> {
                                             children: [
                                               Icon(
                                                 _getCategoryIcon(category),
-                                                color: Theme.of(context).primaryColor,
+                                                color: Theme.of(context).colorScheme.primary,
                                               ),
                                               const SizedBox(width: 8),
                                               Text(
@@ -669,7 +669,7 @@ class PantryPageState extends State<PantryPage> {
                     ),
                   );
                 },
-                backgroundColor: Theme.of(context).primaryColor,
+                backgroundColor: Theme.of(context).colorScheme.primary,
                 child: const Icon(Icons.add),
               ),
       ),
