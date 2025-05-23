@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:provider/provider.dart';
+// import 'package:firebase_auth/firebase_auth.dart'; // Kullanılmıyorsa kaldırılabilir
+// import 'package:provider/provider.dart'; // Kullanılmıyorsa kaldırılabilir
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'screens/login_page.dart';
@@ -17,18 +18,18 @@ void main() async {
   await Firebase.initializeApp();
   final prefs = await SharedPreferences.getInstance();
   darkModeNotifier.value = prefs.getBool('is_dark_mode') ?? false;
-  
+
   // Firestore önbelleğini yapılandır
-  FirebaseFirestore.instance.settings = Settings(
+  FirebaseFirestore.instance.settings = const Settings(
     persistenceEnabled: true,
     cacheSizeBytes: Settings.CACHE_SIZE_UNLIMITED,
   );
-  
+
   // Firestore'u offline ilk modunda çalıştır
   try {
     await FirebaseFirestore.instance.disableNetwork();
     debugPrint('PIŞIR_DEBUG: Firestore network disabled, using offline mode first');
-    
+
     // 3 saniye sonra network'ü tekrar aktifleştir
     Future.delayed(const Duration(seconds: 3), () async {
       try {
@@ -41,7 +42,7 @@ void main() async {
   } catch (e) {
     debugPrint('PIŞIR_DEBUG: Error configuring Firestore offline mode: $e');
   }
-  
+
   runApp(const MyApp());
 }
 
@@ -90,14 +91,14 @@ class MyApp extends StatelessWidget {
               unselectedItemColor: isDark ? Colors.grey[400] : Colors.grey[600],
             ),
             switchTheme: SwitchThemeData(
-              thumbColor: MaterialStateProperty.resolveWith<Color>((Set<MaterialState> states) {
-                if (states.contains(MaterialState.selected)) {
+              thumbColor: WidgetStateProperty.resolveWith<Color>((Set<WidgetState> states) {
+                if (states.contains(WidgetState.selected)) {
                   return Colors.deepPurple;
                 }
                 return isDark ? Colors.grey[400]! : Colors.grey[600]!;
               }),
-              trackColor: MaterialStateProperty.resolveWith<Color>((Set<MaterialState> states) {
-                if (states.contains(MaterialState.selected)) {
+              trackColor: WidgetStateProperty.resolveWith<Color>((Set<WidgetState> states) {
+                if (states.contains(WidgetState.selected)) {
                   return isDark ? Colors.deepPurple.withOpacity(0.5) : Colors.deepPurple.withOpacity(0.3);
                 }
                 return isDark ? Colors.grey[700]! : Colors.grey[300]!;
