@@ -631,31 +631,33 @@ class PantryPageState extends State<PantryPage> {
                       ),
                     ],
                   ),
-        floatingActionButton: _isSelectionMode
-            ? FloatingActionButton(
-                onPressed: _selectedIngredients.isEmpty ? null : _deleteSelectedIngredients,
-                backgroundColor: _selectedIngredients.isEmpty ? Colors.grey : Colors.red,
-                child: const Icon(Icons.delete),
-              )
-            : FloatingActionButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => AddIngredientPage(
-                        existingIngredients: _ingredients,
-                        onIngredientsAdded: (newIngredients) {
-                          setState(() {
-                            _ingredients = newIngredients;
-                          });
-                        },
-                      ),
-                    ),
-                  );
-                },
-                backgroundColor: Theme.of(context).colorScheme.primary,
-                child: const Icon(Icons.add),
-              ),
+        floatingActionButton: _ingredients.isEmpty
+            ? null
+            : _isSelectionMode
+                ? FloatingActionButton(
+                    onPressed: _selectedIngredients.isEmpty ? null : _deleteSelectedIngredients,
+                    backgroundColor: _selectedIngredients.isEmpty ? Colors.grey : Colors.red,
+                    child: const Icon(Icons.delete),
+                  )
+                : FloatingActionButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => AddIngredientPage(
+                            existingIngredients: _ingredients,
+                            onIngredientsAdded: (newIngredients) {
+                              setState(() {
+                                _ingredients = newIngredients;
+                              });
+                            },
+                          ),
+                        ),
+                      );
+                    },
+                    backgroundColor: Theme.of(context).colorScheme.primary,
+                    child: const Icon(Icons.add),
+                  ),
       ),
     );
   }
