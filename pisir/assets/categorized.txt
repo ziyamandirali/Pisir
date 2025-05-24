@@ -1,1078 +1,555 @@
-
 SEBZELER
-
-lahana
-
-kereviz
-
-havuç
-
-sarımsak
-
-pazı
-
-soğan
-
-kabak
-
-mısır
-
-enginar
-
-garnitür
-
-karnabahar
-
-taze soğan
-
-sivri biber
-
-domates
-
-patlıcan
-
-kapya biber
-
-yeşil biber
-
-marul
-
-kırmızı soğan
-
-patates
-
-ıspanak
-
+acur
+arpacık soğan
+asma yaprağı
+bal kabağı
+bamya
+biberiye
+bostan patlıcanı
+brokoli
+cin biberi
+çarliston biber
 çeri domates
-
+ebegümeci
+enginar
+frenk soğanı
+garnitür
+havuç
+ısırgan otu
+ıspanak
+istiridye mantarı
+kabak
+kabak çiçeği
+kapya biber
+karalahana
+karnabahar
+kereviz
+kestane mantarı
 kırmızı biber
-
-salatalık
-
-mor lahana
-
-roka
-
-turp
-
+kırmızı soğan
 kurutulmuş domates
-
+kuru soğan
+kuşkonmaz
+kuzu göbeği mantarı
+lahana
+madımak
 mantar
-
+marul
+mısır
+mor havuç
+mor lahana
+pancar
+patates
+patlıcan
+pazı
+pırasa
+porçini mantarı
+rezene
+roka
+salatalık
+sarı biber
+sarı domates
+sarımsak
+semizotu
+sivri biber
+siyah havuç
+soğan
+süs biberi
+şalgam
+tatlı patates
+taze sarımsak
+taze soğan
+tere
+trüf mantarı
+turp
+yaban mantarı
+yer elması
+yeşil biber
+yeşil domates
 yeşil fasulye
 
-pırasa
-
-sarı biber
-
-arpacık soğan
-
-bostan patlıcanı
-
-brokoli
-
-pancar
-
-kuşkonmaz
-
-semizotu
-
-çarliston biber
-
-bal kabağı
-
-bamya
-
-tatlı patates
-
-asma yaprağı
-
-frenk soğanı
-
-siyah havuç
-
-mor havuç
-
-ebegümeci
-
-karalahana
-
-porçini mantarı
-
-rezene 
-
-kabak çiçeği
-
-yer elması
-
-kestane mantarı
-
-yeşil domates
-
-istiridye mantarı
-
-süs biberi
-
-ısırgan otu
-
-trüf mantarı
-
-tere
-
-cin biberi
-
-sarı domates
-
-madımak
-
-yaban mantarı
-
-şalgam 
-
-kuzu göbeği mantarı
-
-taze sarımsak
-
-acur
-
 MEYVELER
-
-portakal
-
-muz
-
-avokado
-
-kayısı
-
-limon
-
-çilek
-
-elma
-
-frambuaz
-
-cennet hurması
-
-nar
-
-vişne
-
-ananas
-
-böğürtlen
-
-incir
-
-ayva
-
-armut
-
-kuşburnu 
-
-karadut
-
-erik
-
-karpuz
-
-kavun
-
-şeftali
-
-cranberry
-
-yaban mersini
-
-lime
-
-siyah üzüm
-
-kivi
-
-yeşil elma
-
-kızılcık
-
-üzüm
-
-mürdüm eriği
-
-greyfurt
-
-nektarin
-
-mandalina
-
-kiraz
-
-siyah erik
-
-turunç
-
-kumkuat
-
 alıç
-
-mango
-
+ananas
+armut
+avokado
+ayva
+böğürtlen
+cennet hurması
+cranberry
 çağla
-
+çilek
+elma
+erik
+frambuaz
+greyfurt
+incir
+karadut
+karpuz
+kavun
+kayısı
+kırmızı erik
+kivi
+kumkuat
+kuşburnu
+lime
+limon
+mandalina
+mango
+muz
+mürdüm eriği
+nar
+nektarin
+portakal
 sarı elma
-
+siyah erik
+siyah üzüm
+şeftali
+turunç
+üzüm
+vişne
+yaban mersini
 yenidünya
-
+yeşil elma
 zeytin
 
 BAKLİYAT
-
-pirinç
-
+arpa şehriye
+bakla
+barbunya
+bezelye
+börülce
+buğday
+bulgur
+karabuğday
+kırmızı mercimek
+kinoa
+kuru fasulye
+maş fasulyesi
+meksika fasulyesi
 nohut
-
+pirinç
+sarı mercimek
+siyez bulguru
+siyah fasulye
+siyah mercimek
+siyah pirinç
+tofu
+yarma buğday
 yeşil mercimek
 
-bakla
-
-arpa şehriye
-
-meksika fasulyesi
-
-kırmızı mercimek
-
-bezelye
-
-barbunya
-
-maş fasulyesi
-
-kuru fasulye
-
-börülce
-
-tofu
-
-siyah pirinç
-
-siyah mercimek
-
-siyah fasulye
-
-sarı mercimek
-
-kinoa
-
-buğday
-
-karabuğday 
-
-yarma buğday
-
-siyez bulguru
-
-bulgur
-
-ET ÜRÜNLERİ  
-
-nugget
-
+ET ÜRÜNLERİ
 dana füme
-
+hindi salam
+jambon
+kuru et
+macar salam
+nugget
+pastırma
+pepperoni
+piliç salam
+sosis
+sucuk
 tavuk füme
 
-jambon
-
-macar salam
-
-piliç salam
-
-hindi salam
-
-pepperoni
-
-sucuk
-
-pastırma
-
-sosis
-
-kuru et
-
 SÜT VE SÜT ÜRÜNLERİ
-
-süt
-
-labne		
-
-krema			
-
-parmesan
-
-mozzarella
-
-mascarpone
-
-burger peyniri
-
-süt tozu
-
-rokfor
-
-peynir altı suyu
-
-ekşi krema
-
-kefir
-
 beyaz peynir
-
-kaşar peyniri
-
-lor peyniri
-
-süzme yoğurt
-
-keçi peyniri
-
-hellim
-
-tulum peyniri
-
-ezine peyniri
-
-hatay peyniri
-
-dil peyniri
-
-krem peynir
-
-örgü peyniri
-
-çökelek
-
-otlu peynir
-
-telli peynir
-
+burger peyniri
 çeçil peyniri
-
-kolot peyniri
-
-üçgen peynir
-
+çökelek
+dil peyniri
+ekşi krema
+ezine peyniri
 gravyer peyniri
-
-tulum loru
-
+hatay peyniri
+hellim
 isli peynir
-
+kaşar peyniri
 kaymak
-
+keçi peyniri
+kefir
+kolot peyniri
+krema
+krem peynir
+labne
+lor peyniri
+mascarpone
+mozzarella
+otlu peynir
+örgü peyniri
+parmesan
+peynir
+peynir altı suyu
+rokfor
+süt
+süt tozu
+süzme yoğurt
+telli peynir
+tulum loru
+tulum peyniri
+üçgen peynir
 yoğurt
 
-peynir 
-
-KIRMIZI ET 
-
-dana kıyma
-
-kuzu eti
-
-dana eti
-
-kuzu gerdan
-
-dana biftek
-
-dana kavurma
-
-dana but
-
-dana döş
-
-kuzu döş
-
-kuzu incik
-
-kuzu kıyma
-
-dana bonfile
-
-dana ciğeri
-
-kuzu kaburga
-
-dana kontrfile
-
+KIRMIZI ET
 dana antrikot
-
-kuzu but
-
-kuzu pirzola
-
-kuzu kol
-
-dana tranç
-
-kuzu boşluk
-
-kuzu bonfile
-
-dana pirzola
-
-işkembe
-
 dana bağırsağı
-
-dana kaburga
-
+dana biftek
+dana bonfile
+dana but
+dana ciğeri
+dana döş
+dana eti
 dana incik
-
-kuzu böbrek
-
+dana kaburga
+dana kavurma
+dana kıyma
+dana kontrfile
+dana pirzola
+dana tranç
+işkembe
 kokoreç
-
+kuzu bonfile
+kuzu boşluk
+kuzu but
+kuzu böbrek
+kuzu döş
+kuzu eti
+kuzu gerdan
+kuzu incik
+kuzu kaburga
+kuzu kıyma
+kuzu kol
+kuzu pirzola
+kuzu yüreği
+mumbar
 uykuluk
 
-kuzu yüreği
-
-mumbar
-
 KÜMES HAYVANLARI
-
-tavuk göğsü
-
-hindi eti
-
-tavuk bonfile
-
-tavuk baget
-
 bütün tavuk
-
-tavuk eti
-
-tavuk kanat
-
-tavuk kıyma
-
+hindi eti
+hindi göğsü
+hindi pirzola
+ördek
+ördek eti
+tavuk baget
+tavuk bonfile
 tavuk but
-
+tavuk eti
+tavuk fileto
+tavuk göğsü
+tavuk incik
+tavuk kalça
+tavuk kanat
+tavuk kelebek
+tavuk kıyma
 tavuk pirzola
 
-tavuk kalça
-
-tavuk fileto
-
-hindi göğsü
-
-ördek
-
-tavuk incik
-
-tavuk kelebek
-
-hindi pirzola
-
-ördek eti
-
 DENİZ ÜRÜNLERİ
-
-palamut
-
-somon
-
-ton balığı
-
+ahtapot
+alabalık
+ançuez
+barbun balığı
+çinekop
+çipura
+dil balığı
+hamsi
+istavrit
+kalamar
 karides
-
 levrek
-
+lüfer
+mezgit
+midye
+palamut
+sardalya
+somon
+sübye
+ton balığı
 uskumru
 
-kalamar
-
-ahtapot
-
-midye
-
-hamsi
-
-istavrit
-
-çipura
-
-mezgit
-
-sardalya
-
-dil balığı
-
-çinekop
-
-barbun balığı
-
-alabalık
-
-ançuez
-
-sübye
-
-lüfer
-
-BAHARATLAR 
-
-mahlep
-
-nane
-
-hindistan cevizi 
-
-pul biber
-
-karabiber
-
+BAHARATLAR
+biberiye
+beyaz biber
+cajun baharatı
+chili biberi
+çemen
+çiğ köfte baharatı
+çörek otu
+defne yaprağı
 dereotu
-
-toz biber
-
-zencefil
-
-tarçın
-
-muskat
-
+fesleğen
+hardal tohumu
+haspir
+haşhaş
+haşhaş tohumu
+hindistan cevizi
+isot
+kakao çekirdeği
+kakule
+karabiber
 karanfil
-
-haşhaş 
-
 kekik
-
-maydanoz
-
 kimyon
-
+kimyon tohumu
+kişniş
+kişniş tohumu
+köri
+lavanta
+mahlep
+maydanoz
+muskat
+nane
+paprika
+pul biber
+reyhan
+rezene tohumu
+safran
+susam
+taco baharatı
+tarçın
+tarhun
+toz biber
+yenibahar
+yıldız anason
+zahter
+zencefil
 zerdeçal
 
-biberiye		
-
-çörek otu
-
-haspir
-
-kakule
-
-yıldız anason		
-
-köri
-
-susam
-
-fesleğen			
-
-defne yaprağı		
-
-hardal tohumu
-
-cajun baharatı		
-
-isot
-
-yenibahar
-
-paprika
-
-reyhan
-
-chili biberi
-
-kişniş
-
-tarhun
-
-zahter
-
-safran
-
-kişniş tohumu
-
-haşhaş tohumu
-
-rezene tohumu	
-
-beyaz biber
-
-kimyon tohumu
-
-çemen
-			
-lavanta 
-
-taco baharatı
-
-çiğ köfte baharatı		
-
-kakao çekirdeği
-
 KATKI MADDELERİ
-
+bulyon
+et suyu
+jelatin
 kabartma tozu
-
 kakao
-
+karbonat
+kemik suyu
+konserve menemen
+lavanta aroması
+limon tuzu
+maya
+tavuk suyu
 vanilya
 
-maya
-
-bulyon
-
-karbonat
-
-limon tuzu
-
-jelatin
-
-lavanta aroması
-
-et suyu
-
-tavuk suyu
-
-kemik suyu
-
-konserve menemen
-
 UN VE TAHIL ÜRÜNLERİ
-
-nişasta
-
-bisküvi
-
-milföy
-
-irmik
-
-yulaf unu
-
-erişte
-
-yulaf
-
-pide
-
-mısır unu
-
-makarna
-
-galeta unu
-
-yufka
-
-tost ekmeği
-
-tortilla
-
-ekmek 	
-
-lavaş
-
-burgu makarna
-
+bazlama
 bebe bisküvisi
-
+bisküvi
+boncuk makarna
+burgu makarna
+burger ekmeği
+cips
+çavdar unu
+ekmek
+erişte
+fiyonk makarna
+galeta unu
+granola
+hamburger ekmeği
+kahvaltılık gevrek
+karabuğday unu
+kelebek makarna
+köy ekmeği
+kraker
+külah
+kuskus
+lavaş
+lazanya
+makarna
+mantı
+milföy
+mısır ekmeği
+mısır irmiği
+mısır unu
+nişasta
+noodle
+oreo
+paccheri makarna
+panko
+pide
+pirinç patlağı
+pirinç unu
+pretzel
+sandviç ekmeği
+simit
+spagetti
+tam buğday ekmeği
+tarhana
+tel şehriye
+tortellini
+tortilla
+tost ekmeği
+trabzon ekmeği
+yıldız şehriye
+yufka
+yulaf
+yulaf ezmesi
+yulaf kepeği
+yulaf unu
 yüksük makarna
 
-pirinç unu
-
-spagetti
-
-tarhana
-
-tel şehriye
-
-kuskus
-
-çavdar unu
-
-noodle
-
-külah
-
-cips
-
-lazanya
-
-oreo
-
-kahvaltılık gevrek
-
-granola
-
-yulaf ezmesi
-
-burger ekmeği
-
-köy ekmeği
-
-panko
-
-tam buğday ekmeği
-
-
-
-hamburger ekmeği
-
-mısır ekmeği
-
-kelebek makarna
-
-mantı
-
-karabuğday unu
-
-yıldız şehriye
-
-boncuk makarna
-
-mısır irmiği
-
-fiyonk makarna
-
-pirinç patlağı
-
-bazlama
-
-paccheri makarna
-
-tortellini
-
-pretzel
-
-kraker
-
-trabzon ekmeği
-
-sandviç ekmeği
-
-yulaf kepeği
-
-simit
-
 YAĞLAR
-
+ayçiçek yağı
+hindistan cevizi yağı
+iç yağı
+kuyruk yağı
 margarin
-
+mısırözü yağı
+pamuk yağı
+sade yağ
+sarı yağ
 sıvı yağ
-
+susam yağı
+tereyağı
+trüf yağı
 zeytinyağı
 
-sade yağ
-
-ayçiçek yağı
-
-hindistan cevizi yağı
-
-susam yağı
-
-kuyruk yağı
-
-iç yağı
-
-mısırözü yağı
-
-trüf yağı
-
-pamuk yağı
-
-tereyağı
-
 TURŞULAR
-
-kornişon
-
-kapari
-
-lahana turşusu
-
+biber turşusu
+havuç turşusu
 jalapeno turşusu
-
+kapari
+kornişon
+lahana turşusu
 pancar turşusu
 
-havuç turşusu
-
-biber turşusu
-
-SOSLAR VE SİRKELER 
-
-domates salçası
-
-mayonez
-
-hardal
-
-sarımsak sosu
-
-nar ekşisi
-
-elma sirkesi
-
-üzüm sirkesi
-
-biber salçası
-
-ketçap
-
-soya sosu	
-
-balzamik sirke
-
-domates sosu
-
-pesto sos
-
-demi glace sos
-
-barbekü sos
-
-frambuaz sos
-
-paprika sos
-
-beyaz sirke
-
-sweet chili sos
-
-sarımsaklı mayonez
-
-sumak ekşisi
-
+SOSLAR VE SİRKELER
 acı sos
-
-ranch sos
-
 acuka
-
+balzamik sirke
+barbekü sos
+beyaz sirke
+biber salçası
+demi glace sos
+domates salçası
+domates sosu
+elma sirkesi
+frambuaz sos
+hardal
+ketçap
+mayonez
+nar ekşisi
+paprika sos
+pesto sos
+ranch sos
+sarımsak sosu
+sarımsaklı mayonez
+soya sosu
+sumak ekşisi
+sweet chili sos
+üzüm sirkesi
 zeytin ezmesi
 
-İÇECEKLER 
-
-siyah çay
-
-granül kahve
-
-maden suyu
-
-ıhlamur
-
-hibiskus
-
-kahve
-
-filtre kahve
-
-espresso
-
-türk kahvesi
-
-salep
-
-yeşil çay
-
-çekirdek kahve
-
-tonik
-
-şalgam suyu
-
-keçi sütü
-
+İÇECEKLER
+adaçayı
 badem sütü
-
+çekirdek kahve
+çikolatalı süt
+espresso
+filtre kahve
+granül kahve
+hibiskus
 hindistan cevizi sütü
-
+ıhlamur
+kahve
+keçi sütü
+maden suyu
+salep
+siyah çay
+şalgam suyu
+tonik
+türk kahvesi
+yeşil çay
 yulaf sütü
 
-çikolatalı süt
-
-adaçayı
-
-YEMİŞLER 
-
-ceviz
-
-fındık
-
-kabak çekirdeği
-
+YEMİŞLER
 antep fıstığı
-
-fıstık
-
-çam fıstığı
-
 ay çekirdeği
-
 badem
-
-keten tohumu
-
-kestane
-
-kaju
-
+ceviz
+çam fıstığı
+fındık
+fıstık
 hurma
-
+kabak çekirdeği
+kaju
+kestane
+keten tohumu
+kuru erik
+kuru incir
+kuru kayısı
 kuru üzüm
-
+kuru vişne
+kuş üzümü
 leblebi
 
-kuş üzümü
-
-kuru incir
-
-kuru kayısı
-
-kuru erik
-
-kuru vişne
-
-TATLILAR 
-
-tahin
-
-bal
-
-fıstık ezmesi
-
-akçaağaç şurubu
-
-vanilya şurubu
-
-kayısı reçeli
-
-vişne reçeli
-
-çilek reçeli
-
+TATLILAR
 ahududu reçeli
-
-incir reçeli
-
-ayva reçeli
-
-erik marmeladı
-
-vişne marmeladı
-
-şeftali marmeladı
-
-kuşburnu marmeladı
-
-elma marmeladı
-
-çilek marmeladı
-
+akçaağaç şurubu
+antep fıstıklı çikolata
 ayva marmeladı
-
-kızılcık marmeladı
-
+ayva reçeli
+bal
+bitter çikolata
+bonibon
+çikolata sosu
+çikolatalı dondurma
+çikolatalı puding
+çilek marmeladı
+çilek reçeli
+çilekli puding
+damla çikolata
+damla sakızı
+draje
+elma marmeladı
+erik marmeladı
+etimek
+fındık kreması
+fındıklı çikolata
+fıstık ezmesi
+ganaj
+güllaç
+haşhaş ezmesi
+helva
+incir marmeladı
+incir özü
+incir reçeli
+kadayıf
+kakaolu pandispanya
+kakaolu puding
+karadut pekmezi
+karamel
 kayısı marmeladı
-
+kayısı reçeli
+kedi dili
+keçiboynuzu özü
+keçiboynuzu pekmezi
+kızılcık marmeladı
+krem şanti
+krokan
+kuşburnu marmeladı
+lokum
+marmelat
+marshmallow
+muzlu puding
+pandispanya
+pasta süsü
+pastacı kreması
+sürülebilir çikolata
+süt reçeli
+sütlü çikolata
+şeftali marmeladı
+tahin
+üzüm pekmezi
+vanilya şurubu
+vanilyalı puding
+vişne marmeladı
+vişne reçeli
 yaban mersini marmeladı
 
-sürülebilir çikolata
-
-fındık kreması
-
-pandispanya
-
-kakaolu pandispanya
-
-kedi dili
-
-helva 
-
-etimek
-
-kadayıf
-
-antep fıstıklı çikolata
-
-krokan
-
-güllaç
-
-pasta süsü
-
-karamel
-
-marshmallow
-
-bonibon
-
-lokum
-
-draje
-
-kakaolu puding
-
-vanilyalı puding
-
-çikolatalı puding
-
-çilekli puding
-
-çikolatalı dondurma
-
-muzlu puding
-
-damla çikolata
-
-bitter çikolata
-
-çikolata sosu
-
-fındıklı çikolata
-
-sütlü çikolata
-
-beyaz çikolata
-
-marmelat
-
-pastacı kreması
-
-ganaj
-
-krem şanti	
-
-süt reçeli
-
-incir özü
-
-üzüm pekmezi
-
-keçiboynuzu pekmezi
-
-keçiboynuzu özü	
-
-karadut pekmezi
-
-damla sakızı
-
-haşhaş ezmesi
-
 TEMEL MALZEMELER
-
-yumurta
-
-un
-
-şeker
-
-tuz
-
-su
-
 buz
+su
+şeker
+tuz
+un
+yumurta
