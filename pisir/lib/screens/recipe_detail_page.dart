@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 class RecipeDetailPage extends StatefulWidget {
   final Map<String, dynamic> recipe;
@@ -23,8 +24,10 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
   String? _prepTime;
   String? _cookTime;
   String? _description;
+  String? _youtubeVideoId;
   bool _isFavorited = false;
   bool _isUpdatingFavorite = false;
+  WebViewController? _webViewController;
   
   @override
   void initState() {
@@ -91,6 +94,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
         final data = recipeDoc.data()!;
         debugPrint("[RecipeDetailPage] Firestore data received: $data");
         debugPrint("[RecipeDetailPage] Firestore data['description'] specific value: ${data['description']}");
+        debugPrint("[RecipeDetailPage] Firestore data['youtube_url'] specific value: ${data['youtube_url']}");
         
         setState(() {
           _title = data['title'] ?? widget.recipe['title'] ?? 'Tarif Başlığı Yok'; // Robust title
@@ -100,6 +104,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
           _prepTime = data['prepTime']?.toString(); // Convert int/double to String
           _cookTime = data['cookTime']?.toString(); // Convert int/double to String
           _description = data['description']; // Keep as is from previous fix
+          _youtubeVideoId = data['youtube_url']; // YouTube video ID from Firestore
           if (determinedIsFavoritedFlag) {
              _isFavorited = actualInitialIsFavoritedValue;
           }
@@ -132,6 +137,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
       });
     }
     debugPrint("[RecipeDetailPage] _loadRecipeDetails FINISHED. Current state _description: $_description");
+    debugPrint("[RecipeDetailPage] _loadRecipeDetails FINISHED. Current state _youtubeVideoId: $_youtubeVideoId");
   }
 
   Future<void> _toggleFavoriteStatus() async {
@@ -236,6 +242,14 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
     return 'Açıklama yok';
   }
 
+  // Helper method to check if video ID is valid
+  bool _isValidYouTubeVideoId(String? videoId) {
+    if (videoId == null || videoId.isEmpty) return false;
+    
+    // Basic validation for YouTube video ID (11 characters, alphanumeric and some special chars)
+    return videoId.length == 11 && RegExp(r'^[a-zA-Z0-9_-]+$').hasMatch(videoId);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -322,6 +336,44 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
                       );
                     }
                   ),
+                  
+                  // YouTube Video Player
+                  if (_youtubeVideoId != null && _isValidYouTubeVideoId(_youtubeVideoId)) ...[
+                    const SizedBox(height: 24),
+                    const Text(
+                      'Video',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    Container(
+                      width: double.infinity,
+                      height: 200,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.1),
+                            blurRadius: 8,
+                            offset: const Offset(0, 4),
+                          ),
+                        ],
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(12),
+                        child: WebViewWidget(
+                          controller: WebViewController()
+                            ..setJavaScriptMode(JavaScriptMode.unrestricted)
+                            ..loadRequest(Uri.parse(
+                              'https://www.youtube.com/embed/$_youtubeVideoId?autoplay=0&controls=1&showinfo=0&rel=0'
+                            )),
+                        ),
+                      ),
+                    ),
+                  ],
+                  
                   const SizedBox(height: 24),
                   const Text(
                     'Malzemeler',
