@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   final int _maxTotalRecipes = 40; // Maksimum eşleşecek tarif sayısı
   final int _initialDisplayCount = 20; // Başlangıçta gösterilecek tarif sayısı
   final int _loadMoreCount = 10; // Daha fazla butonu ile yüklenecek tarif sayısı
-  final int _batchSize = 40; // Bir seferde işlenecek tarif sayısı
+  final int _batchSize = 17000; // Bir seferde işlenecek tarif sayısı
   final ScrollController _scrollController = ScrollController();
   final Random _random = Random();  // Random nesnesi
 

@@ -18,18 +18,18 @@ void main() async {
   await Firebase.initializeApp();
   final prefs = await SharedPreferences.getInstance();
   darkModeNotifier.value = prefs.getBool('is_dark_mode') ?? false;
-
+  
   // Firestore önbelleğini yapılandır
   FirebaseFirestore.instance.settings = const Settings(
     persistenceEnabled: true,
     cacheSizeBytes: Settings.CACHE_SIZE_UNLIMITED,
   );
-
+  
   // Firestore'u offline ilk modunda çalıştır
   try {
     await FirebaseFirestore.instance.disableNetwork();
     debugPrint('PIŞIR_DEBUG: Firestore network disabled, using offline mode first');
-
+    
     // 3 saniye sonra network'ü tekrar aktifleştir
     Future.delayed(const Duration(seconds: 3), () async {
       try {
@@ -42,7 +42,7 @@ void main() async {
   } catch (e) {
     debugPrint('PIŞIR_DEBUG: Error configuring Firestore offline mode: $e');
   }
-
+  
   runApp(const MyApp());
 }
 
