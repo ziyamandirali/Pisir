@@ -1,147 +1,147 @@
-ev-yapımı-pesto-sos:{fesleğen, limon, parmesan, sarımsak, tuz, zeytinyağı, çam fıstığı}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/09/pesto-sos-yemekcom.jpg}{15}{Ev Yapımı Pesto Sos}
-kışlık-domates-konservesi:{domates, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/kislik-domates-konservesi-tarifi.jpg}{6}{Kışlık Domates Konservesi}
-kırmızı-biberli-domates-sosu:{domates, kapya biber, karabiber, kekik, kimyon, maydanoz, sarımsak, tuz, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/kirmizi-biberli-domates-sosu-onecikan.jpg}{50}{Kırmızı Biberli Domates Sosu}
-ev-yapımı-fındık-şurubu:{fındık, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/ev-yapimi-findik-surubu-editor.jpg}{47}{Ev Yapımı Fındık Şurubu}
-karamel:{krema, limon, su, tereyağı, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/karamel-eliphium.jpg}{15}{Karamel}
-ev-yapımı-domates-sosu:{domates, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/ev-yapimi-domates-sosu-tarifi.jpeg}{17}{Ev Yapımı Domates Sosu}
+pesto-sos:{fesleğen, parmesan, sarımsak, zeytinyağı, çam fıstığı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/pesto-sos-cikolata.jpg}{15}{Pesto Sos}
 sarımsaklı-patates-sos:{elma sirkesi, patates, sarımsak, tavuk suyu, toz biber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/sarimsakli-patates-sos-yemekcm.jpg}{40}{Sarımsaklı Patates Sos}
-tereyağlı-frambuaz-sos:{frambuaz, limon, tereyağı, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/4-yemekcom.jpg}{10}{Tereyağlı Frambuaz Sos}
-mocha-sos:{bitter çikolata, kahve, krema, tereyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/6-yemekcom.jpg}{8}{Mocha Sos}
-gerçek-süt-kreması:{süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/gercek-sut-kremasi-tarifi.jpeg}{40}{Gerçek Süt Kreması}
-yeşil-yağ:{dereotu, maydanoz, nane, sıvı yağ, taze soğan}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/08/yesil-yag-yemekcom.jpg}{40}{Yeşil Yağ}
-kırmızı-soğan-marmelatı:{bal, balzamik sirke, defne yaprağı, elma sirkesi, kişniş tohumu, kırmızı soğan, tereyağı, tuz, vişne, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/kirmizi-sogan-marmelati.jpg}{12}{Kırmızı Soğan Marmelatı}
-ranch-sos:{dereotu, krema, maydanoz, mayonez, sarımsak, soğan, süzme yoğurt, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/ranch-sos-yusuf.jpg}{10}{Ranch Sos}
-soğan-tuzu:{biberiye, soğan, su, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/09/sogan-tuzu-yemekcom.jpg}{140}{Soğan Tuzu}
-limonlu-adaçaylı-makarna-sosu:{adaçayı, karabiber, limon, parmesan, sarımsak, tereyağı, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/10/limonlu-adacayli-makarna-yemekcom.jpg}{20}{Limonlu Adaçaylı Makarna Sosu}
-tahinli-dip-sos:{kişniş, limon, sarımsak, süzme yoğurt, tahin, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/tahinli-dip-sos-aylakchef.jpg}{5}{Tahinli Dip Sos}
-pizza-sosu:{defne yaprağı, domates, fesleğen, karabiber, kekik, sarımsak, soğan, su, tuz, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/02/pizza-sosu-yemekcom.jpg}{40}{Pizza Sosu}
-guacamole-sos:{avokado, karabiber, kırmızı soğan, limon, tuz, zeytinyağı, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/guacamela-sos-hem.jpg}{5}{Guacamole Sos}
-çikolata-sos:{kakao, krema, nişasta, süt, sütlü çikolata, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/11/cikolata-sos-ugur.jpg}{20}{Çikolata Sos}
-condensed-milk:{süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/11/condensed-milk-emine.jpg}{95}{Condensed Milk}
-alfredo-sos:{karabiber, krema, parmesan, sarımsak, tereyağı, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/12/alfredo-sos-tarifi.jpg}{20}{Alfredo Sos}
-bolonez-sos:{dana kıyma, domates, domates salçası, havuç, karabiber, kekik, sarımsak, soğan, su, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/05/bolonez-sos-tarifi-yemekcom.jpg}{45}{Bolonez Sos}
-vişneden-ketçap:{elma sirkesi, karabiber, kırmızı soğan, sarımsak, su, tuz, vişne, yenibahar, zencefil, zeytinyağı, üzüm pekmezi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/visneden-ketcap-yemekcom.jpg}{35}{Vişneden Ketçap}
+5-dakikada-pesto-sos:{ceviz, fesleğen, karabiber, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/5-dakikada-pesto-sos-tarifi.jpg}{5}{5 Dakikada Pesto Sos}
 tarator-sos:{ceviz, ekmek, limon, mayonez, sarımsak, süzme yoğurt, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/09/tarator-sos-one-cikanyeni.jpg}{20}{Tarator Sos}
-yoğunlaştırılmış-süt:{karbonat, süt, tereyağı, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/10/yogunlastirilmis-sut-yemekcom.jpg}{55}{Yoğunlaştırılmış Süt}
-avokadolu-dip-sos:{avokado, limon, su, süzme yoğurt, taze soğan, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/avokadolu-dip-sos-yasemin.jpg}{5}{Avokadolu Dip Sos}
-sarımsaklı-hardallı-mayonez:{ayçiçek yağı, elma sirkesi, hardal, sarımsak, tuz, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/04/sarimsakli-hardalli-mayonez-gozdezfood.jpg}{5}{Sarımsaklı Hardallı Mayonez}
-domatesli-mantar-sos:{domates, elma sirkesi, hardal, kekik, krema, mantar, sarımsak, tavuk suyu, tereyağı, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/07/domatesli-mantar-sos-et-soslari-yemekcom.jpg}{30}{Domatesli Mantar Sos}
-pembe-dip-sos:{hardal, nane, pancar turşusu, sarımsak, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/pembe-dip-sos-duygu.jpg}{10}{Pembe Dip Sos}
-confit-sarımsak:{beyaz biber, defne yaprağı, karabiber, kırmızı biber, sarımsak, zahter, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/11/confit-sarimsak-tarifi.jpg}{6.5}{Confit Sarımsak}
-cips-sosu:{karabiber, kekik, mayonez, nane, pul biber, tuz, yoğurt, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/12/cips-sosu-yemekcom.jpg}{3}{Cips Sosu}
-domates-sosu:{biberiye, domates, fesleğen, karabiber, sarımsak, toz biber, tuz, zeytinyağı, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/08/domates-sosu-tarifi-son.jpg}{95}{Domates Sosu}
-ev-yapımı-kahvaltılık-sos:{domates salçası, kekik, kimyon, köri, nane, susam, toz biber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/ev-yapimi-kahvaltilik-sos-tarifi.jpg}{12}{Ev Yapımı Kahvaltılık Sos}
+kahvaltılık-acuka-sos:{biber salçası, ceviz, domates salçası, ekmek, karabiber, kekik, pul biber, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/kahvaltilik-acuka-sos-tarifi.jpg}{10}{Kahvaltılık Acuka Sos}
 sezar-sos:{elma sirkesi, karabiber, kekik, limon, parmesan, sarımsak, tarhun, tuz, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/sezar-sos-tarifi.jpg}{10}{Sezar Sos}
-tavuk-bulyon:{havuç, kabak, patates, pırasa, soğan, sıvı yağ, tavuk göğsü, tuz, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/11/tavuk-bulyon-sunum-yemekcom.jpg}{35}{Tavuk Bulyon}
-gremolata:{elma sirkesi, karabiber, karanfil, kişniş, lime, limon, maydanoz, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/10/gremolata-tarifi.jpg}{20}{Gremolata}
-mantı-sosu:{domates salçası, karabiber, nane, pul biber, tereyağı, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/04/manti-sosu-sunum-yemekcom.jpg}{10}{Mantı Sosu}
-karamelize-soğanlı-dip-sos:{defne yaprağı, karabiber, kekik, labne, sarımsak, soğan, su, süzme yoğurt, tereyağı, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/04/karamelize-soganli-dip-sos-tarifi.jpg}{65}{Karamelize Soğanlı Dip Sos}
-nar-ekşili-orient-sos:{bulgur, domates, haşhaş, kabak çekirdeği, karabiber, kekik, kırmızı soğan, marul, maydanoz, nar, nar ekşisi, salatalık, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/nar-eksili-orient-sos-yemekcom.jpg}{5}{Nar Ekşili Orient Sos}
-ev-yapımı-acılı-ketçap:{domates, domates salçası, elma sirkesi, nişasta, sarımsak, soğan, su, toz biber, tuz, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/09/ev-yapimi-acili-ketcap-uur.jpg}{100}{Ev Yapımı Acılı Ketçap}
-köz-patlıcan-ve-kuru-fasulyeli-sos:{kimyon, kuru fasulye, patlıcan, sarımsak, toz biber, tuz, zeytinyağı, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/koz-patlicanli-sebze-sos-yemekcom.jpg}{5}{Köz Patlıcan ve Kuru Fasulyeli Sos}
-isırgan-otlu-pesto:{ceviz, karabiber, parmesan, sarımsak, sivri biber, tuz, zeytinyağı, ısırgan otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/01/isirgan-otlu-pesto.jpg}{10}{Isırgan Otlu Pesto}
-haşlanmış-yumurta-sos:{karabiber, krem peynir, limon, su, tuz, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/haslanmis-yumurta-sos-yemekcom.jpg}{14}{Haşlanmış Yumurta Sos}
-parmesanlı-acı-sos:{ceviz, domates salçası, fesleğen, karabiber, parmesan, toz biber, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/03/parmesanli-aci-sos-tarifi.jpg}{15}{Parmesanlı Acı Sos}
-maydanozlu-pesto-sos:{avokado, fındık, karabiber, limon, maydanoz, parmesan, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/maydanozlu-pesto-sos-yeni.jpg}{7}{Maydanozlu Pesto Sos}
-ballı-portakallı-sos:{bal, biberiye, karabiber, nişasta, portakal, su, tavuk suyu, tereyağı, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/biberiyeli-portakal-sos-yemekcom.jpg}{15}{Ballı Portakallı Sos}
-paprika-sos:{biber salçası, kapya biber, karabiber, kırmızı biber, sarı biber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/11/paprika-sos.jpg}{40}{Paprika Sos}
-ballı-hardal-sos:{bal, elma sirkesi, hardal, karabiber, mayonez, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/12/balli-hardal-tarifi.jpg}{15}{Ballı Hardal Sos}
-domates-zeytin-ve-kapari-sos:{fesleğen, kapari, sarımsak, tuz, zeytin, zeytinyağı, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/domatesli-zeytinli-kapari-sos-yemekcom.jpg}{15}{Domates, Zeytin ve Kapari Sos}
-çikolata-sosu:{bitter çikolata, krema, sütlü çikolata, tereyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/03/cikolata-sosu-yemekcom.jpg}{15}{Çikolata Sosu}
-orijinal-pesto-sos:{fesleğen, parmesan, sarımsak, tuz, zeytinyağı, çam fıstığı}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/03/orijinal-pesto-sos-sebahat.jpg}{15}{Orijinal Pesto Sos}
-karamelli-elmalı-sos:{elma, nişasta, süt, tarçın, tereyağı, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/karamelli-elmali-sos-cemre.jpg}{30}{Karamelli Elmalı Sos}
+ev-yapımı-çikolata-sos:{bitter çikolata, kakao, su, süt, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/ev-yapimi-cikolata-sos-gunay.jpg}{20}{Ev Yapımı Çikolata Sos}
+sarımsaklı-vegan-mayonez:{elma sirkesi, hardal, nohut, sarımsak, sıvı yağ, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/sarimsakli-vegan-mayonez-yemekcom.jpg}{5}{Sarımsaklı Vegan Mayonez}
+çıtır-nohutlu-bal-kabaklı-dip-sos:{bal kabağı, hardal, karabiber, kimyon, limon, nohut, sarımsak, süzme peynir, süzme yoğurt, tahin, toz biber, tuz, zerdeçal, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/citir-nohutlu-bal-kabakli-dip-sos-gurme.jpg}{15}{Çıtır Nohutlu Bal Kabaklı Dip Sos}
+limon-sos:{krema, limon, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/3-yemekcom.jpg}{30}{Limon Sos}
+chimichurri-sos:{elma sirkesi, kekik, kişniş, maydanoz, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/07/chimichurri-sos-et-soslari-yemekcom.jpg}{10}{Chimichurri Sos}
 guacamole:{avokado, kişniş, kırmızı soğan, lime, pul biber, sarımsak, tuz, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/10/guacamole-yemekcom.jpg}{15}{Guacamole}
-somon-yumurta-ve-taze-otlu-dip-sos:{dereotu, karabiber, limon, maydanoz, mayonez, portakal, somon, tuz, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/ferhat-somon-yumurta-ve-taze-otlu-dip-sos.jpg}{5}{Somon Yumurta ve Taze Otlu Dip Sos}
-ganaj:{krema, sütlü çikolata}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/07/ganaj-onecikan.jpg}{12}{Ganaj}
-domatesli-biberli-ezme:{domates, domates salçası, karabiber, kırmızı biber, maydanoz, sarımsak, sivri biber, soğan, sıvı yağ, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/domatesli-biberli-ezme-tarifi.jpeg}{10}{Domatesli Biberli Ezme}
-gravy-sos:{karabiber, tavuk suyu, tereyağı, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/12/gravy-sos-tarifi.jpg}{25}{Gravy Sos}
-ev-yapımı-mayonez:{elma sirkesi, hardal, limon, sıvı yağ, tuz, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/ev-yapimi-mayonez-tarifi.jpg}{10}{Ev Yapımı Mayonez}
-hardallı-mayonez:{acı sos, ayçiçek yağı, hardal, karabiber, limon, tuz, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/07/hardalli-mayonez-bilim.jpg}{10}{Hardallı Mayonez}
-tartar-sos:{beyaz biber, hardal, kapari, kişniş, kornişon, mayonez, taze soğan, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/01/tartar-sos-tarifi.jpg}{15}{Tartar Sos}
-cheddar-sos:{cheddar, süt, tereyağı, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/03/cheddar-sos-one-cikan.jpg}{25}{Cheddar Sos}
-çin-usulü-acı-sos:{pul biber, sarımsak, sivri biber, sıvı yağ}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/11/cin-usulu-aci-sos-tarifi.jpg}{10}{Çin Usulü Acı Sos}
-marinara-sos:{domates, domates salçası, karabiber, kekik, sarımsak, soğan, tuz, yeşil biber, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/01/marinara-sos.jpg}{27}{Marinara Sos}
-nar-ekşisi:{nar}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/01/nar-eksisi-tarifi.jpg}{50}{Nar Ekşisi}
-sıvı-krema:{limon, süt, tuz, un, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/sivi-krema-yemekcom.jpg}{10}{Sıvı Krema}
-yumurtasız-mayonez:{elma sirkesi, hardal, sarımsak, süt, sıvı yağ, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/03/ev-yapimi-yumurtasiz-mayonez-onecikan.jpg}{5}{Yumurtasız Mayonez}
-domates-konfit:{karabiber, kekik, sarımsak, tuz, zeytinyağı, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/domates-confit-emine.jpg}{12}{Domates Konfit}
-deniz-tuzlu-karamel-sos:{krema, su, tereyağı, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/deniz-tuzlu-karamel-sos-tarifi.jpg}{11}{Deniz Tuzlu Karamel Sos}
-labneli-patlıcan-dip-sos:{kimyon, labne, patlıcan, sarımsak, toz biber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/sipsak-patlican-mezesi.jpg}{10}{Labneli Patlıcan Dip Sos}
-tapenade:{biberiye, kapari, karabiber, kurutulmuş domates, limon, maydanoz, rezene, sarımsak, sivri biber, tost ekmeği, tuz, yeşil zeytin, zeytin, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/tapenade-tarifi.jpg}{10}{Tapenade}
+toum-sos:{limon, sarımsak, sıvı yağ, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/toum-sos-yemekcom.jpg}{15}{Toum Sos}
+ev-yapımı-kahvaltılık-sos:{domates salçası, kekik, kimyon, köri, nane, susam, toz biber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/ev-yapimi-kahvaltilik-sos-tarifi.jpg}{12}{Ev Yapımı Kahvaltılık Sos}
 labneli-pizza-sosu:{karabiber, kekik, labne, limon, mayonez, nane, sarımsak, tuz, zeytinyağı, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/02/labneli-pizza-sosu-tarifi.jpg}{5}{Labneli Pizza Sosu}
+parmesanlı-acı-sos:{ceviz, domates salçası, fesleğen, karabiber, parmesan, toz biber, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/03/parmesanli-aci-sos-tarifi.jpg}{15}{Parmesanlı Acı Sos}
+avokado-dip-sos:{avokado, karabiber, labne, limon, sarımsak, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/avokado-dip-sos-aysegul.jpg}{10}{Avokado Dip Sos}
+yeşil-yağ:{dereotu, maydanoz, nane, sıvı yağ, taze soğan}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/08/yesil-yag-yemekcom.jpg}{40}{Yeşil Yağ}
+karamel-sos:{krema, tereyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/12/karamel-sos.jpg}{25}{Karamel Sos}
+kahvaltılık-sos:{domates, domates salçası, kapya biber, patlıcan, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/05/cagla-olgun-kahvaltilik-sos.jpg}{35}{Kahvaltılık Sos}
+ispanaklı-avokado-püresi:{avokado, kapya biber, kırmızı soğan, limon, mantar, nar, tuz, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/ispanakli-avokado-puresi.jpg}{40}{Ispanaklı Avokado Püresi}
+tartar-sos:{beyaz biber, hardal, kapari, kişniş, kornişon, mayonez, taze soğan, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/01/tartar-sos-tarifi.jpg}{15}{Tartar Sos}
+ev-yapımı-domates-sosu:{domates, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/ev-yapimi-domates-sosu-tarifi.jpeg}{17}{Ev Yapımı Domates Sosu}
+paprika-sos:{biber salçası, kapya biber, karabiber, kırmızı biber, sarı biber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/11/paprika-sos.jpg}{40}{Paprika Sos}
+körili-limon-püresi:{köri, limon, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/korili-limon-puresi-yemekcom.jpg}{40}{Körili Limon Püresi}
+salsa-sos:{acı sos, domates, karabiber, kişniş, kırmızı soğan, lime, sarımsak, sivri biber, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/12/salsa-sos-yemekcom.jpg}{15}{Salsa Sos}
+haşlanmış-yumurta-sos:{karabiber, krem peynir, limon, su, tuz, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/haslanmis-yumurta-sos-yemekcom.jpg}{14}{Haşlanmış Yumurta Sos}
+beşamel-sos:{karabiber, süt, tereyağı, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/05/besamel-sos-one-cikan.jpg}{20}{Beşamel Sos}
+domatesli-biberli-ezme:{domates, domates salçası, karabiber, kırmızı biber, maydanoz, sarımsak, sivri biber, soğan, sıvı yağ, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/domatesli-biberli-ezme-tarifi.jpeg}{10}{Domatesli Biberli Ezme}
+domates-yağı:{ayçiçek yağı, domates, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/04/domates-yagi-yemekcom.jpg}{23}{Domates Yağı}
+yoğunlaştırılmış-şekerli-süt:{süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/yogunlastirilmis-sekerli-sut-beste.jpg}{6}{Yoğunlaştırılmış Şekerli Süt}
+pratik-guacamole:{avokado, domates, kişniş, kırmızı biber, kırmızı soğan, lime, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/pratik-guacamole-melis.jpg}{10}{Pratik Guacamole}
+kışlık-domates-konservesi:{domates, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/kislik-domates-konservesi-tarifi.jpg}{6}{Kışlık Domates Konservesi}
+mayonez:{elma sirkesi, hardal, limon, sıvı yağ, tuz, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/11/mayonez-tarifi-yemekcom.jpg}{20}{Mayonez}
+gerçek-süt-kreması:{süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/gercek-sut-kremasi-tarifi.jpeg}{40}{Gerçek Süt Kreması}
+köz-biberli-domatesli-sos:{domates, kapya biber, sarımsak, soğan, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/10/koz-biberli-domatesli-sos-sunum.jpg}{25}{Köz Biberli Domatesli Sos}
+ballı-portakallı-sos:{bal, biberiye, karabiber, nişasta, portakal, su, tavuk suyu, tereyağı, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/biberiyeli-portakal-sos-yemekcom.jpg}{15}{Ballı Portakallı Sos}
+domatesten-baharat:{domates, fesleğen, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/06/domatesten-baharat-yemekcom.jpg}{11}{Domatesten Baharat}
+cips-sosu:{karabiber, kekik, mayonez, nane, pul biber, tuz, yoğurt, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/12/cips-sosu-yemekcom.jpg}{3}{Cips Sosu}
+fit-makarna-kreması:{kırmızı biber, su, süt, tereyağı, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/fit-makarna-kremasi-tarifi.jpg}{6}{Fit Makarna Kreması}
+bolonez-sos:{dana kıyma, domates, domates salçası, havuç, karabiber, kekik, sarımsak, soğan, su, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/05/bolonez-sos-tarifi-yemekcom.jpg}{45}{Bolonez Sos}
+ev-yapımı-acılı-ketçap:{domates, domates salçası, elma sirkesi, nişasta, sarımsak, soğan, su, toz biber, tuz, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/09/ev-yapimi-acili-ketcap-uur.jpg}{100}{Ev Yapımı Acılı Ketçap}
+sarımsaklı-domates-sos:{domates, elma sirkesi, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/09/sarimsakli-domates-sosu-tarifi.jpg}{55}{Sarımsaklı Domates Sos}
+nar-ekşisi:{nar}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/01/nar-eksisi-tarifi.jpg}{50}{Nar Ekşisi}
+sarımsak-sosu:{elma sirkesi, sarımsak, sıvı yağ, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/07/sarimsak-sosu-yemekcom.jpg}{10}{Sarımsak Sosu}
+köz-patlıcan-ve-kuru-fasulyeli-sos:{kimyon, kuru fasulye, patlıcan, sarımsak, toz biber, tuz, zeytinyağı, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/koz-patlicanli-sebze-sos-yemekcom.jpg}{5}{Köz Patlıcan ve Kuru Fasulyeli Sos}
+ev-yapımı-ketçap:{domates, elma sirkesi, karabiber, kekik, sarımsak, soğan, toz biber, tuz, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/ev-yapimi-ketcapp-editorr.jpg}{50}{Ev Yapımı Ketçap}
+guacamole-sos:{avokado, chili biberi, domates, kişniş, kırmızı soğan, lime, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/guacamole-sos-bidolu.jpg}{5}{Guacamole Sos}
+karamelize-soğanlı-dip-sos:{defne yaprağı, karabiber, kekik, labne, sarımsak, soğan, su, süzme yoğurt, tereyağı, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/04/karamelize-soganli-dip-sos-tarifi.jpg}{65}{Karamelize Soğanlı Dip Sos}
+tapenade-sos:{biberiye, kapari, karabiber, kekik, limon, maydanoz, sarımsak, zeytin, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/tapenade-sos-editor.jpg}{10}{Tapenade Sos}
+pembe-dip-sos:{hardal, nane, pancar turşusu, sarımsak, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/pembe-dip-sos-duygu.jpg}{10}{Pembe Dip Sos}
+sıvı-krema:{limon, süt, tuz, un, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/sivi-krema-yemekcom.jpg}{10}{Sıvı Krema}
+hardallı-mayonez:{acı sos, ayçiçek yağı, hardal, karabiber, limon, tuz, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/07/hardalli-mayonez-bilim.jpg}{10}{Hardallı Mayonez}
+karamelli-elmalı-sos:{elma, nişasta, süt, tarçın, tereyağı, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/karamelli-elmali-sos-cemre.jpg}{30}{Karamelli Elmalı Sos}
+bezelyeli-sos:{bezelye, karabiber, nane, sarımsak, toz biber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/01/bezelyeli-sos-tarifi.jpg}{5}{Bezelyeli Sos}
+gravy-sos:{karabiber, tavuk suyu, tereyağı, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/12/gravy-sos-tarifi.jpg}{25}{Gravy Sos}
+maydanozlu-pesto-sos:{avokado, fındık, karabiber, limon, maydanoz, parmesan, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/maydanozlu-pesto-sos-yeni.jpg}{7}{Maydanozlu Pesto Sos}
+kalamar-tava-ve-tarator-sos:{ayçiçek yağı, ceviz, ekmek, kalamar, karbonat, limon, maden suyu, sarımsak, süzme yoğurt, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/10/balik-osman-kalamar-tava-tarifi.jpg}{65}{Kalamar Tava ve Tarator Sos}
+çin-usulü-acı-sos:{pul biber, sarımsak, sivri biber, sıvı yağ}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/11/cin-usulu-aci-sos-tarifi.jpg}{10}{Çin Usulü Acı Sos}
+nar-ekşili-orient-sos:{bulgur, domates, haşhaş, kabak çekirdeği, karabiber, kekik, kırmızı soğan, marul, maydanoz, nar, nar ekşisi, salatalık, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/nar-eksili-orient-sos-yemekcom.jpg}{5}{Nar Ekşili Orient Sos}
+ev-yapımı-karamel:{krema, limon, su, tereyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/04/karamel-tarifi.jpg}{30}{Ev Yapımı Karamel}
+elma-sos:{elma, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/elma-sos-tarifi.jpg}{45}{Elma Sos}
+sarımsaklı-hardallı-mayonez:{ayçiçek yağı, elma sirkesi, hardal, sarımsak, tuz, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/04/sarimsakli-hardalli-mayonez-gozdezfood.jpg}{5}{Sarımsaklı Hardallı Mayonez}
+sarımsaklı-mayonez:{hardal, karabiber, limon, sarımsak, su, tuz, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/06/sarimsakli-mayonez.jpg}{20}{Sarımsaklı Mayonez}
+taze-krema-creme-fraichee:{kefir, krema}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/taze-krema-tarifi.jpg}{4}{Taze Krema (Creme Fraichee)}
+hardallı-banban-sos:{elma sirkesi, hardal, mayonez, sarımsak, tereyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/hardalli-banban-yemekcom.jpg}{3}{Hardallı Banban Sos}
+guacamole-sosu:{acı sos, avokado, karabiber, kırmızı soğan, limon, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/12/guacamelo-busra.jpg}{10}{Guacamole Sosu}
+labneli-patlıcan-dip-sos:{kimyon, labne, patlıcan, sarımsak, toz biber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/sipsak-patlican-mezesi.jpg}{10}{Labneli Patlıcan Dip Sos}
+bir-dakikada-yumurtasız-mayonez:{limon, süt, sıvı yağ, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/bir-dakikada-yumurtasiz-mayonez-yemekcom.jpg}{10}{Bir Dakikada Yumurtasız Mayonez}
+bezelyeli-dip-sos:{bezelye, karabiber, tuz, zeytinyağı, çam fıstığı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/08/bezelyeli-dip-sos.jpg}{25}{Bezelyeli Dip Sos}
+acuka:{biber salçası, ceviz, domates salçası, kekik, kimyon, sarımsak, susam, zeytinyağı, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/acuka-2-tarifi.jpg}{5}{Acuka}
+közlenmiş-kapya-biber-konservesi:{kapya biber, sarımsak, tuz, zeytinyağı, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/10/kozlenmis-kapya-biber-tarifi.jpg}{60}{Közlenmiş Kapya Biber Konservesi}
+yoğunlaştırılmış-süt:{karbonat, süt, tereyağı, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/10/yogunlastirilmis-sut-yemekcom.jpg}{55}{Yoğunlaştırılmış Süt}
+garam-masala:{defne yaprağı, kakule, karabiber, karanfil, kimyon, kişniş, rezene, sivri biber, tarçın, yıldız anason, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/garam-masala-editorr.jpg}{23}{Garam Masala}
+avokadolu-dip-sos:{avokado, ceviz, karabiber, limon, sarımsak, tuz, yoğurt, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/avokadolu-dip-sos-editoraralik.jpg}{5}{Avokadolu Dip Sos}
+sardalya-ezmesi:{karabiber, limon, maydanoz, sardalya, soğan, tereyağı, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/10/sardalya-ezmesi-yemekcom.jpg}{15}{Sardalya Ezmesi}
+çikolata-sosu:{bitter çikolata, krema, sütlü çikolata, tereyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/03/cikolata-sosu-yemekcom.jpg}{15}{Çikolata Sosu}
+deniz-tuzlu-karamel-sos:{krema, su, tereyağı, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/deniz-tuzlu-karamel-sos-tarifi.jpg}{11}{Deniz Tuzlu Karamel Sos}
+confit-sarımsak:{beyaz biber, defne yaprağı, karabiber, kırmızı biber, sarımsak, zahter, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/11/confit-sarimsak-tarifi.jpg}{6.5}{Confit Sarımsak}
+evde-sarımsaklı-mayonez:{elma sirkesi, limon, sarımsak, sıvı yağ, tuz, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/04/evde-sarimsakli-mayonez-tarifi.jpg}{5}{Evde Sarımsaklı Mayonez}
+köfte-sosu:{biber salçası, domates, domates salçası, karabiber, kekik, pul biber, sarımsak, toz biber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/01/kofte-sosu-yemekcom.jpg}{5}{Köfte Sosu}
+limonlu-avokado-sos:{avokado, karabiber, kırmızı biber, limon, sarımsak, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/avokado-sos-8-tarifi.jpg}{5}{Limonlu Avokado Sos}
+fesleğen-pesto-sos:{fesleğen, parmesan, sarımsak, tuz, zeytinyağı, çam fıstığı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/11/feslegen-pesto.jpg}{5}{Fesleğen Pesto Sos}
+tahinli-yumuşak-sos:{ceviz, dereotu, karabiber, karnabahar, kimyon, limon, nar, sarımsak, soğan, su, tahin, toz biber, tuz, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/tahinli-yumusak-sos-yemekcom.jpg}{5}{Tahinli Yumuşak Sos}
+praline-kreması:{badem, krema, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/9-yemekcom.jpg}{25}{Praline Kreması}
+domates-konfit:{karabiber, kekik, sarımsak, tuz, zeytinyağı, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/domates-confit-emine.jpg}{12}{Domates Konfit}
+vinaigrette-sos:{elma sirkesi, karabiber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/09/vinaigratte-sos-tarifi.jpg}{5}{Vinaigrette Sos}
+domatesli-mantar-sos:{domates, elma sirkesi, hardal, kekik, krema, mantar, sarımsak, tavuk suyu, tereyağı, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/07/domatesli-mantar-sos-et-soslari-yemekcom.jpg}{30}{Domatesli Mantar Sos}
+süzme-yoğurtlu-dip-sos:{dereotu, nane, pul biber, süzme yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/12/suzme-yogurtlu-dip-sos-sutas-yemekcom.jpg}{5}{Süzme Yoğurtlu Dip Sos}
+kalamar-sosu:{ceviz, ekmek, karabiber, limon, mayonez, sarımsak, süzme yoğurt, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/04/kalamar-sosu-sunum-yemekcom.jpg}{15}{Kalamar Sosu}
+ekşi-krema:{krema, limon, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/02/eksi-krema-tarifi.jpg}{15}{Ekşi Krema}
+mocha-sos:{bitter çikolata, kahve, krema, tereyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/6-yemekcom.jpg}{8}{Mocha Sos}
+domates-sosu:{domates, kapya biber, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/09/domates-sos-sezgi.jpg}{21}{Domates Sosu}
+domates-salçası:{domates, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/09/domates-salcasi.jpg}{27}{Domates Salçası}
+limonlu-adaçaylı-makarna-sosu:{adaçayı, karabiber, limon, parmesan, sarımsak, tereyağı, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/10/limonlu-adacayli-makarna-yemekcom.jpg}{20}{Limonlu Adaçaylı Makarna Sosu}
+ev-yapımı-fındık-şurubu:{fındık, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/ev-yapimi-findik-surubu-editor.jpg}{47}{Ev Yapımı Fındık Şurubu}
+condensed-milk:{süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/11/condensed-milk-emine.jpg}{95}{Condensed Milk}
+frambuaz-sosu:{frambuaz, nişasta, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/frambuaz-sosu-aylak.jpg}{10}{Frambuaz Sosu}
 cafe-de-paris-sos:{dereotu, hardal, karabiber, krema, köri, rokfor, sarımsak, tereyağı, tuz, zerdeçal}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/02/cafe-de-paris-sos-sunum-yemekcom.jpg}{35}{Cafe de Paris Sos}
 pide-bandırmalık-sos:{fındık, kimyon tohumu, nane, pul biber, susam, süzme yoğurt, tuz, zerdeçal, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/04/pide-bandirmalik-dip-sos-yemekcom.jpg}{3}{Pide Bandırmalık Sos}
-acuka:{biber salçası, ceviz, domates salçası, galeta unu, karabiber, kimyon, maydanoz, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/01/acuka-cansu.jpg}{5}{Acuka}
-kahvaltılık-sos:{domates, elma sirkesi, kapya biber, maydanoz, sarımsak, sivri biber, sıvı yağ, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/kahvaltilik-sos-yasmin-kucuk.jpg}{22}{Kahvaltılık Sos}
-aioli-sos:{hardal, karabiber, limon, sarımsak, tuz, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/12/aioli-sos-tarifi.jpg}{25}{Aioli Sos}
-limonlu-avokado-sos:{avokado, karabiber, kırmızı biber, limon, sarımsak, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/avokado-sos-8-tarifi.jpg}{5}{Limonlu Avokado Sos}
-ispanaklı-avokado-püresi:{avokado, kapya biber, kırmızı soğan, limon, mantar, nar, tuz, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/ispanakli-avokado-puresi.jpg}{40}{Ispanaklı Avokado Püresi}
-sarımsaklı-vegan-mayonez:{elma sirkesi, hardal, nohut, sarımsak, sıvı yağ, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/sarimsakli-vegan-mayonez-yemekcom.jpg}{5}{Sarımsaklı Vegan Mayonez}
-sarımsaklı-kaju-sos:{kaju, limon, sarımsak, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/sarimsakli-kaju-sebze-sos-yemekcom.jpg}{7}{Sarımsaklı Kaju Sos}
-bezelyeli-sos:{bezelye, karabiber, nane, sarımsak, toz biber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/01/bezelyeli-sos-tarifi.jpg}{5}{Bezelyeli Sos}
-közlenmiş-kapya-biber-konservesi:{kapya biber, sarımsak, tuz, zeytinyağı, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/10/kozlenmis-kapya-biber-tarifi.jpg}{60}{Közlenmiş Kapya Biber Konservesi}
-ev-yapımı-ketçap:{domates, elma sirkesi, karabiber, kekik, sarımsak, soğan, toz biber, tuz, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/ev-yapimi-ketcapp-editorr.jpg}{50}{Ev Yapımı Ketçap}
-çıtır-nohutlu-bal-kabaklı-dip-sos:{bal kabağı, hardal, karabiber, kimyon, limon, nohut, sarımsak, süzme peynir, süzme yoğurt, tahin, toz biber, tuz, zerdeçal, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/citir-nohutlu-bal-kabakli-dip-sos-gurme.jpg}{15}{Çıtır Nohutlu Bal Kabaklı Dip Sos}
-avokado-dip-sos:{avokado, ceviz, karabiber, limon, sarımsak, süzme yoğurt, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/avakado-dip-sos-2-tarifi.jpg}{10}{Avokado Dip Sos}
-ekşi-krema:{krema, limon, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/02/eksi-krema-tarifi.jpg}{15}{Ekşi Krema}
-ayva-ve-pancarlı-dip-sos:{ayva, dereotu, kabak çekirdeği, limon, pancar, süzme yoğurt, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/12/ayva-ve-pancarli-dip-sos-tarifi.jpg}{10}{Ayva ve Pancarlı Dip Sos}
-tahinli-yumuşak-sos:{ceviz, dereotu, karabiber, karnabahar, kimyon, limon, nar, sarımsak, soğan, su, tahin, toz biber, tuz, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/tahinli-yumusak-sos-yemekcom.jpg}{5}{Tahinli Yumuşak Sos}
-yoğunlaştırılmış-şekerli-süt:{süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/yogunlastirilmis-sekerli-sut-beste.jpg}{6}{Yoğunlaştırılmış Şekerli Süt}
-taze-krema-creme-fraichee:{kefir, krema}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/taze-krema-tarifi.jpg}{4}{Taze Krema (Creme Fraichee)}
-i-ki-malzemeli-krema:{lor peyniri, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/2-malzemeli-krema-gizem.jpg}{5}{İki Malzemeli Krema}
-elma-sos:{elma, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/elma-sos-tarifi.jpg}{45}{Elma Sos}
-sarımsaklı-domates-sos:{domates, elma sirkesi, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/09/sarimsakli-domates-sosu-tarifi.jpg}{55}{Sarımsaklı Domates Sos}
-roka-ve-salatalık-dip-sos:{roka, salatalık, sarımsak, tuz, yoğurt, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/roka-salatalik-dipsos.jpg}{5}{Roka ve Salatalık Dip Sos}
-çilek-sos:{limon, nişasta, su, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/cilek-sos-kadir.jpg}{25}{Çilek Sos}
-kalamar-sosu:{ceviz, ekmek, karabiber, limon, mayonez, sarımsak, süzme yoğurt, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/04/kalamar-sosu-sunum-yemekcom.jpg}{15}{Kalamar Sosu}
-hardallı-banban-sos:{elma sirkesi, hardal, mayonez, sarımsak, tereyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/hardalli-banban-yemekcom.jpg}{3}{Hardallı Banban Sos}
-reyhanlı-kremalı-mantar-sos:{frenk soğanı, karabiber, krema, limon, mantar, nişasta, reyhan, su, tereyağı, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/tavuk-soslari-3-yemekcom.jpg}{15}{Reyhanlı Kremalı Mantar Sos}
-domatesten-baharat:{domates, fesleğen, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/06/domatesten-baharat-yemekcom.jpg}{11}{Domatesten Baharat}
-süzme-yoğurtlu-dip-sos:{dereotu, nane, pul biber, süzme yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/12/suzme-yogurtlu-dip-sos-sutas-yemekcom.jpg}{5}{Süzme Yoğurtlu Dip Sos}
-kahvaltılık-acuka-sos:{biber salçası, ceviz, domates salçası, ekmek, karabiber, kekik, pul biber, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/kahvaltilik-acuka-sos-tarifi.jpg}{10}{Kahvaltılık Acuka Sos}
-pratik-guacamole:{avokado, domates, kişniş, kırmızı biber, kırmızı soğan, lime, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/pratik-guacamole-melis.jpg}{10}{Pratik Guacamole}
-ev-yapımı-karamel-sos:{krema, tereyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/ev-yapimi-karamel-sos-charmer.jpg}{15}{Ev Yapımı Karamel Sos}
-domates-yağı:{ayçiçek yağı, domates, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/04/domates-yagi-yemekcom.jpg}{23}{Domates Yağı}
-köfte-sosu:{biber salçası, domates, domates salçası, karabiber, kekik, pul biber, sarımsak, toz biber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/01/kofte-sosu-yemekcom.jpg}{5}{Köfte Sosu}
-salsa-sos:{acı sos, domates, karabiber, kişniş, kırmızı soğan, lime, sarımsak, sivri biber, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/12/salsa-sos-yemekcom.jpg}{15}{Salsa Sos}
-beşamel-sos:{karabiber, süt, tereyağı, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/05/besamel-sos-one-cikan.jpg}{20}{Beşamel Sos}
-köz-biberli-domatesli-sos:{domates, kapya biber, sarımsak, soğan, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/10/koz-biberli-domatesli-sos-sunum.jpg}{25}{Köz Biberli Domatesli Sos}
-roka-ve-peynirli-dip-sos:{ceviz, mandalina, nar, roka, su, tulum peyniri, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/12/roka-ve-peynirli-dip-sos-tarifi.jpg}{5}{Roka ve Peynirli Dip Sos}
-fesleğen-pesto-sos:{fesleğen, parmesan, sarımsak, tuz, zeytinyağı, çam fıstığı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/11/feslegen-pesto.jpg}{5}{Fesleğen Pesto Sos}
-kalamar-tava-ve-tarator-sos:{ceviz, ekmek, kalamar, karabiber, karbonat, limon, maden suyu, mayonez, mısır unu, sarımsak, süzme yoğurt, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/02/kalamar-tava-saden.jpeg}{30}{Kalamar Tava ve Tarator Sos}
-vinaigrette-sos:{elma sirkesi, karabiber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/09/vinaigratte-sos-tarifi.jpg}{5}{Vinaigrette Sos}
-chipotle-sos:{elma sirkesi, jalapeno turşusu, ketçap, limon, mayonez}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/10/chipotle-sos-onecikan.jpg}{5}{Chipotle Sos}
-pesto-sos:{fesleğen, karabiber, parmesan, sarımsak, tuz, zeytinyağı, çam fıstığı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/pesto-sos-busra-tarifi.jpg}{15}{Pesto Sos}
-tapenade-sos:{biberiye, kapari, karabiber, kekik, limon, maydanoz, sarımsak, zeytin, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/tapenade-sos-editor.jpg}{10}{Tapenade Sos}
-bal-kabaklı-dip-sos:{bal kabağı, biberiye, kapya biber, karabiber, kaşar peyniri, kekik, kimyon, labne, muskat, sarımsak, soğan, toz biber, tuz, zencefil, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/11/bal-kabakli-dip-sos-yemekcom.jpg}{65}{Bal Kabaklı Dip Sos}
-limon-sos:{krema, limon, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/3-yemekcom.jpg}{30}{Limon Sos}
-sarımsaklı-mayonez:{hardal, karabiber, limon, sarımsak, su, tuz, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/06/sarimsakli-mayonez.jpg}{20}{Sarımsaklı Mayonez}
-frambuaz-sosu:{frambuaz, nişasta, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/frambuaz-sosu-aylak.jpg}{10}{Frambuaz Sosu}
-körili-limon-püresi:{köri, limon, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/korili-limon-puresi-yemekcom.jpg}{40}{Körili Limon Püresi}
-mayonez:{elma sirkesi, hardal, limon, sıvı yağ, tuz, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/11/mayonez-tarifi-yemekcom.jpg}{20}{Mayonez}
-chimichurri-sos:{elma sirkesi, kekik, kişniş, maydanoz, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/07/chimichurri-sos-et-soslari-yemekcom.jpg}{10}{Chimichurri Sos}
-evde-sarımsaklı-mayonez:{elma sirkesi, limon, sarımsak, sıvı yağ, tuz, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/04/evde-sarimsakli-mayonez-tarifi.jpg}{5}{Evde Sarımsaklı Mayonez}
-hollandez-sos:{karabiber, limon, su, tereyağı, tuz, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/08/hollandez-sos-tarifi.jpg}{20}{Hollandez Sos}
-biber-sos:{kapya biber, kereviz, kimyon, sarımsak, soğan, toz biber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/biber-sos-tarifi.jpg}{40}{Biber Sos}
-karamel-sos:{krema, tereyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/karamel-sos-tarifi.jpg}{16}{Karamel Sos}
-ev-yapımı-çikolata-sos:{bitter çikolata, kakao, su, süt, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/ev-yapimi-cikolata-sos-gunay.jpg}{20}{Ev Yapımı Çikolata Sos}
-bezelyeli-dip-sos:{bezelye, karabiber, tuz, zeytinyağı, çam fıstığı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/08/bezelyeli-dip-sos.jpg}{25}{Bezelyeli Dip Sos}
-ev-yapımı-karamel:{krema, limon, su, tereyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/04/karamel-tarifi.jpg}{30}{Ev Yapımı Karamel}
-remoulade-sos:{arpacık soğan, hardal, karabiber, kereviz, ketçap, limon, maydanoz, mayonez, sarımsak, taze soğan, toz biber, tuz, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/remoulade-sos-tarifi.jpg}{15}{Remoulade Sos}
-fit-çilek-sos:{hurma, limon, nişasta, su, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/05/cilek-sos-sizden-gelenler.jpg}{15}{Fit Çilek Sos}
-tuzlu-karamel-sos:{krema, tereyağı, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/07/tuzlu-karamel-sos-tarifi.jpg}{20}{Tuzlu Karamel Sos}
-domates-salçası:{domates, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/09/domates-salcasi.jpg}{27}{Domates Salçası}
+soğan-tuzu:{biberiye, soğan, su, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/09/sogan-tuzu-yemekcom.jpg}{140}{Soğan Tuzu}
+biber-sos:{dolmalık biber, kapya biber, karabiber, limon, maydanoz, sarımsak, soğan, su, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/biber-sos-yemekcom.jpg}{30}{Biber Sos}
 yoğurtlu-cips-sosu:{kimyon, nane, pul biber, sarımsak, toz biber, tuz, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/yogurtlu-cips-sosu-yemekcom.jpg}{5}{Yoğurtlu Cips Sosu}
-garam-masala:{defne yaprağı, kakule, karabiber, karanfil, kimyon, kişniş, rezene, sivri biber, tarçın, yıldız anason, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/garam-masala-editorr.jpg}{23}{Garam Masala}
-acı-sos:{chili biberi, domates, elma sirkesi, kapya biber, karabiber, sarımsak, tuz, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/aci-sos-sunlock.jpg}{25}{Acı Sos}
+orijinal-pesto-sos:{fesleğen, karabiber, maydanoz, nane, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/orjinal-pesto-sos-tarifi.jpg}{10}{Orijinal Pesto Sos}
+tereyağlı-frambuaz-sos:{frambuaz, limon, tereyağı, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/4-yemekcom.jpg}{10}{Tereyağlı Frambuaz Sos}
+ev-yapımı-karamel-sos:{krema, tereyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/ev-yapimi-karamel-sos-charmer.jpg}{15}{Ev Yapımı Karamel Sos}
+roka-ve-peynirli-dip-sos:{ceviz, mandalina, nar, roka, su, tulum peyniri, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/12/roka-ve-peynirli-dip-sos-tarifi.jpg}{5}{Roka ve Peynirli Dip Sos}
+vişneden-ketçap:{elma sirkesi, karabiber, kırmızı soğan, sarımsak, su, tuz, vişne, yenibahar, zencefil, zeytinyağı, üzüm pekmezi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/visneden-ketcap-yemekcom.jpg}{35}{Vişneden Ketçap}
+ranch-sos:{arpacık soğan, dereotu, ekşi krema, elma sirkesi, karabiber, kefir, krema, limon, maydanoz, mayonez, sarımsak, taze soğan, toz biber, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/ranch-sos-tarifi.jpg}{15}{Ranch Sos}
+çikolata-sos:{kakao, krema, nişasta, süt, sütlü çikolata, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/11/cikolata-sos-ugur.jpg}{20}{Çikolata Sos}
+ev-yapımı-pesto-sos:{fesleğen, limon, parmesan, sarımsak, tuz, zeytinyağı, çam fıstığı}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/09/pesto-sos-yemekcom.jpg}{15}{Ev Yapımı Pesto Sos}
+roka-ve-salatalık-dip-sos:{roka, salatalık, sarımsak, tuz, yoğurt, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/roka-salatalik-dipsos.jpg}{5}{Roka ve Salatalık Dip Sos}
+karamel:{krema, tereyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/karamel-tarifi.jpg}{20}{Karamel}
 klasik-hardal-sos:{elma sirkesi, hardal, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/klasik-hardal-sos-tarifi.jpeg}{10}{Klasik Hardal Sos}
-kabaklı-dipsos:{ceviz, kabak, sarımsak, tuz, yoğurt, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/11/kabakli-dipsos-tarifi.jpg}{20}{Kabaklı Dipsos}
-sarımsak-sosu:{elma sirkesi, sarımsak, sıvı yağ, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/07/sarimsak-sosu-yemekcom.jpg}{10}{Sarımsak Sosu}
-fit-makarna-kreması:{kırmızı biber, su, süt, tereyağı, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/fit-makarna-kremasi-tarifi.jpg}{6}{Fit Makarna Kreması}
-toum-sos:{limon, sarımsak, sıvı yağ, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/toum-sos-yemekcom.jpg}{15}{Toum Sos}
-bir-dakikada-yumurtasız-mayonez:{limon, süt, sıvı yağ, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/bir-dakikada-yumurtasiz-mayonez-yemekcom.jpg}{10}{Bir Dakikada Yumurtasız Mayonez}
+remoulade-sos:{arpacık soğan, hardal, karabiber, kereviz, ketçap, limon, maydanoz, mayonez, sarımsak, taze soğan, toz biber, tuz, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/remoulade-sos-tarifi.jpg}{15}{Remoulade Sos}
+kırmızı-biberli-domates-sosu:{domates, kapya biber, karabiber, kekik, kimyon, maydanoz, sarımsak, tuz, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/kirmizi-biberli-domates-sosu-onecikan.jpg}{50}{Kırmızı Biberli Domates Sosu}
+kırmızı-soğan-marmelatı:{bal, balzamik sirke, defne yaprağı, elma sirkesi, kişniş tohumu, kırmızı soğan, tereyağı, tuz, vişne, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/kirmizi-sogan-marmelati.jpg}{12}{Kırmızı Soğan Marmelatı}
+hollandez-sos:{karabiber, limon, su, tereyağı, tuz, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/08/hollandez-sos-tarifi.jpg}{20}{Hollandez Sos}
+fit-çilek-sos:{hurma, limon, nişasta, su, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/05/cilek-sos-sizden-gelenler.jpg}{15}{Fit Çilek Sos}
+ganaj:{krema, sütlü çikolata}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/07/ganaj-onecikan.jpg}{12}{Ganaj}
+tahinli-dip-sos:{kişniş, limon, sarımsak, süzme yoğurt, tahin, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/tahinli-dip-sos-aylakchef.jpg}{5}{Tahinli Dip Sos}
+alfredo-sos:{karabiber, krema, parmesan, sarımsak, tereyağı, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/12/alfredo-sos-tarifi.jpg}{20}{Alfredo Sos}
+cheddar-sos:{cheddar, süt, tereyağı, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/03/cheddar-sos-one-cikan.jpg}{25}{Cheddar Sos}
+chipotle-sos:{elma sirkesi, jalapeno turşusu, ketçap, limon, mayonez}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/10/chipotle-sos-onecikan.jpg}{5}{Chipotle Sos}
+ballı-hardal-sos:{bal, elma sirkesi, hardal, karabiber, mayonez, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/12/balli-hardal-tarifi.jpg}{15}{Ballı Hardal Sos}
+iki-malzemeli-krema:{lor peyniri, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/2-malzemeli-krema-gizem.jpg}{5}{İki Malzemeli Krema}
+ayva-ve-pancarlı-dip-sos:{ayva, dereotu, kabak çekirdeği, limon, pancar, süzme yoğurt, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/12/ayva-ve-pancarli-dip-sos-tarifi.jpg}{10}{Ayva ve Pancarlı Dip Sos}
+isırgan-otlu-pesto:{ceviz, karabiber, parmesan, sarımsak, sivri biber, tuz, zeytinyağı, ısırgan otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/01/isirgan-otlu-pesto.jpg}{10}{Isırgan Otlu Pesto}
+pizza-sosu:{defne yaprağı, domates, fesleğen, karabiber, kekik, sarımsak, soğan, su, tuz, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/02/pizza-sosu-yemekcom.jpg}{40}{Pizza Sosu}
+mantı-sosu:{domates salçası, karabiber, nane, pul biber, tereyağı, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/04/manti-sosu-sunum-yemekcom.jpg}{10}{Mantı Sosu}
+yumurtasız-mayonez:{elma sirkesi, hardal, sarımsak, süt, sıvı yağ, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/03/ev-yapimi-yumurtasiz-mayonez-onecikan.jpg}{5}{Yumurtasız Mayonez}
 tereyağlı-limon-sos:{limon, maydanoz, sarımsak, tereyağı, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/limonlu-tereya-sos-yemekcom.jpg}{15}{Tereyağlı Limon Sos}
-praline-kreması:{badem, krema, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/9-yemekcom.jpg}{25}{Praline Kreması}
-guacamole-sosu:{acı sos, avokado, karabiber, kırmızı soğan, limon, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/12/guacamelo-busra.jpg}{10}{Guacamole Sosu}
-sardalya-ezmesi:{karabiber, limon, maydanoz, sardalya, soğan, tereyağı, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/10/sardalya-ezmesi-yemekcom.jpg}{15}{Sardalya Ezmesi}
-5-dakikada-pesto-sos:{ceviz, fesleğen, karabiber, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/5-dakikada-pesto-sos-tarifi.jpg}{5}{5 Dakikada Pesto Sos}
+gremolata:{elma sirkesi, karabiber, karanfil, kişniş, lime, limon, maydanoz, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/10/gremolata-tarifi.jpg}{20}{Gremolata}
+somon-yumurta-ve-taze-otlu-dip-sos:{dereotu, karabiber, limon, maydanoz, mayonez, portakal, somon, tuz, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/ferhat-somon-yumurta-ve-taze-otlu-dip-sos.jpg}{5}{Somon Yumurta ve Taze Otlu Dip Sos}
+tapenade:{biberiye, kapari, karabiber, kurutulmuş domates, limon, maydanoz, rezene, sarımsak, sivri biber, tost ekmeği, tuz, yeşil zeytin, zeytin, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/tapenade-tarifi.jpg}{10}{Tapenade}
+aioli-sos:{hardal, karabiber, limon, sarımsak, tuz, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/12/aioli-sos-tarifi.jpg}{25}{Aioli Sos}
+tuzlu-karamel-sos:{krema, tereyağı, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/07/tuzlu-karamel-sos-tarifi.jpg}{20}{Tuzlu Karamel Sos}
+domates-zeytin-ve-kapari-sos:{fesleğen, kapari, sarımsak, tuz, zeytin, zeytinyağı, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/domatesli-zeytinli-kapari-sos-yemekcom.jpg}{15}{Domates, Zeytin ve Kapari Sos}
+kabaklı-dipsos:{ceviz, kabak, sarımsak, tuz, yoğurt, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/11/kabakli-dipsos-tarifi.jpg}{20}{Kabaklı Dipsos}
+çilek-sos:{limon, nişasta, su, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/cilek-sos-kadir.jpg}{25}{Çilek Sos}
+ev-yapımı-mayonez:{limon, sıvı yağ, tuz, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/11/ev-yapimi-mayonez-tarifi.jpg}{10}{Ev Yapımı Mayonez}
+sarımsaklı-kaju-sos:{kaju, limon, sarımsak, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/sarimsakli-kaju-sebze-sos-yemekcom.jpg}{7}{Sarımsaklı Kaju Sos}
+tavuk-bulyon:{havuç, kabak, patates, pırasa, soğan, sıvı yağ, tavuk göğsü, tuz, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/11/tavuk-bulyon-sunum-yemekcom.jpg}{35}{Tavuk Bulyon}
+bal-kabaklı-dip-sos:{bal kabağı, biberiye, kapya biber, karabiber, kaşar peyniri, kekik, kimyon, labne, muskat, sarımsak, soğan, toz biber, tuz, zencefil, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/11/bal-kabakli-dip-sos-yemekcom.jpg}{65}{Bal Kabaklı Dip Sos}
+marinara-sos:{domates, domates salçası, karabiber, kekik, sarımsak, soğan, tuz, yeşil biber, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/01/marinara-sos.jpg}{27}{Marinara Sos}
+acı-sos:{domates, elma sirkesi, maydanoz, sivri biber, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/aci-sos-yemekcom.jpg}{25}{Acı Sos}
+reyhanlı-kremalı-mantar-sos:{frenk soğanı, karabiber, krema, limon, mantar, nişasta, reyhan, su, tereyağı, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/tavuk-soslari-3-yemekcom.jpg}{15}{Reyhanlı Kremalı Mantar Sos}

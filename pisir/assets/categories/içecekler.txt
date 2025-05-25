@@ -1,314 +1,314 @@
-churchill:{buz, limon, maden suyu, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/05/churchill-tarifi.jpg}{2}{Churchill}
-hurmalı-smoothie:{fındık, hurma, kakao, keten tohumu, muz, süt, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/04/hurmali-smoothie.jpeg}{5}{Hurmalı Smoothie}
-karpuz-granita:{bal, karpuz, limon}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/karpuz-granita-tarifi.jpg}{3}{Karpuz Granita}
-sumak-şerbeti:{su, sumak, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/sumak-serbeti-tarifi.jpeg}{33}{Sumak Şerbeti}
-çikolatalı-ve-muzlu-milkshake:{buz, ceviz, muz, sürülebilir çikolata, süt, vanilya}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/cikolatali-ve-muzlu-milkshake-tarifi.jpg}{5}{Çikolatalı ve Muzlu Milkshake}
-narlı-limonata:{limon, nar, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/11/narli-limonata-ezgi.jpg}{20}{Narlı Limonata}
-lavantalı-limonata:{lavanta, limon, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/08/lavantali-limonata-tarifi.jpg}{30}{Lavantalı Limonata}
-şeftali-sirkesi:{elma sirkesi, şeftali}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/07/seftali-kabugundan-sirke-yemekcom.jpg}{10}{Şeftali Sirkesi}
-şekersiz-soğuk-çay:{karpuz, limon, siyah çay, vişne}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/sekersiz-soguk-cay-gida.jpg}{5}{Şekersiz Soğuk Çay}
-gingerbread-latte:{bal, filtre kahve, karanfil, muskat, su, süt, tarçın, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/gingerbread-latte-idil.jpg}{20}{Gingerbread Latte}
-ginger-shot:{bal, limon, mandalina, portakal, su, zencefil, zerdeçal}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/ginger-shot-onecikan.jpg}{10}{Ginger Shot}
-kolay-salep:{nişasta, su, süt, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/12/salep-yemekcom.jpg}{20}{Kolay Salep}
-kızılcık-kompostosu:{kızılcık, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/09/kizilcik-kompostosu-elif.jpg}{20}{Kızılcık Kompostosu}
-milkshake:{buz, kakao, krema, süt, çikolatalı dondurma, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/milkshake-tarifi.jpg}{5}{Milkshake}
-çikolatalı-soğuk-kahve:{buz, granül kahve, kakao, krem şanti, su, süt, sütlü çikolata, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/cikolatali-soguk-kahve-tarifi.jpg}{10}{Çikolatalı Soğuk Kahve}
-ceviz-sütü:{ceviz, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/02/ceviz-sutu.jpg}{1}{Ceviz Sütü}
-yeşil-i-çecek:{kereviz, limon, maydanoz, salatalık, su, yeşil elma}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/yesil-icecek-editor.jpg}{20}{Yeşil İçecek}
-soğuk-yeşil-çay:{buz, limon, su, yeşil çay}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/08/soguk-yesil-cay-yemekcom.jpg}{11}{Soğuk Yeşil Çay}
-bademli-elma-kompostosu:{badem, elma, kuru üzüm, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/bademli-elma-kompostosu-tarifi.jpg}{35}{Bademli Elma Kompostosu}
-ballı-muzlu-süt:{bal, muz, süt, tarçın}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/11/balli-muzlu-sut-tarifi.jpg}{5}{Ballı Muzlu Süt}
-kavun-şerbeti:{kavun, limon, nane, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/09/kavun-serbeti-tarifi.jpg}{45}{Kavun Şerbeti}
-evde-çilekli-limonata:{limon, su, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/02/evde-cilekli-limonata-bedia.jpg}{10}{Evde Çilekli Limonata}
-kolay-dalgona-kahve:{granül kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/02/kolay-dalgona-kahve-maya.jpeg}{10}{Kolay Dalgona Kahve}
-bal-kabaklı-baharatlı-smoothie:{akçaağaç şurubu, badem sütü, bal kabağı, hindistan cevizi, tarçın, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/09/balkabakli-smoothie-yeni.jpg}{20}{Bal Kabaklı, Baharatlı Smoothie}
-reyhan-suyu:{bal, limon, portakal, reyhan, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/reyhan-suyu-tarifi.jpg}{15}{Reyhan Suyu}
-espresso-tonik:{buz, espresso, limon, tonik}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/07/espresso-tonik-yemekcom.jpg}{1}{Espresso Tonik}
-iced-latte-soğuk-latte:{buz, granül kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/iced-latte-sunum-yemekcom.jpg}{10}{Iced Latte (Soğuk Latte)}
-tarçınlı-sıcak-çikolata:{krema, süt, sütlü çikolata, tarçın}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/11/tarcinli-sicak-cikolata.jpg}{25}{Tarçınlı Sıcak Çikolata}
-dalgona-kahvesi:{granül kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/dalgona-kahvesi-yemekcom.jpg}{17}{Dalgona Kahvesi}
-kavunlu-smoothie:{bal, kavun, nane, süt, süzme yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/07/kavunlu-smoothie-tarifi.jpg}{10}{Kavunlu Smoothie}
-meyveli-smoothie:{bal, karpuz, süt, çilek, şeftali}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/meyveli-smoothie-tarifi.jpeg}{5}{Meyveli Smoothie}
-maydanoz-suyu:{limon, maydanoz, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/02/maydanoz-suyu-sunum-yemekcom.jpg}{10}{Maydanoz Suyu}
-çikolatalı-kahve-şurubu:{kakao, su, tuz, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/05/cikolatali-kahve-surubu-tarifi.jpg}{40}{Çikolatalı Kahve Şurubu}
-karışık-meyve-suyu:{kayısı, su, şeftali, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/karisik-meyve-suyu-yemekcom-1.jpg}{5}{Karışık Meyve Suyu}
-mürdüm-şerbeti:{böğürtlen, frambuaz, karanfil, limon, mürdüm eriği, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/murdum-serbeti-yasemin.jpg}{30}{Mürdüm Şerbeti}
-portakallı-sıcak-çikolata:{kakao, krema, portakal, süt, sütlü çikolata, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/12/portakalli-sicak-cikolata-yemekcom.jpg}{25}{Portakallı Sıcak Çikolata}
-alkolsüz-kokteyl:{elma, elma sirkesi, maden suyu, tarçın}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/02/alkolsuz-kokteyl-yemekcom.jpg}{10}{Alkolsüz Kokteyl}
-ballı-tarçınlı-mangolu-buzlu-çay:{bal, mango, siyah çay, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/07/dem-karakoy-buzlu-cay.jpg}{20}{Ballı, Tarçınlı, Mangolu Buzlu Çay}
-karışık-meyveli-smoothie:{bal, böğürtlen, muz, siyah üzüm, süt, süzme yoğurt, zencefil, zerdeçal}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/10/mor-smoothie.jpg}{5}{Karışık Meyveli Smoothie}
-yeşil-detoks-suyu:{fesleğen, maydanoz, reyhan, salatalık, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/01/yesil-detoks-suyu-tarifi.jpg}{5}{Yeşil Detoks Suyu}
-avokadolu-smoothie:{avokado, bal, nane, süt, yeşil elma, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/05/avokadolu-smoothie-tarifi.jpg}{10}{Avokadolu Smoothie}
-ödem-atıcı-yeşil-i-çecek:{erik, keten tohumu, limon, maydanoz, yeşil elma, yeşil çay, zencefil, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/07/odem-atici-yesil-icecek-ilknur.jpg}{15}{Ödem Atıcı Yeşil İçecek}
-kavun-sübyesi:{kavun, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/kavun-subyesi-onecikan.jpg}{5}{Kavun Sübyesi}
-nane-şerbeti:{buz, limon, nane, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/nane-serbeti-yemekcom-2.jpg}{40}{Nane Şerbeti}
-meyveli-komposto:{kakule, karanfil, portakal, su, tarçın, yeşil elma, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/12/meyveli-komposto-tarifi.jpg}{35}{Meyveli Komposto}
-cool-lime:{bal, buz, limon, nane, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/cool-lime-berna.jpg}{15}{Cool Lime}
-vişneli-cheesecake-smoothie:{bisküvi, krem peynir, muz, süt, vişne}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/08/visneli-cheesecake-smoothie-tarifi.jpg}{5}{Vişneli Cheesecake Smoothie}
-badem-sütü:{badem, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/badem-sutu-esra.jpg}{10}{Badem Sütü}
-kırmızı-erik-kompostosu:{karanfil, siyah erik, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/09/kirmizi-erik-kompostosu.jpg}{25}{Kırmızı Erik Kompostosu}
-kahveli-limonata:{bal, espresso, limon, maden suyu}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/07/kahveli-limonata-yemekcom.jpg}{5}{Kahveli Limonata}
-ev-yapımı-portakal-suyu:{portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/ev-yapimi-portakal-suyu-seyma.jpg}{10}{Ev Yapımı Portakal Suyu}
-marshmallow-lu-sıcak-çikolata:{bitter çikolata, kakao, marshmallow, nişasta, süt, sütlü çikolata, tuz, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/12/sicakcikolata-yemekcom.jpg}{15}{Marshmallow'lu Sıcak Çikolata}
-sarımsak-çayı:{bal, limon, sarımsak, su, zencefil, zerdeçal}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/10/sarimsak-cayi-tarifi-2.jpg}{7}{Sarımsak Çayı}
-altın-kefir:{karabiber, kefir, zerdeçal, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/altin-kefir-tarifi.jpg}{3}{Altın Kefir}
-diyet-dalgona-kahvesi:{bal, granül kahve, su, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/diyet-dalgona-kahve-editor.jpg}{20}{Diyet Dalgona Kahvesi}
-tiramisulu-soğuk-kahve:{dondurma, labne, süt, türk kahvesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/tiramisulu-soguk-kahve-tarifi.jpeg}{5}{Tiramisulu Soğuk Kahve}
-ev-yapımı-sıcak-çikolata:{kakao, keçiboynuzu özü, nişasta, süt, sütlü çikolata}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/ev-yapimi-sicak-cikolata-emel.jpg}{15}{Ev Yapımı Sıcak Çikolata}
-ferahlatan-ramazan-şerbeti:{elma, hibiskus, portakal, su, tarçın, ıhlamur, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/04/ferahlatan-ramazan-serbeti.jpg}{40}{Ferahlatan Ramazan Şerbeti}
-evde-kolay-mocha:{bitter çikolata, filtre kahve, kakao, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/evde-kolay-mocha-tarifi.jpeg}{15}{Evde Kolay Mocha}
-çilekli-buzlu-çay:{buz, limon, siyah çay, su, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/08/cilekli-buzlu-cay-yeni.jpg}{30}{Çilekli Buzlu Çay}
-çilekli-yeşil-çay:{limon, nane, su, tuz, yeşil çay, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/cilekli-yesil-cay-tarifi.jpeg}{8}{Çilekli Yeşil Çay}
-soğuk-kahve:{buz, filtre kahve, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/soguk-kahve-yemekcom.jpg}{20}{Soğuk Kahve}
-ödem-atıcı-yeşil-detoks-suyu:{ananas, limon, maydanoz, salatalık, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/01/odem-atici-yesil-detoks-hande.jpeg}{10}{Ödem Atıcı Yeşil Detoks Suyu}
-muzlu-milkshake:{dondurma, muz, pudra şekeri, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/08/muzlu-milkshake-yemekcom.jpg}{5}{Muzlu Milkshake}
-zencefil-çayı:{bal, limon, su, tarçın, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/zencefil-cayi-yemekcom.jpg}{5}{Zencefil Çayı}
-ev-yapımı-reyhan-şerbeti:{karanfil, limon tuzu, reyhan, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/ev-yapimi-reyhan-serbeti-gozde.jpg}{5}{Ev Yapımı Reyhan Şerbeti}
-yoğurtlu-portakallı-smoothie:{portakal, vanilya, yoğurt, yulaf}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/02/yogurtlu-portakalli-smoothie-yemekcom.jpg}{2}{Yoğurtlu Portakallı Smoothie}
-starbucks-cool-lime:{buz, lime, limon, nane, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/cool-lime-sunum-yemekcom.jpg}{15}{Starbucks Cool Lime}
-tarçınlı-salep:{nişasta, süt, tarçın, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/01/tarcinli-salep-tarifi.jpg}{10}{Tarçınlı Salep}
-berry-hibiscus-çayı:{bal, buz, frambuaz, hibiskus, su, yaban mersini}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/berry-hibiscus-tarifi.jpg}{15}{Berry Hibiscus Çayı}
-kuru-kayısı-kompostosu:{karanfil, kuru kayısı, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/03/kuru-kayisi-kompostosu-tarifi.jpg}{40}{Kuru Kayısı Kompostosu}
-affogato:{bal, kahve, muz, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/affogato-tarifi.jpeg}{10}{Affogato}
-muzlu-süt:{bal, muz, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/muzlu-sut-mylovely.jpg}{3}{Muzlu Süt}
-naneli-ayran:{nane, su, tuz, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/10/naneli-ayran-sunum-yemekcom.jpg}{5}{Naneli Ayran}
-sumaklı-limonata:{limon, su, sumak, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/05/sumakli-limonata.jpg}{15}{Sumaklı Limonata}
-kahveli-sıcak-çikolata:{filtre kahve, kakao, süt, sütlü çikolata}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/kahveli-sicak-cikolata-tarifi.jpg}{7}{Kahveli Sıcak Çikolata}
-hibiskus-çayı:{hibiskus, su, tarçın}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/10/hibiskus-cayi-yemekcom.jpg}{8}{Hibiskus Çayı}
-ev-yapımı-salep:{nişasta, süt, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/12/ev-yapimi-salep-kubra.jpg}{5}{Ev Yapımı Salep}
-kışlık-vişne-suyu:{limon tuzu, su, vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/kislik-visne-suyu-editorr.jpg}{91}{Kışlık Vişne Suyu}
-cold-brew:{buz, kahve, su, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/09/cold-brew-coffee-yeni.jpg}{12}{Cold Brew}
-kakaolu-badem-sütü:{badem sütü, kakao, keçiboynuzu özü}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/kakaolu-badem-sutu-nagihan.jpg}{1}{Kakaolu Badem Sütü}
-pratik-ev-yapımı-limonata:{lime, limon, nane, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/pratik-ev-yapimi-limonata-tarifi.jpg}{15}{Pratik Ev Yapımı Limonata}
-vanilyalı-türk-kahvesi:{su, türk kahvesi, vanilya}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/11/vanilyali-turk-kahvesi-tarifi.jpg}{10}{Vanilyalı Türk Kahvesi}
-detoks-suyu:{lime, limon, nane, su, tarçın, yeşil elma, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/04/detoks-suyu-sunum-yemekcom.jpg}{10}{Detoks Suyu}
-latte-macchiato:{granül kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/latte-machiato-sunum-yemekcom.jpg}{5}{Latte Macchiato}
-zencefilli-kış-çayı:{bal, limon, nane, su, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/10/zencefilli-kis-cayi.jpg}{16}{Zencefilli Kış Çayı}
-muzlu-hurmalı-smoothie:{ceviz, hurma, muz, süt, yulaf kepeği}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/05/muzlu-hurmali-smoothie-tarifi.jpg}{10}{Muzlu Hurmalı Smoothie}
-yeşil-smoothie:{kefir, salatalık, semizotu}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/yesil-smoothie-tarifi.jpg}{4}{Yeşil Smoothie}
-fit-soğuk-çay:{elma, hibiskus, karanfil, maden suyu, nane, su, tarçın, yaban mersini, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/fit-soguk-cay-simay.jpg}{15}{Fit Soğuk Çay}
-karadutlu-kefir:{karadut, kefir}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/karadutlu-kefir-tarifi.jpg}{1}{Karadutlu Kefir}
-i-sviçre-usulü-sıcak-çikolata:{bitter çikolata, karabiber, süt, tarçın, tuz, vanilya}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/isvicre-usulu-sicak-cikolata-aylak.jpg}{6}{İsviçre Usulü Sıcak Çikolata}
-ananaslı-soğuk-çay:{ananas, bal, elma, limon, nane, siyah çay, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/ananasli-soguk-cay-editorr.jpg}{35}{Ananaslı Soğuk Çay}
-ayva-kompostosu:{ayva, limon tuzu, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/ayva-kompostosu-tarifi.jpg}{36}{Ayva Kompostosu}
-keten-tohumlu-smoothie:{keten tohumu, muz, süt, tarçın, yoğurt, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/03/keten-tohumlu-smoothie-tarifi.jpg}{10}{Keten Tohumlu Smoothie}
-taze-sıkılmış-portakal-suyu:{portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/06/taze-sikma-portakal-suyu.jpg}{15}{Taze Sıkılmış Portakal Suyu}
-çilekli-süt:{nane, pudra şekeri, süt, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/07/cilekli-sut-sunum-yemekcom.jpg}{10}{Çilekli Süt}
-alkolsüz-meyve-kokteyli:{limon, maden suyu, nar, çilek, şeftali}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/alkolsuz-meyve-kokteyli-tugba.jpg}{5}{Alkolsüz Meyve Kokteyli}
-kirazlı-soğuk-çay:{bal, buz, kiraz, limon, siyah çay, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/07/kirazli-soguk-cay-tarifi.jpg}{5}{Kirazlı Soğuk Çay}
-ballı-soğuk-kahve:{bal, buz, granül kahve, su, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/09/balli-soguk-kahve-sezgi.jpg}{5}{Ballı Soğuk Kahve}
-evde-limonata:{limon, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/evde-limonata-tarifi.jpg}{30}{Evde Limonata}
-2-limondan-limonata:{buz, limon, nane, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/2-limondan-limonata-tarifi.jpg}{1}{2 Limondan Limonata}
-kayısı-kompostosu:{karanfil, kuru kayısı, su, tarçın, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/kayisi-kompostosu-yenge.jpg}{35}{Kayısı Kompostosu}
-az-malzemeli-limonata:{limon, nane, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/az-malzemeli-limonata-editor.jpg}{25}{Az Malzemeli Limonata}
-karpuz-püreli-buzlu-çay:{buz, karpuz, limon, nane, siyah çay, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/08/karpuzlu-soguk-cay-1.png}{30}{Karpuz Püreli Buzlu Çay}
-ev-yapımı-taze-limonata:{bal, limon, nane, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/ev-yapimi-limonata-tarifi-2.jpg}{15}{Ev Yapımı Taze Limonata}
-gerçek-sıcak-çikolata:{bitter çikolata, kakao, krema, marshmallow, nişasta, süt, sütlü çikolata, tuz, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/12/sicak-cikolata-yemekcom.jpg}{20}{Gerçek Sıcak Çikolata}
-dukan-birası:{limon, maden suyu, su, yeşil çay}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/dukan-birasi-ceren.jpg}{15}{Dukan Birası}
-kuru-dağ-eriği-ekşisi:{kuru erik, nane, pul biber, sarımsak, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/05/kuru-dag-erigi-eksisi-tarifi.jpg}{20}{Kuru Dağ Eriği Ekşisi}
-bal-kabaklı-ve-kahveli-smoothie:{bal kabağı, filtre kahve, muskat, muz, süt, tarçın, yulaf, zencefil, zerdeçal}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/02/bal-kabakli-kahveli-smoothie-yemekcom.jpg}{2}{Bal Kabaklı ve Kahveli Smoothie}
-lassi:{buz, mango, yoğurt, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/10/lassi-tarifi.jpeg}{5}{Lassi}
-pumpkin-spice-şurubu:{bal, bal kabağı, muskat, su, tarçın, yenibahar, zencefil, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/pumpkin-spice-surubu-tarifi.jpg}{25}{Pumpkin Spice Şurubu}
-dalgona-kahve:{buz, granül kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/dalgona-kahvee-editorrr.jpg}{10}{Dalgona Kahve}
-karpuzlu-limonlu-frozen:{bal, buz, karpuz, limon, maden suyu}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/karpuzlu-limonlu-frozen-tarifi.jpg}{20}{Karpuzlu Limonlu Frozen}
-vişneli-ramazan-şerbeti:{karanfil, limon tuzu, su, tarçın, vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/04/visneli-ramazan-serbeti-tarifi-aysegul-karaman.jpg}{35}{Vişneli Ramazan Şerbeti}
-orman-meyveli-smoothie:{böğürtlen, frambuaz, kefir, nane, yaban mersini, zencefil, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/05/kirmizi-meyveli-smoothie-tarifi.jpg}{10}{Orman Meyveli Smoothie}
-ev-yapımı-vişne-suyu:{su, vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/ev-yapimi-visne-suyu-hande.jpg}{50}{Ev Yapımı Vişne Suyu}
-pratik-churchill:{limon, maden suyu, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/07/churchill-mango.jpg}{5}{Pratik Churchill}
-bisküvili-ve-muzlu-soğuk-kahve:{bebe bisküvisi, buz, filtre kahve, karamel, muz, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/07/muzlu-ve-biskuvili-soguk-kahve-yemekcom.jpg}{2}{Bisküvili ve Muzlu Soğuk Kahve}
-erik-suyu:{siyah erik, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/10/erik-suyu-maya.jpg}{50}{Erik Suyu}
-mangolu-portakallı-smoothie:{dondurma, karanfil, mango, nane, portakal}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/05/mangolu-portakalli-smoothie-tarifi.jpg}{10}{Mangolu Portakallı Smoothie}
-çilekli-fit-limonata:{limon, su, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/cilekli-fit-limonata-tarifi.jpeg}{10}{Çilekli Fit Limonata}
-kurşun-geçirmez-kahve:{filtre kahve, hindistan cevizi yağı, muskat, tarçın, tereyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/12/kursun-gecirmez-kahve-tarifi.jpg}{5}{Kurşun Geçirmez Kahve}
-zencefilli-ballı-limon:{bal, limon, tarçın, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/02/zencefilli-balli-limon.jpg}{5}{Zencefilli Ballı Limon}
-çilek-yulaf-ve-keten-tohumlu-smoothie:{bal, keten tohumu, muz, süt, yoğurt, yulaf, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/04/rengi-guzel-cilek-yulaf-ve-keten-tohumlu-smoothie-yemekcom.jpg}{5}{Çilek Yulaf ve Keten Tohumlu Smoothie}
-buz-gibi-milkshake:{bal, dondurma, süt, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/buz-gibi-milkshake-tarifi.jpg}{20}{Buz Gibi Milkshake}
-acılı-ayran:{cin biberi, su, tuz, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/05/acili-ayran-tarifi.jpg}{15}{Acılı Ayran}
-baharatlı-sıcak-çikolatalı-süt:{bitter çikolata, süt, tarçın, yıldız anason, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/baharatli-sicak-cikolatali-sun.jpg}{25}{Baharatlı Sıcak Çikolatalı Süt}
-naneli-limonata:{lime, nane, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/10/naneli-limonata-mayas.jpg}{30}{Naneli Limonata}
-portakal-ve-limon-saklama:{limon, portakal}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/04/portakal-ve-limon-saklama-tarifi.jpg}{244}{Portakal ve Limon Saklama}
-bubble-tea:{nişasta, su, süt, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/11/bubble-tea-yemekcom.jpg}{40}{Bubble Tea}
-yeşil-elmalı-maydanoz-suyu:{maydanoz, salatalık, su, yeşil elma}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/10/elmali-maydanoz-suyu-tarifi.jpg}{5}{Yeşil Elmalı Maydanoz Suyu}
-kivili-smoothie:{kivi, limon, maydanoz, yeşil elma, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/05/kivili-smoothie-tarifi.jpg}{10}{Kivili Smoothie}
-kuru-meyveli-hoşaf:{kuru kayısı, kuru üzüm, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/kuru-meyveli-hosaf-tarifi.jpg}{60}{Kuru Meyveli Hoşaf}
-üç-farklı-aromalı-su:{buz, limon, nane, salatalık, su, zencefil, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/aromali-su-happy.jpg}{5}{Üç Farklı Aromalı Su}
-pancarlı-smoothie:{limon, maydanoz, pancar, yoğurt, zencefil, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/05/pancarli-smoothie-tarifi.jpg}{10}{Pancarlı Smoothie}
-buz-gibi-limonata:{limon, nane, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/buz-gibi-limonata-tarifi.jpg}{5}{Buz Gibi Limonata}
-karadut-şerbeti:{karadut, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/08/karadut-serbeti-tarifi-.jpg}{15}{Karadut Şerbeti}
-kakaolu-süt:{kakao, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/11/kakaolu-sut-tarifi.jpg}{14}{Kakaolu Süt}
-ayran:{su, tuz, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/10/ayran-sunum-yemekcom.jpg}{5}{Ayran}
-karpuzlu-limonata:{karpuz, limon, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/08/1-dilim-karpuzla-karpuzlu-limonata-tarifi-sizdengelenler.jpg}{5}{Karpuzlu Limonata}
-naneli-ve-fesleğenli-ayran:{buz, fesleğen, nane, su, süzme yoğurt, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/feslegenli-taze-naneli-ayran-yemekcom.jpg}{2}{Naneli ve Fesleğenli Ayran}
-şeftali-suyu:{su, şeftali, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/seftali-suyu-onecikan.jpg}{30}{Şeftali Suyu}
-ramazan-şerbeti:{karanfil, kuru erik, kuru üzüm, su, tarçın, vişne, zencefil, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/02/ramazan-serbeti-yemekcom.jpg}{30}{Ramazan Şerbeti}
-nektarlı-i-çecek:{buz, dondurma, nektarin, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/nektarli-icecek-tarifi.jpeg}{10}{Nektarlı İçecek}
-kuru-üzüm-hoşafı:{karanfil, su, üzüm, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/kuru-uzum-hosafi-tarifi.jpg}{25}{Kuru Üzüm Hoşafı}
-nutellalı-sıcak-çikolata:{antep fıstığı, bitter çikolata, fındık kreması, kakao, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/12/nutellali-sicak-cikolata-tarifi.jpg}{20}{Nutellalı Sıcak Çikolata}
-çilekli-ferah-limonata:{limon, limon tuzu, su, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/cilekli-limonata-tarifi-son.jpg}{25}{Çilekli Ferah Limonata}
-şekersiz-limonata:{bal, limon, nane, portakal, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/sekersiz-limonata-editor.jpg}{15}{Şekersiz Limonata}
-fit-i-çecek:{ananas, limon, maydanoz, su, yeşil elma, zencefil, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/03/fit-icecek.jpg}{10}{Fit İçecek}
-konsantre-vişne-suyu:{vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/08/konsantre-visne-suyu-editor.jpg}{42}{Konsantre Vişne Suyu}
-sindirimi-düzenleyen-smoothie:{bal, kefir, kivi, maydanoz, muz, salatalık, su, yulaf ezmesi, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/sindirimi-duzenleyen-smoothie-tarifi.jpg}{5}{Sindirimi Düzenleyen Smoothie}
-evde-elma-sirkesi-nasıl-yapılır:{bal, elma, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/01/elma-sirkesi-tarifi.jpg}{30}{Evde Elma Sirkesi Nasıl Yapılır?}
-vanilyalı-badem-sütü:{badem, su, vanilya}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/07/vanilyali-badem-sutu-tarifi.jpg}{30}{Vanilyalı Badem Sütü}
-afrika-kahvesi:{kakao, limon, su, türk kahvesi, vanilya}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/afrika-kahvesi-tarifi.jpg}{8}{Afrika Kahvesi}
-türk-kahvesi:{su, türk kahvesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/turk-kahvesi-elif.jpg}{6}{Türk Kahvesi}
-salep:{nişasta, salep, süt, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/salep-ozge.jpg}{13}{Salep}
-karpuzlu-smoothie:{bisküvi, karpuz, kuru üzüm, süt, yulaf ezmesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/06/karpuzlu-smoothie-1.jpg}{5}{Karpuzlu Smoothie}
-çikolatalı-milkshake:{bitter çikolata, kakao, krema, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/cikolatali-milkshake-yemekcom.jpg}{5}{Çikolatalı Milkshake}
-çilekli-milkshake:{dondurma, süt, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/cilekli-milkshake-sunum-yemekcom.jpg}{15}{Çilekli Milkshake}
-robotta-kolay-limonata:{limon, limon tuzu, nane, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/robotta-kolay-limonata-ismihan.jpg}{10}{Robotta Kolay Limonata}
-vegan-yeşil-smoothie:{badem sütü, fıstık ezmesi, muz, yulaf, zencefil, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/vegan-yesil-smoothie.jpg}{6}{Vegan Yeşil Smoothie}
-dondurmalı-soğuk-kahve:{dondurma, granül kahve, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/dondurmali-soguk-kahve-bedia.jpg}{5}{Dondurmalı Soğuk Kahve}
-filtre-kahve:{kahve, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/filtre-kahve-tarifi.jpg}{10}{Filtre Kahve}
-sütlü-kahve:{süt, türk kahvesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/sutlu-kahve-sunum-yemekcom.jpg}{10}{Sütlü Kahve}
-alkali-maydanozlu-i-çecek:{limon, maydanoz, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/alkali-maydanozlu-icecek-nagi.jpg}{1}{Alkali Maydanozlu İçecek}
-alıç-sirkesi:{alıç, elma, elma sirkesi, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/02/alic-sirkesi-tarifi.jpg}{15}{Alıç Sirkesi}
-elmalı-detox-suyu:{elma, limon, maydanoz, su, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/elmali-detox-suyu-tarifi.jpeg}{5}{Elmalı Detox Suyu}
-ballı-limonata:{bal, limon, nane, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/balli-limonata-editor.jpg}{5}{Ballı Limonata}
-pratik-soğuk-kahve:{buz, granül kahve, karamel, su, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/soguk-kahve-editor.jpg}{2}{Pratik Soğuk Kahve}
-vişne-suyu:{su, vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/visne-suyu-tarifi.jpg}{58}{Vişne Suyu}
-kayısılı-bademli-osmanlı-şerbeti:{badem, karanfil, kuru kayısı, limon, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/kayisili-bademli-osmanli-serbeti-tarifi.jpg}{23}{Kayısılı Bademli Osmanlı Şerbeti}
-nane-limon:{limon, nane, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/02/nane-limon-yemekcom.jpg}{12}{Nane Limon}
-tahinli-latte:{espresso, filtre kahve, hurma, su, süt, tahin, tarçın, vanilya şurubu}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/tahinli-latte.jpg}{28}{Tahinli Latte}
-badem-sütlü-pekmezli-kahve:{badem sütü, filtre kahve, kakao, keçiboynuzu pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/badem-sutlu-pekmezli-kahve.jpg}{7}{Badem Sütlü Pekmezli Kahve}
-pratik-cool-lime:{buz, limon, nane, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/pratik-cool-lime-aysegul.jpg}{10}{Pratik Cool Lime}
-gerçek-salep:{salep, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/01/gercek-salep-onecikan.jpg}{20}{Gerçek Salep}
-tropikal-meyveli-i-çecek:{ananas, kivi, limon, nektarin}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/tropikal-meyveli-icecek-alime.jpg}{10}{Tropikal Meyveli İçecek}
-dalgona-coffee:{kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/dalgona-coffee.jpg}{10}{Dalgona Coffee}
-bağırsak-temizleyen-i-çecek:{avokado, elma, su, zencefil, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/03/bagirsak-temizleyen-icecek-tarifi.jpg}{5}{Bağırsak Temizleyen İçecek}
-vanilyalı-buzlu-yeşil-çay:{bal, buz, dondurma, limon, nane, su, yeşil çay, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/08/vanilyali-buzlu-yesil-cay-tarifi-yeni.jpg}{30}{Vanilyalı Buzlu Yeşil Çay}
-chai-tea-latte:{kakule, karabiber, karanfil, siyah çay, su, süt, tarçın, yıldız anason, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/01/chai-tea-latte-tarifiii.jpg}{20}{Chai Tea Latte}
-dondurmalı-milkshake:{dondurma, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/04/dondurmali-milkshake-tarifi.jpg}{10}{Dondurmalı Milkshake}
-kolay-soğuk-kahve:{granül kahve, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/kolay-soguk-kahve-tarifi.jpg}{20}{Kolay Soğuk Kahve}
-hindistan-cevizi-sütü:{hindistan cevizi, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/02/hindistan-cevizi-sutu.jpg}{10}{Hindistan Cevizi Sütü}
-frappe:{buz, granül kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/07/frappe-2-irem-tarifi.jpg}{5}{Frappe}
-ev-yapımı-şeftali-suyu:{su, şeftali, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/seftali-suyu-tarifi.jpg}{23}{Ev Yapımı Şeftali Suyu}
-pratik-sıcak-çikolata:{kakao, marshmallow, süt, sütlü çikolata}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/sicak-cikolata-esra.jpg}{25}{Pratik Sıcak Çikolata}
-kahveli-ve-yulaflı-smoothie:{buz, espresso, fıstık ezmesi, muz, süt, yulaf}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/kahveli-yulafli-smoothie-yemekcom.jpg}{3}{Kahveli ve Yulaflı Smoothie}
-kırmızı-erik-suyu:{siyah erik, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/kirmizi-erik-suyu-nefisanne.jpg}{11}{Kırmızı Erik Suyu}
-portakal-suyu:{nane, portakal}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/12/portakal-suyu-one-cikan.jpg}{15}{Portakal Suyu}
-vişneli-limonata:{lime, limon, su, vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/08/visneli-limonata.jpg}{25}{Vişneli Limonata}
-muzlu-smoothie:{hurma, kahve, muz, süt, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/muzlu-smoothie-tarifi.jpg}{15}{Muzlu Smoothie}
-yaban-mersinli-smoothie:{bal, muz, süt, yaban mersini, yoğurt, yulaf ezmesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/yaban-mersinli-smoothie-tarifi.jpg}{5}{Yaban Mersinli Smoothie}
-şekersiz-kayısılı-soğuk-çay:{bal, kayısı, siyah çay, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/sekersiz-kayisili-soguk-cay-yes.jpg}{45}{Şekersiz Kayısılı Soğuk Çay}
-orijinal-limonata:{limon, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/kusursuz-limonata-yemekcom.jpg}{15}{Orijinal Limonata}
-çörçil:{buz, limon, maden suyu, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/05/corcil-tarifi.jpg}{2}{Çörçil}
-osmanlı-şerbeti:{karanfil, limon, siyah erik, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/osmanli-serbeti-yeni.jpg}{30}{Osmanlı Şerbeti}
-ev-yapımı-kayısı-suyu:{kayısı, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/ev-yapimi-kayisi-suyu-tarifi.jpg}{42}{Ev Yapımı Kayısı Suyu}
-cold-hibiskus:{bal, hibiskus, karanfil, limon tuzu, su, tarçın}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/cold-hibiskus-gozde.jpg}{5}{Cold Hibiskus}
-oreo-milkshake:{dondurma, oreo, süt, vanilya}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/02/oreo-milkshake-tarifi.jpg}{10}{Oreo Milkshake}
-yaz-i-çeceği:{bal, süt, yoğurt, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/yaz-icecegi-tarifi-alime.jpg}{5}{Yaz İçeceği}
-çilek-kompostosu:{karanfil, su, tarçın, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/07/cilek-kompostosu-yeni.jpg}{25}{Çilek Kompostosu}
-frambuazlı-limonata:{bal, frambuaz, limon, nane, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/frambuazli-limonata-tarifi.jpg}{5}{Frambuazlı Limonata}
-soğuk-dalgona-kahve:{buz, granül kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/soguk-dalgona-kahve-tarifi.jpg}{5}{Soğuk Dalgona Kahve}
-yer-fıstıklı-soğuk-kahve:{buz, fıstık, fıstık ezmesi, granül kahve, karamel, krem şanti, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/06/yer-fistikli-soguk-kahve-tarifi.jpg}{3}{Yer Fıstıklı Soğuk Kahve}
-atom:{bal, fındık kreması, kivi, muz, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/01/atom-icecek-tarifi.jpg}{10}{Atom}
-kremalı-kahve:{filtre kahve, krema, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/08/kremali-kahve-yemekcom.jpg}{10}{Kremalı Kahve}
-vanilya-aromalı-buzlu-kahve:{buz, filtre kahve, su, vanilya}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/vanilya-aromali-buzlu-kahve-tarifi.jpg}{15}{Vanilya Aromalı Buzlu Kahve}
-şalgam-suyu:{ekmek, limon tuzu, pancar, siyah havuç, su, tuz, şalgam, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/11/salgam-suyu-tarifi.jpg}{30}{Şalgam Suyu}
-acı-biberli-sıcak-çikolata:{kırmızı biber, su, süt, sütlü çikolata, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/12/ac-biberli-sicak-cikolata.jpg}{30}{Acı Biberli Sıcak Çikolata}
-tatlı-dalgona-kahve:{granül kahve, su, süt tozu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/tatli-dalgona-kahve-editor.jpg}{5}{Tatlı Dalgona Kahve}
-karamelli-sıcak-çikolata:{su, süt, sütlü çikolata, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/12/karamelli-sicak-cikolata.jpg}{35}{Karamelli Sıcak Çikolata}
-i-talyan-usulü-sıcak-çikolata:{bal, bitter çikolata, kakao, nişasta, süt, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/italyan-usulu-sicak-cikolata-tarifi.jpg}{25}{İtalyan Usulü Sıcak Çikolata}
-pancarlı-kefir:{bal, kefir, pancar}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/01/20230119010218970973-11.jpg}{5}{Pancarlı Kefir}
-kahveli-badem-sütü:{badem sütü, türk kahvesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/kahveli-badem-sutu-nagi.jpg}{1}{Kahveli Badem Sütü}
-ananaslı-smoothie:{ananas, muz, nane, portakal, süt, zerdeçal}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/ananasli-smoothie-biem.jpg}{10}{Ananaslı Smoothie}
-kahveli-pina-colada:{ananas, bal, buz, hindistan cevizi, kahve, limon, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/07/kahveli-pina-colada-yemekcom.jpg}{10}{Kahveli Pina Colada}
-acısız-limonata:{limon, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/03/acisiz-limonata-onecikan.jpg}{10}{Acısız Limonata}
-şeftalili-milkshake:{dondurma, süt, şeftali}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/seftalili-milkshake-editorr.jpg}{1}{Şeftalili Milkshake}
-kavun-sütü-beyaz-limonata-çengel-güneşi:{bal, kavun, krema, limon, maden suyu, nane, salatalık, su, süt, tarçın, çikolatalı dondurma, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/bby-moctails-yemekcom.jpg}{10}{Kavun Sütü, Beyaz Limonata, Çengel Güneşi}
-ödem-atıcı-çay:{karabiber, karanfil, limon, tarçın, yeşil elma}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/odem-atici-cay-sunum-yemekcom.jpg}{15}{Ödem Atıcı Çay}
-çilekli-limonata:{limon, su, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/cilekli-limonata-sezgi.jpg}{15}{Çilekli Limonata}
 çikolatalı-sütlü-milkshake:{krem şanti, pasta süsü, çikolata sosu, çikolatalı dondurma, çikolatalı süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/cikolatali-sut-sutas-yemekcom.jpg}{10}{Çikolatalı Sütlü Milkshake}
-karamel-macchiato:{espresso, karamel, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/03/karamel-macchiato-yemekcom.jpg}{10}{Karamel Macchiato}
-altın-smoothie:{badem, bal, karabiber, muskat, muz, süt, tarçın, zencefil, zerdeçal}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/sutas-altin-smoothie-yemekcom.jpg}{5}{Altın Smoothie}
-elma-kompostosu:{elma, karanfil, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/01/elma-kompostosu-tarifi.jpg}{65}{Elma Kompostosu}
-kombucha:{mantar, siyah çay, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/kombucha-tarifi.jpg}{15}{Kombucha}
-yulaf-sütü:{buz, su, tuz, vanilya, yulaf}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/06/yulaf-sutu-yemekcom.jpg}{40}{Yulaf Sütü}
-kayısı-hoşafı:{kuru kayısı, kuş üzümü, limon, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/03/kayisi-hosafi-onecikan.jpg}{25}{Kayısı Hoşafı}
-elmalı-smoothie:{badem, bal, elma, süt, tarçın, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/04/elmali-smoothie-tarifi.jpg}{10}{Elmalı Smoothie}
-vişne-hoşafı:{limon, su, vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/05/visne-hosafi-yemekcom.jpg}{45}{Vişne Hoşafı}
-kolay-sıcak-çikolata:{kakao, süt, sütlü çikolata, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/kolay-sicak-cikolata-happy.jpg}{15}{Kolay Sıcak Çikolata}
+gerçek-sıcak-çikolata:{bitter çikolata, kakao, krema, marshmallow, nişasta, süt, sütlü çikolata, tuz, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/12/sicak-cikolata-yemekcom.jpg}{20}{Gerçek Sıcak Çikolata}
+kolay-salep:{nişasta, su, süt, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/12/salep-yemekcom.jpg}{20}{Kolay Salep}
+kavunlu-smoothie:{bal, kavun, nane, süt, süzme yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/07/kavunlu-smoothie-tarifi.jpg}{10}{Kavunlu Smoothie}
+ceviz-sütü:{ceviz, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/02/ceviz-sutu.jpg}{1}{Ceviz Sütü}
+kayısı-kompostosu:{karanfil, kuru kayısı, su, tarçın, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/kayisi-kompostosu-yenge.jpg}{35}{Kayısı Kompostosu}
+evde-limonata:{limon, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/evde-limonata-tarifi.jpg}{30}{Evde Limonata}
+tarçınlı-sıcak-çikolata:{krema, süt, sütlü çikolata, tarçın}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/11/tarcinli-sicak-cikolata.jpg}{25}{Tarçınlı Sıcak Çikolata}
+ramazan-şerbeti:{hibiskus, karanfil, siyah erik, su, tarçın, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/ramazan-serbeti-ceylankoksal.jpg}{20}{Ramazan Şerbeti}
+2-limondan-limonata:{buz, limon, nane, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/2-limondan-limonata-tarifi.jpg}{1}{2 Limondan Limonata}
+yeşil-elmalı-maydanoz-suyu:{maydanoz, salatalık, su, yeşil elma}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/10/elmali-maydanoz-suyu-tarifi.jpg}{5}{Yeşil Elmalı Maydanoz Suyu}
+lassi:{buz, mango, yoğurt, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/10/lassi-tarifi.jpeg}{5}{Lassi}
 sirkeli-elma-kürü:{bal, elma sirkesi, maden suyu, tarçın, yeşil elma}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/09/sirkeli-elma-kuru-tarifi.jpg}{5}{Sirkeli Elma Kürü}
-karpuz-suyu:{buz, karpuz, limon, pudra şekeri}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/karpuz-suyu-alime.jpg}{15}{Karpuz Suyu}
-pratik-çilekli-limonata:{limon, su, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/04/pratik-cilekli-limonata-yemekcom.jpg}{10}{Pratik Çilekli Limonata}
-fit-dalgona-kahve:{bal, granül kahve, su, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/fit-dalgona-tarifi.jpg}{10}{Fit Dalgona Kahve}
-hibiskus-şerbeti:{hibiskus, karanfil, limon, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/hibiskus-serbeti-tarifi.jpg}{30}{Hibiskus Şerbeti}
-nogay-çayı:{karabiber, siyah çay, su, süt, tereyağı, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/01/nogay-cayi-tarifi-nasil-yapilir.jpg}{20}{Nogay Çayı}
-gerçek-salepli-i-çecek:{salep, süt, tarçın, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/02/gercek-salepli-icecek-tarifi.jpg}{35}{Gerçek Salepli İçecek}
-mevlana-şerbeti:{bal, elma sirkesi, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/mevlana-serbeti-tarifi.jpg}{3}{Mevlana Şerbeti}
-lime-dilimli-buzlu-yeşil-çay:{bal, buz, frambuaz, lime, nane, su, yeşil çay}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/08/lime-dilimli-buzlu-yesil-cay-yeni.jpg}{30}{Lime Dilimli Buzlu Yeşil Çay}
-1-portakal-2-limondan-limonata:{limon, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/06/1limon1portakal-one-cikan.jpg}{15}{1 Portakal 2 Limondan Limonata}
-kızılcık-şerbeti:{kızılcık, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/kizilcik-serbeti-tarifi.jpg}{35}{Kızılcık Şerbeti}
-karpuz-frozen:{bal, karpuz, limon, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/07/karpuzlu-frozen-yemekcom.jpg}{2}{Karpuz Frozen}
-limonlu-soda-çorçil:{limon, maden suyu, nane, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/09/limonlu-soda-corcil-yemekcom.jpg}{5}{Limonlu Soda Çorçil}
-mürdüm-eriği-suyu:{karanfil, mürdüm eriği, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/murdum-erigi-suyu-tarifi.jpg}{45}{Mürdüm Eriği Suyu}
-muzlu-ve-şeftalili-milkshake:{bal, muz, süt, yoğurt, şeftali}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/muzlu-ve-seftalili-milkshake-tariif.jpg}{25}{Muzlu ve Şeftalili Milkshake}
-çilekli-smoothie:{muz, süt, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/cilekli-smootihe-tarifi.jpeg}{5}{Çilekli Smoothie}
-nane-çayı:{nane, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/nane-cayi-yemekcom.jpg}{18}{Nane Çayı}
-pastane-limonatası:{limon, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/pastane-limonatasi-birfiske.jpg}{30}{Pastane Limonatası}
-çilekli-frozen:{dondurma, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/cilekli-frozen-tarifi.jpg}{5}{Çilekli Frozen}
-kızılcıklı-kuşburnu-aromalı-buzlu-çay:{bal, buz, kuşburnu, kızılcık, limon, su, tarçın}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/08/kizilcikli-kusburnu-buzlu-cay-yeni.jpg}{30}{Kızılcıklı, Kuşburnu Aromalı Buzlu Çay}
-yeşil-detoks-smoothie:{ananas, kivi, limon, maydanoz, salatalık, su, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/yesil-detoks-smoothie-sebahat.jpg}{5}{Yeşil Detoks Smoothie}
-fit-sıcak-çikolata:{bal, bitter çikolata, kakao, süt, tarçın}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/fit-sicak-cikolata-nezi.jpg}{7}{Fit Sıcak Çikolata}
-pumpkin-spice-latte:{bal kabağı, espresso, karanfil, muskat, süt, tarçın, zencefil, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/pumpkin-spice-latte-2-tarifi.jpg}{45}{Pumpkin Spice Latte}
-kahveli-muzlu-smoothie:{buz, filtre kahve, muz, su, süt, vanilya}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/kahveli-muzlu-smoothie-tarifi.jpg}{40}{Kahveli Muzlu Smoothie}
-öksürük-kesici:{limon, zeytinyağı, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/04/oksuruk-kesici-tarifi.jpg}{8}{Öksürük Kesici}
-ayva-çayı:{ayva, karanfil, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/03/ayva-cayi-tarifi.jpg}{30}{Ayva Çayı}
-tek-kişilik-dalgona-kahvesi:{granül kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/tek-kisilik-dalgona-kahvesi-editor.jpg}{5}{Tek Kişilik Dalgona Kahvesi}
-çilekli-kolay-limonata:{limon, su, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/06/cilekli-kolay-limonata-ayla.jpg}{5}{Çilekli Kolay Limonata}
-ev-yapımı-limonata:{limon, limon tuzu, nane, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/ev-yapimi-limonata-esra.jpg}{45}{Ev Yapımı Limonata}
-kar-helvası:{buz, çilek reçeli}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/kar-helvasi-tarifi.jpeg}{5}{Kar Helvası}
-tahinli-muzlu-süt:{kakao, muz, süt, tahin}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/02/tahinli-muzlu-sut.jpg}{10}{Tahinli Muzlu Süt}
-detoks-i-çeceği:{limon, maden suyu, nane, yeşil çay}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/detoks-icecegi-yonca.jpg}{7}{Detoks İçeceği}
-kereviz-sapı-suyu:{kereviz, limon, maydanoz, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/kereviz-sapi-suyu-mevy.jpg}{5}{Kereviz Sapı Suyu}
-madam-rosmerta-nın-bal-kabağı-suyu-tarifi:{ananas, bal, bal kabağı, elma, hindistan cevizi, tarçın, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/09/bal-kabagi-suyu-tarifi.jpg}{10}{Madam Rosmerta’nın Bal Kabağı Suyu Tarifi}
-limonata:{limon, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/limonata-sena.jpg}{25}{Limonata}
-hoşaf:{karanfil, kuru kayısı, kuru üzüm, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/06/hosaf-yemekcom.jpg}{20}{Hoşaf}
-flat-white:{espresso, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/09/flat-white-yemekcom.jpg}{8}{Flat White}
-mor-reyhan-şerbeti:{limon, limon tuzu, reyhan, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/mor-reyhan-serbeti-2-tarifi.jpeg}{40}{Mor Reyhan Şerbeti}
-üzüm-hoşafı:{su, üzüm, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/09/uzum-hosafi-tarifi.jpg}{25}{Üzüm Hoşafı}
-ayva-sirkesi:{ayva, elma sirkesi, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/01/ayva-sirkesi-tarifi.jpg}{15}{Ayva Sirkesi}
-şeftalili-soğuk-çay:{limon, limon tuzu, siyah çay, su, şeftali, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/seftalili-soguk-cay-aysegul.jpg}{40}{Şeftalili Soğuk Çay}
-atom-smoothie:{bal, buz, ceviz, havuç, muz, pancar, portakal, süt, yeşil elma}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/vestel-smoothie-yemekcom.jpg}{5}{Atom Smoothie}
-soğuk-latte:{filtre kahve, kakao, süt, sütlü çikolata}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/soguk-latte-tarifi.jpg}{5}{Soğuk Latte}
-ananaslı-çilekli-soda:{ananas, maden suyu, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/ananasli-cilekli-soda-editor.jpg}{5}{Ananaslı Çilekli Soda}
-ihlamur:{kuşburnu, su, zencefil, ıhlamur}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/01/ihlamur-editor.jpg}{10}{Ihlamur}
-şeftali-ve-kirazlı-smoothie:{bal, kefir, kiraz, süt, şeftali}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/seftalili-kirazli-smoothie.jpg}{15}{Şeftali ve Kirazlı Smoothie}
-agua-de-horchata-meksika-salebi:{karanfil, pirinç, su, süt, tarçın, vanilya, yıldız anason, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/11/horchata-tarifi.jpg}{30}{Agua de Horchata (Meksika Salebi)}
-cortado:{espresso, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/09/cortado-yemekcom.jpg}{10}{Cortado}
-portakallı-limonata:{limon, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/portakalli-limonata-tarifi-1.jpg}{15}{Portakallı Limonata}
-fermente-mucizesi-nedir-ve-nasıl-yapılır:{elma sirkesi, pancar, tuz, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/01/pancar-kvass-tarifi.jpg}{25}{Fermente Mucizesi Nedir ve Nasıl Yapılır?}
-kakaolu-smoothie:{bal, fıstık ezmesi, kakao, muz, süt, yulaf ezmesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/kakaolu-smoothie-yemekcom.jpg}{5}{Kakaolu Smoothie}
-latte-tadında-soğuk-kahve:{bal, buz, granül kahve, su, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/latte-tadinda-soguk-kahve-tarifi.jpg}{10}{Latte Tadında Soğuk Kahve}
-fit-dalgona-kahvesi:{granül kahve, keçiboynuzu özü, su, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/fit-dalgona-kahvesi-editor-elif.jpg}{5}{Fit Dalgona Kahvesi}
-şeftali-kompostosu:{karanfil, su, tarçın, şeftali, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/07/seftali-kompostosu-tarifi.jpg}{40}{Şeftali Kompostosu}
-ev-yapımı-çilekli-limonata:{limon, nane, su, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/ev-yapimi-cilekli-limonata-taze.jpg}{35}{Ev Yapımı Çilekli Limonata}
-karpuzlata:{karpuz, limon, nane, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/karpuzlata-tarifi.jpeg}{10}{Karpuzlata}
-zencefilli-gazoz:{buz, karbonat, limon, maden suyu, nane, su, zencefil, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/03/zencefilli-gazoz-tarifi.jpg}{35}{Zencefilli Gazoz}
-altın-süt:{hindistan cevizi yağı, karabiber, süt, tarçın, zencefil, zerdeçal}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/altin-sut-2-tarifi.jpeg}{7}{Altın Süt}
-limonlu-soğuk-çay-ice-tea:{limon, nane, siyah çay, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/limonlu-soguk-cay-sunum.jpg}{10}{Limonlu Soğuk Çay (Ice Tea)}
-karamel-kremalı-cold-brew:{buz, filtre kahve, karamel, krema, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/07/karamelli-cold-brew-espressomap.jpg}{10}{Karamel Kremalı Cold Brew}
-greyfurtlu-smoothie:{bal, greyfurt, hindistan cevizi sütü, kuru kayısı, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/02/greyfurtlu-smoothie-tarifi.jpg}{10}{Greyfurtlu Smoothie}
-latte:{kahve, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/latte-tarifi.jpg}{8}{Latte}
-muzlu-kakaolu-smoothie:{badem sütü, buz, kakao, muz}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/muzlu-kakaolu-smoothie-tarifi.jpeg}{5}{Muzlu Kakaolu Smoothie}
-vişne-kompostosu:{karanfil, su, tarçın, vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/06/visne-kompostosu-tarifi.jpg}{55}{Vişne Kompostosu}
-çikolatalı-dondurmalı-soğuk-kahve:{kahve, su, sürülebilir çikolata, süt, çikolatalı dondurma}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/cikolatali-dondurmali-soguk-kahve-tarifi.jpg}{15}{Çikolatalı Dondurmalı Soğuk Kahve}
-melonlemon:{karpuz, limon}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/07/melonlemon-binnur.jpg}{10}{Melonlemon}
-yaban-mersinli-ananaslı-smoothie:{ananas, kefir, yaban mersini}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/03/yaban-mersinli-ananasli-smoothie-seba.jpg}{5}{Yaban Mersinli Ananaslı Smoothie}
-karadutlu-milkshake:{dondurma, karadut, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/07/karadutlu-milkshake-fundaboz.jpg}{5}{Karadutlu Milkshake}
-boza:{bulgur, maya, pirinç, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/11/boza-yemekcom.jpg}{54}{Boza}
-karpuz-sorbe:{karpuz, vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/karpuz-sorbe-tarifi.jpg}{17}{Karpuz Sorbe}
-3-portakal-ile-5-litre-portakal-suyu:{limon tuzu, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/11/3-portakaldan-5-litre-portakal-suyu-tarifi.jpg}{10}{3 Portakal ile 5 Litre Portakal Suyu}
-ayva-hoşafı:{ayva, karanfil, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/03/ayva-hosafi-onecikan.jpg}{40}{Ayva Hoşafı}
-erik-kompostosu:{erik, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/erik-kompostosu-tarifi.jpg}{25}{Erik Kompostosu}
-böğürtlen-smoothie:{buz, böğürtlen, muz, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/bogurtlen-smoothie-tarifi.jpeg}{10}{Böğürtlen Smoothie}
-üzüm-sirkesi:{bal, bulgur, nohut, siyah üzüm, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/09/uzum-sirkesi.jpg}{15}{Üzüm Sirkesi}
-soğan-suyu-kürü:{soğan, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/sogan-suyu-kuru-yemekcom.jpg}{12}{Soğan Suyu Kürü}
-sıcak-çikolata:{bal, kakao, nişasta, süt, sütlü çikolata, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/sicak-cikolata-aysegul.jpg}{15}{Sıcak Çikolata}
-şipşak-sıcak-çikolata:{bal, bitter çikolata, süt, tarçın}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/sipsak-sicak-cikolata-tarifi.jpg}{20}{Şipşak Sıcak Çikolata}
-karpuzlu-yeşil-çay:{bal, karpuz, limon, yeşil çay}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/12/karpuzlu-yesil-cay-editor.jpg}{25}{Karpuzlu Yeşil Çay}
-üzüm-suyu:{su, üzüm, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/08/uzum-suyu-yemekcom.jpg}{30}{Üzüm Suyu}
+ev-yapımı-limonata:{limon, limon tuzu, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/ev-yapimi-limonata.jpg}{1}{Ev Yapımı Limonata}
+maydanoz-suyu:{limon, maydanoz, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/02/maydanoz-suyu-sunum-yemekcom.jpg}{10}{Maydanoz Suyu}
+elmalı-smoothie:{badem, bal, elma, süt, tarçın, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/04/elmali-smoothie-tarifi.jpg}{10}{Elmalı Smoothie}
+kırmızı-erik-kompostosu:{karanfil, siyah erik, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/09/kirmizi-erik-kompostosu.jpg}{25}{Kırmızı Erik Kompostosu}
+muzlu-hurmalı-smoothie:{ceviz, hurma, muz, süt, yulaf kepeği}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/05/muzlu-hurmali-smoothie-tarifi.jpg}{10}{Muzlu Hurmalı Smoothie}
+yer-fıstıklı-soğuk-kahve:{buz, fıstık, fıstık ezmesi, granül kahve, karamel, krem şanti, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/06/yer-fistikli-soguk-kahve-tarifi.jpg}{3}{Yer Fıstıklı Soğuk Kahve}
+hindistan-cevizi-sütü:{hindistan cevizi, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/hindistan-cevizi-sutu-nagihan.jpg}{5}{Hindistan Cevizi Sütü}
+vişneli-cheesecake-smoothie:{bisküvi, krem peynir, muz, süt, vişne}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/08/visneli-cheesecake-smoothie-tarifi.jpg}{5}{Vişneli Cheesecake Smoothie}
 şeftalili-smoothie:{süt, yoğurt, şeftali}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/08/seftalili-smoothie-tarifi.jpg}{10}{Şeftalili Smoothie}
-reyhan-şerbeti:{limon tuzu, reyhan, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/reyhan-serbeti-pozitif.jpg}{30}{Reyhan Şerbeti}
+kombucha:{mantar, siyah çay, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/kombucha-tarifi.jpg}{15}{Kombucha}
+bademli-elma-kompostosu:{badem, elma, kuru üzüm, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/bademli-elma-kompostosu-tarifi.jpg}{35}{Bademli Elma Kompostosu}
+dalgona-kahve:{buz, granül kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/dalgona-kahve-editor.jpg}{20}{Dalgona Kahve}
+şalgam-suyu:{ekmek, limon tuzu, pancar, siyah havuç, su, tuz, şalgam, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/11/salgam-suyu-tarifi.jpg}{30}{Şalgam Suyu}
+karpuz-sorbe:{karpuz, vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/karpuz-sorbe-tarifi.jpg}{17}{Karpuz Sorbe}
+kavun-sütü-beyaz-limonata-çengel-güneşi:{bal, kavun, krema, limon, maden suyu, nane, salatalık, su, süt, tarçın, çikolatalı dondurma, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/bby-moctails-yemekcom.jpg}{10}{Kavun Sütü, Beyaz Limonata, Çengel Güneşi}
+pratik-soğuk-kahve:{buz, granül kahve, karamel, su, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/soguk-kahve-editor.jpg}{2}{Pratik Soğuk Kahve}
+tatlı-dalgona-kahve:{granül kahve, su, süt tozu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/tatli-dalgona-kahve-editor.jpg}{5}{Tatlı Dalgona Kahve}
+şeftali-kompostosu:{limon tuzu, su, şeftali, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/seftali-kompostosu-seftali.jpg}{30}{Şeftali Kompostosu}
+oreo-milkshake:{dondurma, oreo, süt, vanilya}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/02/oreo-milkshake-tarifi.jpg}{10}{Oreo Milkshake}
+yulaf-sütü:{buz, su, tuz, vanilya, yulaf}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/06/yulaf-sutu-yemekcom.jpg}{40}{Yulaf Sütü}
+limonlu-soğuk-çay-ice-tea:{limon, nane, siyah çay, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/limonlu-soguk-cay-sunum.jpg}{10}{Limonlu Soğuk Çay (Ice Tea)}
+çilekli-smoothie:{muz, süt, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/cilekli-smootihe-tarifi.jpeg}{5}{Çilekli Smoothie}
+ananaslı-soğuk-çay:{ananas, bal, elma, limon, nane, siyah çay, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/ananasli-soguk-cay-editorr.jpg}{35}{Ananaslı Soğuk Çay}
+ginger-shot:{bal, limon, mandalina, portakal, su, zencefil, zerdeçal}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/ginger-shot-onecikan.jpg}{10}{Ginger Shot}
+karışık-meyveli-smoothie:{bal, böğürtlen, muz, siyah üzüm, süt, süzme yoğurt, zencefil, zerdeçal}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/10/mor-smoothie.jpg}{5}{Karışık Meyveli Smoothie}
+portakallı-sıcak-çikolata:{kakao, krema, portakal, süt, sütlü çikolata, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/12/portakalli-sicak-cikolata-yemekcom.jpg}{25}{Portakallı Sıcak Çikolata}
+altın-süt:{hindistan cevizi, hindistan cevizi yağı, süt, tarçın, zerdeçal}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/06/ekran-goruntusu-2024-06-03-115857.png}{10}{Altın Süt}
+yoğurtlu-portakallı-smoothie:{portakal, vanilya, yoğurt, yulaf}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/02/yogurtlu-portakalli-smoothie-yemekcom.jpg}{2}{Yoğurtlu Portakallı Smoothie}
+ananaslı-smoothie:{ananas, muz, nane, portakal, süt, zerdeçal}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/ananasli-smoothie-biem.jpg}{10}{Ananaslı Smoothie}
+zencefilli-kış-çayı:{bal, limon, nane, su, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/10/zencefilli-kis-cayi.jpg}{16}{Zencefilli Kış Çayı}
+vanilyalı-buzlu-yeşil-çay:{bal, buz, dondurma, limon, nane, su, yeşil çay, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/08/vanilyali-buzlu-yesil-cay-tarifi-yeni.jpg}{30}{Vanilyalı Buzlu Yeşil Çay}
+ballı-tarçınlı-mangolu-buzlu-çay:{bal, mango, siyah çay, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/07/dem-karakoy-buzlu-cay.jpg}{20}{Ballı, Tarçınlı, Mangolu Buzlu Çay}
+karadutlu-milkshake:{dondurma, karadut, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/07/karadutlu-milkshake-fundaboz.jpg}{5}{Karadutlu Milkshake}
+marshmallowlu-sıcak-çikolata:{bitter çikolata, kakao, marshmallow, nişasta, süt, sütlü çikolata, tuz, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/12/sicakcikolata-yemekcom.jpg}{15}{Marshmallow'lu Sıcak Çikolata}
+çikolatalı-dondurmalı-soğuk-kahve:{kahve, su, sürülebilir çikolata, süt, çikolatalı dondurma}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/cikolatali-dondurmali-soguk-kahve-tarifi.jpg}{15}{Çikolatalı Dondurmalı Soğuk Kahve}
+üzüm-suyu:{su, üzüm, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/08/uzum-suyu-yemekcom.jpg}{30}{Üzüm Suyu}
+tek-kişilik-dalgona-kahvesi:{granül kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/tek-kisilik-dalgona-kahvesi-editor.jpg}{5}{Tek Kişilik Dalgona Kahvesi}
+portakal-suyu:{nane, portakal}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/12/portakal-suyu-one-cikan.jpg}{15}{Portakal Suyu}
+kayısılı-bademli-osmanlı-şerbeti:{badem, karanfil, kuru kayısı, limon, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/kayisili-bademli-osmanli-serbeti-tarifi.jpg}{23}{Kayısılı Bademli Osmanlı Şerbeti}
+sarımsak-çayı:{bal, limon, sarımsak, su, zencefil, zerdeçal}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/10/sarimsak-cayi-tarifi-2.jpg}{7}{Sarımsak Çayı}
+baharatlı-sıcak-çikolatalı-süt:{bitter çikolata, süt, tarçın, yıldız anason, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/baharatli-sicak-cikolatali-sun.jpg}{25}{Baharatlı Sıcak Çikolatalı Süt}
+frambuazlı-limonata:{bal, frambuaz, limon, nane, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/frambuazli-limonata-tarifi.jpg}{5}{Frambuazlı Limonata}
+karpuzlu-smoothie:{bisküvi, karpuz, kuru üzüm, süt, yulaf ezmesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/06/karpuzlu-smoothie-1.jpg}{5}{Karpuzlu Smoothie}
+ayran:{su, tuz, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/10/ayran-sunum-yemekcom.jpg}{5}{Ayran}
+sütlü-kahve:{süt, türk kahvesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/sutlu-kahve-sunum-yemekcom.jpg}{10}{Sütlü Kahve}
+soğuk-yeşil-çay:{su, yeşil çay}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/evde-soguk-yesil-cay-yemekcom1.jpg}{10}{Soğuk Yeşil Çay}
+ev-yapımı-kayısı-suyu:{kayısı, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/ev-yapimi-kayisi-suyu-tarifi.jpg}{42}{Ev Yapımı Kayısı Suyu}
+vişne-kompostosu:{karanfil, su, tarçın, vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/06/visne-kompostosu-tarifi.jpg}{55}{Vişne Kompostosu}
+mürdüm-şerbeti:{böğürtlen, frambuaz, karanfil, limon, mürdüm eriği, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/murdum-serbeti-yasemin.jpg}{30}{Mürdüm Şerbeti}
+lime-dilimli-buzlu-yeşil-çay:{bal, buz, frambuaz, lime, nane, su, yeşil çay}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/08/lime-dilimli-buzlu-yesil-cay-yeni.jpg}{30}{Lime Dilimli Buzlu Yeşil Çay}
+orman-meyveli-smoothie:{böğürtlen, frambuaz, kefir, nane, yaban mersini, zencefil, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/05/kirmizi-meyveli-smoothie-tarifi.jpg}{10}{Orman Meyveli Smoothie}
+ödem-atıcı-yeşil-detoks-suyu:{ananas, limon, maydanoz, salatalık, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/01/odem-atici-yesil-detoks-hande.jpeg}{10}{Ödem Atıcı Yeşil Detoks Suyu}
+çikolatalı-kahve-şurubu:{kakao, su, tuz, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/05/cikolatali-kahve-surubu-tarifi.jpg}{40}{Çikolatalı Kahve Şurubu}
+ferahlatan-ramazan-şerbeti:{elma, hibiskus, portakal, su, tarçın, ıhlamur, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/04/ferahlatan-ramazan-serbeti.jpg}{40}{Ferahlatan Ramazan Şerbeti}
+karpuzlu-limonata:{buz, karpuz, limon, limon tuzu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/05/aysegul-karaman-karpuzlu-limonata.jpg}{15}{Karpuzlu Limonata}
+evde-elma-sirkesi-nasıl-yapılır:{bal, elma, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/01/elma-sirkesi-tarifi.jpg}{30}{Evde Elma Sirkesi Nasıl Yapılır?}
+bisküvili-ve-muzlu-soğuk-kahve:{bebe bisküvisi, buz, filtre kahve, karamel, muz, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/07/muzlu-ve-biskuvili-soguk-kahve-yemekcom.jpg}{2}{Bisküvili ve Muzlu Soğuk Kahve}
+kuru-dağ-eriği-ekşisi:{kuru erik, nane, pul biber, sarımsak, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/05/kuru-dag-erigi-eksisi-tarifi.jpg}{20}{Kuru Dağ Eriği Ekşisi}
+pratik-sıcak-çikolata:{kakao, marshmallow, süt, sütlü çikolata}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/sicak-cikolata-esra.jpg}{25}{Pratik Sıcak Çikolata}
+kolay-sıcak-çikolata:{kakao, süt, sütlü çikolata, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/kolay-sicak-cikolata-happy.jpg}{15}{Kolay Sıcak Çikolata}
+nogay-çayı:{karabiber, siyah çay, su, süt, tereyağı, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/01/nogay-cayi-tarifi-nasil-yapilir.jpg}{20}{Nogay Çayı}
+agua-de-horchata-meksika-salebi:{karanfil, pirinç, su, süt, tarçın, vanilya, yıldız anason, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/11/horchata-tarifi.jpg}{30}{Agua de Horchata (Meksika Salebi)}
+melonlemon:{karpuz, limon}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/07/melonlemon-binnur.jpg}{10}{Melonlemon}
+pancarlı-smoothie:{limon, maydanoz, pancar, yoğurt, zencefil, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/05/pancarli-smoothie-tarifi.jpg}{10}{Pancarlı Smoothie}
+kahveli-limonata:{bal, espresso, limon, maden suyu}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/07/kahveli-limonata-yemekcom.jpg}{5}{Kahveli Limonata}
+kuru-kayısı-kompostosu:{karanfil, kuru kayısı, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/03/kuru-kayisi-kompostosu-tarifi.jpg}{40}{Kuru Kayısı Kompostosu}
+öksürük-kesici:{limon, zeytinyağı, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/04/oksuruk-kesici-tarifi.jpg}{8}{Öksürük Kesici}
+ihlamur:{kuşburnu, su, zencefil, ıhlamur}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/01/ihlamur-editor.jpg}{10}{Ihlamur}
+böğürtlen-smoothie:{buz, böğürtlen, muz, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/bogurtlen-smoothie-tarifi.jpeg}{10}{Böğürtlen Smoothie}
+limonlu-soda-çorçil:{limon, maden suyu, nane, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/09/limonlu-soda-corcil-yemekcom.jpg}{5}{Limonlu Soda Çorçil}
+karpuzlu-limonlu-frozen:{bal, buz, karpuz, limon, maden suyu}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/karpuzlu-limonlu-frozen-tarifi.jpg}{20}{Karpuzlu Limonlu Frozen}
+ev-yapımı-portakal-suyu:{portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/ev-yapimi-portakal-suyu-seyma.jpg}{10}{Ev Yapımı Portakal Suyu}
+alkolsüz-kokteyl:{elma, elma sirkesi, maden suyu, tarçın}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/02/alkolsuz-kokteyl-yemekcom.jpg}{10}{Alkolsüz Kokteyl}
+yaz-içeceği:{bal, süt, yoğurt, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/yaz-icecegi-tarifi-alime.jpg}{5}{Yaz İçeceği}
+vegan-yeşil-smoothie:{badem sütü, fıstık ezmesi, muz, yulaf, zencefil, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/vegan-yesil-smoothie.jpg}{6}{Vegan Yeşil Smoothie}
+tropikal-meyveli-içecek:{ananas, kivi, limon, nektarin}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/tropikal-meyveli-icecek-alime.jpg}{10}{Tropikal Meyveli İçecek}
+dukan-birası:{limon, maden suyu, su, yeşil çay}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/dukan-birasi-yemekcom.jpg}{5}{Dukan Birası}
+ev-yapımı-sıcak-çikolata:{süt, sütlü çikolata}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/ev-yapimi-sicak-cikolata-tarifi.jpg}{10}{Ev Yapımı Sıcak Çikolata}
+kuru-üzüm-hoşafı:{karanfil, su, üzüm, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/kuru-uzum-hosafi-tarifi.jpg}{25}{Kuru Üzüm Hoşafı}
+karpuzlata:{karpuz, limon, nane, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/karpuzlata-tarifi.jpeg}{10}{Karpuzlata}
+tiramisulu-soğuk-kahve:{dondurma, labne, süt, türk kahvesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/tiramisulu-soguk-kahve-tarifi.jpeg}{5}{Tiramisulu Soğuk Kahve}
+soğuk-latte:{filtre kahve, kakao, süt, sütlü çikolata}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/soguk-latte-tarifi.jpg}{5}{Soğuk Latte}
+üzüm-sirkesi:{bal, bulgur, nohut, siyah üzüm, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/09/uzum-sirkesi.jpg}{15}{Üzüm Sirkesi}
+atom-smoothie:{bal, buz, ceviz, havuç, muz, pancar, portakal, süt, yeşil elma}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/vestel-smoothie-yemekcom.jpg}{5}{Atom Smoothie}
+pratik-cool-lime:{buz, limon, nane, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/pratik-cool-lime-aysegul.jpg}{10}{Pratik Cool Lime}
+karpuz-frozen:{bal, karpuz, limon, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/07/karpuzlu-frozen-yemekcom.jpg}{2}{Karpuz Frozen}
+cold-hibiskus:{bal, hibiskus, karanfil, limon tuzu, su, tarçın}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/cold-hibiskus-gozde.jpg}{5}{Cold Hibiskus}
+starbucks-cool-lime:{buz, lime, limon, nane, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/cool-lime-sunum-yemekcom.jpg}{15}{Starbucks Cool Lime}
+şekersiz-limonata:{bal, limon, nane, portakal, su, yeşil elma}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/06/sekersiz-limonata-tarifi.jpg}{10}{Şekersiz Limonata}
+kışlık-vişne-suyu:{limon tuzu, su, vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/kislik-visne-suyu-editorr.jpg}{91}{Kışlık Vişne Suyu}
+kahveli-ve-yulaflı-smoothie:{buz, espresso, fıstık ezmesi, muz, süt, yulaf}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/kahveli-yulafli-smoothie-yemekcom.jpg}{3}{Kahveli ve Yulaflı Smoothie}
+kereviz-sapı-suyu:{kereviz, limon, maydanoz, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/kereviz-sapi-suyu-mevy.jpg}{5}{Kereviz Sapı Suyu}
+az-malzemeli-limonata:{limon, limon tuzu, portakal, su, yeşil elma, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/02/az-malzemeli-limonata.jpg}{20}{Az Malzemeli Limonata}
+cortado:{espresso, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/09/cortado-yemekcom.jpg}{10}{Cortado}
+ev-yapımı-vişne-suyu:{karanfil, su, tarçın, vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/visne-suyu-editor.jpg}{50}{Ev Yapımı Vişne Suyu}
+çikolatalı-ve-muzlu-milkshake:{buz, ceviz, muz, sürülebilir çikolata, süt, vanilya}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/cikolatali-ve-muzlu-milkshake-tarifi.jpg}{5}{Çikolatalı ve Muzlu Milkshake}
+çilekli-ferah-limonata:{limon, limon tuzu, su, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/cilekli-limonata-tarifi-son.jpg}{25}{Çilekli Ferah Limonata}
+italyan-usulü-sıcak-çikolata:{bal, bitter çikolata, kakao, nişasta, süt, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/italyan-usulu-sicak-cikolata-tarifi.jpg}{25}{İtalyan Usulü Sıcak Çikolata}
+hoşaf:{karanfil, kuru kayısı, kuru üzüm, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/06/hosaf-yemekcom.jpg}{20}{Hoşaf}
+fermente-mucizesi-nedir-ve-nasıl-yapılır:{elma sirkesi, pancar, tuz, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/01/pancar-kvass-tarifi.jpg}{25}{Fermente Mucizesi Nedir ve Nasıl Yapılır?}
+kolay-soğuk-kahve:{granül kahve, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/kolay-soguk-kahve-tarifi.jpg}{20}{Kolay Soğuk Kahve}
+karpuzlu-yeşil-çay:{bal, karpuz, limon, yeşil çay}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/12/karpuzlu-yesil-cay-editor.jpg}{25}{Karpuzlu Yeşil Çay}
+pastane-limonatası:{limon, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/pastane-limonatasi-birfiske.jpg}{30}{Pastane Limonatası}
+vişne-suyu:{su, vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/visne-suyu-tarifi.jpg}{58}{Vişne Suyu}
+avokadolu-smoothie:{avokado, bal, nane, süt, yeşil elma, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/05/avokadolu-smoothie-tarifi.jpg}{10}{Avokadolu Smoothie}
+osmanlı-şerbeti:{hibiskus, karanfil, limon, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/osmanli-serbeti-bedia.jpg}{10}{Osmanlı Şerbeti}
+sindirimi-düzenleyen-smoothie:{bal, kefir, kivi, maydanoz, muz, salatalık, su, yulaf ezmesi, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/sindirimi-duzenleyen-smoothie-tarifi.jpg}{5}{Sindirimi Düzenleyen Smoothie}
+reyhan-suyu:{bal, limon, portakal, reyhan, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/reyhan-suyu-tarifi.jpg}{15}{Reyhan Suyu}
+yeşil-smoothie:{limon, maydanoz, salatalık, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/08/yesil-smoothie-2-tarifi.jpg}{5}{Yeşil Smoothie}
+soğuk-kahve:{granül kahve, kakao, su, sürülebilir çikolata, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/soguk-kahve-5-tarifi.jpg}{10}{Soğuk Kahve}
+karpuz-püreli-buzlu-çay:{buz, karpuz, limon, nane, siyah çay, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/08/karpuzlu-soguk-cay-1.png}{30}{Karpuz Püreli Buzlu Çay}
+detoks-içeceği:{limon, maden suyu, nane, yeşil çay}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/detoks-icecegi-yonca.jpg}{7}{Detoks İçeceği}
+sıcak-çikolata:{bitter çikolata, krem şanti, krema, süt, sütlü çikolata, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/sicak-cikolata-4-tarifi.jpg}{15}{Sıcak Çikolata}
+badem-sütlü-pekmezli-kahve:{badem sütü, filtre kahve, kakao, keçiboynuzu pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/badem-sutlu-pekmezli-kahve.jpg}{7}{Badem Sütlü Pekmezli Kahve}
+vanilya-aromalı-buzlu-kahve:{buz, filtre kahve, su, vanilya}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/vanilya-aromali-buzlu-kahve-tarifi.jpg}{15}{Vanilya Aromalı Buzlu Kahve}
+çikolatalı-soğuk-kahve:{buz, granül kahve, süt, sütlü çikolata, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/06/cikolatali-soguk-kahve-taze.jpg}{5}{Çikolatalı Soğuk Kahve}
+hibiskus-şerbeti:{hibiskus, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/hibiskus-serbeti-editor.jpg}{7}{Hibiskus Şerbeti}
+fit-içecek:{ananas, limon, maydanoz, su, yeşil elma, zencefil, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/03/fit-icecek.jpg}{10}{Fit İçecek}
+pancarlı-kefir:{bal, kefir, pancar}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/01/20230119010218970973-11.jpg}{5}{Pancarlı Kefir}
+hurmalı-smoothie:{fındık, hurma, kakao, keten tohumu, muz, süt, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/04/hurmali-smoothie.jpeg}{5}{Hurmalı Smoothie}
+mürdüm-eriği-suyu:{karanfil, mürdüm eriği, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/murdum-erigi-suyu-tarifi.jpg}{45}{Mürdüm Eriği Suyu}
+karpuz-suyu:{buz, karpuz, limon, pudra şekeri}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/karpuz-suyu-alime.jpg}{15}{Karpuz Suyu}
+yeşil-detoks-smoothie:{elma, kivi, limon, salatalık, su, zencefil, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/yesil-detoks-smoothie-yemekcom.jpg}{3}{Yeşil Detoks Smoothie}
+portakal-ve-limon-saklama:{limon, portakal}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/04/portakal-ve-limon-saklama-tarifi.jpg}{244}{Portakal ve Limon Saklama}
+zencefil-çayı:{bal, limon, su, tarçın, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/zencefil-cayi-yemekcom.jpg}{5}{Zencefil Çayı}
+pratik-çilekli-limonata:{limon, su, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/04/pratik-cilekli-limonata-yemekcom.jpg}{10}{Pratik Çilekli Limonata}
+pumpkin-spice-şurubu:{bal, bal kabağı, muskat, su, tarçın, yenibahar, zencefil, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/pumpkin-spice-surubu-tarifi.jpg}{25}{Pumpkin Spice Şurubu}
+zencefilli-ballı-limon:{bal, limon, tarçın, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/02/zencefilli-balli-limon.jpg}{5}{Zencefilli Ballı Limon}
+kızılcıklı-kuşburnu-aromalı-buzlu-çay:{bal, buz, kuşburnu, kızılcık, limon, su, tarçın}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/08/kizilcikli-kusburnu-buzlu-cay-yeni.jpg}{30}{Kızılcıklı, Kuşburnu Aromalı Buzlu Çay}
+nutellalı-sıcak-çikolata:{antep fıstığı, bitter çikolata, fındık kreması, kakao, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/12/nutellali-sicak-cikolata-tarifi.jpg}{20}{Nutellalı Sıcak Çikolata}
+ev-yapımı-taze-limonata:{bal, limon, nane, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/ev-yapimi-limonata-tarifi-2.jpg}{15}{Ev Yapımı Taze Limonata}
+acısız-limonata:{limon, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/03/acisiz-limonata-onecikan.jpg}{10}{Acısız Limonata}
+tarçınlı-salep:{nişasta, süt, tarçın, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/01/tarcinli-salep-tarifi.jpg}{10}{Tarçınlı Salep}
+alkolsüz-meyve-kokteyli:{limon, maden suyu, nar, çilek, şeftali}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/alkolsuz-meyve-kokteyli-tugba.jpg}{5}{Alkolsüz Meyve Kokteyli}
+greyfurtlu-smoothie:{bal, greyfurt, hindistan cevizi sütü, kuru kayısı, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/02/greyfurtlu-smoothie-tarifi.jpg}{10}{Greyfurtlu Smoothie}
+isviçre-usulü-sıcak-çikolata:{bitter çikolata, karabiber, süt, tarçın, tuz, vanilya}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/isvicre-usulu-sicak-cikolata-aylak.jpg}{6}{İsviçre Usulü Sıcak Çikolata}
+çilekli-kolay-limonata:{limon, su, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/06/cilekli-kolay-limonata-ayla.jpg}{5}{Çilekli Kolay Limonata}
+karadut-şerbeti:{karadut, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/08/karadut-serbeti-tarifi-.jpg}{15}{Karadut Şerbeti}
+chai-tea-latte:{kakule, karabiber, karanfil, siyah çay, su, süt, tarçın, yıldız anason, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/01/chai-tea-latte-tarifiii.jpg}{20}{Chai Tea Latte}
+çilek-kompostosu:{karanfil, su, tarçın, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/07/cilek-kompostosu-yeni.jpg}{25}{Çilek Kompostosu}
+kolay-dalgona-kahve:{granül kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/02/kolay-dalgona-kahve-maya.jpeg}{10}{Kolay Dalgona Kahve}
+muzlu-smoothie:{hurma, kahve, muz, süt, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/muzlu-smoothie-tarifi.jpg}{15}{Muzlu Smoothie}
+kar-helvası:{buz, çilek reçeli}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/kar-helvasi-tarifi.jpeg}{5}{Kar Helvası}
+karamel-macchiato:{espresso, karamel, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/03/karamel-macchiato-yemekcom.jpg}{10}{Karamel Macchiato}
+yeşil-içecek:{kereviz, limon, maydanoz, salatalık, su, yeşil elma}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/yesil-icecek-editor.jpg}{20}{Yeşil İçecek}
+çikolatalı-milkshake:{bitter çikolata, kakao, krema, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/cikolatali-milkshake-yemekcom.jpg}{5}{Çikolatalı Milkshake}
+zencefilli-gazoz:{buz, karbonat, limon, maden suyu, nane, su, zencefil, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/03/zencefilli-gazoz-tarifi.jpg}{35}{Zencefilli Gazoz}
+flat-white:{espresso, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/09/flat-white-yemekcom.jpg}{8}{Flat White}
+çilekli-frozen:{dondurma, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/cilekli-frozen-tarifi.jpg}{5}{Çilekli Frozen}
+yaban-mersinli-smoothie:{bal, muz, süt, yaban mersini, yoğurt, yulaf ezmesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/yaban-mersinli-smoothie-tarifi.jpg}{5}{Yaban Mersinli Smoothie}
+espresso-tonik:{buz, espresso, limon, tonik}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/07/espresso-tonik-yemekcom.jpg}{1}{Espresso Tonik}
+kremalı-kahve:{filtre kahve, krema, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/08/kremali-kahve-yemekcom.jpg}{10}{Kremalı Kahve}
+nektarlı-içecek:{buz, dondurma, nektarin, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/nektarli-icecek-tarifi.jpeg}{10}{Nektarlı İçecek}
+acılı-ayran:{cin biberi, su, tuz, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/05/acili-ayran-tarifi.jpg}{15}{Acılı Ayran}
+ayva-çayı:{ayva, karanfil, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/03/ayva-cayi-tarifi.jpg}{30}{Ayva Çayı}
+şeftali-sirkesi:{elma sirkesi, şeftali}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/07/seftali-kabugundan-sirke-yemekcom.jpg}{10}{Şeftali Sirkesi}
+dalgona-coffee:{kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/dalgona-coffee.jpg}{10}{Dalgona Coffee}
+narlı-limonata:{limon, nar, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/11/narli-limonata-ezgi.jpg}{20}{Narlı Limonata}
+kurşun-geçirmez-kahve:{filtre kahve, hindistan cevizi yağı, muskat, tarçın, tereyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/12/kursun-gecirmez-kahve-tarifi.jpg}{5}{Kurşun Geçirmez Kahve}
+karışık-meyve-suyu:{kayısı, su, şeftali, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/karisik-meyve-suyu-yemekcom-1.jpg}{5}{Karışık Meyve Suyu}
+kirazlı-soğuk-çay:{bal, buz, kiraz, limon, siyah çay, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/07/kirazli-soguk-cay-tarifi.jpg}{5}{Kirazlı Soğuk Çay}
+fit-dalgona-kahvesi:{granül kahve, keçiboynuzu özü, su, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/fit-dalgona-kahvesi-editor-elif.jpg}{5}{Fit Dalgona Kahvesi}
+ballı-soğuk-kahve:{bal, hindistan cevizi, kahve, su, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/07/balli-soguk-kahve-tarifi.jpg}{10}{Ballı Soğuk Kahve}
+madam-rosmertanın-bal-kabağı-suyu-tarifi:{ananas, bal, bal kabağı, elma, hindistan cevizi, tarçın, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/09/bal-kabagi-suyu-tarifi.jpg}{10}{Madam Rosmerta’nın Bal Kabağı Suyu Tarifi}
+gerçek-salepli-içecek:{salep, süt, tarçın, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/02/gercek-salepli-icecek-tarifi.jpg}{35}{Gerçek Salepli İçecek}
+mevlana-şerbeti:{bal, elma sirkesi, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/mevlana-serbeti-tarifi.jpg}{3}{Mevlana Şerbeti}
+pratik-churchill:{limon, maden suyu, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/07/churchill-mango.jpg}{5}{Pratik Churchill}
+acı-biberli-sıcak-çikolata:{kırmızı biber, su, süt, sütlü çikolata, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/12/ac-biberli-sicak-cikolata.jpg}{30}{Acı Biberli Sıcak Çikolata}
+gingerbread-latte:{bal, filtre kahve, karanfil, muskat, su, süt, tarçın, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/gingerbread-latte-idil.jpg}{20}{Gingerbread Latte}
+buz-gibi-limonata:{limon, portakal, su, zerdeçal, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/buz-gibi-limonata-tarifi-son.jpg}{75}{Buz Gibi Limonata}
+tahinli-muzlu-süt:{kakao, muz, süt, tahin}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/02/tahinli-muzlu-sut.jpg}{10}{Tahinli Muzlu Süt}
+şekersiz-soğuk-çay:{karpuz, limon, siyah çay, vişne}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/sekersiz-soguk-cay-gida.jpg}{5}{Şekersiz Soğuk Çay}
+kakaolu-badem-sütü:{badem sütü, kakao, keçiboynuzu özü}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/kakaolu-badem-sutu-nagihan.jpg}{1}{Kakaolu Badem Sütü}
+ev-yapımı-şeftali-suyu:{su, şeftali, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/seftali-suyu-tarifi.jpg}{23}{Ev Yapımı Şeftali Suyu}
+boza:{bulgur, maya, pirinç, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/11/boza-yemekcom.jpg}{54}{Boza}
+sumak-şerbeti:{su, sumak, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/sumak-serbeti-tarifi.jpeg}{33}{Sumak Şerbeti}
+tahinli-latte:{espresso, filtre kahve, hurma, su, süt, tahin, tarçın, vanilya şurubu}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/tahinli-latte.jpg}{28}{Tahinli Latte}
+keten-tohumlu-smoothie:{bal, keten tohumu, muz, süt, tarçın, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/04/yaz-gelirken-keten-tohumlu-smoothie-yemekcom.jpg}{5}{Keten Tohumlu Smoothie}
+kuru-meyveli-hoşaf:{kuru kayısı, kuru üzüm, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/kuru-meyveli-hosaf-tarifi.jpg}{60}{Kuru Meyveli Hoşaf}
+kızılcık-şerbeti:{karanfil, kızılcık, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/kizilcik-serbeti-tarifi.jpeg}{50}{Kızılcık Şerbeti}
+cold-brew:{buz, kahve, su, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/09/cold-brew-coffee-yeni.jpg}{12}{Cold Brew}
+bağırsak-temizleyen-içecek:{avokado, elma, su, zencefil, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/03/bagirsak-temizleyen-icecek-tarifi.jpg}{5}{Bağırsak Temizleyen İçecek}
+meyveli-smoothie:{buz, vişne, üzüm, şeftali}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/meyveli-smoothie-tarifi.jpeg}{5}{Meyveli Smoothie}
+bal-kabaklı-ve-kahveli-smoothie:{bal kabağı, filtre kahve, muskat, muz, süt, tarçın, yulaf, zencefil, zerdeçal}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/02/bal-kabakli-kahveli-smoothie-yemekcom.jpg}{2}{Bal Kabaklı ve Kahveli Smoothie}
+muzlu-süt:{bal, buz, muz, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/04/muzlu-sut-yemekcom.jpg}{2}{Muzlu Süt}
+diyet-dalgona-kahvesi:{bal, granül kahve, su, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/diyet-dalgona-kahve-editor.jpg}{20}{Diyet Dalgona Kahvesi}
+kakaolu-süt:{kakao, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/11/kakaolu-sut-tarifi.jpg}{14}{Kakaolu Süt}
+salep:{nişasta, salep, süt, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/salep-ozge.jpg}{13}{Salep}
+kivili-smoothie:{bal, kivi, muz, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/04/tam-mevsimi-kivili-smoothie-yemekcom1.jpg}{5}{Kivili Smoothie}
+yeşil-detoks-suyu:{fesleğen, maydanoz, reyhan, salatalık, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/01/yesil-detoks-suyu-tarifi.jpg}{5}{Yeşil Detoks Suyu}
+frappe:{buz, granül kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/06/frappe-yemekcom.jpg}{5}{Frappe}
+cool-lime:{lime, nane, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/cool-lime-tria.jpg}{25}{Cool Lime}
+kahveli-sıcak-çikolata:{espresso, krema, süt, sütlü çikolata}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/kahveli-sicak-cikolata-yemekcom.jpg}{25}{Kahveli Sıcak Çikolata}
+muzlu-kakaolu-smoothie:{buz, kakao, muz, süt, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/muzlu-kakaolu-smoothie-happy.jpg}{15}{Muzlu Kakaolu Smoothie}
+ballı-limonata:{bal, limon, nane, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/balli-limonata-editor.jpg}{5}{Ballı Limonata}
+çilekli-süt:{nane, pudra şekeri, süt, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/07/cilekli-sut-sunum-yemekcom.jpg}{10}{Çilekli Süt}
+erik-suyu:{limon, siyah erik, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/06/erik-suyu-tarifi.jpg}{35}{Erik Suyu}
+ayva-sirkesi:{ayva, elma sirkesi, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/01/ayva-sirkesi-tarifi.jpg}{15}{Ayva Sirkesi}
+altın-kefir:{karabiber, kefir, zerdeçal, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/altin-kefir-tarifi.jpg}{3}{Altın Kefir}
+kahveli-badem-sütü:{badem sütü, türk kahvesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/kahveli-badem-sutu-nagi.jpg}{1}{Kahveli Badem Sütü}
+lavantalı-limonata:{böğürtlen, lavanta, limon, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/lavantali-limonata-sunlock.jpg}{3}{Lavantalı Limonata}
+konsantre-vişne-suyu:{vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/08/konsantre-visne-suyu-editor.jpg}{42}{Konsantre Vişne Suyu}
+kakaolu-smoothie:{bal, fıstık ezmesi, kakao, muz, süt, yulaf ezmesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/kakaolu-smoothie-yemekcom.jpg}{5}{Kakaolu Smoothie}
+soğan-suyu-kürü:{soğan, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/sogan-suyu-kuru-yemekcom.jpg}{12}{Soğan Suyu Kürü}
+nane-şerbeti:{buz, limon, nane, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/nane-serbeti-yemekcom-2.jpg}{40}{Nane Şerbeti}
+filtre-kahve:{kahve, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/filtre-kahve-tarifi.jpg}{10}{Filtre Kahve}
+muzlu-ve-şeftalili-milkshake:{bal, muz, süt, yoğurt, şeftali}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/muzlu-ve-seftalili-milkshake-tariif.jpg}{25}{Muzlu ve Şeftalili Milkshake}
+fit-dalgona-kahve:{buz, granül kahve, keçiboynuzu özü, su, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/fit-dalgona-kahve-aylin.jpg}{5}{Fit Dalgona Kahve}
+kahveli-pina-colada:{ananas, bal, buz, hindistan cevizi, kahve, limon, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/07/kahveli-pina-colada-yemekcom.jpg}{10}{Kahveli Pina Colada}
+elma-kompostosu:{elma, karanfil, su, tarçın, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/11/elma-kompostosu-tarifi.jpg}{70}{Elma Kompostosu}
+vanilyalı-badem-sütü:{badem, su, vanilya}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/07/vanilyali-badem-sutu-tarifi.jpg}{30}{Vanilyalı Badem Sütü}
+taze-sıkılmış-portakal-suyu:{portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/06/taze-sikma-portakal-suyu.jpg}{15}{Taze Sıkılmış Portakal Suyu}
+vişneli-limonata:{lime, limon, su, vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/08/visneli-limonata.jpg}{25}{Vişneli Limonata}
+çilek-yulaf-ve-keten-tohumlu-smoothie:{bal, keten tohumu, muz, süt, yoğurt, yulaf, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/04/rengi-guzel-cilek-yulaf-ve-keten-tohumlu-smoothie-yemekcom.jpg}{5}{Çilek Yulaf ve Keten Tohumlu Smoothie}
+şeftali-suyu:{su, şeftali, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/seftali-suyu-onecikan.jpg}{30}{Şeftali Suyu}
+soğuk-dalgona-kahve:{buz, granül kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/soguk-dalgona-kahve-tarifi.jpg}{5}{Soğuk Dalgona Kahve}
+kavun-şerbeti:{kavun, limon, nane, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/09/kavun-serbeti-tarifi.jpg}{45}{Kavun Şerbeti}
+berry-hibiscus-çayı:{bal, buz, frambuaz, hibiskus, su, yaban mersini}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/berry-hibiscus-tarifi.jpg}{15}{Berry Hibiscus Çayı}
+naneli-limonata:{limon, nane, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/naneli-limonata-tarifi.jpg}{20}{Naneli Limonata}
+şekersiz-kayısılı-soğuk-çay:{bal, kayısı, siyah çay, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/sekersiz-kayisili-soguk-cay-yes.jpg}{45}{Şekersiz Kayısılı Soğuk Çay}
+ödem-atıcı-çay:{karabiber, karanfil, limon, tarçın, yeşil elma}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/odem-atici-cay-sunum-yemekcom.jpg}{15}{Ödem Atıcı Çay}
+dondurmalı-soğuk-kahve:{dondurma, granül kahve, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/dondurmali-soguk-kahve-bedia.jpg}{5}{Dondurmalı Soğuk Kahve}
+evde-çilekli-limonata:{limon, su, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/02/evde-cilekli-limonata-bedia.jpg}{10}{Evde Çilekli Limonata}
+karpuz-granita:{bal, karpuz, limon}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/karpuz-granita-tarifi.jpg}{3}{Karpuz Granita}
+ballı-muzlu-süt:{bal, muz, süt, tarçın}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/11/balli-muzlu-sut-tarifi.jpg}{5}{Ballı Muzlu Süt}
+karadutlu-kefir:{karadut, kefir}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/karadutlu-kefir-tarifi.jpg}{1}{Karadutlu Kefir}
+3-portakal-ile-5-litre-portakal-suyu:{limon tuzu, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/11/3-portakaldan-5-litre-portakal-suyu-tarifi.jpg}{10}{3 Portakal ile 5 Litre Portakal Suyu}
+latte-macchiato:{granül kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/latte-machiato-sunum-yemekcom.jpg}{5}{Latte Macchiato}
+limonata:{bal, limon, nane, portakal, su, zencefil, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/03/limonata-tarifi.jpg}{30}{Limonata}
+vişne-hoşafı:{limon, su, vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/05/visne-hosafi-yemekcom.jpg}{45}{Vişne Hoşafı}
+üç-farklı-aromalı-su:{buz, limon, nane, salatalık, su, zencefil, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/aromali-su-happy.jpg}{5}{Üç Farklı Aromalı Su}
+üzüm-hoşafı:{su, üzüm, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/09/uzum-hosafi-tarifi.jpg}{25}{Üzüm Hoşafı}
+çilekli-buzlu-çay:{buz, limon, siyah çay, su, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/08/cilekli-buzlu-cay-yeni.jpg}{30}{Çilekli Buzlu Çay}
+naneli-ve-fesleğenli-ayran:{buz, fesleğen, nane, su, süzme yoğurt, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/feslegenli-taze-naneli-ayran-yemekcom.jpg}{2}{Naneli ve Fesleğenli Ayran}
+erik-kompostosu:{erik, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/erik-kompostosu-tarifi.jpg}{25}{Erik Kompostosu}
+kayısı-hoşafı:{kuru kayısı, kuş üzümü, limon, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/03/kayisi-hosafi-onecikan.jpg}{25}{Kayısı Hoşafı}
+mangolu-portakallı-smoothie:{dondurma, karanfil, mango, nane, portakal}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/05/mangolu-portakalli-smoothie-tarifi.jpg}{10}{Mangolu Portakallı Smoothie}
+orijinal-limonata:{limon, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/kusursuz-limonata-yemekcom.jpg}{15}{Orijinal Limonata}
+çilekli-fit-limonata:{limon, su, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/cilekli-fit-limonata-tarifi.jpeg}{10}{Çilekli Fit Limonata}
+çilekli-yeşil-çay:{limon, nane, su, tuz, yeşil çay, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/cilekli-yesil-cay-tarifi.jpeg}{8}{Çilekli Yeşil Çay}
+nane-çayı:{nane, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/nane-cayi-yemekcom.jpg}{18}{Nane Çayı}
+1-portakal-2-limondan-limonata:{limon, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/06/1limon1portakal-one-cikan.jpg}{15}{1 Portakal 2 Limondan Limonata}
+ev-yapımı-salep:{nişasta, süt, vanilya, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/12/ev-yapimi-salep-kubra.jpg}{5}{Ev Yapımı Salep}
+atom:{bal, fındık kreması, kivi, muz, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/01/atom-icecek-tarifi.jpg}{10}{Atom}
+ev-yapımı-reyhan-şerbeti:{karanfil, limon tuzu, reyhan, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/ev-yapimi-reyhan-serbeti-gozde.jpg}{5}{Ev Yapımı Reyhan Şerbeti}
+vişneli-ramazan-şerbeti:{karanfil, limon tuzu, su, tarçın, vişne, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/04/visneli-ramazan-serbeti-tarifi-aysegul-karaman.jpg}{35}{Vişneli Ramazan Şerbeti}
+altın-smoothie:{badem, bal, karabiber, muskat, muz, süt, tarçın, zencefil, zerdeçal}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/sutas-altin-smoothie-yemekcom.jpg}{5}{Altın Smoothie}
+çörçil:{buz, limon, maden suyu, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/05/corcil-tarifi.jpg}{2}{Çörçil}
+bal-kabaklı-baharatlı-smoothie:{akçaağaç şurubu, badem sütü, bal kabağı, hindistan cevizi, tarçın, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/09/balkabakli-smoothie-yeni.jpg}{20}{Bal Kabaklı, Baharatlı Smoothie}
+hibiskus-çayı:{hibiskus, su, tarçın}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/10/hibiskus-cayi-yemekcom.jpg}{8}{Hibiskus Çayı}
+karamelli-sıcak-çikolata:{su, süt, sütlü çikolata, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/12/karamelli-sicak-cikolata.jpg}{35}{Karamelli Sıcak Çikolata}
+alkali-maydanozlu-içecek:{limon, maydanoz, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/alkali-maydanozlu-icecek-nagi.jpg}{1}{Alkali Maydanozlu İçecek}
+sumaklı-limonata:{limon, su, sumak, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/05/sumakli-limonata.jpg}{15}{Sumaklı Limonata}
+iced-latte-soğuk-latte:{buz, granül kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/iced-latte-sunum-yemekcom.jpg}{10}{Iced Latte (Soğuk Latte)}
+pratik-ev-yapımı-limonata:{lime, limon, nane, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/pratik-ev-yapimi-limonata-tarifi.jpg}{15}{Pratik Ev Yapımı Limonata}
+ev-yapımı-çilekli-limonata:{limon, nane, su, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/ev-yapimi-cilekli-limonata-taze.jpg}{35}{Ev Yapımı Çilekli Limonata}
+elmalı-detox-suyu:{elma, limon, maydanoz, su, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/elmali-detox-suyu-tarifi.jpeg}{5}{Elmalı Detox Suyu}
+yaban-mersinli-ananaslı-smoothie:{ananas, kefir, yaban mersini}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/03/yaban-mersinli-ananasli-smoothie-seba.jpg}{5}{Yaban Mersinli Ananaslı Smoothie}
+bubble-tea:{nişasta, su, süt, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/11/bubble-tea-yemekcom.jpg}{40}{Bubble Tea}
+şipşak-sıcak-çikolata:{bal, bitter çikolata, süt, tarçın}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/sipsak-sicak-cikolata-tarifi.jpg}{20}{Şipşak Sıcak Çikolata}
+churchill:{buz, limon, maden suyu, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/05/churchill-tarifi.jpg}{2}{Churchill}
+detoks-suyu:{lime, limon, nane, su, tarçın, yeşil elma, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/04/detoks-suyu-sunum-yemekcom.jpg}{10}{Detoks Suyu}
+gerçek-salep:{salep, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/01/gercek-salep-onecikan.jpg}{20}{Gerçek Salep}
+fit-soğuk-çay:{elma, hibiskus, karanfil, maden suyu, nane, su, tarçın, yaban mersini, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/fit-soguk-cay-simay.jpg}{15}{Fit Soğuk Çay}
+buz-gibi-milkshake:{bal, dondurma, süt, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/buz-gibi-milkshake-tarifi.jpg}{20}{Buz Gibi Milkshake}
+meyveli-komposto:{kakule, karanfil, portakal, su, tarçın, yeşil elma, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/12/meyveli-komposto-tarifi.jpg}{35}{Meyveli Komposto}
+ayva-kompostosu:{ayva, karanfil, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/12/ayva-kompostosu-yeni.jpg}{55}{Ayva Kompostosu}
+nane-limon:{limon, nane, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/02/nane-limon-yemekcom.jpg}{12}{Nane Limon}
+ananaslı-çilekli-soda:{ananas, maden suyu, çilek}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/ananasli-cilekli-soda-editor.jpg}{5}{Ananaslı Çilekli Soda}
+ayva-hoşafı:{ayva, karanfil, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/03/ayva-hosafi-onecikan.jpg}{40}{Ayva Hoşafı}
+kavun-sübyesi:{kavun, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/kavun-subyesi-onecikan.jpg}{5}{Kavun Sübyesi}
+vanilyalı-türk-kahvesi:{su, türk kahvesi, vanilya}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/11/vanilyali-turk-kahvesi-tarifi.jpg}{10}{Vanilyalı Türk Kahvesi}
+karamel-kremalı-cold-brew:{buz, filtre kahve, karamel, krema, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/07/karamelli-cold-brew-espressomap.jpg}{10}{Karamel Kremalı Cold Brew}
+çilekli-milkshake:{dondurma, süt, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/cilekli-milkshake-sunum-yemekcom.jpg}{15}{Çilekli Milkshake}
+türk-kahvesi:{su, türk kahvesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/turk-kahvesi-elif.jpg}{6}{Türk Kahvesi}
+kızılcık-kompostosu:{kızılcık, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/09/kizilcik-kompostosu-elif.jpg}{20}{Kızılcık Kompostosu}
+mor-reyhan-şerbeti:{limon, limon tuzu, reyhan, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/mor-reyhan-serbeti-2-tarifi.jpeg}{40}{Mor Reyhan Şerbeti}
+milkshake:{buz, kakao, krema, süt, çikolatalı dondurma, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/milkshake-tarifi.jpg}{5}{Milkshake}
+reyhan-şerbeti:{limon tuzu, reyhan, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/04/reyhan-serbeti-hemsire.jpg}{25}{Reyhan Şerbeti}
+evde-kolay-mocha:{bitter çikolata, filtre kahve, kakao, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/evde-kolay-mocha-tarifi.jpeg}{15}{Evde Kolay Mocha}
+portakallı-limonata:{bal, buz, limon, nane, portakal, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/portakalli-limonata-tarifi.jpeg}{10}{Portakallı Limonata}
+latte:{kahve, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/latte-tarifi.jpg}{8}{Latte}
+çilekli-limonata:{limon, portakal, su, çilek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/cilekli-limonata-sumeyye.jpg}{10}{Çilekli Limonata}
+şeftalili-milkshake:{dondurma, süt, şeftali}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/seftalili-milkshake-editorr.jpg}{1}{Şeftalili Milkshake}
+kahveli-muzlu-smoothie:{buz, filtre kahve, muz, su, süt, vanilya}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/kahveli-muzlu-smoothie-tarifi.jpg}{40}{Kahveli Muzlu Smoothie}
+afrika-kahvesi:{kakao, limon, su, türk kahvesi, vanilya}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/afrika-kahvesi-tarifi.jpg}{8}{Afrika Kahvesi}
+şeftali-ve-kirazlı-smoothie:{bal, kefir, kiraz, süt, şeftali}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/seftalili-kirazli-smoothie.jpg}{15}{Şeftali ve Kirazlı Smoothie}
+affogato:{dondurma, kahve}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/07/affogato-tarifi.jpg}{25}{Affogato}
+badem-sütü:{badem, su}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/04/badem-sutu.jpg}{10}{Badem Sütü}
+latte-tadında-soğuk-kahve:{bal, buz, granül kahve, su, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/latte-tadinda-soguk-kahve-tarifi.jpg}{10}{Latte Tadında Soğuk Kahve}
+robotta-kolay-limonata:{limon, limon tuzu, nane, portakal, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/robotta-kolay-limonata-ismihan.jpg}{10}{Robotta Kolay Limonata}
+dalgona-kahvesi:{buz, granül kahve, su, süt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/07/dalgona-kahvesi-tarifi.jpg}{5}{Dalgona Kahvesi}
+alıç-sirkesi:{alıç, elma, elma sirkesi, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/02/alic-sirkesi-tarifi.jpg}{15}{Alıç Sirkesi}
+şeftalili-soğuk-çay:{bal, siyah çay, su, şeftali}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/seftalili-soguk-cay-gunay.jpg}{25}{Şeftalili Soğuk Çay}
+muzlu-milkshake:{dondurma, muz, pudra şekeri, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/08/muzlu-milkshake-yemekcom.jpg}{5}{Muzlu Milkshake}
+ödem-atıcı-yeşil-içecek:{erik, keten tohumu, limon, maydanoz, yeşil elma, yeşil çay, zencefil, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/07/odem-atici-yesil-icecek-ilknur.jpg}{15}{Ödem Atıcı Yeşil İçecek}
+dondurmalı-milkshake:{dondurma, süt}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/04/dondurmali-milkshake-tarifi.jpg}{10}{Dondurmalı Milkshake}
+fit-sıcak-çikolata:{bal, bitter çikolata, kakao, süt, tarçın}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/fit-sicak-cikolata-nezi.jpg}{7}{Fit Sıcak Çikolata}
+kırmızı-erik-suyu:{siyah erik, su, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/kirmizi-erik-suyu-nefisanne.jpg}{11}{Kırmızı Erik Suyu}
+pumpkin-spice-latte:{bal kabağı, espresso, karanfil, muskat, süt, tarçın, zencefil, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/pumpkin-spice-latte-2-tarifi.jpg}{45}{Pumpkin Spice Latte}
+naneli-ayran:{nane, su, tuz, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/10/naneli-ayran-sunum-yemekcom.jpg}{5}{Naneli Ayran}
