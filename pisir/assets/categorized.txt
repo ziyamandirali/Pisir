@@ -2,6 +2,8 @@ SEBZELER
 
 lahana
 
+dolmalık biber
+
 kereviz
 
 havuç
@@ -10,7 +12,13 @@ sarımsak
 
 pazı
 
+maydanoz
+
 soğan
+
+kuzukulağı
+
+dereotu
 
 kabak
 
@@ -224,6 +232,8 @@ yenidünya
 
 zeytin
 
+yeşil zeytin
+
 BAKLİYAT
 
 pirinç
@@ -304,11 +314,25 @@ süt
 
 labne		
 
+burgu peynir
+
+eski kaşar
+
+cheddar
+
+feta peyniri
+
 krema			
 
 parmesan
 
+süzme peynir
+
 mozzarella
+
+yoğurt kaymağı
+
+pecorino
 
 mascarpone
 
@@ -380,6 +404,8 @@ kuzu eti
 
 dana eti
 
+dana gerdan
+
 kuzu gerdan
 
 dana biftek
@@ -445,6 +471,8 @@ tavuk göğsü
 hindi eti
 
 tavuk bonfile
+
+hindi but
 
 tavuk baget
 
@@ -522,17 +550,21 @@ lüfer
 
 BAHARATLAR 
 
+anason
+
 mahlep
 
 nane
 
+sumak
+
 hindistan cevizi 
+
+köfte baharatı
 
 pul biber
 
 karabiber
-
-dereotu
 
 toz biber
 
@@ -547,8 +579,6 @@ karanfil
 haşhaş 
 
 kekik
-
-maydanoz
 
 kimyon
 
@@ -620,7 +650,11 @@ kabartma tozu
 
 kakao
 
+ekşi maya
+
 vanilya
+
+pudra şekeri
 
 maya
 
@@ -665,6 +699,8 @@ mısır unu
 makarna
 
 galeta unu
+
+penne makarna
 
 yufka
 
@@ -717,8 +753,6 @@ köy ekmeği
 panko
 
 tam buğday ekmeği
-
-
 
 hamburger ekmeği
 
@@ -938,15 +972,23 @@ kuru vişne
 
 TATLILAR 
 
+dondurma
+
 tahin
 
 bal
+
+fındık ezmesi
 
 fıstık ezmesi
 
 akçaağaç şurubu
 
 vanilya şurubu
+
+kiraz reçeli
+
+frambuaz reçeli
 
 kayısı reçeli
 
