@@ -29,6 +29,9 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
   bool _isUpdatingFavorite = false;
   WebViewController? _webViewController;
   
+  // Nutritional value variables
+  Map<String, String>? _nutritionalValues;
+  
   @override
   void initState() {
     super.initState();
@@ -95,6 +98,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
         debugPrint("[RecipeDetailPage] Firestore data received: $data");
         debugPrint("[RecipeDetailPage] Firestore data['description'] specific value: ${data['description']}");
         debugPrint("[RecipeDetailPage] Firestore data['youtube_url'] specific value: ${data['youtube_url']}");
+        debugPrint("[RecipeDetailPage] Firestore data['nutritionalValue'] specific value: ${data['nutritionalValue']}");
         
         setState(() {
           _title = data['title'] ?? widget.recipe['title'] ?? 'Tarif Başlığı Yok'; // Robust title
@@ -105,17 +109,21 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
           _cookTime = data['cookTime']?.toString(); // Convert int/double to String
           _description = data['description']; // Keep as is from previous fix
           _youtubeVideoId = data['youtube_url']; // YouTube video ID from Firestore
+          _nutritionalValues = _parseNutritionalValues(data['nutritionalValue']);
           if (determinedIsFavoritedFlag) {
              _isFavorited = actualInitialIsFavoritedValue;
           }
           _isLoading = false;
           _isUpdatingFavorite = false;
         });
+        
+        debugPrint("[RecipeDetailPage] Parsed nutritional values: $_nutritionalValues");
       } else {
         debugPrint("[RecipeDetailPage] Recipe document NOT FOUND in Firestore for ID: $recipeId");
         setState(() {
           _title = widget.recipe['title'] ?? 'Tarif Bulunamadı'; // Fallback title
           // _description will remain null, displayDescription will handle it
+          _nutritionalValues = _parseNutritionalValues(widget.recipe['nutritionalValue']);
           if (determinedIsFavoritedFlag) {
             _isFavorited = actualInitialIsFavoritedValue;
           }
@@ -123,12 +131,14 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
           _isUpdatingFavorite = false;
           debugPrint('[RecipeDetailPage] Recipe document not found, but favorite status determined.');
         });
+        debugPrint("[RecipeDetailPage] Fallback nutritional values from widget.recipe: $_nutritionalValues");
       }
     } catch (e) {
       debugPrint('[RecipeDetailPage] Error loading recipe details or favorite status: $e');
       setState(() {
         _title = widget.recipe['title'] ?? 'Hata Oluştu'; // Error title
         // _description will remain null
+        _nutritionalValues = _parseNutritionalValues(widget.recipe['nutritionalValue']);
         if (determinedIsFavoritedFlag) {
           _isFavorited = actualInitialIsFavoritedValue;
         }
@@ -250,6 +260,116 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
     return videoId.length == 11 && RegExp(r'^[a-zA-Z0-9_-]+$').hasMatch(videoId);
   }
 
+  // Helper method to parse nutritional values
+  Map<String, String>? _parseNutritionalValues(dynamic nutritionalValue) {
+    if (nutritionalValue == null) return null;
+    
+    try {
+      String nutritionalString;
+      
+      // Handle different data types
+      if (nutritionalValue is String) {
+        nutritionalString = nutritionalValue;
+      } else if (nutritionalValue is Map) {
+        // If it's already a map, convert to our expected format
+        return Map<String, String>.from(nutritionalValue.map((key, value) => 
+          MapEntry(key.toString(), value.toString())));
+      } else {
+        nutritionalString = nutritionalValue.toString();
+      }
+      
+      if (nutritionalString.isEmpty || nutritionalString == 'null') return null;
+      
+      final Map<String, String> nutritionalMap = {};
+      
+      // Parse format: "Kalori: 250 kcal||Protein: 15g||Karbonhidrat: 30g||Yağ: 8g"
+      // Also handle alternative formats like "Kalori:250kcal||Protein:15g"
+      final parts = nutritionalString.split('||');
+      
+      for (final part in parts) {
+        final trimmedPart = part.trim();
+        if (trimmedPart.isEmpty) continue;
+        
+        final colonIndex = trimmedPart.indexOf(':');
+        if (colonIndex != -1 && colonIndex < trimmedPart.length - 1) {
+          final key = trimmedPart.substring(0, colonIndex).trim();
+          final value = trimmedPart.substring(colonIndex + 1).trim();
+          
+          if (key.isNotEmpty && value.isNotEmpty) {
+            // Clean up common formatting issues
+            String cleanKey = key.replaceAll(RegExp(r'[^\w\sğüşıöçĞÜŞIÖÇ]'), '').trim();
+            String cleanValue = value.trim();
+            
+            // Ensure we have valid data
+            if (cleanKey.isNotEmpty && cleanValue.isNotEmpty) {
+              nutritionalMap[cleanKey] = cleanValue;
+            }
+          }
+        }
+      }
+      
+      debugPrint('[RecipeDetailPage] Successfully parsed ${nutritionalMap.length} nutritional values');
+      return nutritionalMap.isNotEmpty ? nutritionalMap : null;
+    } catch (e) {
+      debugPrint('[RecipeDetailPage] Error parsing nutritional values: $e');
+      return null;
+    }
+  }
+
+  // Helper method to build nutritional value cards
+  Widget _buildNutritionalValuesSection() {
+    if (_nutritionalValues == null || _nutritionalValues!.isEmpty) {
+      return const SizedBox.shrink();
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const SizedBox(height: 16),
+        Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            color: Theme.of(context).brightness == Brightness.dark 
+                ? Colors.grey[800] 
+                : Colors.grey[100],
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(
+              color: Theme.of(context).brightness == Brightness.dark 
+                  ? Colors.grey[600]! 
+                  : Colors.grey[300]!,
+              width: 1,
+            ),
+          ),
+          child: Wrap(
+            spacing: 16,
+            runSpacing: 8,
+            children: _nutritionalValues!.entries.map((entry) {
+              // Format the display text properly
+              String displayText;
+              if (entry.key.toLowerCase().contains('kalori')) {
+                displayText = 'Porsiyon başı kalori: ${entry.value}';
+              } else {
+                displayText = '${entry.key}: ${entry.value}';
+              }
+              
+              return Text(
+                displayText,
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500,
+                  color: Theme.of(context).brightness == Brightness.dark 
+                      ? Colors.white70 
+                      : Colors.black87,
+                ),
+              );
+            }).toList(),
+          ),
+        ),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -312,6 +432,8 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
                       ],
                     ),
                   ),
+
+                  _buildNutritionalValuesSection(),
 
                   Padding(
                     padding: const EdgeInsets.all(16.0),
