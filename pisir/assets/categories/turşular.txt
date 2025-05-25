@@ -1,73 +1,73 @@
-zeytinyağlı-kolay-limon-turşusu:{kekik, limon, tuz, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/06/zeytintagli-limon-tursusu-yemekcom.jpg}{10}{Zeytinyağlı Kolay Limon Turşusu}
-pancar-turşusu:{pancar, sarımsak, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/pancar-tursusu-bread.jpg}{41}{Pancar Turşusu}
-sivri-biber-turşusu:{karabiber, sarımsak, sivri biber, su, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/sivri-biber-tursu-sunum-1.jpg}{10}{Sivri Biber Turşusu}
-fındık-turp-turşusu:{elma sirkesi, karabiber, limon, limon tuzu, sarımsak, su, turp, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/12/findik-turp-tursusu-yemekcom.jpg}{15}{Fındık Turp Turşusu}
-hızlı-lahana-turşusu:{defne yaprağı, elma sirkesi, mor lahana, sarımsak, sivri biber, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/hizli-lahana-tursusu-yemekcom.jpg}{30}{Hızlı Lahana Turşusu}
-ezme-turşu:{domates, maydanoz, sarımsak, sivri biber, tuz, zeytinyağı, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/ezme-tursu-one-cikan.jpg}{10}{Ezme Turşu}
-yağlı-kırmızı-biber-turşusu:{kapya biber, maydanoz, sarımsak, tuz, zeytinyağı, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/yagli-kirmizi-biber-tursusu-one-cikan.jpg}{35}{Yağlı Kırmızı Biber Turşusu}
-sauerkraut:{lahana, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/sauerkraut-yemekcom-1.jpg}{10}{Sauerkraut}
-kapya-biber-turşusu:{elma sirkesi, kapya biber, maydanoz, sarımsak, sıvı yağ, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/12/kapya-biber-tursusu-tarifi.jpg}{20}{Kapya Biber Turşusu}
-şipşak-turşu:{ayçiçek yağı, elma sirkesi, kapya biber, maydanoz, sarımsak, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/07/sipsak-tursu-tarifi.jpg}{35}{Şipşak Turşu}
-havuç-turşusu:{dereotu, elma sirkesi, havuç, limon tuzu, sarımsak, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/12/havuc-tursusu-sunum-yemekcom.jpg}{15}{Havuç Turşusu}
-pancarlı-karnabahar-turşusu:{karnabahar, limon tuzu, pancar, sarımsak, su, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/11/pancarli-karnabahar-tursusu.jpg}{20}{Pancarlı Karnabahar Turşusu}
-lor-peynirli-biber-turşusu:{elma sirkesi, kekik, kırmızı biber, lor peyniri, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/08/lor-peynirli-biber-tursusu-tarifi.jpg}{40}{Lor Peynirli Biber Turşusu}
-şipşak-yaz-turşusu:{elma sirkesi, maydanoz, nane, patlıcan, sarımsak, su, tuz, yeşil biber}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/09/sipsak-yaz-tursusu-pelincelezzetler.jpg}{25}{Şipşak Yaz Turşusu}
-hızlı-pembe-turp-turşusu:{beyaz sirke, defne yaprağı, karabiber, limon, pancar, sarımsak, su, turp, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/pembe-turp-tursusu-mevy.jpg}{10}{Hızlı Pembe Turp Turşusu}
-salatalık-kimchi:{havuç, pul biber, salatalık, sarımsak, soya sosu, soğan, su, taze soğan, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/01/salatalik-kimchi-sg.jpg}{25}{Salatalık Kimchi}
-acı-biber-turşusu:{limon, sarımsak, sivri biber, su, tuz, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/06/aci-biber-tursusu-tarifi.jpg}{10}{Acı Biber Turşusu}
-yağlı-biber-turşusu:{domates, sarımsak, su, tuz, yeşil biber, zeytinyağı, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/yagli-biber-tursusu-arzum.jpg}{55}{Yağlı Biber Turşusu}
-sütlü-biber-turşusu:{beyaz peynir, keçi sütü, çarliston biber}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/09/sutlu-biber-tursusu-onecikan-yeni.jpg}{25}{Sütlü Biber Turşusu}
-kornişon-turşu:{elma sirkesi, kornişon, limon tuzu, nohut, sarımsak}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/kornison-tursu-tarifi.jpg}{25}{Kornişon Turşu}
-soka:{kaymak, lor peyniri, süt, süzme yoğurt, tuz, yeşil biber}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/11/soka-yeni-onecikan.jpg}{1}{Soka}
-kırmızı-pancar-turşusu:{elma sirkesi, kekik, limon tuzu, pancar, sarımsak, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/kirmizi-pancar-tursusu-yemekcom.jpg}{15}{Kırmızı Pancar Turşusu}
-kırmızı-biber-turşusu:{maydanoz, sarımsak, su, sıvı yağ, toz biber, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/kirmizi-biber-tursusu-editor.jpg}{60}{Kırmızı Biber Turşusu}
-fermente-havuç:{biberiye, hardal tohumu, havuç, tuz, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/06/fermante-havuc-yemekcom.jpg}{15}{Fermente Havuç}
-biber-turşusu:{sarımsak, su, tuz, yeşil biber, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/biber-tursusu-onecikan-yeni.jpg}{20}{Biber Turşusu}
-yaz-turşusu:{domates, elma sirkesi, sarımsak, sivri biber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/10/yaz-tursusu-editor.jpg}{20}{Yaz Turşusu}
-közlenmiş-biber-turşusu:{ayçiçek yağı, kırmızı biber, maydanoz, sarımsak, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/kozlenmis-biber-tursusu-tarifi.jpg}{50}{Közlenmiş Biber Turşusu}
-mor-lahana-turşusu:{limon, maydanoz, mor lahana, sıvı yağ, tuz, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/mor-lahana-tursusu-2-tarifi.jpg}{3}{Mor Lahana Turşusu}
-brokoli-ve-karnabahar-kimchi:{brokoli, elma sirkesi, karnabahar, sarımsak, soya sosu, susam, susam yağı, tuz, zencefil, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/brokoli-karnabahar-sapi-kimchi-tarifi.jpg}{40}{Brokoli ve Karnabahar Kimchi}
-cin-biber-turşusu:{cin biberi, sarımsak, su, tuz, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/09/cin-biber-tursusu-yemekcom.jpg}{15}{Cin Biber Turşusu}
-kolay-karışık-turşu:{havuç, kereviz, kornişon, lahana, limon tuzu, patlıcan, sarımsak, sivri biber, su, tuz, yeşil domates, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/12/kolay-karisik-tursu-tarifi.jpg}{16}{Kolay Karışık Turşu}
-zencefil-turşusu:{elma sirkesi, tuz, zencefil, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/02/zencefil-tursusu-yemekcom.jpg}{15}{Zencefil Turşusu}
-patlıcan-turşusu:{kırmızı biber, lahana, limon tuzu, patlıcan, sarımsak, su, tuz, yeşil biber, yeşil domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/09/patlican-tursusu-tarifi.jpg}{10}{Patlıcan Turşusu}
-salatalık-turşusu:{elma sirkesi, kornişon, sarımsak, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/salatalik-tursusu-onecikan.jpg}{30}{Salatalık Turşusu}
-konserve-mor-lahana-turşusu:{limon, mor lahana, su, tuz, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/mor-lahana-konservesi-onecikan.jpg}{10}{Konserve Mor Lahana Turşusu}
-kolay-turşu:{elma sirkesi, kapya biber, maydanoz, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/09/kolay-tursu-tarifi.jpg}{30}{Kolay Turşu}
-pratik-karışık-turşu:{defne yaprağı, elma sirkesi, havuç, karabiber, lahana, mor lahana, pul biber, salatalık, sarımsak, su, turp, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/12/pratik-karisik-tursu.jpg}{10}{Pratik Karışık Turşu}
-karışık-turşu:{havuç, kapya biber, lahana, sarımsak, sivri biber, tuz, yeşil biber, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/12/karisik-tursu-tarifi.jpg}{35}{Karışık Turşu}
-enginar-turşusu:{elma sirkesi, enginar, limon, sarımsak, su, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/04/enginar-tursusu-tarifi.jpg}{15}{Enginar Turşusu}
-yağlı-ev-turşusu:{havuç, lahana, salatalık, sarımsak, sivri biber, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/yagli-ev-tursusu-hem.jpg}{3}{Yağlı Ev Turşusu}
-domates-soslu-biber-turşusu:{domates, elma sirkesi, sarımsak, sivri biber, tuz, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/domates-soslu-biber-tursusu-tarifi.jpg}{15}{Domates Soslu Biber Turşusu}
 top-biber-turşusu:{limon, sarımsak, sivri biber, su, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/topbibertursusu-sunum.jpg}{10}{Top Biber Turşusu}
-soğan-turşusu:{defne yaprağı, karabiber, kırmızı soğan, sarımsak, su, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/sogan-tursusu-duygu.jpg}{15}{Soğan Turşusu}
-yağlı-acı-biber-turşusu:{elma sirkesi, sarımsak, su, sıvı yağ, tuz, yeşil biber}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/yagli-aci-biber-tursusu-yemekcom.jpg}{60}{Yağlı Acı Biber Turşusu}
-üzüm-turşusu:{karabiber, kişniş, sarımsak, tuz, üzüm, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/09/uzum-tursusu-yemekcom.jpg}{5}{Üzüm Turşusu}
+yeşil-biber-turşusu:{elma sirkesi, limon, sarımsak, sivri biber, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/08/biber-tursusu-yeni.jpg}{20}{Yeşil Biber Turşusu}
+hızlı-pembe-turp-turşusu:{beyaz sirke, defne yaprağı, karabiber, limon, pancar, sarımsak, su, turp, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/pembe-turp-tursusu-mevy.jpg}{10}{Hızlı Pembe Turp Turşusu}
+bamya-turşusu:{bamya, karabiber, sarımsak, su, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/bamya-tursusu-onecikan.jpg}{20}{Bamya Turşusu}
+sirkesiz-karışık-turşu:{havuç, lahana, maydanoz, nohut, sarımsak, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/09/sirkesiz-tursu-onecikan-yeni.jpg}{15}{Sirkesiz Karışık Turşu}
 pancarlı-lahana-turşusu:{lahana, pancar, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/pancarli-lahana-tursusu-tarifi.jpg}{30}{Pancarlı Lahana Turşusu}
+kolay-turşu:{elma sirkesi, kapya biber, maydanoz, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/09/kolay-tursu-tarifi.jpg}{30}{Kolay Turşu}
+mor-lahana-turşusu:{limon, maydanoz, mor lahana, sıvı yağ, tuz, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/mor-lahana-tursusu-2-tarifi.jpg}{3}{Mor Lahana Turşusu}
+şipşak-turşu:{ayçiçek yağı, elma sirkesi, kapya biber, maydanoz, sarımsak, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/07/sipsak-tursu-tarifi.jpg}{35}{Şipşak Turşu}
 havuçlu-turşu:{elma sirkesi, havuç, limon tuzu, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/11/havuclu-tursu-tarifi.jpg}{15}{Havuçlu Turşu}
-kolay-pancar-turşusu:{elma sirkesi, pancar, sarımsak, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/02/kolay-pancar-tursusu-maritsa.jpeg}{70}{Kolay Pancar Turşusu}
-turşu:{arpacık soğan, defne yaprağı, havuç, karnabahar, kişniş tohumu, kırmızı biber, lahana, limon tuzu, nohut, salatalık, sarımsak, tuz, yeşil domates, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/09/tursu-tarifi.jpg}{1}{Turşu}
-peynirli-biber-turşusu:{elma sirkesi, karabiber, kırmızı biber, lor peyniri, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/peynirli-biber-tursusu-tarifi.jpg}{19}{Peynirli Biber Turşusu}
-lahana-turşusu:{defne yaprağı, dereotu, elma sirkesi, lahana, maydanoz, pancar, rezene, sarımsak, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/09/kirmizi-lahana-tursusu-tahiranovruzova.jpg}{25}{Lahana Turşusu}
-beyaz-lahana-turşusu:{defne yaprağı, karabiber, lahana, limon tuzu, sarımsak, su, tuz, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/beyaz-lahana-tursusu-yemekcom.jpg}{15}{Beyaz Lahana Turşusu}
+yağlı-acı-biber-turşusu:{elma sirkesi, sarımsak, su, sıvı yağ, tuz, yeşil biber}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/yagli-aci-biber-tursusu-yemekcom.jpg}{60}{Yağlı Acı Biber Turşusu}
+fındık-turp-turşusu:{elma sirkesi, karabiber, limon, limon tuzu, sarımsak, su, turp, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/12/findik-turp-tursusu-yemekcom.jpg}{15}{Fındık Turp Turşusu}
+kolay-karışık-turşu:{havuç, kereviz, kornişon, lahana, limon tuzu, patlıcan, sarımsak, sivri biber, su, tuz, yeşil domates, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/12/kolay-karisik-tursu-tarifi.jpg}{16}{Kolay Karışık Turşu}
+közlenmiş-biber-turşusu:{ayçiçek yağı, kırmızı biber, maydanoz, sarımsak, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/kozlenmis-biber-tursusu-tarifi.jpg}{50}{Közlenmiş Biber Turşusu}
+sivri-biber-turşusu:{karabiber, sarımsak, sivri biber, su, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/sivri-biber-tursu-sunum-1.jpg}{10}{Sivri Biber Turşusu}
+alman-turşusu:{defne yaprağı, dereotu, elma sirkesi, hardal tohumu, karabiber, kişniş tohumu, kornişon, soğan, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/10/alman-tursusu-tarifi1.jpg}{15}{Alman Turşusu}
+hızlı-lahana-turşusu:{defne yaprağı, elma sirkesi, mor lahana, sarımsak, sivri biber, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/hizli-lahana-tursusu-yemekcom.jpg}{30}{Hızlı Lahana Turşusu}
+salatalık-turşusu:{elma sirkesi, kornişon, sarımsak, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/salatalik-tursusu-onecikan.jpg}{30}{Salatalık Turşusu}
+kırmızı-soğan-turşusu:{biberiye, hardal tohumu, kırmızı soğan, limon tuzu, su, tuz, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/09/kirmizi-sogan-tursusu-yemekcom.jpg}{15}{Kırmızı Soğan Turşusu}
+soka:{kaymak, lor peyniri, süt, süzme yoğurt, tuz, yeşil biber}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/11/soka-yeni-onecikan.jpg}{1}{Soka}
+yağlı-kırmızı-biber-turşusu:{kapya biber, maydanoz, sarımsak, tuz, zeytinyağı, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/yagli-kirmizi-biber-tursusu-one-cikan.jpg}{35}{Yağlı Kırmızı Biber Turşusu}
+kapya-biber-turşusu:{elma sirkesi, kapya biber, maydanoz, sarımsak, sıvı yağ, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/12/kapya-biber-tursusu-tarifi.jpg}{20}{Kapya Biber Turşusu}
+pratik-karışık-turşu:{defne yaprağı, elma sirkesi, havuç, karabiber, lahana, mor lahana, pul biber, salatalık, sarımsak, su, turp, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/12/pratik-karisik-tursu.jpg}{10}{Pratik Karışık Turşu}
+karnabahar-turşusu:{elma sirkesi, havuç, karnabahar, sarımsak, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/karnabahar-tursusu-onecikan.jpg}{10}{Karnabahar Turşusu}
+pancarlı-karnabahar-turşusu:{karnabahar, limon tuzu, pancar, sarımsak, su, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/11/pancarli-karnabahar-tursusu.jpg}{20}{Pancarlı Karnabahar Turşusu}
+sauerkraut:{lahana, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/sauerkraut-yemekcom-1.jpg}{10}{Sauerkraut}
+kornişon-turşusu:{elma sirkesi, kornişon, sarımsak, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/09/kornison-tursusu-yemekcom.jpg}{35}{Kornişon Turşusu}
+fasulye-turşusu:{elma sirkesi, limon, sarımsak, tuz, yeşil fasulye}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/fasulye-tursusu-bi.jpg}{44}{Fasulye Turşusu}
+yağlı-ev-turşusu:{havuç, lahana, salatalık, sarımsak, sivri biber, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/yagli-ev-tursusu-hem.jpg}{3}{Yağlı Ev Turşusu}
+şipşak-pancar-turşusu:{elma sirkesi, pancar, sarımsak, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/11/sipsak-pancar-tursusu-tarifi.jpg}{35}{Şipşak Pancar Turşusu}
 limon-turşusu:{defne yaprağı, karabiber, limon, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/11/butun-limon-tursusu-yemekcom.jpg}{10}{Limon Turşusu}
+sıcak-suyla-kolay-soğan-turşusu:{defne yaprağı, elma sirkesi, hardal tohumu, kırmızı soğan, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/06/sicak-sulu-sogan-tursusu-yemekcom.jpg}{10}{Sıcak Suyla Kolay Soğan Turşusu}
+sarımsak-turşusu:{defne yaprağı, elma sirkesi, karabiber, sarımsak, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/sarimsak-tursusu-one-cikan-2.jpg}{30}{Sarımsak Turşusu}
+ezme-turşu:{domates, maydanoz, sarımsak, sivri biber, tuz, zeytinyağı, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/07/ezme-tursu-one-cikan.jpg}{10}{Ezme Turşu}
+lahana-turşusu:{defne yaprağı, dereotu, elma sirkesi, lahana, maydanoz, pancar, rezene, sarımsak, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/09/kirmizi-lahana-tursusu-tahiranovruzova.jpg}{25}{Lahana Turşusu}
+zencefil-turşusu:{elma sirkesi, tuz, zencefil, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/02/zencefil-tursusu-yemekcom.jpg}{15}{Zencefil Turşusu}
+pancar-turşusu:{pancar, sarımsak, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/pancar-tursusu-bread.jpg}{41}{Pancar Turşusu}
+havuç-turşusu:{dereotu, elma sirkesi, havuç, limon tuzu, sarımsak, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/12/havuc-tursusu-sunum-yemekcom.jpg}{15}{Havuç Turşusu}
+peynirli-biber-turşusu:{elma sirkesi, karabiber, kırmızı biber, lor peyniri, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/peynirli-biber-tursusu-tarifi.jpg}{19}{Peynirli Biber Turşusu}
+lor-peynirli-biber-turşusu:{elma sirkesi, kekik, kırmızı biber, lor peyniri, sarımsak, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/08/lor-peynirli-biber-tursusu-tarifi.jpg}{40}{Lor Peynirli Biber Turşusu}
+sarı-turp-turşusu:{beyaz sirke, defne yaprağı, karabiber, su, turp, tuz, zerdeçal, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/sari-turp-tursusu-tarifi.jpg}{40}{Sarı Turp Turşusu}
+acur-turşusu:{acur, limon, sarımsak, su, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/09/acur-tursusu-onecikan.jpg}{15}{Acur Turşusu}
+yağlı-biber-turşusu:{domates, sarımsak, su, tuz, yeşil biber, zeytinyağı, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/yagli-biber-tursusu-arzum.jpg}{55}{Yağlı Biber Turşusu}
+üzüm-turşusu:{karabiber, kişniş, sarımsak, tuz, üzüm, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/09/uzum-tursusu-yemekcom.jpg}{5}{Üzüm Turşusu}
+kırmızı-biber-turşusu:{maydanoz, sarımsak, su, sıvı yağ, toz biber, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/kirmizi-biber-tursusu-editor.jpg}{60}{Kırmızı Biber Turşusu}
+konserve-mor-lahana-turşusu:{limon, mor lahana, su, tuz, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/mor-lahana-konservesi-onecikan.jpg}{10}{Konserve Mor Lahana Turşusu}
+soğan-turşusu:{defne yaprağı, karabiber, kırmızı soğan, sarımsak, su, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/sogan-tursusu-duygu.jpg}{15}{Soğan Turşusu}
+cin-biber-turşusu:{cin biberi, sarımsak, su, tuz, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/09/cin-biber-tursusu-yemekcom.jpg}{15}{Cin Biber Turşusu}
+kornişon-turşu:{elma sirkesi, kornişon, limon tuzu, nohut, sarımsak}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/kornison-tursu-tarifi.jpg}{25}{Kornişon Turşu}
+fellah-turşusu:{patlıcan, sarımsak, sivri biber, su, sumak, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/04/fellah-tursusu-sunum-yemekcom.jpg}{55}{Fellah Turşusu}
+elma-sirkeli-sumaklı-soğan-turşusu:{elma sirkesi, karabiber, kimyon tohumu, kırmızı soğan, sumak, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/06/sirkeli-sogan-tursusu-yemekcom.jpg}{10}{Elma Sirkeli Sumaklı Soğan Turşusu}
+kırmızı-pancar-turşusu:{elma sirkesi, kekik, limon tuzu, pancar, sarımsak, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/kirmizi-pancar-tursusu-yemekcom.jpg}{15}{Kırmızı Pancar Turşusu}
+biber-turşusu:{sarımsak, su, tuz, yeşil biber, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/biber-tursusu-onecikan-yeni.jpg}{20}{Biber Turşusu}
+beyaz-lahana-turşusu:{defne yaprağı, karabiber, lahana, limon tuzu, sarımsak, su, tuz, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/beyaz-lahana-tursusu-yemekcom.jpg}{15}{Beyaz Lahana Turşusu}
+salatalık-kimchi:{havuç, pul biber, salatalık, sarımsak, soya sosu, soğan, su, taze soğan, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/01/salatalik-kimchi-sg.jpg}{25}{Salatalık Kimchi}
+turşu:{arpacık soğan, defne yaprağı, havuç, karnabahar, kişniş tohumu, kırmızı biber, lahana, limon tuzu, nohut, salatalık, sarımsak, tuz, yeşil domates, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/09/tursu-tarifi.jpg}{1}{Turşu}
+enginar-turşusu:{elma sirkesi, enginar, limon, sarımsak, su, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/04/enginar-tursusu-tarifi.jpg}{15}{Enginar Turşusu}
+acı-biber-turşusu:{limon, sarımsak, sivri biber, su, tuz, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/06/aci-biber-tursusu-tarifi.jpg}{10}{Acı Biber Turşusu}
+şipşak-yaz-turşusu:{elma sirkesi, maydanoz, nane, patlıcan, sarımsak, su, tuz, yeşil biber}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/09/sipsak-yaz-tursusu-pelincelezzetler.jpg}{25}{Şipşak Yaz Turşusu}
+kolay-pancar-turşusu:{elma sirkesi, pancar, sarımsak, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/02/kolay-pancar-tursusu-maritsa.jpeg}{70}{Kolay Pancar Turşusu}
+lokanta-usulü-kırmızı-lahana-turşusu:{elma sirkesi, limon, mor lahana, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/02/lokanta-usulu-kirmizi-lahana-tursusu-asama-6.jpg}{15}{Lokanta Usulü Kırmızı Lahana Turşusu}
+brokoli-ve-karnabahar-kimchi:{brokoli, elma sirkesi, karnabahar, sarımsak, soya sosu, susam, susam yağı, tuz, zencefil, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/brokoli-karnabahar-sapi-kimchi-tarifi.jpg}{40}{Brokoli ve Karnabahar Kimchi}
+karışık-turşu:{havuç, kapya biber, lahana, sarımsak, sivri biber, tuz, yeşil biber, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/12/karisik-tursu-tarifi.jpg}{35}{Karışık Turşu}
+fermente-havuç:{biberiye, hardal tohumu, havuç, tuz, zencefil}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/06/fermante-havuc-yemekcom.jpg}{15}{Fermente Havuç}
 turşu-suyu:{elma sirkesi, limon tuzu, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/09/tursu-suyu-yemekcom.jpg}{5}{Turşu Suyu}
 ev-yapımı-pancar-turşusu:{elma sirkesi, pancar, sarımsak, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/01/ev-yapimi-pancar-tursusu-tarifi.jpg}{25}{Ev Yapımı Pancar Turşusu}
-acur-turşusu:{acur, limon, sarımsak, su, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/09/acur-tursusu-onecikan.jpg}{15}{Acur Turşusu}
-sirkesiz-karışık-turşu:{havuç, lahana, maydanoz, nohut, sarımsak, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/09/sirkesiz-tursu-onecikan-yeni.jpg}{15}{Sirkesiz Karışık Turşu}
-şipşak-pancar-turşusu:{elma sirkesi, pancar, sarımsak, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/11/sipsak-pancar-tursusu-tarifi.jpg}{35}{Şipşak Pancar Turşusu}
-sarımsak-turşusu:{defne yaprağı, elma sirkesi, karabiber, sarımsak, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/sarimsak-tursusu-one-cikan-2.jpg}{30}{Sarımsak Turşusu}
-karnabahar-turşusu:{elma sirkesi, havuç, karnabahar, sarımsak, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/karnabahar-tursusu-onecikan.jpg}{10}{Karnabahar Turşusu}
-yeşil-biber-turşusu:{elma sirkesi, limon, sarımsak, sivri biber, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/08/biber-tursusu-yeni.jpg}{20}{Yeşil Biber Turşusu}
-lokanta-usulü-kırmızı-lahana-turşusu:{elma sirkesi, limon, mor lahana, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/02/lokanta-usulu-kirmizi-lahana-tursusu-asama-6.jpg}{15}{Lokanta Usulü Kırmızı Lahana Turşusu}
-fasulye-turşusu:{elma sirkesi, limon, sarımsak, tuz, yeşil fasulye}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/fasulye-tursusu-bi.jpg}{44}{Fasulye Turşusu}
-kornişon-turşusu:{elma sirkesi, kornişon, sarımsak, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/09/kornison-tursusu-yemekcom.jpg}{35}{Kornişon Turşusu}
-elma-sirkeli-sumaklı-soğan-turşusu:{elma sirkesi, karabiber, kimyon tohumu, kırmızı soğan, sumak, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/06/sirkeli-sogan-tursusu-yemekcom.jpg}{10}{Elma Sirkeli Sumaklı Soğan Turşusu}
-kırmızı-soğan-turşusu:{biberiye, hardal tohumu, kırmızı soğan, limon tuzu, su, tuz, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/09/kirmizi-sogan-tursusu-yemekcom.jpg}{15}{Kırmızı Soğan Turşusu}
+sütlü-biber-turşusu:{beyaz peynir, keçi sütü, çarliston biber}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/09/sutlu-biber-tursusu-onecikan-yeni.jpg}{25}{Sütlü Biber Turşusu}
+domates-soslu-biber-turşusu:{domates, elma sirkesi, sarımsak, sivri biber, tuz, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/domates-soslu-biber-tursusu-tarifi.jpg}{15}{Domates Soslu Biber Turşusu}
+yaz-turşusu:{domates, elma sirkesi, sarımsak, sivri biber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/10/yaz-tursusu-editor.jpg}{20}{Yaz Turşusu}
+patlıcan-turşusu:{kırmızı biber, lahana, limon tuzu, patlıcan, sarımsak, su, tuz, yeşil biber, yeşil domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/09/patlican-tursusu-tarifi.jpg}{10}{Patlıcan Turşusu}
 domates-turşusu:{elma sirkesi, sarımsak, tuz, yeşil domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/09/yesil-domates-tursusu-yemekcom.jpg}{30}{Domates Turşusu}
 kıtır-kıtır-lahana-turşusu:{karabiber, lahana, sarımsak, su, tuz, üzüm sirkesi}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/12/kitir-lahana-tursusu-onecikan-yeni.jpg}{20}{Kıtır Kıtır Lahana Turşusu}
-fellah-turşusu:{patlıcan, sarımsak, sivri biber, su, sumak, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/04/fellah-tursusu-sunum-yemekcom.jpg}{55}{Fellah Turşusu}
-sıcak-suyla-kolay-soğan-turşusu:{defne yaprağı, elma sirkesi, hardal tohumu, kırmızı soğan, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/06/sicak-sulu-sogan-tursusu-yemekcom.jpg}{10}{Sıcak Suyla Kolay Soğan Turşusu}
-sarı-turp-turşusu:{beyaz sirke, defne yaprağı, karabiber, su, turp, tuz, zerdeçal, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/sari-turp-tursusu-tarifi.jpg}{40}{Sarı Turp Turşusu}
-alman-turşusu:{defne yaprağı, dereotu, elma sirkesi, hardal tohumu, karabiber, kişniş tohumu, kornişon, soğan, su, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/10/alman-tursusu-tarifi1.jpg}{15}{Alman Turşusu}
-bamya-turşusu:{bamya, karabiber, sarımsak, su, tuz, üzüm sirkesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/bamya-tursusu-onecikan.jpg}{20}{Bamya Turşusu}
+zeytinyağlı-kolay-limon-turşusu:{kekik, limon, tuz, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/06/zeytintagli-limon-tursusu-yemekcom.jpg}{10}{Zeytinyağlı Kolay Limon Turşusu}

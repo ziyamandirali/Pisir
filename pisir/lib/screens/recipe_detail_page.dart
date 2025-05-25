@@ -108,7 +108,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
           _prepTime = data['prepTime']?.toString(); // Convert int/double to String
           _cookTime = data['cookTime']?.toString(); // Convert int/double to String
           _description = data['description']; // Keep as is from previous fix
-          _youtubeVideoId = data['youtube_url']; // YouTube video ID from Firestore
+          _youtubeVideoId = data['youtubeId']; // YouTube video ID from Firestore
           _nutritionalValues = _parseNutritionalValues(data['nutritionalValue']);
           if (determinedIsFavoritedFlag) {
              _isFavorited = actualInitialIsFavoritedValue;

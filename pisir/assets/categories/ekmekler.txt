@@ -1,307 +1,308 @@
-ev-yapımı-baget-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/03/ev-yapimi-baget-ekmek-tarifi.jpg}{65}{Ev Yapımı Baget Ekmek}
-glutensiz-mercimek-ekmeği:{kabartma tozu, karabiber, kekik, kırmızı mercimek, pul biber, tuz, yumurta, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/03/glutensiz-mercimek-ekmegi-tarifi.jpg}{35}{Glutensiz Mercimek Ekmeği}
-naan-ekmeği:{bal, maya, maydanoz, sarımsak, su, tereyağı, tuz, un, yoğurt, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/04/meyvberry-naan-ekmegi.jpg}{40}{Naan Ekmeği}
-kızarmış-tam-buğday-ekmeği:{haşhaş, maya, su, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/tam-bugday-ekmegi-tarifi.jpeg}{55}{Kızarmış Tam Buğday Ekmeği}
-köy-ekmeği:{maya, su, tuz, un, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/koy-ekmegi-ruveyda.jpg}{21}{Köy Ekmeği}
-yudaneli-tost-ekmeği:{maya, su, süt, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/yudaneli-tost-ekmegi-editor.jpg}{84}{Yudaneli Tost Ekmeği}
-yumuşak-focaccia:{domates, maya, piliç salam, su, susam, tuz, un, zeytinyağı, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/yumusak-focaccia-tarifi.jpeg}{45}{Yumuşak Focaccia}
-tavada-karabuğday-ekmeği:{karabuğday unu, pul biber, su, tuz, yulaf unu, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/tavada-karabugday-ekmegi-ege.jpg}{15}{Tavada Karabuğday Ekmeği}
-domatesli-ekmek:{domates, kaşar peyniri, kekik, maya, sarımsak, su, tereyağı, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/05/domatesli-ekmek-tarifi.jpg}{80}{Domatesli Ekmek}
-tava-pidesi:{maya, maydanoz, su, sıvı yağ, un, yoğurt, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/03/tava-pidesi-onecikan.jpg}{40}{Tava Pidesi}
-rokforlu-ve-zeytin-ezmeli-ekmek:{biberiye, maya, rokfor, süt, tereyağı, tuz, un, yumurta, zeytin ezmesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/rokforlu-ve-zeytin-ezmeli-ekmek-tarifi.jpeg}{55}{Rokforlu ve Zeytin Ezmeli Ekmek}
-zerdeçallı-ekmek:{maya, su, tuz, un, zerdeçal, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/zerdecalli-ekmek-editor.jpg}{41.5}{Zerdeçallı Ekmek}
-hataydan-biberli-ekmek:{biber salçası, ceviz, domates, karabiber, kimyon, maya, nane, nar ekşisi, soğan, susam, süt, sıvı yağ, tuz, un, yumurta, zahter, zeytinyağı, çökelek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/01/biberli-ekmek-yemekcom.jpg}{60}{Hatay'dan Biberli Ekmek}
-ev-yapımı-bazlama:{maya, su, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/bazlama-vildan.jpg}{35}{Ev Yapımı Bazlama}
-kuru-meyveli-ekmek:{ceviz, incir, kuru kayısı, maya, su, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/kuru-meyveli-ekmek-tarifi.jpg}{35}{Kuru Meyveli Ekmek}
-pratik-tam-buğday-ekmeği:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/pratik-tam-bugdayli-ekmek-tarifi.jpg}{50}{Pratik Tam Buğday Ekmeği}
-mini-somun-ekmek:{maya, su, tuz, un, yoğurt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/mini-somon-ekmek-tarifi.jpg}{65}{Mini Somun Ekmek}
-lavaş-ekmeği:{maya, su, sıvı yağ, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/lavas-ekmegi-son.jpeg}{55}{Lavaş Ekmeği}
-yulaf-ekmeği:{maya, su, tuz, un, yulaf unu, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/yulaf-ekmegi-editor.jpg}{45}{Yulaf Ekmeği}
-sarımsaklı-kruton:{ekmek, karabiber, sarımsak, sıvı yağ, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/sarimsakli-kruton-editor.jpg}{20}{Sarımsaklı Kruton}
-kolay-mini-ekmek:{haşhaş, maya, su, susam, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/01/kolay-mini-ekmek-kubra.jpg}{31}{Kolay Mini Ekmek}
-kıtır-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/kitir-ekmek-tarifi.jpg}{85}{Kıtır Ekmek}
-klasik-foccacia:{biberiye, kekik, maya, su, tuz, un, zeytinyağı, çeri domates, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/klasik-foccacia-tarifi.jpg}{27}{Klasik Foccacia}
-mini-pamuk-ekmekler:{maya, su, susam, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/06/mini-pamuk-ekmekler-tarifi.jpg}{40}{Mini Pamuk Ekmekler}
-kolay-tost-ekmeği:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/kolay-tost-ekmegi-bimutfak.jpg}{36}{Kolay Tost Ekmeği}
-minik-somun-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/ekmek-bitarifver.jpg}{55}{Minik Somun Ekmek}
-kuru-domatesli-zeytinli-ekmek:{kurutulmuş domates, maya, su, tuz, un, zeytin}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/kuru-domatesli-ekmekk.jpg}{31}{Kuru Domatesli Zeytinli Ekmek}
-çavdarlı-ekmek:{maya, su, tuz, yoğurt, çavdar unu, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/02/cavdarli-ekmek-tarifi.jpg}{36}{Çavdarlı Ekmek}
-güveçte-minik-ekmek:{maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/03/guvecte-minik-ekmek-tarifi.jpg}{75}{Güveçte Minik Ekmek}
-focaccia-ekmek:{biberiye, kekik, maya, sarımsak, su, tuz, un, zeytin, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/focaccia-ekmek-tarifi.jpeg}{65}{Focaccia Ekmek}
-biberiyeli-ekmek:{biberiye, maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/09/biberiyeli-ekmek-tarifi.jpg}{70}{Biberiyeli Ekmek}
-tarçınlı-rulo-ekmek:{maya, pudra şekeri, su, süt, tarçın, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/tarcinli-rulo-ekmek-sweety.jpg}{27}{Tarçınlı Rulo Ekmek}
-tencerede-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/tencerede-ekmek-tarifi-son.jpg}{140}{Tencerede Ekmek}
-sandviç-hamburger-ekmeği:{bal, maya, su, süt, tuz, un, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/10/sandvic-hamburger-ekmegi-tarifi.jpg}{65}{Sandviç Hamburger Ekmeği}
-kepekli-ekmek:{maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/04/kepekli-ekmek-tarifi.jpg}{31}{Kepekli Ekmek}
-kahvaltılık-tost-ekmeği:{maya, su, süt, sıvı yağ, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/01/kahvaltilik-tost-ekmegi.jpg}{45}{Kahvaltılık Tost Ekmeği}
-pratik-ramazan-pidesi:{bal, maya, su, tuz, un, yoğurt, yumurta, zeytinyağı, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/pratik-ramazan-pidesi-tarifi.jpg}{35}{Pratik Ramazan Pidesi}
-kolay-mercimek-ekmeği:{kabartma tozu, kırmızı mercimek, tuz, yoğurt, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/kolay-mercimek-ekmegi-editor.jpg}{60}{Kolay Mercimek Ekmeği}
-yumuşacık-somun-ekmeği:{maya, su, süt, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/yumusacik-somun-ekmegi-sizden.jpg}{45}{Yumuşacık Somun Ekmeği}
-soğanlı-ekmek:{biber salçası, domates salçası, kırmızı biber, maya, pul biber, soğan, su, susam, sıvı yağ, tuz, un, yoğurt, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/soganli-ekmek-tarifi.jpg}{45}{Soğanlı Ekmek}
-sandviç-ekmeği:{maya, su, süt, sıvı yağ, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/sandvic-ekmegi-yemekcom.jpg}{32}{Sandviç Ekmeği}
-kuru-ekşi-mayalı-kolay-ekmek:{ekşi maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/kuru-eksi-mayali-kolay-ekmek-sevim.jpg}{43}{Kuru Ekşi Mayalı Kolay Ekmek}
-pancarlı-ekşi-mayalı-çiçek-ekmek:{maya, pancar, süt, tuz, un, zeytinyağı, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/pancarli-eksi-mayali-cicek-ekmek-tarifi.jpg}{51}{Pancarlı Ekşi Mayalı Çiçek Ekmek}
-sarımsaklı-peynirli-ekmek:{ekmek, karabiber, kaşar peyniri, kekik, sarımsak, tereyağı, toz biber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/sarimsakli-peynirli-ekmek-yemekcom.jpg}{55}{Sarımsaklı Peynirli Ekmek}
-minik-ekmekler:{maya, su, tuz, un, yoğurt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/10/mini-ekmekler.jpg}{80}{Minik Ekmekler}
-banana-bread:{bitter çikolata, kabartma tozu, karbonat, muz, sütlü çikolata, sıvı yağ, tarçın, tuz, un, vanilya, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/banana-bread-5-tarifi-1.jpg}{65}{Banana Bread}
-mayle-ekmeği:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/01/mayle-ekmegi.jpg}{37}{Mayle Ekmeği}
-pratik-mısır-ekmeği:{mısır unu, su, sıvı yağ, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/02/20200212080003419151.jpeg}{35}{Pratik Mısır Ekmeği}
-naan:{biberiye, kekik, maya, su, tereyağı, tuz, un, yoğurt, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/01/naan-tarifi-asama-yemekcom.jpg}{50}{Naan}
-roll-ekmek:{maya, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/roll-ekmek-editor.jpg}{40}{Roll Ekmek}
-brioche:{bal, limon, maya, süt, tereyağı, tuz, un, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/11/brioche-tarifi.jpg}{40}{Brioche}
-pratik-kruton:{ekmek, kekik, toz biber, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/01/pratik-kruton-tarifi.jpg}{40}{Pratik Kruton}
-zeytinli-ve-kaşarlı-rulo-ekmek:{kaşar peyniri, krema, maya, süt, tuz, un, yumurta, zeytin ezmesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/zeytinli-ve-kasarli-rulo-ekmek-tarifi.jpg}{31}{Zeytinli ve Kaşarlı Rulo Ekmek}
-yufka-ekmek:{su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/05/yufka-ekmek-tarifi.jpg}{80}{Yufka Ekmek}
-pamuk-sandviç-ekmeği:{maya, su, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/pamuk-sandvic-ekmegi-tarif.jpeg}{60}{Pamuk Sandviç Ekmeği}
-tatlı-ekmekler:{maya, su, sürülebilir çikolata, süt, sıvı yağ, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/tatli-ekmekler-rukiye.jpg}{60}{Tatlı Ekmekler}
-sarımsaklı-ekmek:{maya, maydanoz, sarımsak, su, tereyağı, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/sarimsakli-ekmekfatma.jpg}{45}{Sarımsaklı Ekmek}
-fırın-tadında-ekmek:{maya, su, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/firin-tadinda-ekmek-tarifi.jpeg}{31}{Fırın Tadında Ekmek}
-cevizli-pekmezli-ekmek:{ceviz, maya, su, tuz, un, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/12/cevizli-pekmezli-ekmek.jpg}{70}{Cevizli Pekmezli Ekmek}
-mini-ekmek-somunları:{maya, su, sıvı yağ, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/mini-ekmek-somunlari-tarifi.jpg}{110}{Mini Ekmek Somunları}
-aromalı-ekmek-dilimleri:{cheddar, fesleğen, karabiber, kaşar peyniri, reyhan, sandviç ekmeği, sarımsak, tereyağı, tuz, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/05/aromali-ekmekler.jpg}{25}{Aromalı Ekmek Dilimleri}
-çavdarlı-tam-buğday-ekmeği:{ayçiçek yağı, maya, su, süt, tuz, un, çavdar unu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/cavdarli-tam-bugday-ekmegi-tarifi.jpg}{80}{Çavdarlı Tam Buğday Ekmeği}
-foccacia:{domates, kekik, maya, sarımsak, su, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/focaccia-tarifi-son.jpg}{27}{Foccacia}
-focaccia-ekmeği:{fesleğen, maya, mozzarella, sarımsak, su, tuz, un, zeytin, zeytinyağı, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/foccacia-yemekburada.jpg}{31}{Focaccia Ekmeği}
-ev-yapımı-iki-temel-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/bby-ekmek-yemekcom.jpg}{28}{Ev Yapımı İki Temel Ekmek}
-burger-ekmeği:{maya, su, susam, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/02/ev-yapimi-hamburger-ekmegi.jpg}{70}{Burger Ekmeği}
-kolay-focaccia-ekmeği:{bal, domates, kekik, maya, sarımsak, su, tuz, un, zeytin, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/focaccia-ekmegi-editor.jpg}{27}{Kolay Focaccia Ekmeği}
-kahvaltı-ekmeği:{ceviz, kekik, kurutulmuş domates, maya, sarımsak, süt, tereyağı, un, yumurta, zeytin ezmesi, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/08/kahvalti-ekmegi-tarifi.jpg}{80}{Kahvaltı Ekmeği}
-tavuklu-mantarlı-ekmek:{domates, hamburger ekmeği, kapya biber, karabiber, kaşar peyniri, mantar, pul biber, tavuk göğsü, tereyağı, tuz, yeşil biber}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/tavuklu-mantarli-ekmek-tarifi.jpg}{10}{Tavuklu Mantarlı Ekmek}
-pratik-köy-ekmeği:{maya, su, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/pratik-koy-ekmegi-tarifi.jpg}{70}{Pratik Köy Ekmeği}
-biberli-ekmek:{biber salçası, domates salçası, kapya biber, kekik, kimyon, maya, pul biber, soğan, su, susam, süt, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/biberli-ekmek-yeni.jpg}{60}{Biberli Ekmek}
-cevizli-mısır-ekmeği:{ceviz, kabartma tozu, kekik, maden suyu, mısır unu, tereyağı, tuz, yoğurt, yumurta, zeytin, zeytinyağı, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/12/cevizli-misir-ekmegi-tarifi.jpg}{60}{Cevizli Mısır Ekmeği}
-bazlama-ekmek:{maya, su, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/bazlama-ekmek-tarifduragim.jpg}{20}{Bazlama Ekmek}
-airfryerda-bazlama:{maya, su, sıvı yağ, tuz, un, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/11/airfryerda-bazlama-yemekcom.jpg}{16}{Airfryer'da Bazlama}
-pita-balon-ekmeği:{maya, su, süt, sıvı yağ, tuz, un, yoğurt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/pita-ekmegi-tarifi.jpg}{21}{Pita (Balon) Ekmeği}
-sağlıklı-focaccia-ekmeği:{biberiye, kekik, maya, maydanoz, sarımsak, su, tuz, un, yeşil zeytin, zeytin, zeytinyağı, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/saglikli-focaccia-ekmegi-tarifi.jpg}{32}{Sağlıklı Focaccia Ekmeği}
-tırnak-pide:{maya, su, tuz, un, yoğurt, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/08/tirnak-pide-tarifi.jpg}{45}{Tırnak Pide}
-ispanak-püreli-ekşi-mayalı-ekmek:{ekşi maya, tuz, un, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/ispanak-pureli-eksi-mayali-ekmek-seyma.jpg}{26}{Ispanak Püreli Ekşi Mayalı Ekmek}
-kırmızı-mercimek-ekmeği:{kabartma tozu, karabuğday unu, kimyon, kırmızı mercimek, süt, tuz, yumurta, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/11/kirmizi-mercimek-ekmegi-tarifi.jpg}{40}{Kırmızı Mercimek Ekmeği}
-minik-tam-buğday-ekmeği:{ay çekirdeği, maya, su, susam, sıvı yağ, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/09/minik-tam-bugday-ekmegi-eda.jpg}{45}{Minik Tam Buğday Ekmeği}
-zeytinli-sarımsaklı-çiçek-ekmek:{biberiye, kekik, maya, sarımsak, su, sıvı yağ, tuz, un, yumurta, zeytin, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/05/20180501055847459469.jpeg}{21}{Zeytinli Sarımsaklı Çiçek Ekmek}
-tam-buğdaylı-minik-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/tam-bugdayli-minik-ekmek-tarifi.jpg}{21}{Tam Buğdaylı Minik Ekmek}
-airfryerda-tam-buğday-unlu-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/04/airfryer-tam-bugday-ekmek.jpg}{70}{Airfryer’da Tam Buğday Unlu Ekmek}
-tortilla:{patates, sarımsak, soğan, toz biber, un, yoğurt, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/tortilla-sizden-gelenler.jpg}{50}{Tortilla}
-tam-buğdaylı-hamburger-ekmeği:{bal, keten tohumu, maya, su, susam, süt, tuz, un, yoğurt, zeytinyağı, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/05/tam-bugdayli-hamburger-ekmegi-tarifi.jpg}{45}{Tam Buğdaylı Hamburger Ekmeği}
-sarımsaklı-peynirli-kuru-domatesli-ekmek:{ekmek, kaşar peyniri, kurutulmuş domates, maydanoz, sarımsak, tereyağı, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/sarimsakli-peynirli-kuru-domatesli-ekmek-tarifi.jpg}{23}{Sarımsaklı Peynirli Kuru Domatesli Ekmek}
-büyük-papatya-ekmek:{maya, su, susam, süt, tuz, un, yumurta, zeytinyağı, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/buyuk-papatya-ekmek-sofra.jpg}{50}{Büyük Papatya Ekmek}
-dereotlu-ve-zeytinli-ekmekler:{dereotu, maya, su, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/10/dereotlu-ve-zeytinli-ekmekler-tarifi.jpg}{40}{Dereotlu ve Zeytinli Ekmekler}
-köfteli-çiçek-ekmek:{dana kıyma, irmik, isot, karabiber, kaşar peyniri, kimyon, köfte baharatı, maya, nane, pul biber, sarımsak, soğan, su, sumak, taze soğan, tereyağı, tuz, un, yoğurt, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/01/mayali-manti-tarifi.png}{85}{Köfteli Çiçek Ekmek}
-ev-yapımı-beyaz-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/12/ev-yapimi-beyaz-ekmek-buse.jpg}{60}{Ev Yapımı Beyaz Ekmek}
-patlıcan-dolgulu-ekmek:{bal, biber salçası, karabiber, maya, patlıcan, soğan, su, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/07/patlican-dolgulu-ekmek.jpg}{65}{Patlıcan Dolgulu Ekmek}
-hamburger-ekmeği:{maya, su, susam, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/hamburger-ekmegi-baki.jpg}{65}{Hamburger Ekmeği}
-pita-ekmeği:{maya, su, süt, tuz, un, yoğurt, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/pita-ekmegi-nurlu-1.jpg}{20}{Pita Ekmeği}
-kurutulmuş-domatesli-ekmek:{kekik, kurutulmuş domates, maya, su, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/05/kurutulmus-domatesli-ekmek.jpg}{50}{Kurutulmuş Domatesli Ekmek}
-kek-kalıbında-ekmek:{maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/kek-kalibinda-ekmek-editor.jpg}{70}{Kek Kalıbında Ekmek}
-ev-yapımı-sütlü-ekmek:{maya, su, süt, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/09/sutlu-ekmek-editor.jpg}{70}{Ev Yapımı Sütlü Ekmek}
-konyadan-etli-ekmek:{dana kıyma, domates, maya, sivri biber, soğan, su, sıvı yağ, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/01/konya-etli-ekmek-yemekcom.jpg}{60}{Konya'dan Etli Ekmek}
-foccacia-ekmeği:{bal, biberiye, kapya biber, kekik, kurutulmuş domates, kırmızı soğan, maya, sarımsak, su, tuz, un, zeytin, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/foccacia-ekmegi-tarifi.jpg}{37}{Foccacia Ekmeği}
-salamlı-peynirli-örgü-ekmek:{dereotu, kaşar peyniri, krem peynir, maya, piliç salam, su, tuz, un, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/salamli-peynirli-orgu-ekmek-alime.jpg}{70}{Salamlı Peynirli Örgü Ekmek}
-ciabatta:{maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/ciabatta.jpg}{55}{Ciabatta}
-bagel:{bal, haşhaş, kapari, krem peynir, maya, somon, su, susam, taze soğan, tuz, un, çörek otu, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/02/bagel-tarifi.jpg}{47}{Bagel}
-malatya-ekşili-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/04/eksili-ekmek-yemekcom.jpg}{22}{Malatya Ekşili Ekmek}
-ev-yapımı-hamburger-ekmeği:{maya, su, susam, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/burger-ekmegi-yemekcom-1.jpg}{18}{Ev Yapımı Hamburger Ekmeği}
-kahvaltılık-puf-ekmek:{kabartma tozu, maya, su, süt, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/05/kahvaltilik-puk-ekmek.jpg}{50}{Kahvaltılık Puf Ekmek}
-mor-havuçlu-ekmek:{haşhaş, maya, mor havuç, su, süt, sıvı yağ, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/mor-havuclu-ekmek-senem.jpg}{45}{Mor Havuçlu Ekmek}
-fransız-baston-baget-ekmek:{bal, maya, su, süt, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/12/fransiz-baston-ekmek.jpg}{41}{Fransız Baston (Baget) Ekmek}
-ekşi-mayalı-bagel:{bal, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/eksi-mayali-bagel-tarifi.jpg}{2}{Ekşi Mayalı Bagel}
-sütlü-ekmek:{maya, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/06/sutlu-ekmek.jpg}{70}{Sütlü Ekmek}
-zeytinli-ekmek:{maya, su, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/zeytinli-ekmek-yemekcom.jpg}{2}{Zeytinli Ekmek}
-tam-buğdaylı-focaccia:{bal, fesleğen, kekik, kurutulmuş domates, kırmızı soğan, mantar, maya, su, tuz, un, zeytin, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/tam-bugdayli-focaccia-tarifi.jpeg}{60}{Tam Buğdaylı Focaccia}
-yufka-ekmeği:{maya, su, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/yufka-ekmegi-onecikan.jpg}{25}{Yufka Ekmeği}
-dört-çeşit-focaccia:{bal, biberiye, cheddar, fesleğen, incir, jambon, kapya biber, kekik, keçi peyniri, maya, parmesan, su, tulum peyniri, tuz, un, zeytin, zeytinyağı, çeri domates, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/09/dort-cesit-focaccia-tarifi.jpg}{75}{Dört Çeşit Focaccia}
-ekşi-mayalı-focaccia:{ekşi maya, su, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/eksi-mayali-foccaccia.jpg}{80}{Ekşi Mayalı Focaccia}
-patatesli-tava-ekmeği:{patates, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/patatesli-tava-ekmegi-yemekcom.jpg}{16}{Patatesli Tava Ekmeği}
-ingiliz-muffin:{maya, su, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/05/ingiliz-muffin.jpg}{53}{İngiliz Muffin}
-cabata-ekmeği:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/cabata-ekmegi-tarifi.jpg}{33}{Cabata Ekmeği}
-airfryerda-sarımsaklı-ekmek:{ekmek, karabiber, kaşar peyniri, maydanoz, sarımsak, sıvı yağ, tereyağı, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/07/airfryerda-sarimsakli-ekmek.jpg}{35}{Airfryer'da Sarımsaklı Ekmek}
-nohuttan-tost-ekmeği:{karbonat, limon, nohut, süt, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/12/nohuttan-tost-ekmegi-tarifi.jpg}{35}{Nohuttan Tost Ekmeği}
-kek-kıvamında-mısır-ekmeği:{karbonat, mısır unu, su, tuz, yoğurt, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/misir-ekmegi-sema.jpg}{30}{Kek Kıvamında Mısır Ekmeği}
-yoğrulmayan-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/04/yogrulmayan-ekmek-tarifi.jpg}{55}{Yoğrulmayan Ekmek}
-mayalı-lavaş:{maya, su, süt, sıvı yağ, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/04/mayali-lavas-kendi.jpg}{45}{Mayalı Lavaş}
-güveçte-ekmek:{maya, su, sıvı yağ, tuz, un, üzüm pekmezi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/09/guvecte-ekmek-tarifi.jpg}{75}{Güveçte Ekmek}
-mor-havuçlu-baget:{maya, mor havuç, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/10/mor-havuclu-baget.jpg}{21}{Mor Havuçlu Baget}
-mor-ekmek:{maya, mor havuç, su, süt, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/mor-ekmek-tarifi.jpg}{70}{Mor Ekmek}
-airfryerda-ramazan-pidesi:{maya, su, susam, süt, tuz, un, yoğurt, yumurta, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/03/airfryerda-ramazan-pidesi-yemekcom.jpg}{13.5}{Airfryer'da Ramazan Pidesi}
-tombik-ekmek:{maya, su, susam, süt, sıvı yağ, tuz, un, yoğurt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/05/tombik-ekmek-tarifi-yemekcom.jpg}{11}{Tombik Ekmek}
-mayalı-hamburger-ekmeği:{maya, su, susam, süt, sıvı yağ, tereyağı, tuz, un, yoğurt, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/hamburger-ekmegi-2-tarifi.jpg}{40}{Mayalı Hamburger Ekmeği}
-pratik-çiçek-ekmek:{maya, su, susam, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/pratik-cicek-ekmek-editor.jpg}{70}{Pratik Çiçek Ekmek}
-yulaflı-pratik-ekmek:{lor peyniri, maydanoz, yeşil zeytin, yulaf ezmesi, yumurta, zeytin, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/12/yulafli-pratik-ekmek.jpg}{25}{Yulaflı Pratik Ekmek}
-cevizli-ekmek:{ceviz, maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/cevizli-ekmek-tarifi-son.jpg}{37}{Cevizli Ekmek}
-sarımsaklı-kaşarlı-ekmek:{kaşar peyniri, maya, maydanoz, sarımsak, su, süt, sıvı yağ, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/sarimsakli-kasarli-ekmek-arzu.jpg}{65}{Sarımsaklı Kaşarlı Ekmek}
-fransız-ekmeği:{maya, su, tuz, çavdar unu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/10/fransiz-ekmegi-yemekcom.jpg}{75}{Fransız Ekmeği}
-ev-yapımı-somun-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/ev-yapimi-somun-ekmek-tarifi-sunum.jpg}{50}{Ev Yapımı Somun Ekmek}
-zeytinli-italyan-ekmeği:{maya, su, tuz, un, zeytin, zeytinyağı, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/zeytinli-italyan-ekmegi-tarifi.jpg}{31}{Zeytinli İtalyan Ekmeği}
-tam-buğday-unlu-balon-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/tam-bugday-unlu-balon-ekmek.jpg}{110}{Tam Buğday Unlu Balon Ekmek}
-zeytinli-kuru-domatesli-ekmek:{ceviz, kurutulmuş domates, maya, süt, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/zeytinli-kuru-domatesli-ekmek-2-tarifi.jpg}{55}{Zeytinli Kuru Domatesli Ekmek}
-mayalı-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/mayali-ekmek-tarifi.jpeg}{35}{Mayalı Ekmek}
-kefir-mayalı-ekmek:{bal, ceviz, kefir, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/12/kefir-mayali-ekmek-tarifi.jpg}{21}{Kefir Mayalı Ekmek}
-tereyağlı-hamburger-ekmeği:{maya, süt, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/tereyagli-hamburger-ekmegi-editor.jpg}{50}{Tereyağlı Hamburger Ekmeği}
-mısır-ekmeği:{kabartma tozu, mısır unu, su, tereyağı, tuz, un, yoğurt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/misir-ekmegi-2-tarifi.jpg}{60}{Mısır Ekmeği}
-kolay-gevrek-ekmek:{haşhaş, kabartma tozu, karbonat, su, susam, un, zeytinyağı, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/12/kolay-gevrek-ekmek-bedia.jpg}{35}{Kolay Gevrek Ekmek}
-ekşi-mayalı-bazlama-ekmek:{ekşi maya, keten tohumu, su, tuz, un, yumurta, zerdeçal}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/eksi-mayali-bazlama-ekmek-tarifi.jpg}{31}{Ekşi Mayalı Bazlama Ekmek}
-zeytinli-ve-cevizli-baton-ekmek:{ceviz, maya, su, sıvı yağ, tuz, un, zeytin, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/zeytinli-cevizli-baton-ekmek-sema.jpg}{50}{Zeytinli ve Cevizli Baton Ekmek}
-somun-ekmeği:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/01/somun-ekmegi-emine-1.jpg}{45}{Somun Ekmeği}
-tam-buğday-unlu-hamburger-ekmeği:{maya, su, susam, süt, sıvı yağ, tereyağı, tuz, un, yumurta, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/tam-bugday-unlu-hamburger-ekmegi-tarifi.jpg}{50}{Tam Buğday Unlu Hamburger Ekmeği}
-patatesli-otlu-ekmek:{dereotu, kabartma tozu, karabiber, kurutulmuş domates, muskat, mısır unu, patates, susam, tulum peyniri, tuz, yoğurt, yulaf ezmesi, yumurta, zeytinyağı, çörek otu, ıspanak, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/patatesli-otlu-ekmek-tarifi.jpg}{55}{Patatesli Otlu Ekmek}
-sarımsaklı-kahvaltı-ekmeği:{kaşar peyniri, kekik, maya, maydanoz, sarımsak, su, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/sarimsakli-kahvalti-ekmegi-tarifi.jpg}{80}{Sarımsaklı Kahvaltı Ekmeği}
-çekirdekli-ve-susamlı-ekmek:{ay çekirdeği, maya, su, susam, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/12/cekirdekli-ekmek.jpg}{46}{Çekirdekli ve Susamlı Ekmek}
-orijinal-focaccia:{maya, maydanoz, sarımsak, su, tuz, un, zeytin, zeytinyağı, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/05/orijinal-focaccia-yemekcom.jpg}{23}{Orijinal Focaccia}
-kakaolu-portakallı-ekmek:{kakao, maya, portakal, su, süt, tuz, un, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/12/kakaolu-portakalli-ekmek.jpg}{27}{Kakaolu Portakallı Ekmek}
-evde-ramazan-pidesi:{maya, su, susam, süt, sıvı yağ, tuz, un, yumurta, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/evde-ramazan-pidesi-tarifi.jpg}{60}{Evde Ramazan Pidesi}
-pofuduk-hamburger-ekmeği:{maya, su, süt, tereyağı, tuz, un, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/pofuduk-hamburger-ekmegi-tarifi.jpeg}{35}{Pofuduk Hamburger Ekmeği}
-minik-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/minik-ekmek-editorr.jpg}{40}{Minik Ekmek}
-peynirli-sarımsaklı-ekmek:{ezine peyniri, kaşar peyniri, maya, sarımsak, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/peynirli-sarimsakli-ekmek-tarifi.jpg}{50}{Peynirli Sarımsaklı Ekmek}
-ev-yapımı-pita-ekmeği:{maya, su, süt, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/pita-ekmegi.jpg}{40}{Ev Yapımı Pita Ekmeği}
-ramazan-pidesi:{maya, su, susam, tuz, un, yoğurt, yulaf kepeği, yumurta, zeytinyağı, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/05/ramazan-pidesi-tarifi-yeni.jpg}{40}{Ramazan Pidesi}
-mahlepli-çikolatalı-ekmek:{bitter çikolata, mahlep, maya, su, süt, sütlü çikolata, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/cikolatali-mahlepli-ekmek.jpg}{47}{Mahlepli Çikolatalı Ekmek}
-tam-buğdaylı-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/12/tam-bugdayli-ekmek-vanilla.jpg}{70}{Tam Buğdaylı Ekmek}
-en-lezzetli-odun-ekmeği:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/en-lezzetli-odun-ekmegi-editor.jpg}{70}{En Lezzetli Odun Ekmeği}
-soğanlı-biberli-ekmek:{biber salçası, ceviz, karabiber, kekik, kimyon, maya, pul biber, soğan, su, susam, süt, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/11/soganli-biberli-ekmek-tarifi.jpg}{75}{Soğanlı Biberli Ekmek}
-ev-yapımı-tost-ekmeği:{maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/ev-yapimi-tost-ekmegi-editor.jpg}{120}{Ev Yapımı Tost Ekmeği}
-taze-soğanlı-mısır-ekmeği:{kabartma tozu, kaymak, maden suyu, mısır unu, su, taze soğan, tereyağı, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/01/taze-soganli-misir-ekmegi-tarifi.png}{75}{Taze Soğanlı Mısır Ekmeği}
-sarımsaklı-burma-ekmek:{maya, maydanoz, sarımsak, süt, tereyağı, tuz, un, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/sarimsakli-burma-ekmek-hatice.jpg}{36}{Sarımsaklı Burma Ekmek}
-gevrek-mısır-ekmeği:{karabiber, mısır unu, su, süt, tuz, un, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/04/gevrekmisirekmegi.jpg}{50}{Gevrek Mısır Ekmeği}
-kabak-ekmeği:{dereotu, kabak, kabartma tozu, karabiber, kekik, tuz, un, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/kabak-ekmegi-editorrr.jpg}{40}{Kabak Ekmeği}
-mayasız-hamurdan-ekmek:{kabartma tozu, su, süt, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/mayasiz-hamurdan-ekmek-tarifi.jpeg}{40}{Mayasız Hamurdan Ekmek}
-ciabatta-ekmeği:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/ciabatta-mevyberry.jpg}{65}{Ciabatta Ekmeği}
-pamuk-ekmek:{maya, su, süt, tuz, un, yoğurt, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/pamuk-ekmek-editor.jpg}{50}{Pamuk Ekmek}
-acukalı-kahvaltılık-ekmek:{biber salçası, ceviz, domates salçası, ekmek, karabiber, kekik, kimyon, maya, pul biber, sarımsak, susam, süt, tuz, un, yenibahar, yumurta, zeytinyağı, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/11/acukali-ekmek.jpg}{120}{Acukalı Kahvaltılık Ekmek}
-muzlu-ekmek:{ceviz, karbonat, muz, süt, sıvı yağ, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/05/muzlu-ekmek.jpg}{60}{Muzlu Ekmek}
-ekşi-mayalı-çiçek-ekmek:{maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/eksi-maya-cicek-ekmek-editor-onecikan.jpg}{64}{Ekşi Mayalı Çiçek ekmek}
-dereotlu-baget-ekmeği:{dereotu, maya, su, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/dereotlu-baget-ekmegi-tarifi.jpg}{50}{Dereotlu Baget Ekmeği}
-bayat-ekmekten-yumurtalı-ekmek:{beyaz peynir, ekmek, kaşar peyniri, margarin, sıvı yağ, tuz, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/bayat-ekmekten-yumurtali-ekmek-tarifi.jpg}{40}{Bayat Ekmekten Yumurtalı Ekmek}
-tahıllı-ekmek:{haşhaş, keten tohumu, maya, su, susam, süt, tuz, un, zeytinyağı, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/tahilli-ekmek-tarifi.jpg}{45}{Tahıllı Ekmek}
-mini-kuru-domatesli-zeytinli-ekmek:{kurutulmuş domates, maya, su, süt, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/mini-kuru-domatesli-ekmek.jpg}{85}{Mini Kuru Domatesli Zeytinli Ekmek}
-tam-buğday-unlu-focaccia:{adaçayı, bal, kekik, keten tohumu, maya, sarımsak, su, tuz, un, zeytin, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/08/tam-bugday-unlu-foccacia.jpg}{70}{Tam Buğday Unlu Focaccia}
-tam-buğday-unlu-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/tam-bugday-unlu-ekmek-tarifi.jpg}{50}{Tam Buğday Unlu Ekmek}
-rize-usulü-hamsili-ekmek:{domates, domates salçası, hamsi, maydanoz, mısır unu, nane, patates, pazı, soğan, sıvı yağ, tuz, çarliston biber}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/02/rize-usulu-hamsili-ekmek-huner.jpg}{60}{Rize Usulü Hamsili Ekmek}
-kuru-domatesli-kekikli-ekmek:{kekik, kurutulmuş domates, maya, su, tuz, un, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/03/kuru-domatesli-kekikli-ekmek-mayasi.jpg}{85}{Kuru Domatesli Kekikli Ekmek}
-üç-malzemeli-tavada-ekmek:{karabuğday unu, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/09/uc-malzemeli-ekmek.jpg}{20}{Üç Malzemeli Tavada Ekmek}
-tepside-biberli-ekmek:{biber salçası, domates salçası, karabiber, kekik, kimyon, maya, pul biber, soğan, su, susam, süt, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/tepside-biberli-ekmek-yemekcom.jpg}{26}{Tepside Biberli Ekmek}
-baharatlı-ekmek:{biber salçası, ceviz, karabiber, kekik, kimyon, maya, pul biber, soğan, su, susam, süt, sıvı yağ, tuz, zahter, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/baharatli-ekmek-tarifi-son.jpg}{31}{Baharatlı Ekmek}
-monkey-bread:{maya, su, süt, tarçın, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/02/monkey-bread-tarifi.jpg}{60}{Monkey Bread}
-patatesli-yumuşacık-ekmek:{karabiber, maya, patates, su, süt, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/11/patatesli-yumusacik-ekmek-tarifi-.jpg}{50}{Patatesli Yumuşacık Ekmek}
-çiçek-ekmek:{maya, su, susam, süt, sıvı yağ, tuz, un, yoğurt, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/cicek-ekmek-tarifi.jpeg}{40}{Çiçek Ekmek}
-ev-yapımı-somun-ekmeği:{maya, su, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/ev-yapimi-somun-ekmek-editor.jpg}{50}{Ev Yapımı Somun Ekmeği}
-brioche-ekmeği:{ceviz, damla çikolata, kuru üzüm, maya, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/brioche-ekmegi-tarifi.jpg}{70}{Brioche Ekmeği}
-gobit-ekmek:{maya, su, tuz, un, yoğurt, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/08/gobit-ekmek-yemekcom.jpg}{60}{Gobit Ekmek}
-örgülü-macar-ekmeği:{maya, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/02/orgulu-macar-ekmegi.jpg}{22}{Örgülü Macar Ekmeği}
-tepside-etli-ekmek:{dana kıyma, domates, karabiber, maydanoz, soğan, su, sıvı yağ, toz biber, tuz, un, yeşil biber}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/tepside-etli-ekmek-tarifi.jpg}{40}{Tepside Etli Ekmek}
-sağlıklı-tost-ekmeği:{maya, su, tereyağı, tuz, un, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/saglikli-tost-ekmegi-tarifi.jpeg}{35}{Sağlıklı Tost Ekmeği}
-tam-buğdaylı-sandviç-ekmeği:{maya, su, süt, tuz, un, yulaf, yumurta, zeytinyağı, çörek otu, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/11/tam-bugdayli-sandvic-ekmegi-tarifi.jpg}{65}{Tam Buğdaylı Sandviç Ekmeği}
-kekik-ve-sucuklu-tava-ekmeği:{kaşar peyniri, kekik, sucuk, süt, tereyağı, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/kekik-ve-sucuklu-tava-ekmegi-alime.jpg}{65}{Kekik ve Sucuklu Tava Ekmeği}
-kolay-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/kolay-ekmek-neslihan.jpg}{40}{Kolay Ekmek}
-tam-buğdaylı-simit:{ay çekirdeği, maya, su, susam, süt, tuz, un, yumurta, üzüm pekmezi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/08/tam-bugdayli-simit-tarifi.jpg}{30}{Tam Buğdaylı Simit}
-etli-ekmek:{dana kıyma, domates, karabiber, kırmızı biber, maya, pul biber, soğan, su, süt, sıvı yağ, toz biber, tuz, un, yeşil biber, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/10/etli-ekmek-3-tarifi.jpg}{55}{Etli Ekmek}
-yağlı-ekmek:{maya, su, süt, sıvı yağ, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/09/yagli-ekmek-tarifi.jpg}{30}{Yağlı Ekmek}
-ev-ekmeği:{maya, su, süt, tuz, un, yoğurt, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/ev-ekmegi-duygu.jpg}{85}{Ev Ekmeği}
-sütlü-sandviç-ekmeği:{maya, su, susam, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/sutlu-sandvic-ekmegi-tarifi.jpg}{1}{Sütlü Sandviç Ekmeği}
-mısır-unlu-tava-ekmeği:{kabartma tozu, mısır unu, tuz, yoğurt, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/misir-unlu-tava-ekmegi-tarifi.jpeg}{10}{Mısır Unlu Tava Ekmeği}
-döküm-tencerede-çavdar-ekmeği:{maya, süt, tereyağı, tuz, un, çavdar unu}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/03/dokum-tencerede-cavdar-ekmegi-tarifi.jpg}{21}{Döküm Tencerede Çavdar Ekmeği}
-incirli-ekmek:{badem, ceviz, fındık, kuru incir, maya, portakal, su, tarçın, un, çavdar unu}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/01/incirli-ekmek.jpg}{17}{İncirli Ekmek}
-salçalı-ekmek:{biber salçası, domates salçası, maya, su, süt, tereyağı, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/salcali-ekmek-editor.jpg}{42}{Salçalı Ekmek}
-zeytinli-focaccia:{kekik, maya, sarımsak, su, tuz, un, zeytin, zeytinyağı, çeri domates, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/01/zeytinli-focaccia-tarifi.jpg}{60}{Zeytinli Focaccia}
-yulaf-kepekli-ekmek:{bal, maya, mısır unu, nişasta, su, süt, tuz, yulaf, yulaf kepeği, yumurta, zeytinyağı, çavdar unu}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/07/yulaf-kepekli-ekmek.jpg}{55}{Yulaf Kepekli Ekmek}
-kaşık-ekmeği:{kabartma tozu, mısır unu, süt, tereyağı, tuz, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/04/kasik-ekmegi.jpg}{50}{Kaşık Ekmeği}
-ev-yapımı-tam-buğday-ekmeği:{limon, maya, su, süt, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/09/tam-bugday-unlu-ekmek-tarifi.jpg}{32}{Ev Yapımı Tam Buğday Ekmeği}
-mercimek-ekmeği:{karbonat, kırmızı mercimek, peynir, tuz, yoğurt, yumurta, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/mercimek-ekmegi-2-tarifi.jpg}{50}{Mercimek Ekmeği}
-baget-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/baget-ekmek-tarifi.jpg}{31}{Baget Ekmek}
-kolay-focaccia:{biberiye, domates, irmik, kekik, maya, su, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/01/kolay-foccacia-ozge.jpg}{50}{Kolay Focaccia}
-kolay-sağlıklı-ekmek:{bal, maya, su, süt, tuz, un, zeytinyağı, çavdar unu}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/saglikli-kolay-ekmek-yeni.jpg}{40}{Kolay Sağlıklı Ekmek}
-kuruyemişli-ekmek:{bal, ceviz, haşhaş tohumu, kabak çekirdeği, maya, su, tuz, un, yulaf unu}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/10/kuruyemisli-ekmek-tarifi.jpg}{120}{Kuruyemişli Ekmek}
-tam-buğdaylı-lavaş:{maya, su, tuz, un, yoğurt, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/10/tam-bugdayli-lavas.jpg}{60}{Tam Buğdaylı Lavaş}
-yulaflı-baget-ekmek:{maya, su, tuz, un, yulaf ezmesi, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/01/yulafli-baget-ekmek.jpg}{50}{Yulaflı Baget Ekmek}
-haşhaşlı-köy-ekmeği:{haşhaş, maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/12/hashasli-koy-ekmegi.jpg}{70}{Haşhaşlı Köy Ekmeği}
-airfryerda-kahvaltılık-ekmek:{ekmek, kapya biber, kaşar peyniri, lor peyniri, pul biber, süt, sıvı yağ, tuz, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/08/airfryerda-kahvaltilik-ekmek-onecikan.jpg}{17}{Airfryer'da Kahvaltılık Ekmek}
-çikolatalı-ekşi-mayalı-ekmek:{ekşi maya, kakao, su, sütlü çikolata, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/cikolatali-eksi-mayali-ekmek-saden.jpg}{41}{Çikolatalı Ekşi Mayalı Ekmek}
-karabuğday-ekmeği:{karabuğday unu, maya, su, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/11/karabugday-ekmegi-yemekcom.jpg}{47}{Karabuğday Ekmeği}
-papatya-ekmek:{maya, su, susam, süt, sıvı yağ, tuz, un, zeytinyağı, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/papatya-ekmek-tarifi.jpeg}{42}{Papatya Ekmek}
-ev-yapımı-ramazan-pidesi:{maden suyu, maya, su, susam, süt, sıvı yağ, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/ev-yapimi-ramazan-pidesi-tarifi.jpg}{30}{Ev Yapımı Ramazan Pidesi}
-evde-kolay-ekmek:{maya, su, susam, tuz, un, yoğurt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/evde-kolay-ekmek-tarifi.jpg}{105}{Evde Kolay Ekmek}
-rafine-şekerisiz-çikolatalı-ekmek:{bal, bitter çikolata, fındık, kakao, maya, süt, tereyağı, tuz, un, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/rafine-sekersiz-cikolatali-ekmek-tarifi.jpeg}{18}{Rafine Şekerisiz Çikolatalı Ekmek}
-ekmek-pide:{maya, su, süt, sıvı yağ, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/ekmek-pide-tarifi.jpg}{60}{Ekmek Pide}
-tereyağlı-tost-ekmeği:{maya, su, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/tereyagli-tost-ekmegi-sevda.jpg}{85}{Tereyağlı Tost Ekmeği}
-tam-ölçülü-hamburger-ekmeği:{maya, su, susam, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/11/hamburger-ekmegi-happy.jpg}{45}{Tam Ölçülü Hamburger Ekmeği}
-tuzlu-scone:{kabak çekirdeği, kabartma tozu, karabiber, kekik, maydanoz, süt, telli peynir, tereyağı, toz biber, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/tuzlu-scone.jpg}{35}{Tuzlu Scone}
-ev-yapımı-ekmek:{karabiber, kekik, maya, sarımsak, su, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/05/ev-yapimi-ekmek-tarifi.jpg}{43}{Ev Yapımı Ekmek}
-tam-buğday-ekmeği:{maya, su, süt, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/10/tam-bugday-ekmegi-2-tarifi-son.jpg}{42}{Tam Buğday Ekmeği}
-yumuşacık-kahvaltılık-ekmek:{kabartma tozu, süt, tuz, un, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/yumusacik-kahvaltilik-ekmek.jpg}{35}{Yumuşacık Kahvaltılık Ekmek}
-oopsie-ekmeği:{kabartma tozu, labne, tuz, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/oopsie-ekmegi-cikolatalimutfak.jpg}{25}{Oopsie Ekmeği}
-kuru-domatesli-ekşi-maya-ekmeği:{ay çekirdeği, ekşi maya, kurutulmuş domates, su, tuz, un, zeytinyağı, çavdar unu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/kuru-domatesli-eksi-maya-ekmegi-editor.jpg}{4}{Kuru Domatesli Ekşi Maya Ekmeği}
-cevizli-mini-çavdar-ekmeği:{ceviz, maya, su, tuz, un, zeytinyağı, çavdar unu}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/mini-cevizli-cavdar-ekmegi-tarifi.jpg}{31}{Cevizli Mini Çavdar Ekmeği}
-dürümlük-lavaş:{kabartma tozu, su, tereyağı, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/durumluk-lavas-tarifi.jpeg}{11}{Dürümlük Lavaş}
-bulgur-ekmeği:{bulgur, domates salçası, kimyon, maya, reyhan, soğan, toz biber, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/bulgur-ekmegi-tarifi.jpg}{50}{Bulgur Ekmeği}
-pratik-hamburger-ekmeği:{ayçiçek yağı, maya, su, susam, süt, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/kolay-hamburger-ekmegi-editor.jpg}{50}{Pratik Hamburger Ekmeği}
-yulaf-ekmeği-oat-bread:{ceviz, kabak çekirdeği, kabartma tozu, yaban mersini, yoğurt, yulaf, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/03/yulaf-ekmegi-se.jpg}{50}{Yulaf Ekmeği (Oat Bread)}
-tavada-mayalı-ekmek:{maya, su, süt, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/05/tavada-mayali-ekmek-tarifi.jpg}{40}{Tavada Mayalı Ekmek}
-pırasalı-mısır-ekmeği:{kabartma tozu, karabiber, mısır unu, pul biber, pırasa, su, süt, sıvı yağ, tuz, un, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/pirasali-misir-ekmegi-yemekcom.jpg}{16}{Pırasalı Mısır Ekmeği}
-lor-peynirli-sandviç-ekmeği:{lor peyniri, susam, yulaf, yumurta, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/01/lor-peynirli-sandvic-ekmegi-tarifi.jpg}{35}{Lor Peynirli Sandviç Ekmeği}
-kuru-domates-ve-zeytinli-ekmek:{kekik, kurutulmuş domates, maya, sarımsak, süt, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/kuru-domtes-ve-zeytinli-ekmek-tarifi.jpg}{41}{Kuru Domates ve Zeytinli Ekmek}
 trabzon-ekmeği:{maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/08/trabzon-ekmegi-sunum-yemekcom.jpg}{41}{Trabzon Ekmeği}
-sütlü-yuvarlak-ekmek:{maya, süt, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/02/sutlu-yuvarlak-ekmek.jpg}{50}{Sütlü Yuvarlak Ekmek}
-muzlu-çikolatalı-ekmek:{damla çikolata, kabartma tozu, karbonat, muz, süt, sıvı yağ, tarçın, tereyağı, un, vanilya, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/muzlu-ekmek-tarifi-2.jpeg}{75}{Muzlu Çikolatalı Ekmek}
-tarçınlı-tatlı-ekmek:{maya, süt, tarçın, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/06/tarcinli-tatli-ekmek-tarifi.jpg}{40}{Tarçınlı Tatlı Ekmek}
-3-malzemeli-lavaş:{su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/01/3-malzemeli-lavas-one-cikan.jpg}{35}{3 Malzemeli Lavaş}
-mini-sandviç-ekmeği:{ay çekirdeği, fesleğen, maya, su, susam, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/mini-sandvic-ekmegi-tarifi.jpg}{30}{Mini Sandviç Ekmeği}
-sütlü-lavaş:{süt, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/sutlu-lavas-sunum-3.jpg}{25}{Sütlü Lavaş}
-avokado-ekmek:{avokado, kabartma tozu, tuz, yulaf unu, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/03/avokado-ekmek-tarifi.jpg}{30}{Avokado Ekmek}
-şekerli-ekmek:{maya, su, susam, süt, sıvı yağ, tuz, yoğurt, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/12/sekerli-ekmek-tarifi.jpg}{55}{Şekerli Ekmek}
-sarımsaklı-yumulmalık-ekmek:{biberiye, ekmek, karabiber, kaşar peyniri, kekik, maydanoz, sarımsak, tereyağı, tulum peyniri, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/01/sarimsakli-yumulmalik-ekmek-yemekcom.jpg}{65}{Sarımsaklı Yumulmalık Ekmek}
-tavada-pamuk-ekmek:{maya, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/tavada-pamuk-ekmek-onecikan.jpg}{31}{Tavada Pamuk Ekmek}
-puf-hamburger-ekmeği:{maya, su, susam, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/puf-hamburger-ekmegi-tarifi.jpg}{50}{Puf Hamburger Ekmeği}
-mayasız-yumuşacık-ekmek:{kabartma tozu, maden suyu, su, tuz, un, yoğurt, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/yumusacik-mayasiz-ekmek-tarifi.jpg}{45}{Mayasız Yumuşacık Ekmek}
-çavdar-unlu-ekmek:{bal, maya, su, tuz, zeytinyağı, çavdar unu}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/cavdar-unlu-ekmek-tarifi.jpg}{45}{Çavdar Unlu Ekmek}
-mini-bazlama-ekmeği:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/mini-bazlama-ekmegi-tarifi.jpg}{65}{Mini Bazlama Ekmeği}
-zeytin-ezmeli-kuru-domatesli-ekmek:{bal, kurutulmuş domates, maya, su, süt, tuz, un, zeytin ezmesi, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/11/zeytin-ezmeli-ekmek.jpg}{42}{Zeytin Ezmeli & Kuru Domatesli Ekmek}
-yöresel-kömbe-ekmeği:{maya, su, süt, sıvı yağ, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/yoresel-kombe-ekmegi-baki.jpg}{40}{Yöresel Kömbe Ekmeği}
-taş-fırından-farksız-ramazan-pidesi:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/ramazan-pidesi-4-ahmetasci.jpg}{35}{Taş Fırından Farksız Ramazan Pidesi}
-evde-klasik-somun-ekmek:{maya, su, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/somun-ekmek-yeni-one-cikan.jpg}{45}{Evde Klasik Somun Ekmek}
-kahvaltılık-ekmek:{dereotu, karabiber, kekik, kişniş, maydanoz, nane, pul biber, tereyağı, tulum peyniri, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/01/kahvaltilik-ekmek-tarifi.jpg}{10}{Kahvaltılık Ekmek}
-puf-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/puf-ekmek-irem.jpg}{70}{Puf Ekmek}
-yumuşak-hamburger-ekmeği:{maya, su, süt, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/hamburger-ekmegi-3-tarifi-fundak.jpg}{16}{Yumuşak Hamburger Ekmeği}
-taş-fırın-ekmegi:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/tas-firin-ekmegi-tarifi.jpg}{35}{Taş Fırın Ekmegi}
-ev-yapımı-galeta-unu:{ekmek}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/12/ev-yapimi-galeta-unu-tarifi.jpg}{30}{Ev Yapımı Galeta Unu}
-dereotlu-mısır-ekmeği:{dereotu, kabartma tozu, mısır unu, tuz, un, yoğurt, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/11/dereotlu-misir-ekmegi.jpg}{50}{Dereotlu Mısır Ekmeği}
-kekikli-domates-dilimleri:{domates, kaşar peyniri, kekik, maya, süt, sıvı yağ, tuz, un, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/11/kekikli-domates-dilimleri-ulku.jpg}{45}{Kekikli Domates Dilimleri}
-ekşi-mayalı-ev-ekmeği:{ekşi maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/eksi-mayali-ev-ekmegi-ayse.jpg}{75}{Ekşi Mayalı Ev Ekmeği}
-ekşi-mayalı-ağaç-ekmek:{ekşi maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/eksi-mayali-agac-ekmek.jpg}{13}{Ekşi Mayalı Ağaç Ekmek}
-kabaklı-havuçlu-mısır-ekmeği:{havuç, kabak, kabartma tozu, karabiber, mısır unu, pul biber, tereyağı, tuz, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/02/kabakli-havuclu-misir-ekmegi-tarif.jpg}{55}{Kabaklı, Havuçlu Mısır Ekmeği}
-focaccia:{kapya biber, maya, maydanoz, sarımsak, su, tuz, un, zeytin, zeytinyağı, çeri domates, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/12/foccaia-yemekcom.jpg}{26}{Focaccia}
-tam-buğdaylı-mini-bazlama:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/tam-bugdayli-mini-bazlama-tarifi.jpeg}{32}{Tam buğdaylı Mini Bazlama}
-çeşnili-ekmek:{kekik, kurutulmuş domates, maya, sarımsak, su, sıvı yağ, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/cesnili-ekmek-tarifi.jpg}{21}{Çeşnili Ekmek}
-kefirli-ekmek:{karbonat, kefir, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/03/kefirli-ekmek-irem.jpg}{45}{Kefirli Ekmek}
-sarmal-ekmek:{maya, süt, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/sarmal-ekmek-damla.jpg}{65}{Sarmal Ekmek}
-italyan-ekmeği-focaccia:{maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/italyan-ekmegi-evimin.jpg}{21}{İtalyan Ekmeği (Focaccia)}
-zeytinli-mini-ekmekler:{maya, su, tuz, un, yoğurt, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/01/zeytinli-mini-ekmekler-tarifi.jpg}{30}{Zeytinli Mini Ekmekler}
-ekşi-mayalı-muzlu-ekmek:{ekşi maya, kabartma tozu, karbonat, muz, süt, sıvı yağ, tarçın, tuz, un, vanilya, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/11/eksi-mayali-muzlu-ekmek-tarifi.jpg}{65}{Ekşi Mayalı Muzlu Ekmek}
-mayasız-ekmek:{karbonat, kefir, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/04/mayasiz-ekmek.jpg}{35}{Mayasız Ekmek}
-bulut-ekmek:{kabartma tozu, labne, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/bulut-ekmek-tarifi-one-cikan.jpg}{11}{Bulut Ekmek}
-tavada-mısır-ekmeği:{maya, mısır unu, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/tavada-misir-ekmegi-bread.jpg}{16}{Tavada Mısır Ekmeği}
-orta-dünyadan-lembas:{kabartma tozu, süt, tarçın, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/02/yuzuklerin-efendisi-lembas-yemekcom.jpg}{40}{Orta Dünya'dan Lembas}
-1-kilo-undan-5-adet-somun-ekmek:{maya, su, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/12/1-kg-undan-5-somun-ekmek-one-cikan.jpg}{50}{1 Kilo Undan 5 Adet Somun Ekmek}
-mayasız-lavaş:{kabartma tozu, su, sıvı yağ, tuz, un, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/04/mayasiz-lavas-aysegul.jpg}{50}{Mayasız Lavaş}
-pratik-puf-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/pratik-puf-ekmek-tarifi.jpg}{40}{Pratik Puf Ekmek}
-ev-yapımı-lavaş:{su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/lavas-yenge.jpg}{25}{Ev Yapımı Lavaş}
 sağlıklı-ekmek:{kekik, maya, muskat, su, tuz, un, yoğurt, zeytinyağı, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/11/saglikli-ekmek.jpg}{60}{Sağlıklı Ekmek}
-zeytinli-haşhaşlı-ekmek:{haşhaş, maya, su, tuz, un, yoğurt, zeytin, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/zeytinli-hashasli-ekmek-tarifi.jpg}{80}{Zeytinli Haşhaşlı Ekmek}
-bun-ekmeği-bao-ekmeği:{karbonat, maya, su, süt tozu, sıvı yağ, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/bun-ekmegi-tavuklu-yemekcom.jpg}{67}{Bun Ekmeği (Bao Ekmeği)}
-çavdar-ekmeği:{kekik, maya, su, tuz, zeytinyağı, çavdar unu}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/03/cavdar-ekmegi-tarifi.jpg}{65}{Çavdar Ekmeği}
-evde-lavaş-yapımı:{su, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/12/ev-yapimi-lavas-one-cikan.jpg}{50}{Evde Lavaş Yapımı}
-kefirli-isırgan-otu-ekmeği:{kabartma tozu, karbonat, kefir, tuz, un, zeytinyağı, ısırgan otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/kefirli-isirgan-otlu-ekmek-beyza.jpg}{26}{Kefirli Isırgan Otu Ekmeği}
-alman-ekmeği:{karbonat, maya, su, süt, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/09/alman-ekmegi-yemekcom.jpg}{117}{Alman Ekmeği}
-küçük-somun-ekmek:{maya, su, tuz, un, yoğurt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/kucuk-somun-ekmek-rukiye.jpg}{50}{Küçük Somun Ekmek}
-tam-buğday-unlu-tost-ekmeği:{maya, su, süt, sıvı yağ, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/tam-bugday-unlu-tost-ekmegi-tarifi.jpg}{46}{Tam Buğday Unlu Tost Ekmeği}
-mini-baget-ekmek:{maya, su, tuz, un, yoğurt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/mini-baget-ekmek-tarifi.jpg}{21}{Mini Baget Ekmek}
-örgü-ekmek:{bal, maya, su, tuz, un, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/orgu-ekmek-tarifi.jpg}{70}{Örgü Ekmek}
-sütsüz-yumuşacık-ramazan-pidesi:{galeta unu, maya, su, susam, tuz, un, yoğurt, yumurta, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/sutsuz-yumusacik-ramazan-pidesi-tarifi.jpg}{21}{Sütsüz Yumuşacık Ramazan Pidesi}
-pratik-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/pratik-ekmek-editor-guzide.jpg}{51}{Pratik Ekmek}
-ekşi-mayalı-ekmek:{ekşi maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/eksi-mayali-ekmek-haticeoncel.jpg}{74}{Ekşi Mayalı Ekmek}
-sütlü-japon-ekmeği:{maya, su, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/sutlu-japon-ekmegi-tarifi.jpg}{40}{Sütlü Japon Ekmeği}
-köz-patlıcanlı-focaccia:{domates, kekik, maya, patlıcan, reyhan, sarımsak, su, toz biber, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/koz-patlicanli-foccacia-happy.jpg}{50}{Köz Patlıcanlı Focaccia}
-sarımsaklı-yumuşak-ekmek:{dereotu, domates, domates salçası, kaşar peyniri, kekik, maya, maydanoz, pul biber, sarımsak, su, sıvı yağ, tereyağı, toz biber, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/05/sarimsakli-yumusak-ekmek-tarifi.jpg}{55}{Sarımsaklı Yumuşak Ekmek}
-biberli-pratik-ekmek:{biber salçası, kekik, kişniş, lor peyniri, maya, soğan, su, susam, tuz, un, zeytinyağı, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/biberli-ekmek-tarifi.jpg}{23}{Biberli Pratik Ekmek}
-kaşar-peyniri-dolgulu-ekmek:{ekmek, kaşar peyniri, maydanoz, sarımsak, tereyağı, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/06/kasar-peyniri-dolgulu-ekmek.jpg}{25}{Kaşar Peyniri Dolgulu Ekmek}
-mor-havuçlu-çavdar-ekmeği:{maya, mor havuç, su, süt, tereyağı, tuz, un, çavdar unu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/03/mor-havuclu-cavdar-ekmegi-tarifi.jpg}{65}{Mor Havuçlu Çavdar Ekmeği}
+aromalı-ekmek-dilimleri:{cheddar, fesleğen, karabiber, kaşar peyniri, reyhan, sandviç ekmeği, sarımsak, tereyağı, tuz, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/05/aromali-ekmekler.jpg}{25}{Aromalı Ekmek Dilimleri}
+fransız-baston-baget-ekmek:{bal, maya, su, süt, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/12/fransiz-baston-ekmek.jpg}{41}{Fransız Baston (Baget) Ekmek}
+tavuklu-mantarlı-ekmek:{domates, hamburger ekmeği, kapya biber, karabiber, kaşar peyniri, mantar, pul biber, tavuk göğsü, tereyağı, tuz, yeşil biber}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/tavuklu-mantarli-ekmek-tarifi.jpg}{10}{Tavuklu Mantarlı Ekmek}
+ramazan-pidesi:{maya, su, susam, tuz, un, yoğurt, yulaf kepeği, yumurta, zeytinyağı, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/05/ramazan-pidesi-tarifi-yeni.jpg}{40}{Ramazan Pidesi}
+ev-yapımı-sütlü-ekmek:{maya, su, süt, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/09/sutlu-ekmek-editor.jpg}{70}{Ev Yapımı Sütlü Ekmek}
+dört-çeşit-focaccia:{bal, biberiye, cheddar, fesleğen, incir, jambon, kapya biber, kekik, keçi peyniri, maya, parmesan, su, tulum peyniri, tuz, un, zeytin, zeytinyağı, çeri domates, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/09/dort-cesit-focaccia-tarifi.jpg}{75}{Dört Çeşit Focaccia}
+banana-bread:{bitter çikolata, kabartma tozu, karbonat, muz, sütlü çikolata, sıvı yağ, tarçın, tuz, un, vanilya, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/banana-bread-5-tarifi-1.jpg}{65}{Banana Bread}
+ev-yapımı-baget-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/03/ev-yapimi-baget-ekmek-tarifi.jpg}{65}{Ev Yapımı Baget Ekmek}
+mini-kuru-domatesli-zeytinli-ekmek:{kurutulmuş domates, maya, su, süt, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/mini-kuru-domatesli-ekmek.jpg}{85}{Mini Kuru Domatesli Zeytinli Ekmek}
+kahvaltı-ekmeği:{ceviz, kekik, kurutulmuş domates, maya, sarımsak, süt, tereyağı, un, yumurta, zeytin ezmesi, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/08/kahvalti-ekmegi-tarifi.jpg}{80}{Kahvaltı Ekmeği}
+ekşi-mayalı-çiçek-ekmek:{maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/eksi-maya-cicek-ekmek-editor-onecikan.jpg}{64}{Ekşi Mayalı Çiçek ekmek}
+kekik-ve-sucuklu-tava-ekmeği:{kaşar peyniri, kekik, sucuk, süt, tereyağı, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/kekik-ve-sucuklu-tava-ekmegi-alime.jpg}{65}{Kekik ve Sucuklu Tava Ekmeği}
+kolay-focaccia:{biberiye, domates, irmik, kekik, maya, su, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/01/kolay-foccacia-ozge.jpg}{50}{Kolay Focaccia}
+yulaflı-baget-ekmek:{maya, su, tuz, un, yulaf ezmesi, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/01/yulafli-baget-ekmek.jpg}{50}{Yulaflı Baget Ekmek}
+pratik-ramazan-pidesi:{bal, maya, su, tuz, un, yoğurt, yumurta, zeytinyağı, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/pratik-ramazan-pidesi-tarifi.jpg}{35}{Pratik Ramazan Pidesi}
+en-lezzetli-odun-ekmeği:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/en-lezzetli-odun-ekmegi-editor.jpg}{70}{En Lezzetli Odun Ekmeği}
+kabaklı-havuçlu-mısır-ekmeği:{havuç, kabak, kabartma tozu, karabiber, mısır unu, pul biber, tereyağı, tuz, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/02/kabakli-havuclu-misir-ekmegi-tarif.jpg}{55}{Kabaklı, Havuçlu Mısır Ekmeği}
+zeytinli-focaccia:{kekik, maya, sarımsak, su, tuz, un, zeytin, zeytinyağı, çeri domates, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/01/zeytinli-focaccia-tarifi.jpg}{60}{Zeytinli Focaccia}
+airfryerda-kahvaltılık-ekmek:{ekmek, kapya biber, kaşar peyniri, lor peyniri, pul biber, süt, sıvı yağ, tuz, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/08/airfryerda-kahvaltilik-ekmek-onecikan.jpg}{17}{Airfryer'da Kahvaltılık Ekmek}
 mini-bazlama:{maya, su, süt, sıvı yağ, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/mini-bazlama-tarifi.jpeg}{6}{Mini Bazlama}
+sarımsaklı-yumulmalık-ekmek:{biberiye, ekmek, karabiber, kaşar peyniri, kekik, maydanoz, sarımsak, tereyağı, tulum peyniri, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/01/sarimsakli-yumulmalik-ekmek-yemekcom.jpg}{65}{Sarımsaklı Yumulmalık Ekmek}
+ev-yapımı-somun-ekmeği:{maya, su, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/ev-yapimi-somun-ekmek-editor.jpg}{50}{Ev Yapımı Somun Ekmeği}
+köfteli-çiçek-ekmek:{dana kıyma, irmik, isot, karabiber, kaşar peyniri, kimyon, köfte baharatı, maya, nane, pul biber, sarımsak, soğan, su, sumak, taze soğan, tereyağı, tuz, un, yoğurt, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/01/mayali-manti-tarifi.png}{85}{Köfteli Çiçek Ekmek}
+bun-ekmeği-bao-ekmeği:{karbonat, maya, su, süt tozu, sıvı yağ, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/bun-ekmegi-tavuklu-yemekcom.jpg}{67}{Bun Ekmeği (Bao Ekmeği)}
+çavdar-unlu-ekmek:{bal, maya, su, tuz, zeytinyağı, çavdar unu}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/cavdar-unlu-ekmek-tarifi.jpg}{45}{Çavdar Unlu Ekmek}
+mayasız-hamurdan-ekmek:{kabartma tozu, su, süt, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/mayasiz-hamurdan-ekmek-tarifi.jpeg}{40}{Mayasız Hamurdan Ekmek}
+orta-dünyadan-lembas:{kabartma tozu, süt, tarçın, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/02/yuzuklerin-efendisi-lembas-yemekcom.jpg}{40}{Orta Dünya'dan Lembas}
+tam-buğday-unlu-balon-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/tam-bugday-unlu-balon-ekmek.jpg}{110}{Tam Buğday Unlu Balon Ekmek}
+incirli-ekmek:{badem, ceviz, fındık, kuru incir, maya, portakal, su, tarçın, un, çavdar unu}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/01/incirli-ekmek.jpg}{17}{İncirli Ekmek}
+şekerli-ekmek:{maya, su, susam, süt, sıvı yağ, tuz, yoğurt, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/12/sekerli-ekmek-tarifi.jpg}{55}{Şekerli Ekmek}
+kabak-ekmeği:{dereotu, kabak, kabartma tozu, karabiber, kekik, tuz, un, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/kabak-ekmegi-editorrr.jpg}{40}{Kabak Ekmeği}
+mor-havuçlu-baget:{maya, mor havuç, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/10/mor-havuclu-baget.jpg}{21}{Mor Havuçlu Baget}
+airfryerda-ramazan-pidesi:{maya, su, susam, süt, tuz, un, yoğurt, yumurta, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/03/airfryerda-ramazan-pidesi-yemekcom.jpg}{13.5}{Airfryer'da Ramazan Pidesi}
+tam-buğdaylı-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/12/tam-bugdayli-ekmek-vanilla.jpg}{70}{Tam Buğdaylı Ekmek}
+tam-buğdaylı-hamburger-ekmeği:{bal, keten tohumu, maya, su, susam, süt, tuz, un, yoğurt, zeytinyağı, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/05/tam-bugdayli-hamburger-ekmegi-tarifi.jpg}{45}{Tam Buğdaylı Hamburger Ekmeği}
+yöresel-kömbe-ekmeği:{maya, su, süt, sıvı yağ, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/yoresel-kombe-ekmegi-baki.jpg}{40}{Yöresel Kömbe Ekmeği}
+monkey-bread:{maya, su, süt, tarçın, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/02/monkey-bread-tarifi.jpg}{60}{Monkey Bread}
+tuzlu-scone:{kabak çekirdeği, kabartma tozu, karabiber, kekik, maydanoz, süt, telli peynir, tereyağı, toz biber, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/tuzlu-scone.jpg}{35}{Tuzlu Scone}
+hamburger-ekmeği:{maya, su, susam, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/hamburger-ekmegi-baki.jpg}{65}{Hamburger Ekmeği}
+tam-buğday-unlu-focaccia:{adaçayı, bal, kekik, keten tohumu, maya, sarımsak, su, tuz, un, zeytin, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/08/tam-bugday-unlu-foccacia.jpg}{70}{Tam Buğday Unlu Focaccia}
+taş-fırından-farksız-ramazan-pidesi:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/ramazan-pidesi-4-ahmetasci.jpg}{35}{Taş Fırından Farksız Ramazan Pidesi}
+çavdarlı-tam-buğday-ekmeği:{ayçiçek yağı, maya, su, süt, tuz, un, çavdar unu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/cavdarli-tam-bugday-ekmegi-tarifi.jpg}{80}{Çavdarlı Tam Buğday Ekmeği}
+mor-ekmek:{maya, mor havuç, su, süt, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/mor-ekmek-tarifi.jpg}{70}{Mor Ekmek}
+ekşi-mayalı-ekmek:{ekşi maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/eksi-mayali-ekmek-haticeoncel.jpg}{74}{Ekşi Mayalı Ekmek}
+tam-buğday-unlu-hamburger-ekmeği:{maya, su, susam, süt, sıvı yağ, tereyağı, tuz, un, yumurta, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/tam-bugday-unlu-hamburger-ekmegi-tarifi.jpg}{50}{Tam Buğday Unlu Hamburger Ekmeği}
+tam-buğday-ekmeği:{maya, su, süt, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/10/tam-bugday-ekmegi-2-tarifi-son.jpg}{42}{Tam Buğday Ekmeği}
+foccacia-ekmeği:{bal, biberiye, kapya biber, kekik, kurutulmuş domates, kırmızı soğan, maya, sarımsak, su, tuz, un, zeytin, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/foccacia-ekmegi-tarifi.jpg}{37}{Foccacia Ekmeği}
+döküm-tencerede-çavdar-ekmeği:{maya, süt, tereyağı, tuz, un, çavdar unu}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/03/dokum-tencerede-cavdar-ekmegi-tarifi.jpg}{21}{Döküm Tencerede Çavdar Ekmeği}
+kuru-ekşi-mayalı-kolay-ekmek:{ekşi maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/kuru-eksi-mayali-kolay-ekmek-sevim.jpg}{43}{Kuru Ekşi Mayalı Kolay Ekmek}
+pamuk-sandviç-ekmeği:{maya, su, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/pamuk-sandvic-ekmegi-tarif.jpeg}{60}{Pamuk Sandviç Ekmeği}
+tencerede-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/tencerede-ekmek-tarifi-son.jpg}{140}{Tencerede Ekmek}
+yudaneli-tost-ekmeği:{maya, su, süt, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/yudaneli-tost-ekmegi-editor.jpg}{84}{Yudaneli Tost Ekmeği}
+soğanlı-ekmek:{biber salçası, domates salçası, kırmızı biber, maya, pul biber, soğan, su, susam, sıvı yağ, tuz, un, yoğurt, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/soganli-ekmek-tarifi.jpg}{45}{Soğanlı Ekmek}
+sütlü-yuvarlak-ekmek:{maya, süt, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/02/sutlu-yuvarlak-ekmek.jpg}{50}{Sütlü Yuvarlak Ekmek}
+tavada-karabuğday-ekmeği:{karabuğday unu, pul biber, su, tuz, yulaf unu, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/tavada-karabugday-ekmegi-ege.jpg}{15}{Tavada Karabuğday Ekmeği}
+küçük-somun-ekmek:{maya, su, tuz, un, yoğurt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/kucuk-somun-ekmek-rukiye.jpg}{50}{Küçük Somun Ekmek}
+zeytinli-ve-kaşarlı-rulo-ekmek:{kaşar peyniri, krema, maya, süt, tuz, un, yumurta, zeytin ezmesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/zeytinli-ve-kasarli-rulo-ekmek-tarifi.jpg}{31}{Zeytinli ve Kaşarlı Rulo Ekmek}
+1-kilo-undan-5-adet-somun-ekmek:{maya, su, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/12/1-kg-undan-5-somun-ekmek-one-cikan.jpg}{50}{1 Kilo Undan 5 Adet Somun Ekmek}
+kakaolu-portakallı-ekmek:{kakao, maya, portakal, su, süt, tuz, un, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/12/kakaolu-portakalli-ekmek.jpg}{27}{Kakaolu Portakallı Ekmek}
+bulut-ekmek:{kabartma tozu, labne, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/bulut-ekmek-tarifi-one-cikan.jpg}{11}{Bulut Ekmek}
+evde-ramazan-pidesi:{maya, su, susam, süt, sıvı yağ, tuz, un, yumurta, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/evde-ramazan-pidesi-tarifi.jpg}{60}{Evde Ramazan Pidesi}
+puf-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/puf-ekmek-irem.jpg}{70}{Puf Ekmek}
+lavaş-ekmeği:{maya, su, sıvı yağ, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/lavas-ekmegi-son.jpeg}{55}{Lavaş Ekmeği}
+kefir-mayalı-ekmek:{bal, ceviz, kefir, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/12/kefir-mayali-ekmek-tarifi.jpg}{21}{Kefir Mayalı Ekmek}
+evde-kolay-ekmek:{maya, su, susam, tuz, un, yoğurt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/evde-kolay-ekmek-tarifi.jpg}{105}{Evde Kolay Ekmek}
+mor-havuçlu-ekmek:{haşhaş, maya, mor havuç, su, süt, sıvı yağ, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/mor-havuclu-ekmek-senem.jpg}{45}{Mor Havuçlu Ekmek}
+puf-hamburger-ekmeği:{maya, su, susam, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/puf-hamburger-ekmegi-tarifi.jpg}{50}{Puf Hamburger Ekmeği}
+fransız-ekmeği:{maya, su, tuz, çavdar unu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/10/fransiz-ekmegi-yemekcom.jpg}{75}{Fransız Ekmeği}
+biberli-pratik-ekmek:{biber salçası, kekik, kişniş, lor peyniri, maya, soğan, su, susam, tuz, un, zeytinyağı, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/biberli-ekmek-tarifi.jpg}{23}{Biberli Pratik Ekmek}
+dereotlu-ve-zeytinli-ekmekler:{dereotu, maya, su, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/10/dereotlu-ve-zeytinli-ekmekler-tarifi.jpg}{40}{Dereotlu ve Zeytinli Ekmekler}
+zeytinli-italyan-ekmeği:{maya, su, tuz, un, zeytin, zeytinyağı, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/zeytinli-italyan-ekmegi-tarifi.jpg}{31}{Zeytinli İtalyan Ekmeği}
+mini-baget-ekmek:{maya, su, tuz, un, yoğurt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/mini-baget-ekmek-tarifi.jpg}{21}{Mini Baget Ekmek}
+ev-ekmeği:{maya, su, süt, tuz, un, yoğurt, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/ev-ekmegi-duygu.jpg}{85}{Ev Ekmeği}
+pratik-çiçek-ekmek:{maya, su, susam, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/pratik-cicek-ekmek-editor.jpg}{70}{Pratik Çiçek Ekmek}
+yağlı-ekmek:{maya, su, süt, sıvı yağ, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/09/yagli-ekmek-tarifi.jpg}{30}{Yağlı Ekmek}
+üç-malzemeli-tavada-ekmek:{karabuğday unu, su, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/09/uc-malzemeli-ekmek.jpg}{20}{Üç Malzemeli Tavada Ekmek}
+kuru-meyveli-ekmek:{ceviz, incir, kuru kayısı, maya, su, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/kuru-meyveli-ekmek-tarifi.jpg}{35}{Kuru Meyveli Ekmek}
+güveçte-ekmek:{maya, su, sıvı yağ, tuz, un, üzüm pekmezi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/09/guvecte-ekmek-tarifi.jpg}{75}{Güveçte Ekmek}
+ciabatta-ekmeği:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/ciabatta-mevyberry.jpg}{65}{Ciabatta Ekmeği}
+kahvaltılık-tost-ekmeği:{maya, su, süt, sıvı yağ, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/01/kahvaltilik-tost-ekmegi.jpg}{45}{Kahvaltılık Tost Ekmeği}
+zeytinli-kuru-domatesli-ekmek:{ceviz, kurutulmuş domates, maya, süt, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/zeytinli-kuru-domatesli-ekmek-2-tarifi.jpg}{55}{Zeytinli Kuru Domatesli Ekmek}
+glutensiz-mercimek-ekmeği:{kabartma tozu, karabiber, kekik, kırmızı mercimek, pul biber, tuz, yumurta, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/03/glutensiz-mercimek-ekmegi-tarifi.jpg}{35}{Glutensiz Mercimek Ekmeği}
+italyan-ekmeği-focaccia:{maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/italyan-ekmegi-evimin.jpg}{21}{İtalyan Ekmeği (Focaccia)}
+patlıcan-dolgulu-ekmek:{bal, biber salçası, karabiber, maya, patlıcan, soğan, su, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/07/patlican-dolgulu-ekmek.jpg}{65}{Patlıcan Dolgulu Ekmek}
+ev-yapımı-beyaz-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/12/ev-yapimi-beyaz-ekmek-buse.jpg}{60}{Ev Yapımı Beyaz Ekmek}
+kolay-gevrek-ekmek:{haşhaş, kabartma tozu, karbonat, su, susam, un, zeytinyağı, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/12/kolay-gevrek-ekmek-bedia.jpg}{35}{Kolay Gevrek Ekmek}
+tarçınlı-tatlı-ekmek:{maya, süt, tarçın, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/06/tarcinli-tatli-ekmek-tarifi.jpg}{40}{Tarçınlı Tatlı Ekmek}
+ekşi-mayalı-ev-ekmeği:{ekşi maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/eksi-mayali-ev-ekmegi-ayse.jpg}{75}{Ekşi Mayalı Ev Ekmeği}
+sarımsaklı-peynirli-kuru-domatesli-ekmek:{ekmek, kaşar peyniri, kurutulmuş domates, maydanoz, sarımsak, tereyağı, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/sarimsakli-peynirli-kuru-domatesli-ekmek-tarifi.jpg}{23}{Sarımsaklı Peynirli Kuru Domatesli Ekmek}
+köy-ekmeği:{maya, su, tuz, un, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/koy-ekmegi-ruveyda.jpg}{21}{Köy Ekmeği}
+ciabatta:{maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/ciabatta.jpg}{55}{Ciabatta}
+patatesli-tava-ekmeği:{patates, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/patatesli-tava-ekmegi-yemekcom.jpg}{16}{Patatesli Tava Ekmeği}
+pratik-hamburger-ekmeği:{ayçiçek yağı, maya, su, susam, süt, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/kolay-hamburger-ekmegi-editor.jpg}{50}{Pratik Hamburger Ekmeği}
+kahvaltılık-puf-ekmek:{kabartma tozu, maya, su, süt, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/05/kahvaltilik-puk-ekmek.jpg}{50}{Kahvaltılık Puf Ekmek}
+mini-pamuk-ekmekler:{maya, su, susam, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/06/mini-pamuk-ekmekler-tarifi.jpg}{40}{Mini Pamuk Ekmekler}
+gevrek-mısır-ekmeği:{karabiber, mısır unu, su, süt, tuz, un, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/04/gevrekmisirekmegi.jpg}{50}{Gevrek Mısır Ekmeği}
+ev-yapımı-ramazan-pidesi:{maden suyu, maya, su, susam, süt, sıvı yağ, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/ev-yapimi-ramazan-pidesi-tarifi.jpg}{30}{Ev Yapımı Ramazan Pidesi}
+kek-kıvamında-mısır-ekmeği:{karbonat, mısır unu, su, tuz, yoğurt, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/misir-ekmegi-sema.jpg}{30}{Kek Kıvamında Mısır Ekmeği}
+çeşnili-ekmek:{kekik, kurutulmuş domates, maya, sarımsak, su, sıvı yağ, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/cesnili-ekmek-tarifi.jpg}{21}{Çeşnili Ekmek}
+tahıllı-ekmek:{haşhaş, keten tohumu, maya, su, susam, süt, tuz, un, zeytinyağı, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/tahilli-ekmek-tarifi.jpg}{45}{Tahıllı Ekmek}
+sarımsaklı-peynirli-ekmek:{ekmek, karabiber, kaşar peyniri, kekik, sarımsak, tereyağı, toz biber, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/sarimsakli-peynirli-ekmek-yemekcom.jpg}{55}{Sarımsaklı Peynirli Ekmek}
+zeytinli-ve-cevizli-baton-ekmek:{ceviz, maya, su, sıvı yağ, tuz, un, zeytin, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/zeytinli-cevizli-baton-ekmek-sema.jpg}{50}{Zeytinli ve Cevizli Baton Ekmek}
+ev-yapımı-iki-temel-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/bby-ekmek-yemekcom.jpg}{28}{Ev Yapımı İki Temel Ekmek}
+sarımsaklı-yumuşak-ekmek:{dereotu, domates, domates salçası, kaşar peyniri, kekik, maya, maydanoz, pul biber, sarımsak, su, sıvı yağ, tereyağı, toz biber, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/05/sarimsakli-yumusak-ekmek-tarifi.jpg}{55}{Sarımsaklı Yumuşak Ekmek}
+tepside-etli-ekmek:{dana kıyma, domates, karabiber, maydanoz, soğan, su, sıvı yağ, toz biber, tuz, un, yeşil biber}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/tepside-etli-ekmek-tarifi.jpg}{40}{Tepside Etli Ekmek}
+biberiyeli-ekmek:{biberiye, maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/09/biberiyeli-ekmek-tarifi.jpg}{70}{Biberiyeli Ekmek}
+tatlı-ekmekler:{maya, su, sürülebilir çikolata, süt, sıvı yağ, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/tatli-ekmekler-rukiye.jpg}{60}{Tatlı Ekmekler}
+zeytinli-mini-ekmekler:{maya, su, tuz, un, yoğurt, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/01/zeytinli-mini-ekmekler-tarifi.jpg}{30}{Zeytinli Mini Ekmekler}
+salamlı-peynirli-örgü-ekmek:{dereotu, kaşar peyniri, krem peynir, maya, piliç salam, su, tuz, un, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/salamli-peynirli-orgu-ekmek-alime.jpg}{70}{Salamlı Peynirli Örgü Ekmek}
+acukalı-kahvaltılık-ekmek:{biber salçası, ceviz, domates salçası, ekmek, karabiber, kekik, kimyon, maya, pul biber, sarımsak, susam, süt, tuz, un, yenibahar, yumurta, zeytinyağı, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/11/acukali-ekmek.jpg}{120}{Acukalı Kahvaltılık Ekmek}
+ev-yapımı-somun-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/ev-yapimi-somun-ekmek-tarifi-sunum.jpg}{50}{Ev Yapımı Somun Ekmek}
+kuru-domatesli-ekşi-maya-ekmeği:{ay çekirdeği, ekşi maya, kurutulmuş domates, su, tuz, un, zeytinyağı, çavdar unu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/kuru-domatesli-eksi-maya-ekmegi-editor.jpg}{4}{Kuru Domatesli Ekşi Maya Ekmeği}
+papatya-ekmek:{maya, su, susam, süt, sıvı yağ, tuz, un, zeytinyağı, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/papatya-ekmek-tarifi.jpeg}{42}{Papatya Ekmek}
+tepside-biberli-ekmek:{biber salçası, domates salçası, karabiber, kekik, kimyon, maya, pul biber, soğan, su, susam, süt, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/tepside-biberli-ekmek-yemekcom.jpg}{26}{Tepside Biberli Ekmek}
+tortilla:{patates, sarımsak, soğan, toz biber, un, yoğurt, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/tortilla-sizden-gelenler.jpg}{50}{Tortilla}
+3-malzemeli-lavaş:{su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/01/3-malzemeli-lavas-one-cikan.jpg}{35}{3 Malzemeli Lavaş}
+tavada-mısır-ekmeği:{maya, mısır unu, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/tavada-misir-ekmegi-bread.jpg}{16}{Tavada Mısır Ekmeği}
+kaşar-peyniri-dolgulu-ekmek:{ekmek, kaşar peyniri, maydanoz, sarımsak, tereyağı, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/06/kasar-peyniri-dolgulu-ekmek.jpg}{25}{Kaşar Peyniri Dolgulu Ekmek}
+örgülü-macar-ekmeği:{maya, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/02/orgulu-macar-ekmegi.jpg}{22}{Örgülü Macar Ekmeği}
+alman-ekmeği:{karbonat, maya, su, süt, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/09/alman-ekmegi-yemekcom.jpg}{117}{Alman Ekmeği}
+airfryerda-sarımsaklı-ekmek:{ekmek, karabiber, kaşar peyniri, maydanoz, sarımsak, sıvı yağ, tereyağı, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/07/airfryerda-sarimsakli-ekmek.jpg}{35}{Airfryer'da Sarımsaklı Ekmek}
+ev-yapımı-ekmek:{karabiber, kekik, maya, sarımsak, su, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/05/ev-yapimi-ekmek-tarifi.jpg}{43}{Ev Yapımı Ekmek}
+kaşık-ekmeği:{kabartma tozu, mısır unu, süt, tereyağı, tuz, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/04/kasik-ekmegi.jpg}{50}{Kaşık Ekmeği}
+mısır-unlu-tava-ekmeği:{kabartma tozu, mısır unu, tuz, yoğurt, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/misir-unlu-tava-ekmegi-tarifi.jpeg}{10}{Mısır Unlu Tava Ekmeği}
+sağlıklı-tost-ekmeği:{maya, su, tereyağı, tuz, un, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/saglikli-tost-ekmegi-tarifi.jpeg}{35}{Sağlıklı Tost Ekmeği}
+focaccia-ekmek:{biberiye, kekik, maya, sarımsak, su, tuz, un, zeytin, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/focaccia-ekmek-tarifi.jpeg}{65}{Focaccia Ekmek}
+fırın-tadında-ekmek:{maya, su, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/firin-tadinda-ekmek-tarifi.jpeg}{31}{Fırın Tadında Ekmek}
+yufka-ekmek:{su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/05/yufka-ekmek-tarifi.jpg}{80}{Yufka Ekmek}
+airfryerda-bazlama:{maya, su, sıvı yağ, tuz, un, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/11/airfryerda-bazlama-yemekcom.jpg}{16}{Airfryer'da Bazlama}
+pofuduk-hamburger-ekmeği:{maya, su, süt, tereyağı, tuz, un, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/pofuduk-hamburger-ekmegi-tarifi.jpeg}{35}{Pofuduk Hamburger Ekmeği}
+tam-buğdaylı-focaccia:{bal, fesleğen, kekik, kurutulmuş domates, kırmızı soğan, mantar, maya, su, tuz, un, zeytin, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/tam-bugdayli-focaccia-tarifi.jpeg}{60}{Tam Buğdaylı Focaccia}
+tam-buğdaylı-minik-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/tam-bugdayli-minik-ekmek-tarifi.jpg}{21}{Tam Buğdaylı Minik Ekmek}
+rafine-şekerisiz-çikolatalı-ekmek:{bal, bitter çikolata, fındık, kakao, maya, süt, tereyağı, tuz, un, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/rafine-sekersiz-cikolatali-ekmek-tarifi.jpeg}{18}{Rafine Şekerisiz Çikolatalı Ekmek}
+yoğrulmayan-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/04/yogrulmayan-ekmek-tarifi.jpg}{55}{Yoğrulmayan Ekmek}
+ekşi-mayalı-bazlama-ekmek:{ekşi maya, keten tohumu, su, tuz, un, yumurta, zerdeçal}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/eksi-mayali-bazlama-ekmek-tarifi.jpg}{31}{Ekşi Mayalı Bazlama Ekmek}
+baharatlı-ekmek:{biber salçası, ceviz, karabiber, kekik, kimyon, maya, pul biber, soğan, su, susam, süt, sıvı yağ, tuz, zahter, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/baharatli-ekmek-tarifi-son.jpg}{31}{Baharatlı Ekmek}
+minik-somun-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/ekmek-bitarifver.jpg}{55}{Minik Somun Ekmek}
+malatya-ekşili-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/04/eksili-ekmek-yemekcom.jpg}{22}{Malatya Ekşili Ekmek}
+yulaf-kepekli-ekmek:{bal, maya, mısır unu, nişasta, su, süt, tuz, yulaf, yulaf kepeği, yumurta, zeytinyağı, çavdar unu}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/07/yulaf-kepekli-ekmek.jpg}{55}{Yulaf Kepekli Ekmek}
+kepekli-ekmek:{maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/04/kepekli-ekmek-tarifi.jpg}{31}{Kepekli Ekmek}
+mor-havuçlu-çavdar-ekmeği:{maya, mor havuç, su, süt, tereyağı, tuz, un, çavdar unu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/03/mor-havuclu-cavdar-ekmegi-tarifi.jpg}{65}{Mor Havuçlu Çavdar Ekmeği}
+naan:{biberiye, kekik, maya, su, tereyağı, tuz, un, yoğurt, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/01/naan-tarifi-asama-yemekcom.jpg}{50}{Naan}
+kek-kalıbında-ekmek:{maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/kek-kalibinda-ekmek-editor.jpg}{70}{Kek Kalıbında Ekmek}
+pancarlı-ekşi-mayalı-çiçek-ekmek:{maya, pancar, süt, tuz, un, zeytinyağı, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/pancarli-eksi-mayali-cicek-ekmek-tarifi.jpg}{51}{Pancarlı Ekşi Mayalı Çiçek Ekmek}
+taze-soğanlı-mısır-ekmeği:{kabartma tozu, kaymak, maden suyu, mısır unu, su, taze soğan, tereyağı, tuz, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/01/taze-soganli-misir-ekmegi-tarifi.png}{75}{Taze Soğanlı Mısır Ekmeği}
+mısır-ekmeği:{kabartma tozu, mısır unu, su, tereyağı, tuz, un, yoğurt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/misir-ekmegi-2-tarifi.jpg}{60}{Mısır Ekmeği}
+mayalı-hamburger-ekmeği:{maya, su, susam, süt, sıvı yağ, tereyağı, tuz, un, yoğurt, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/hamburger-ekmegi-2-tarifi.jpg}{40}{Mayalı Hamburger Ekmeği}
+ev-yapımı-pita-ekmeği:{maya, su, süt, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/pita-ekmegi.jpg}{40}{Ev Yapımı Pita Ekmeği}
+salçalı-ekmek:{biber salçası, domates salçası, maya, su, süt, tereyağı, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/salcali-ekmek-editor.jpg}{42}{Salçalı Ekmek}
+güveçte-minik-ekmek:{maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/03/guvecte-minik-ekmek-tarifi.jpg}{75}{Güveçte Minik Ekmek}
+cevizli-mini-çavdar-ekmeği:{ceviz, maya, su, tuz, un, zeytinyağı, çavdar unu}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/mini-cevizli-cavdar-ekmegi-tarifi.jpg}{31}{Cevizli Mini Çavdar Ekmeği}
+foccacia:{domates, kekik, maya, sarımsak, su, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/focaccia-tarifi-son.jpg}{27}{Foccacia}
+sütlü-ekmek:{maya, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/06/sutlu-ekmek.jpg}{70}{Sütlü Ekmek}
+ev-yapımı-hamburger-ekmeği:{maya, su, susam, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/burger-ekmegi-yemekcom-1.jpg}{18}{Ev Yapımı Hamburger Ekmeği}
+pratik-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/pratik-ekmek-editor-guzide.jpg}{51}{Pratik Ekmek}
+tombik-ekmek:{maya, su, susam, süt, sıvı yağ, tuz, un, yoğurt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/05/tombik-ekmek-tarifi-yemekcom.jpg}{11}{Tombik Ekmek}
+bazlama-ekmek:{maya, su, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/bazlama-ekmek-tarifduragim.jpg}{20}{Bazlama Ekmek}
+ev-yapımı-galeta-unu:{ekmek}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/12/ev-yapimi-galeta-unu-tarifi.jpg}{30}{Ev Yapımı Galeta Unu}
+gobit-ekmek:{maya, su, tuz, un, yoğurt, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/08/gobit-ekmek-yemekcom.jpg}{60}{Gobit Ekmek}
+ev-yapımı-bazlama:{maya, su, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/bazlama-vildan.jpg}{35}{Ev Yapımı Bazlama}
+domatesli-ekmek:{domates, kaşar peyniri, kekik, maya, sarımsak, su, tereyağı, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/05/domatesli-ekmek-tarifi.jpg}{80}{Domatesli Ekmek}
+sütsüz-yumuşacık-ramazan-pidesi:{galeta unu, maya, su, susam, tuz, un, yoğurt, yumurta, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/sutsuz-yumusacik-ramazan-pidesi-tarifi.jpg}{21}{Sütsüz Yumuşacık Ramazan Pidesi}
+yumuşacık-somun-ekmeği:{maya, su, süt, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/yumusacik-somun-ekmegi-sizden.jpg}{45}{Yumuşacık Somun Ekmeği}
+airfryerda-tam-buğday-unlu-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/04/airfryer-tam-bugday-ekmek.jpg}{70}{Airfryer’da Tam Buğday Unlu Ekmek}
+minik-ekmekler:{maya, su, tuz, un, yoğurt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/10/mini-ekmekler.jpg}{80}{Minik Ekmekler}
+ekşi-mayalı-ağaç-ekmek:{ekşi maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/eksi-mayali-agac-ekmek.jpg}{13}{Ekşi Mayalı Ağaç Ekmek}
+ekmek-pide:{maya, su, süt, sıvı yağ, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/ekmek-pide-tarifi.jpg}{60}{Ekmek Pide}
+tavada-pamuk-ekmek:{maya, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/tavada-pamuk-ekmek-onecikan.jpg}{31}{Tavada Pamuk Ekmek}
+kurutulmuş-domatesli-ekmek:{kekik, kurutulmuş domates, maya, su, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/05/kurutulmus-domatesli-ekmek.jpg}{50}{Kurutulmuş Domatesli Ekmek}
+pratik-kruton:{ekmek, kekik, toz biber, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/01/pratik-kruton-tarifi.jpg}{40}{Pratik Kruton}
+evde-lavaş-yapımı:{su, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/12/ev-yapimi-lavas-one-cikan.jpg}{50}{Evde Lavaş Yapımı}
+kolay-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/kolay-ekmek-neslihan.jpg}{40}{Kolay Ekmek}
+kolay-mini-ekmek:{haşhaş, maya, su, susam, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/01/kolay-mini-ekmek-kubra.jpg}{31}{Kolay Mini Ekmek}
+kolay-tost-ekmeği:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/kolay-tost-ekmegi-bimutfak.jpg}{36}{Kolay Tost Ekmeği}
+minik-tam-buğday-ekmeği:{ay çekirdeği, maya, su, susam, sıvı yağ, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/09/minik-tam-bugday-ekmegi-eda.jpg}{45}{Minik Tam Buğday Ekmeği}
+mayle-ekmeği:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/01/mayle-ekmegi.jpg}{37}{Mayle Ekmeği}
+peynirli-sarımsaklı-ekmek:{ezine peyniri, kaşar peyniri, maya, sarımsak, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/10/peynirli-sarimsakli-ekmek-tarifi.jpg}{50}{Peynirli Sarımsaklı Ekmek}
+tam-ölçülü-hamburger-ekmeği:{maya, su, susam, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/11/hamburger-ekmegi-happy.jpg}{45}{Tam Ölçülü Hamburger Ekmeği}
+karabuğday-ekmeği:{karabuğday unu, maya, su, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/11/karabugday-ekmegi-yemekcom.jpg}{47}{Karabuğday Ekmeği}
+sandviç-hamburger-ekmeği:{bal, maya, su, süt, tuz, un, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/10/sandvic-hamburger-ekmegi-tarifi.jpg}{65}{Sandviç Hamburger Ekmeği}
+kolay-mercimek-ekmeği:{kabartma tozu, kırmızı mercimek, tuz, yoğurt, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/kolay-mercimek-ekmegi-editor.jpg}{60}{Kolay Mercimek Ekmeği}
+kızarmış-tam-buğday-ekmeği:{haşhaş, maya, su, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/tam-bugday-ekmegi-tarifi.jpeg}{55}{Kızarmış Tam Buğday Ekmeği}
+mayasız-yumuşacık-ekmek:{kabartma tozu, maden suyu, su, tuz, un, yoğurt, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/yumusacik-mayasiz-ekmek-tarifi.jpg}{45}{Mayasız Yumuşacık Ekmek}
+sandviç-ekmeği:{maya, su, süt, sıvı yağ, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/sandvic-ekmegi-yemekcom.jpg}{32}{Sandviç Ekmeği}
+zeytinli-sarımsaklı-çiçek-ekmek:{biberiye, kekik, maya, sarımsak, su, sıvı yağ, tuz, un, yumurta, zeytin, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/05/20180501055847459469.jpeg}{21}{Zeytinli Sarımsaklı Çiçek Ekmek}
+tarçınlı-rulo-ekmek:{maya, pudra şekeri, su, süt, tarçın, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/tarcinli-rulo-ekmek-sweety.jpg}{27}{Tarçınlı Rulo Ekmek}
+biberli-ekmek:{biber salçası, domates salçası, kapya biber, kekik, kimyon, maya, pul biber, soğan, su, susam, süt, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/biberli-ekmek-yeni.jpg}{60}{Biberli Ekmek}
+mayasız-ekmek:{karbonat, kefir, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/04/mayasiz-ekmek.jpg}{35}{Mayasız Ekmek}
+dürümlük-lavaş:{kabartma tozu, su, tereyağı, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/09/durumluk-lavas-tarifi.jpeg}{11}{Dürümlük Lavaş}
+mercimek-ekmeği:{karbonat, kırmızı mercimek, peynir, tuz, yoğurt, yumurta, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/mercimek-ekmegi-2-tarifi.jpg}{50}{Mercimek Ekmeği}
+somun-ekmeği:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/01/somun-ekmegi-emine-1.jpg}{45}{Somun Ekmeği}
+tam-buğdaylı-simit:{ay çekirdeği, maya, su, susam, süt, tuz, un, yumurta, üzüm pekmezi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/08/tam-bugdayli-simit-tarifi.jpg}{30}{Tam Buğdaylı Simit}
+haşhaşlı-köy-ekmeği:{haşhaş, maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/12/hashasli-koy-ekmegi.jpg}{70}{Haşhaşlı Köy Ekmeği}
+örgü-ekmek:{bal, maya, su, tuz, un, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/orgu-ekmek-tarifi.jpg}{70}{Örgü Ekmek}
+pratik-köy-ekmeği:{maya, su, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/pratik-koy-ekmegi-tarifi.jpg}{70}{Pratik Köy Ekmeği}
+cabata-ekmeği:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/cabata-ekmegi-tarifi.jpg}{33}{Cabata Ekmeği}
+burger-ekmeği:{maya, su, susam, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2015/02/ev-yapimi-hamburger-ekmegi.jpg}{70}{Burger Ekmeği}
+mayalı-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/mayali-ekmek-tarifi.jpeg}{35}{Mayalı Ekmek}
+avokado-ekmek:{avokado, kabartma tozu, tuz, yulaf unu, yumurta, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/03/avokado-ekmek-tarifi.jpg}{30}{Avokado Ekmek}
+lor-peynirli-sandviç-ekmeği:{lor peyniri, susam, yulaf, yumurta, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2025/01/lor-peynirli-sandvic-ekmegi-tarifi.jpg}{35}{Lor Peynirli Sandviç Ekmeği}
 çiçek-ekmeği:{maya, su, süt, tuz, un, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/cicek-ekmegi-yummy.jpg}{65}{Çiçek Ekmeği}
+oopsie-ekmeği:{kabartma tozu, labne, tuz, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/oopsie-ekmegi-cikolatalimutfak.jpg}{25}{Oopsie Ekmeği}
+sarımsaklı-kaşarlı-ekmek:{kaşar peyniri, maya, maydanoz, sarımsak, su, süt, sıvı yağ, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/sarimsakli-kasarli-ekmek-arzu.jpg}{65}{Sarımsaklı Kaşarlı Ekmek}
+yumuşak-hamburger-ekmeği:{maya, su, süt, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/hamburger-ekmegi-3-tarifi-fundak.jpg}{16}{Yumuşak Hamburger Ekmeği}
+muzlu-çikolatalı-ekmek:{damla çikolata, kabartma tozu, karbonat, muz, süt, sıvı yağ, tarçın, tereyağı, un, vanilya, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/muzlu-ekmek-tarifi-2.jpeg}{75}{Muzlu Çikolatalı Ekmek}
+pratik-puf-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/pratik-puf-ekmek-tarifi.jpg}{40}{Pratik Puf Ekmek}
+focaccia-ekmeği:{fesleğen, maya, mozzarella, sarımsak, su, tuz, un, zeytin, zeytinyağı, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/foccacia-yemekburada.jpg}{31}{Focaccia Ekmeği}
+konyadan-etli-ekmek:{dana kıyma, domates, maya, sivri biber, soğan, su, sıvı yağ, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/01/konya-etli-ekmek-yemekcom.jpg}{60}{Konya'dan Etli Ekmek}
+ispanak-püreli-ekşi-mayalı-ekmek:{ekşi maya, tuz, un, ıspanak}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/ispanak-pureli-eksi-mayali-ekmek-seyma.jpg}{26}{Ispanak Püreli Ekşi Mayalı Ekmek}
+kefirli-isırgan-otu-ekmeği:{kabartma tozu, karbonat, kefir, tuz, un, zeytinyağı, ısırgan otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/kefirli-isirgan-otlu-ekmek-beyza.jpg}{26}{Kefirli Isırgan Otu Ekmeği}
+minik-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/minik-ekmek-editorr.jpg}{40}{Minik Ekmek}
+orijinal-focaccia:{maya, maydanoz, sarımsak, su, tuz, un, zeytin, zeytinyağı, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/05/orijinal-focaccia-yemekcom.jpg}{23}{Orijinal Focaccia}
+çavdarlı-ekmek:{maya, su, tuz, yoğurt, çavdar unu, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/02/cavdarli-ekmek-tarifi.jpg}{36}{Çavdarlı Ekmek}
+mahlepli-çikolatalı-ekmek:{bitter çikolata, mahlep, maya, su, süt, sütlü çikolata, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/cikolatali-mahlepli-ekmek.jpg}{47}{Mahlepli Çikolatalı Ekmek}
+tereyağlı-tost-ekmeği:{maya, su, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/tereyagli-tost-ekmegi-sevda.jpg}{85}{Tereyağlı Tost Ekmeği}
+bayat-ekmekten-yumurtalı-ekmek:{beyaz peynir, ekmek, kaşar peyniri, margarin, sıvı yağ, tuz, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/bayat-ekmekten-yumurtali-ekmek-tarifi.jpg}{40}{Bayat Ekmekten Yumurtalı Ekmek}
+zeytinli-ekmek:{maya, su, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/zeytinli-ekmek-yemekcom.jpg}{2}{Zeytinli Ekmek}
+yufka-ekmeği:{maya, su, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/08/yufka-ekmegi-onecikan.jpg}{25}{Yufka Ekmeği}
+tereyağlı-hamburger-ekmeği:{maya, süt, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/tereyagli-hamburger-ekmegi-editor.jpg}{50}{Tereyağlı Hamburger Ekmeği}
+ingiliz-muffin:{maya, su, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/05/ingiliz-muffin.jpg}{53}{İngiliz Muffin}
+cevizli-pekmezli-ekmek:{ceviz, maya, su, tuz, un, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/12/cevizli-pekmezli-ekmek.jpg}{70}{Cevizli Pekmezli Ekmek}
+hataydan-biberli-ekmek:{biber salçası, ceviz, domates, karabiber, kimyon, maya, nane, nar ekşisi, soğan, susam, süt, sıvı yağ, tuz, un, yumurta, zahter, zeytinyağı, çökelek, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/01/biberli-ekmek-yemekcom.jpg}{60}{Hatay'dan Biberli Ekmek}
+sarımsaklı-kruton:{ekmek, karabiber, sarımsak, sıvı yağ, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/sarimsakli-kruton-editor.jpg}{20}{Sarımsaklı Kruton}
+dereotlu-baget-ekmeği:{dereotu, maya, su, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/dereotlu-baget-ekmegi-tarifi.jpg}{50}{Dereotlu Baget Ekmeği}
+tam-buğdaylı-lavaş:{maya, su, tuz, un, yoğurt, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/10/tam-bugdayli-lavas.jpg}{60}{Tam Buğdaylı Lavaş}
+sarmal-ekmek:{maya, süt, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/sarmal-ekmek-damla.jpg}{65}{Sarmal Ekmek}
+evde-klasik-somun-ekmek:{maya, su, süt, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/somun-ekmek-yeni-one-cikan.jpg}{45}{Evde Klasik Somun Ekmek}
+roll-ekmek:{maya, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/roll-ekmek-editor.jpg}{40}{Roll Ekmek}
+mini-bazlama-ekmeği:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/12/mini-bazlama-ekmegi-tarifi.jpg}{65}{Mini Bazlama Ekmeği}
+sarımsaklı-kahvaltı-ekmeği:{kaşar peyniri, kekik, maya, maydanoz, sarımsak, su, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/sarimsakli-kahvalti-ekmegi-tarifi.jpg}{80}{Sarımsaklı Kahvaltı Ekmeği}
+tam-buğdaylı-mini-bazlama:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/tam-bugdayli-mini-bazlama-tarifi.jpeg}{32}{Tam buğdaylı Mini Bazlama}
+ev-yapımı-lavaş:{su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/lavas-yenge.jpg}{25}{Ev Yapımı Lavaş}
+tam-buğdaylı-sandviç-ekmeği:{maya, su, süt, tuz, un, yulaf, yumurta, zeytinyağı, çörek otu, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/11/tam-bugdayli-sandvic-ekmegi-tarifi.jpg}{65}{Tam Buğdaylı Sandviç Ekmeği}
+cevizli-mısır-ekmeği:{ceviz, kabartma tozu, kekik, maden suyu, mısır unu, tereyağı, tuz, yoğurt, yumurta, zeytin, zeytinyağı, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/12/cevizli-misir-ekmegi-tarifi.jpg}{60}{Cevizli Mısır Ekmeği}
+baget-ekmek:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/baget-ekmek-tarifi.jpg}{31}{Baget Ekmek}
+sütlü-lavaş:{süt, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/08/sutlu-lavas-sunum-3.jpg}{25}{Sütlü Lavaş}
+kuru-domates-ve-zeytinli-ekmek:{kekik, kurutulmuş domates, maya, sarımsak, süt, tuz, un, zeytin, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/kuru-domtes-ve-zeytinli-ekmek-tarifi.jpg}{41}{Kuru Domates ve Zeytinli Ekmek}
+yumuşak-focaccia:{domates, maya, piliç salam, su, susam, tuz, un, zeytinyağı, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/yumusak-focaccia-tarifi.jpeg}{45}{Yumuşak Focaccia}
+kekikli-domates-dilimleri:{domates, kaşar peyniri, kekik, maya, süt, sıvı yağ, tuz, un, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/11/kekikli-domates-dilimleri-ulku.jpg}{45}{Kekikli Domates Dilimleri}
+kolay-focaccia-ekmeği:{bal, domates, kekik, maya, sarımsak, su, tuz, un, zeytin, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/focaccia-ekmegi-editor.jpg}{27}{Kolay Focaccia Ekmeği}
+kuruyemişli-ekmek:{bal, ceviz, haşhaş tohumu, kabak çekirdeği, maya, su, tuz, un, yulaf unu}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/10/kuruyemisli-ekmek-tarifi.jpg}{120}{Kuruyemişli Ekmek}
+rize-usulü-hamsili-ekmek:{domates, domates salçası, hamsi, maydanoz, mısır unu, nane, patates, pazı, soğan, sıvı yağ, tuz, çarliston biber}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/02/rize-usulu-hamsili-ekmek-huner.jpg}{60}{Rize Usulü Hamsili Ekmek}
+yulaf-ekmeği:{maya, su, tuz, un, yulaf unu, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/yulaf-ekmegi-editor.jpg}{45}{Yulaf Ekmeği}
+zerdeçallı-ekmek:{maya, su, tuz, un, zerdeçal, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/zerdecalli-ekmek-editor.jpg}{41.5}{Zerdeçallı Ekmek}
+
+sütlü-sandviç-ekmeği:{maya, su, susam, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/03/sutlu-sandvic-ekmegi-tarifi.jpg}{1}{Sütlü Sandviç Ekmeği}
+ev-yapımı-tost-ekmeği:{maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/ev-yapimi-tost-ekmegi-editor.jpg}{120}{Ev Yapımı Tost Ekmeği}
+kırmızı-mercimek-ekmeği:{kabartma tozu, karabuğday unu, kimyon, kırmızı mercimek, süt, tuz, yumurta, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/11/kirmizi-mercimek-ekmegi-tarifi.jpg}{40}{Kırmızı Mercimek Ekmeği}
+naan-ekmeği:{bal, maya, maydanoz, sarımsak, su, tereyağı, tuz, un, yoğurt, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/04/meyvberry-naan-ekmegi.jpg}{40}{Naan Ekmeği}
+kahvaltılık-ekmek:{dereotu, karabiber, kekik, kişniş, maydanoz, nane, pul biber, tereyağı, tulum peyniri, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/01/kahvaltilik-ekmek-tarifi.jpg}{10}{Kahvaltılık Ekmek}
+brioche-ekmeği:{ceviz, damla çikolata, kuru üzüm, maya, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/brioche-ekmegi-tarifi.jpg}{70}{Brioche Ekmeği}
+yulaflı-pratik-ekmek:{lor peyniri, maydanoz, yeşil zeytin, yulaf ezmesi, yumurta, zeytin, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/12/yulafli-pratik-ekmek.jpg}{25}{Yulaflı Pratik Ekmek}
+pratik-tam-buğday-ekmeği:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/pratik-tam-bugdayli-ekmek-tarifi.jpg}{50}{Pratik Tam Buğday Ekmeği}
+patatesli-yumuşacık-ekmek:{karabiber, maya, patates, su, süt, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/11/patatesli-yumusacik-ekmek-tarifi-.jpg}{50}{Patatesli Yumuşacık Ekmek}
+mini-ekmek-somunları:{maya, su, sıvı yağ, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/10/mini-ekmek-somunlari-tarifi.jpg}{110}{Mini Ekmek Somunları}
+brioche:{bal, limon, maya, süt, tereyağı, tuz, un, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2014/11/brioche-tarifi.jpg}{40}{Brioche}
+tava-pidesi:{maya, maydanoz, su, sıvı yağ, un, yoğurt, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/03/tava-pidesi-onecikan.jpg}{40}{Tava Pidesi}
+kuru-domatesli-kekikli-ekmek:{kekik, kurutulmuş domates, maya, su, tuz, un, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2023/03/kuru-domatesli-kekikli-ekmek-mayasi.jpg}{85}{Kuru Domatesli Kekikli Ekmek}
+dereotlu-mısır-ekmeği:{dereotu, kabartma tozu, mısır unu, tuz, un, yoğurt, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/11/dereotlu-misir-ekmegi.jpg}{50}{Dereotlu Mısır Ekmeği}
+tam-buğday-unlu-tost-ekmeği:{maya, su, süt, sıvı yağ, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/08/tam-bugday-unlu-tost-ekmegi-tarifi.jpg}{46}{Tam Buğday Unlu Tost Ekmeği}
+bulgur-ekmeği:{bulgur, domates salçası, kimyon, maya, reyhan, soğan, toz biber, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/bulgur-ekmegi-tarifi.jpg}{50}{Bulgur Ekmeği}
+etli-ekmek:{dana kıyma, domates, karabiber, kırmızı biber, maya, pul biber, soğan, su, süt, sıvı yağ, toz biber, tuz, un, yeşil biber, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/10/etli-ekmek-3-tarifi.jpg}{55}{Etli Ekmek}
+pırasalı-mısır-ekmeği:{kabartma tozu, karabiber, mısır unu, pul biber, pırasa, su, süt, sıvı yağ, tuz, un, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/01/pirasali-misir-ekmegi-yemekcom.jpg}{16}{Pırasalı Mısır Ekmeği}
+kıtır-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/kitir-ekmek-tarifi.jpg}{85}{Kıtır Ekmek}
+sağlıklı-focaccia-ekmeği:{biberiye, kekik, maya, maydanoz, sarımsak, su, tuz, un, yeşil zeytin, zeytin, zeytinyağı, çeri domates}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/01/saglikli-focaccia-ekmegi-tarifi.jpg}{32}{Sağlıklı Focaccia Ekmeği}
+zeytin-ezmeli-kuru-domatesli-ekmek:{bal, kurutulmuş domates, maya, su, süt, tuz, un, zeytin ezmesi, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/11/zeytin-ezmeli-ekmek.jpg}{42}{Zeytin Ezmeli & Kuru Domatesli Ekmek}
+yumuşacık-kahvaltılık-ekmek:{kabartma tozu, süt, tuz, un, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/yumusacik-kahvaltilik-ekmek.jpg}{35}{Yumuşacık Kahvaltılık Ekmek}
+çekirdekli-ve-susamlı-ekmek:{ay çekirdeği, maya, su, susam, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/12/cekirdekli-ekmek.jpg}{46}{Çekirdekli ve Susamlı Ekmek}
+kefirli-ekmek:{karbonat, kefir, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/03/kefirli-ekmek-irem.jpg}{45}{Kefirli Ekmek}
+mini-somun-ekmek:{maya, su, tuz, un, yoğurt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/mini-somon-ekmek-tarifi.jpg}{65}{Mini Somun Ekmek}
+çiçek-ekmek:{maya, su, susam, süt, sıvı yağ, tuz, un, yoğurt, çörek otu, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/05/cicek-ekmek-tarifi.jpeg}{40}{Çiçek Ekmek}
+pita-balon-ekmeği:{maya, su, süt, sıvı yağ, tuz, un, yoğurt, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/pita-ekmegi-tarifi.jpg}{21}{Pita (Balon) Ekmeği}
+kuru-domatesli-zeytinli-ekmek:{kurutulmuş domates, maya, su, tuz, un, zeytin}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/kuru-domatesli-ekmekk.jpg}{31}{Kuru Domatesli Zeytinli Ekmek}
+yulaf-ekmeği-oat-bread:{ceviz, kabak çekirdeği, kabartma tozu, yaban mersini, yoğurt, yulaf, yumurta}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/03/yulaf-ekmegi-se.jpg}{50}{Yulaf Ekmeği (Oat Bread)}
+bagel:{bal, haşhaş, kapari, krem peynir, maya, somon, su, susam, taze soğan, tuz, un, çörek otu, üzüm pekmezi}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/02/bagel-tarifi.jpg}{47}{Bagel}
+zeytinli-haşhaşlı-ekmek:{haşhaş, maya, su, tuz, un, yoğurt, zeytin, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/zeytinli-hashasli-ekmek-tarifi.jpg}{80}{Zeytinli Haşhaşlı Ekmek}
+tırnak-pide:{maya, su, tuz, un, yoğurt, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2017/08/tirnak-pide-tarifi.jpg}{45}{Tırnak Pide}
+tam-buğday-unlu-ekmek:{maya, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/tam-bugday-unlu-ekmek-tarifi.jpg}{50}{Tam Buğday Unlu Ekmek}
+ev-yapımı-tam-buğday-ekmeği:{limon, maya, su, süt, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/09/tam-bugday-unlu-ekmek-tarifi.jpg}{32}{Ev Yapımı Tam Buğday Ekmeği}
+mayalı-lavaş:{maya, su, süt, sıvı yağ, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/04/mayali-lavas-kendi.jpg}{45}{Mayalı Lavaş}
+focaccia:{kapya biber, maya, maydanoz, sarımsak, su, tuz, un, zeytin, zeytinyağı, çeri domates, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/12/foccaia-yemekcom.jpg}{26}{Focaccia}
+çavdar-ekmeği:{kekik, maya, su, tuz, zeytinyağı, çavdar unu}{https://cdn.yemek.com/mncrop/640/480/uploads/2016/03/cavdar-ekmegi-tarifi.jpg}{65}{Çavdar Ekmeği}
+kolay-sağlıklı-ekmek:{bal, maya, su, süt, tuz, un, zeytinyağı, çavdar unu}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/saglikli-kolay-ekmek-yeni.jpg}{40}{Kolay Sağlıklı Ekmek}
+sarımsaklı-ekmek:{maya, maydanoz, sarımsak, su, tereyağı, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/sarimsakli-ekmekfatma.jpg}{45}{Sarımsaklı Ekmek}
+patatesli-otlu-ekmek:{dereotu, kabartma tozu, karabiber, kurutulmuş domates, muskat, mısır unu, patates, susam, tulum peyniri, tuz, yoğurt, yulaf ezmesi, yumurta, zeytinyağı, çörek otu, ıspanak, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/09/patatesli-otlu-ekmek-tarifi.jpg}{55}{Patatesli Otlu Ekmek}
+rokforlu-ve-zeytin-ezmeli-ekmek:{biberiye, maya, rokfor, süt, tereyağı, tuz, un, yumurta, zeytin ezmesi, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/06/rokforlu-ve-zeytin-ezmeli-ekmek-tarifi.jpeg}{55}{Rokforlu ve Zeytin Ezmeli Ekmek}
+büyük-papatya-ekmek:{maya, su, susam, süt, tuz, un, yumurta, zeytinyağı, çörek otu}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/04/buyuk-papatya-ekmek-sofra.jpg}{50}{Büyük Papatya Ekmek}
+tavada-mayalı-ekmek:{maya, su, süt, tereyağı, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2018/05/tavada-mayali-ekmek-tarifi.jpg}{40}{Tavada Mayalı Ekmek}
+pita-ekmeği:{maya, su, süt, tuz, un, yoğurt, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/05/pita-ekmegi-nurlu-1.jpg}{20}{Pita Ekmeği}
+muzlu-ekmek:{ceviz, karbonat, muz, süt, sıvı yağ, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/05/muzlu-ekmek.jpg}{60}{Muzlu Ekmek}
+sütlü-japon-ekmeği:{maya, su, süt, tereyağı, tuz, un, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/06/sutlu-japon-ekmegi-tarifi.jpg}{40}{Sütlü Japon Ekmeği}
+mini-sandviç-ekmeği:{ay çekirdeği, fesleğen, maya, su, susam, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/07/mini-sandvic-ekmegi-tarifi.jpg}{30}{Mini Sandviç Ekmeği}
+pamuk-ekmek:{maya, su, süt, tuz, un, yoğurt, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/pamuk-ekmek-editor.jpg}{50}{Pamuk Ekmek}
+ekşi-mayalı-bagel:{bal, su, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/eksi-mayali-bagel-tarifi.jpg}{2}{Ekşi Mayalı Bagel}
+mayasız-lavaş:{kabartma tozu, su, sıvı yağ, tuz, un, yoğurt}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/04/mayasiz-lavas-aysegul.jpg}{50}{Mayasız Lavaş}
+klasik-foccacia:{biberiye, kekik, maya, su, tuz, un, zeytinyağı, çeri domates, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/klasik-foccacia-tarifi.jpg}{27}{Klasik Foccacia}
+taş-fırın-ekmegi:{maya, su, tuz, un, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/04/tas-firin-ekmegi-tarifi.jpg}{35}{Taş Fırın Ekmegi}
+ekşi-mayalı-muzlu-ekmek:{ekşi maya, kabartma tozu, karbonat, muz, süt, sıvı yağ, tarçın, tuz, un, vanilya, yumurta, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2019/11/eksi-mayali-muzlu-ekmek-tarifi.jpg}{65}{Ekşi Mayalı Muzlu Ekmek}
+çikolatalı-ekşi-mayalı-ekmek:{ekşi maya, kakao, su, sütlü çikolata, tuz, un}{https://cdn.yemek.com/mncrop/640/480/uploads/2022/10/cikolatali-eksi-mayali-ekmek-saden.jpg}{41}{Çikolatalı Ekşi Mayalı Ekmek}
+soğanlı-biberli-ekmek:{biber salçası, ceviz, karabiber, kekik, kimyon, maya, pul biber, soğan, su, susam, süt, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/11/soganli-biberli-ekmek-tarifi.jpg}{75}{Soğanlı Biberli Ekmek}
+köz-patlıcanlı-focaccia:{domates, kekik, maya, patlıcan, reyhan, sarımsak, su, toz biber, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/07/koz-patlicanli-foccacia-happy.jpg}{50}{Köz Patlıcanlı Focaccia}
+pratik-mısır-ekmeği:{mısır unu, su, sıvı yağ, tuz}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/02/20200212080003419151.jpeg}{35}{Pratik Mısır Ekmeği}
+cevizli-ekmek:{ceviz, maya, su, tuz, un, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/03/cevizli-ekmek-tarifi-son.jpg}{37}{Cevizli Ekmek}
+ekşi-mayalı-focaccia:{ekşi maya, su, tuz, un, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2020/11/eksi-mayali-foccaccia.jpg}{80}{Ekşi Mayalı Focaccia}
+nohuttan-tost-ekmeği:{karbonat, limon, nohut, süt, tuz, zeytinyağı}{https://cdn.yemek.com/mncrop/640/480/uploads/2024/12/nohuttan-tost-ekmegi-tarifi.jpg}{35}{Nohuttan Tost Ekmeği}
+sarımsaklı-burma-ekmek:{maya, maydanoz, sarımsak, süt, tereyağı, tuz, un, yumurta, zeytinyağı, şeker}{https://cdn.yemek.com/mncrop/640/480/uploads/2021/02/sarimsakli-burma-ekmek-hatice.jpg}{36}{Sarımsaklı Burma Ekmek}
