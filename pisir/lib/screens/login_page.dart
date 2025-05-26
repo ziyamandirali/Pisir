@@ -81,7 +81,7 @@ class _LoginPageState extends State<LoginPage> {
           message = 'Bu e-posta adresi farklı bir giriş yöntemi ile kayıtlı';
           break;
         case 'invalid-credential':
-          message = 'Geçersiz kimlik bilgileri';
+          message = 'Geçersiz kimlik bilgileri veya hatalı şifre';
           break;
         case 'operation-not-allowed':
           message = 'Google girişi etkinleştirilmemiş';
@@ -89,20 +89,45 @@ class _LoginPageState extends State<LoginPage> {
         case 'user-disabled':
           message = 'Bu hesap devre dışı bırakılmış';
           break;
+        case 'too-many-requests':
+          message = 'Çok fazla giriş denemesi. Lütfen daha sonra tekrar deneyin';
+          break;
+        case 'network-request-failed':
+          message = 'İnternet bağlantı hatası';
+          break;
         default:
-          message = 'Google ile giriş yapılamadı: ${e.message}';
+          message = 'Google ile giriş yapılamadı: ${e.message ?? e.code}';
+          break;
       }
       
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(message)),
+          SnackBar(
+            content: Text(
+              message,
+              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.white),
+            ),
+            backgroundColor: Colors.red[700],
+            behavior: SnackBarBehavior.floating,
+            margin: const EdgeInsets.all(16),
+            duration: const Duration(seconds: 5),
+          ),
         );
       }
     } catch (e) {
       debugPrint('Google sign in error: $e');
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Google ile giriş yapılamadı: Beklenmeyen hata')),
+          SnackBar(
+            content: Text(
+              'Google ile giriş yapılamadı: ${e.toString().contains('RECAPTCHA') ? 'Doğrulama hatası, lütfen tekrar deneyin' : 'Beklenmeyen hata'}',
+              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.white),
+            ),
+            backgroundColor: Colors.red[700],
+            behavior: SnackBarBehavior.floating,
+            margin: const EdgeInsets.all(16),
+            duration: const Duration(seconds: 5),
+          ),
         );
       }
     } finally {
@@ -147,13 +172,24 @@ class _LoginPageState extends State<LoginPage> {
         Navigator.pushReplacementNamed(context, '/main');
       }
     } on FirebaseAuthException catch (e) {
+      debugPrint('Firebase Auth error: ${e.code} - ${e.message}');
       String message = 'Bir hata oluştu';
+      
       switch (e.code) {
         case 'user-not-found':
           message = 'Bu e-posta adresi ile kayıtlı kullanıcı bulunamadı';
           break;
         case 'wrong-password':
           message = 'Hatalı şifre';
+          break;
+        case 'invalid-credential':
+          message = 'Geçersiz kimlik bilgileri veya hatalı şifre';
+          break;
+        case 'user-disabled':
+          message = 'Bu hesap devre dışı bırakılmış';
+          break;
+        case 'too-many-requests':
+          message = 'Çok fazla giriş denemesi. Lütfen daha sonra tekrar deneyin';
           break;
         case 'email-already-in-use':
           message = 'Bu e-posta adresi zaten kullanımda';
@@ -164,18 +200,47 @@ class _LoginPageState extends State<LoginPage> {
         case 'invalid-email':
           message = 'Geçersiz e-posta adresi';
           break;
+        case 'operation-not-allowed':
+          message = 'Bu giriş yöntemi şu anda devre dışı';
+          break;
+        case 'network-request-failed':
+          message = 'İnternet bağlantı hatası';
+          break;
+        default:
+          message = 'Giriş hatası: ${e.message ?? e.code}';
+          break;
       }
       
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(message)),
+          SnackBar(
+            content: Text(
+              message,
+              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.white),
+            ),
+            backgroundColor: Colors.red[700],
+            behavior: SnackBarBehavior.floating,
+            margin: const EdgeInsets.all(16),
+            duration: const Duration(seconds: 5),
+          ),
         );
       }
     } catch (e) {
       debugPrint('Email sign in error: $e');
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Giriş yapılamadı: $e')),
+          SnackBar(
+            content: Text(
+              e.toString().contains('RECAPTCHA') 
+                  ? 'Doğrulama hatası: Lütfen tekrar deneyin'
+                  : 'Giriş yapılamadı: Beklenmeyen bir hata oluştu',
+              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.white),
+            ),
+            backgroundColor: Colors.red[700],
+            behavior: SnackBarBehavior.floating,
+            margin: const EdgeInsets.all(16),
+            duration: const Duration(seconds: 5),
+          ),
         );
       }
     } finally {
