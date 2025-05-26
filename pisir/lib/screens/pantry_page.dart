@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -56,12 +57,11 @@ class PantryPageState extends State<PantryPage> {
 
   Future<void> _loadDeviceId() async {
     try {
-      final prefs = await SharedPreferences.getInstance();
-      final deviceId = prefs.getString('device_id');
+      final User? currentUser = FirebaseAuth.instance.currentUser;
       
       if (mounted) {
         setState(() {
-          _deviceId = deviceId;
+          _deviceId = currentUser?.uid;
         });
       }
     } catch (e) {
@@ -804,14 +804,14 @@ class _AddIngredientPageState extends State<AddIngredientPage> {
 
   Future<void> _saveIngredients() async {
     try {
-      final prefs = await SharedPreferences.getInstance();
-      final deviceId = prefs.getString('device_id');
+      final User? currentUser = FirebaseAuth.instance.currentUser;
+      final deviceId = currentUser?.uid;
       
       if (deviceId == null) {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
-              content: Text('Cihaz ID bulunamadı'),
+              content: Text('Kullanıcı girişi bulunamadı'),
               backgroundColor: Colors.red,
             ),
           );
@@ -903,10 +903,16 @@ class _AddIngredientPageState extends State<AddIngredientPage> {
               controller: _searchController,
               decoration: InputDecoration(
                 hintText: 'Malzeme Ara',
-                prefixIcon: const Icon(Icons.search),
+                prefixIcon: Icon(
+                  Icons.search,
+                  color: isDark ? Colors.grey[400] : Colors.grey[600],
+                ),
                 suffixIcon: _searchController.text.isNotEmpty
                     ? IconButton(
-                        icon: const Icon(Icons.clear),
+                        icon: Icon(
+                          Icons.clear,
+                          color: isDark ? Colors.grey[400] : Colors.grey[600],
+                        ),
                         onPressed: () {
                           _searchController.clear();
                         },
@@ -916,7 +922,13 @@ class _AddIngredientPageState extends State<AddIngredientPage> {
                   borderRadius: BorderRadius.circular(10),
                 ),
                 filled: true,
-                fillColor: Colors.grey[100],
+                fillColor: isDark ? Colors.grey[800] : Colors.grey[100],
+                hintStyle: TextStyle(
+                  color: isDark ? Colors.grey[400] : Colors.grey[600],
+                ),
+              ),
+              style: TextStyle(
+                color: isDark ? Colors.white : Colors.black,
               ),
             ),
           ),
@@ -946,8 +958,13 @@ class _AddIngredientPageState extends State<AddIngredientPage> {
             ),
             Expanded(
               child: _selectedCategory == null
-                  ? const Center(
-                      child: Text('Lütfen bir kategori seçin'),
+                  ? Center(
+                      child: Text(
+                        'Lütfen bir kategori seçin',
+                        style: TextStyle(
+                          color: isDark ? Colors.white70 : Colors.black54,
+                        ),
+                      ),
                     )
                   : GridView.builder(
                       padding: const EdgeInsets.all(8),
@@ -988,8 +1005,13 @@ class _AddIngredientPageState extends State<AddIngredientPage> {
           ] else ...[
             Expanded(
               child: _searchResults.isEmpty
-                  ? const Center(
-                      child: Text('Sonuç bulunamadı'),
+                  ? Center(
+                      child: Text(
+                        'Sonuç bulunamadı',
+                        style: TextStyle(
+                          color: isDark ? Colors.white70 : Colors.black54,
+                        ),
+                      ),
                     )
                   : GridView.builder(
                       padding: const EdgeInsets.all(8),

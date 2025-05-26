@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:pisir/screens/recipe_detail_page.dart'; // Assuming this is your detail page
 
 class FavoritesPage extends StatefulWidget {
@@ -36,8 +36,8 @@ class _FavoritesPageState extends State<FavoritesPage> {
   }
 
   Future<void> _loadDeviceId() async {
-    final prefs = await SharedPreferences.getInstance();
-    _deviceId = prefs.getString('device_id');
+    final User? currentUser = FirebaseAuth.instance.currentUser;
+    _deviceId = currentUser?.uid;
   }
 
   Stream<List<Map<String, dynamic>>> _loadFavoritesStream() {

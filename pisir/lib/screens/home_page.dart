@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:convert';
@@ -52,9 +52,9 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   }
 
   Future<void> _loadDeviceId() async {
-    final prefs = await SharedPreferences.getInstance();
+    final User? currentUser = FirebaseAuth.instance.currentUser;
     setState(() {
-      _deviceId = prefs.getString('device_id');
+      _deviceId = currentUser?.uid;
     });
     if (_deviceId != null) {
       await _loadPantryIngredients();
