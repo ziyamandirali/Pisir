@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle; // Added for rootBundle
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'recipe_detail_page.dart';
 // Removed: import 'package:cloud_firestore/cloud_firestore.dart'; // Not needed for local search list
@@ -100,8 +100,8 @@ class _RecipeSearchPageState extends State<RecipeSearchPage> {
       _isPantryLoading = true;
     });
     
-    final prefs = await SharedPreferences.getInstance();
-    final deviceId = prefs.getString('device_id');
+    final User? currentUser = FirebaseAuth.instance.currentUser;
+    final deviceId = currentUser?.uid;
     
     setState(() {
       _deviceId = deviceId;

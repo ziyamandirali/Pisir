@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import '../main.dart'; // darkModeNotifier için import
 
 class SplashScreen extends StatefulWidget {
@@ -22,24 +22,22 @@ class _SplashScreenState extends State<SplashScreen> {
     if (!mounted) return;
     
     try {
-      // Kullanıcının daha önce giriş yapıp yapmadığını kontrol et
-      final prefs = await SharedPreferences.getInstance();
-      final isLoggedIn = prefs.getBool('is_logged_in') ?? false;
-      final deviceId = prefs.getString('device_id');
+      // Firebase Auth state'ini kontrol et
+      final User? currentUser = FirebaseAuth.instance.currentUser;
       
-      debugPrint('PIŞIR_DEBUG: Checking login status - isLoggedIn: $isLoggedIn, deviceId: $deviceId');
+      debugPrint('PIŞIR_DEBUG: Checking auth state - currentUser: ${currentUser?.uid}');
       
-      if (isLoggedIn && deviceId != null && deviceId.isNotEmpty) {
-        // Kullanıcı daha önce giriş yapmış, direkt ana sayfaya yönlendir
-        debugPrint('PIŞIR_DEBUG: User already logged in, redirecting to main screen');
+      if (currentUser != null) {
+        // Kullanıcı giriş yapmış, direkt ana sayfaya yönlendir
+        debugPrint('PIŞIR_DEBUG: User authenticated, redirecting to main screen');
         Navigator.pushReplacementNamed(context, '/main');
       } else {
-        // Kullanıcı daha önce giriş yapmamış, login sayfasına yönlendir
-        debugPrint('PIŞIR_DEBUG: User not logged in, redirecting to login screen');
+        // Kullanıcı giriş yapmamış, login sayfasına yönlendir
+        debugPrint('PIŞIR_DEBUG: User not authenticated, redirecting to login screen');
         Navigator.pushReplacementNamed(context, '/login');
       }
     } catch (e) {
-      debugPrint('PIŞIR_DEBUG: Error checking login status: $e');
+      debugPrint('PIŞIR_DEBUG: Error checking auth state: $e');
       // Hata durumunda login sayfasına yönlendir
       Navigator.pushReplacementNamed(context, '/login');
     }

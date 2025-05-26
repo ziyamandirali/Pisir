@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class RecipeDetailPage extends StatefulWidget {
@@ -39,8 +39,8 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
   }
   
   Future<String?> _getDeviceId() async {
-    final prefs = await SharedPreferences.getInstance();
-    return prefs.getString('device_id');
+    final User? currentUser = FirebaseAuth.instance.currentUser;
+    return currentUser?.uid;
   }
 
   Future<void> _loadRecipeDetails() async {
