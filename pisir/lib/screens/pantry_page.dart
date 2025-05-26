@@ -20,6 +20,7 @@ class PantryPageState extends State<PantryPage> {
   Map<String, List<String>> _ingredients = {};
   bool _isSelectionMode = false;
   Set<String> _selectedIngredients = {};
+  Map<String, bool> _expandedCategories = {}; // Kategorilerin açık/kapalı durumunu takip eder
   final ScrollController _scrollController = ScrollController();
   final TextEditingController _searchController = TextEditingController();
   String _searchQuery = '';
@@ -141,9 +142,16 @@ class PantryPageState extends State<PantryPage> {
       // Verileri önbelleğe kaydet
       await _saveToCache(ingredients);
 
+      // Kategori açık/kapalı durumlarını başlat
+      Map<String, bool> initialExpandedState = {};
+      ingredients.keys.forEach((category) {
+        initialExpandedState[category] = true; // Başlangıçta tüm kategoriler açık
+      });
+
       if (mounted) {
         setState(() {
           _ingredients = ingredients;
+          _expandedCategories = initialExpandedState;
           _isInitialized = true;
           _isLoading = false;
         });
@@ -376,6 +384,13 @@ class PantryPageState extends State<PantryPage> {
       }
     });
   }
+  
+  // Kategori açma/kapama fonksiyonu
+  void _toggleCategoryExpansion(String category) {
+    setState(() {
+      _expandedCategories[category] = !(_expandedCategories[category] ?? true);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -578,28 +593,46 @@ class PantryPageState extends State<PantryPage> {
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Padding(
-                                          padding: const EdgeInsets.all(12.0),
-                                          child: Row(
-                                            children: [
-                                              /*Icon(
-                                                _getCategoryIcon(category),
-                                                color: Theme.of(context).colorScheme.primary,
-                                              
-                                              )*/
-                                              const SizedBox(width: 8),
-                                              Text(
-                                                category,
-                                                style: const TextStyle(
-                                                  fontSize: 18,
-                                                  fontWeight: FontWeight.bold,
+                                        // Kategori başlığı ve toggle butonu
+                                        InkWell(
+                                          onTap: () => _toggleCategoryExpansion(category),
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(12.0),
+                                            child: Row(
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: [
+                                                Row(
+                                                  children: [
+                                                    /*Icon(
+                                                      _getCategoryIcon(category),
+                                                      color: Theme.of(context).colorScheme.primary,
+                                                    
+                                                    )*/
+                                                    const SizedBox(width: 8),
+                                                    Text(
+                                                      category,
+                                                      style: const TextStyle(
+                                                        fontSize: 18,
+                                                        fontWeight: FontWeight.bold,
+                                                      ),
+                                                    ),
+                                                  ],
                                                 ),
-                                              ),
-                                            ],
+                                                // Açık/Kapalı durumuna göre ok ikonu
+                                                Icon(
+                                                  _expandedCategories[category] ?? true
+                                                      ? Icons.keyboard_arrow_up
+                                                      : Icons.keyboard_arrow_down,
+                                                  color: isDark ? Colors.white70 : Colors.grey[700],
+                                                ),
+                                              ],
+                                            ),
                                           ),
                                         ),
                                         const Divider(height: 1),
-                                        ...ingredients.map((ingredient) => ListTile(
+                                        // Kategori açıksa içeriği göster
+                                        if (_expandedCategories[category] ?? true)
+                                          ...ingredients.map((ingredient) => ListTile(
                                           key: Key('$category-$ingredient'),
                                           title: Text(ingredient),
                                           leading: const Icon(Icons.kitchen),
